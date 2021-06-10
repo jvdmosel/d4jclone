@@ -1,0 +1,49 @@
+from pathlib import Path
+
+from d4jclone.config import BASEDIR, SCRIPTDIR, REPODIR
+from d4jclone.parser.bugParser import getModifiedSources, parseBug
+from d4jclone.parser.projectParser import parseProject
+from d4jclone.util.projects import projects
+
+sep = '\n'+ '-' * 80
+
+def project_info(project_id):
+    project = parseProject(project_id)
+    print('Summary of configuration for Project: ' + project.id + sep)
+    print('    Script dir: ' + SCRIPTDIR)
+    print('      Base dir: ' + BASEDIR)
+    print('      Repo dir: ' + REPODIR + sep)
+    print('    Project ID: ' + project.id)
+    print('       Program: ' + project.program)
+    print('    Build File: ' + project.build_file + sep)
+    print('           Vcs: ' + 'Vcs::' + project.vcs)
+    print('    Repository: ' + str(Path(REPODIR) / (projects.get(project.id) + '.git')))
+    print('     Commit db: ' + str(Path(SCRIPTDIR) / 'projects' / project.id / 'bugs.csv'))
+    print('Number of bugs: ' + str(project.number_of_bugs))
+
+def bug_info(project_id, bug_id):
+    bug = parseBug(project_id, bug_id)
+    print('Summary for Bug: ' + project_id + '-' + bug.id + sep)
+    print('Revision ID (fixed version):\n' + bug.rev_fixed + sep)
+    print('Revision date (fixed version):\n' + bug.rev_date_fixed + sep)
+    print('Bug report id:\n' + bug.external_id + sep)
+    print('Bug report url:\n' + bug.url + sep)
+    print('Root cause in triggering tests:\n' + 'UNKNOWN' + sep)
+    srcs = getModifiedSources(bug)
+    if len(srcs) > 0:
+        srcs = '\n - '.join(getModifiedSources(bug))
+    else:
+        srcs = 'UNKNOWN'
+        print('List of modified sources:\n - ' + srcs + sep)
+        
+def info(project_id, bug_id = None):
+    if project_id in projects.keys():
+        project = parseProject(project_id)
+        if bug_id == None:
+            project_info(project_id)
+        elif 0 < int(bug_id) <= project.number_of_bugs+1:
+            bug_info(project_id, bug_id)
+        else:
+            raise Exception('Error: ' + project_id + '-' + bug_id  + ' is a non-existent bug')
+    else:
+        raise Exception('Invalid project_id:' + project_id)
