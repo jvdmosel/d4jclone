@@ -15,4 +15,4 @@ def parseProject(project):
     with open(metadata_file) as json_file:
         metadata = json.load(json_file)
         return Project(metadata['id'], metadata['program'], metadata['vcs'], 
-                       metadata['build_file'], int(metadata['number_of_bugs']))
+                       PROJECTDIR + '/' + metadata['build_file'], int(metadata['number_of_bugs']))
