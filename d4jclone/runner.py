@@ -49,10 +49,13 @@ class D4jclone(object):
         parser.add_argument('-v', help='The version id that shall be checked out', required=True)
         parser.add_argument('-w', help='The working directory to which the buggy or fixed project version shall be checked out', required=True)
         args = parser.parse_args(sys.argv[2:])
-        checkout.checkout(args.p, int(args.v[:1]), args.v[1:], args.w)
+        checkout.checkout(args.p, int(args.v[:len(args.v)-1]), args.v[len(args.v)-1:], args.w)
         
     def compile(self):
-        compile.compile()
+        parser = argparse.ArgumentParser(description='Compile parser')
+        parser.add_argument('-w', help='The working directory of the checked-out project version. Default is the current directory.', required=False)
+        args = parser.parse_args(sys.argv[2:])
+        compile.compile(args.w)
         
     def test(self):
         parser = argparse.ArgumentParser(description='Test parser')
@@ -65,6 +68,7 @@ class D4jclone(object):
 
 def main():
     D4jclone()
+    #createTest.test('Bcel', 1, 1, True, False)
     #metadata is specific to system, cannot upload as that, generate path on the fly (do not save)?
     
 if __name__ == '__main__':
