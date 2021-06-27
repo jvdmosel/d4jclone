@@ -1,0 +1,2 @@
+bug.id,revision.id.buggy,revision.id.fixed,revision.date.fixed,report.id,report.url
+1,779ce9e90728f5ab9e8fed95f071ef69a5661498,96461c6e3083fc1b2abd0d856d7d21401ae37ca0,2007-11-29 01:13:06 +0000,JSPWIKI-82,https://issues.apache.org/jira/browse/JSPWIKI-82

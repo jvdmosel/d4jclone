@@ -1,0 +1,7 @@
+{
+    "id": "Net",
+    "program": "commons-net",
+    "build_file": "Net/Net.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "93"
+}

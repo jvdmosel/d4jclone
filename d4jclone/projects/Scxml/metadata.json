@@ -1,0 +1,7 @@
+{
+    "id": "Scxml",
+    "program": "commons-scxml",
+    "build_file": "Scxml/Scxml.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "28"
+}

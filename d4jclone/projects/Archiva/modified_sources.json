@@ -1,0 +1,10 @@
+{
+    "MRM-1136": [
+        "org.apache.maven.archiva.repository.metadata.RepositoryMetadataReader",
+        "org.apache.maven.archiva.xml.XMLReaderTest"
+    ],
+    "MRM-1698": [
+        "org.apache.archiva.admin.repository.proxyconnector.DefaultProxyConnectorAdmin"
+    ],
+    "MRM-1830": []
+}

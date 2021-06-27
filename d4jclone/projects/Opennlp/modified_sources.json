@@ -1,0 +1,285 @@
+{
+    "OPENNLP-90": [
+        "opennlp.tools.chunker.ChunkerME"
+    ],
+    "OPENNLP-138": [
+        "opennlp.tools.namefind.DefaultNameContextGenerator",
+        "opennlp.tools.namefind.BigramNameFeatureGenerator",
+        "opennlp.tools.namefind.NameFinderME"
+    ],
+    "OPENNLP-150": [],
+    "OPENNLP-151": [
+        "opennlp.uima.tokenize.TokenizerTrainer"
+    ],
+    "OPENNLP-161": [],
+    "OPENNLP-201": [
+        "opennlp.tools.sentdetect.EmptyLinePreprocessorStream",
+        "opennlp.tools.sentdetect.SentenceSampleStream"
+    ],
+    "OPENNLP-203": [],
+    "OPENNLP-204": [],
+    "OPENNLP-288": [
+        "opennlp.tools.postag.POSDictionary"
+    ],
+    "OPENNLP-294": [
+        "opennlp.tools.namefind.TokenNameFinderEvaluator"
+    ],
+    "OPENNLP-295": [
+        "opennlp.tools.sentdetect.SentenceDetectorME",
+        "opennlp.tools.sentdetect.SentenceDetectorMETest"
+    ],
+    "OPENNLP-316": [
+        "opennlp.tools.util.eval.Evaluator"
+    ],
+    "OPENNLP-329": [],
+    "OPENNLP-332": [
+        "opennlp.tools.parser.Parse"
+    ],
+    "OPENNLP-395": [
+        "opennlp.uima.namefind.NameFinderTrainer"
+    ],
+    "OPENNLP-403": [],
+    "OPENNLP-418": [
+        "opennlp.tools.cmdline.ArgumentParser",
+        "opennlp.tools.cmdline.ArgumentParserTest"
+    ],
+    "OPENNLP-427": [
+        "opennlp.uima.parser.Parser"
+    ],
+    "OPENNLP-451": [],
+    "OPENNLP-452": [
+        "opennlp.tools.util.eval.CrossValidationPartitioner"
+    ],
+    "OPENNLP-470": [
+        "opennlp.tools.cmdline.AbstractCmdLineTool",
+        "opennlp.tools.cmdline.CLI",
+        "opennlp.tools.cmdline.tokenizer.SimpleTokenizerTool"
+    ],
+    "OPENNLP-474": [
+        "opennlp.tools.formats.NameSampleDataStreamFactory"
+    ],
+    "OPENNLP-479": [
+        "opennlp.tools.sentdetect.DefaultSDContextGenerator"
+    ],
+    "OPENNLP-488": [
+        "opennlp.tools.ml.maxent.io.GISModelWriter",
+        "opennlp.tools.ml.model.AbstractDataIndexer"
+    ],
+    "OPENNLP-491": [
+        "opennlp.tools.parser.AbstractBottomUpParser"
+    ],
+    "OPENNLP-520": [
+        "opennlp.tools.util.model.BaseModel"
+    ],
+    "OPENNLP-524": [
+        "opennlp.tools.tokenize.TokenizerFactory"
+    ],
+    "OPENNLP-527": [
+        "opennlp.model.FileEventStream",
+        "opennlp.model.RealValueFileEventStream",
+        "opennlp.model.TwoPassDataIndexer",
+        "opennlp.maxent.RealValueModelTest",
+        "opennlp.maxent.io.RealValueFileEventStreamTest"
+    ],
+    "OPENNLP-529": [
+        "opennlp.tools.formats.ad.ADSentenceStream",
+        "opennlp.tools.formats.ad.ADNameSampleStreamTest",
+        "opennlp.tools.formats.ad.ADParagraphStreamTest",
+        "opennlp.tools.formats.ad.ADSentenceSampleStreamTest",
+        "opennlp.tools.formats.ad.ADTokenSampleStreamTest"
+    ],
+    "OPENNLP-530": [
+        "opennlp.tools.formats.ad.ADNameSampleStream"
+    ],
+    "OPENNLP-562": [
+        "opennlp.tools.namefind.RegexNameFinder",
+        "opennlp.tools.namefind.RegexNameFinderTest"
+    ],
+    "OPENNLP-576": [
+        "opennlp.uima.namefind.AbstractNameFinder"
+    ],
+    "OPENNLP-593": [
+        "opennlp.tools.util.model.BaseModel"
+    ],
+    "OPENNLP-594": [
+        "opennlp.tools.parser.Parse"
+    ],
+    "OPENNLP-601": [
+        "opennlp.tools.namefind.NameSampleTypeFilter"
+    ],
+    "OPENNLP-635": [
+        "opennlp.tools.ml.TrainerFactory"
+    ],
+    "OPENNLP-644": [],
+    "OPENNLP-645": [
+        "opennlp.uima.chunker.ChunkerTrainer",
+        "opennlp.uima.sentdetect.SentenceDetectorTrainer"
+    ],
+    "OPENNLP-670": [
+        "opennlp.tools.namefind.TokenNameFinderFactory"
+    ],
+    "OPENNLP-673": [],
+    "OPENNLP-676": [
+        "opennlp.uima.util.AnnotationComboIterator",
+        "opennlp.uima.util.AnnotationComboIteratorTest",
+        "opennlp.uima.util.CasUtil"
+    ],
+    "OPENNLP-677": [
+        "opennlp.tools.parser.ParserModel"
+    ],
+    "OPENNLP-704": [
+        "opennlp.tools.cmdline.sentdetect.SentenceDetectorTool"
+    ],
+    "OPENNLP-711": [
+        "opennlp.tools.sentdetect.SentenceDetectorME"
+    ],
+    "OPENNLP-717": [
+        "opennlp.tools.namefind.NameFinderME",
+        "opennlp.tools.namefind.TokenNameFinderFactory"
+    ],
+    "OPENNLP-721": [
+        "opennlp.tools.util.featuregen.GeneratorFactory"
+    ],
+    "OPENNLP-724": [
+        "opennlp.tools.cmdline.namefind.TokenNameFinderTrainerTool"
+    ],
+    "OPENNLP-729": [],
+    "OPENNLP-730": [],
+    "OPENNLP-739": [
+        "opennlp.tools.cmdline.chunker.ChunkerMETool"
+    ],
+    "OPENNLP-744": [
+        "opennlp.tools.formats.brat.AnnotationConfiguration",
+        "opennlp.tools.formats.brat.AttributeAnnotation",
+        "opennlp.tools.formats.brat.BratAnnotationStream"
+    ],
+    "OPENNLP-749": [],
+    "OPENNLP-751": [
+        "opennlp.tools.chunker.ChunkerME",
+        "opennlp.tools.chunker.ChunkerModel"
+    ],
+    "OPENNLP-762": [
+        "opennlp.tools.postag.POSModel",
+        "opennlp.tools.postag.POSTaggerME"
+    ],
+    "OPENNLP-778": [
+        "opennlp.tools.parser.ParserModel"
+    ],
+    "OPENNLP-784": [
+        "opennlp.tools.formats.brat.AnnotationConfiguration"
+    ],
+    "OPENNLP-785": [
+        "opennlp.tools.namefind.NameFinderME",
+        "opennlp.tools.namefind.TokenNameFinderModel"
+    ],
+    "OPENNLP-799": [
+        "opennlp.tools.sentdetect.NewlineSentenceDetector",
+        "opennlp.tools.sentdetect.NewlineSentenceDetectorTest"
+    ],
+    "OPENNLP-810": [],
+    "OPENNLP-835": [
+        "opennlp.tools.ml.model.SequenceStreamEventStream"
+    ],
+    "OPENNLP-845": [
+        "opennlp.tools.util.eval.Evaluator"
+    ],
+    "OPENNLP-906": [
+        "opennlp.tools.util.model.BaseModel"
+    ],
+    "OPENNLP-929": [
+        "opennlp.tools.ml.maxent.GISTrainer",
+        "opennlp.tools.ml.maxent.GISTestIndexing"
+    ],
+    "OPENNLP-955": [],
+    "OPENNLP-959": [
+        "opennlp.tools.formats.brat.BratNameSampleStream"
+    ],
+    "OPENNLP-961": [
+        "opennlp.tools.formats.brat.AnnotationConfiguration",
+        "opennlp.tools.formats.brat.BratAnnotation",
+        "opennlp.tools.formats.brat.BratAnnotationStream",
+        "opennlp.tools.formats.brat.EventAnnotation"
+    ],
+    "OPENNLP-963": [
+        "opennlp.tools.ml.AbstractEventTrainer"
+    ],
+    "OPENNLP-989": [
+        "opennlp.tools.namefind.NameFinderSequenceValidator",
+        "opennlp.tools.namefind.NameFinderSequenceValidatorTest"
+    ],
+    "OPENNLP-1010": [
+        "opennlp.tools.ml.naivebayes.NaiveBayesModelWriter",
+        "opennlp.tools.ml.naivebayes.NaiveBayesSerializedCorrectnessTest"
+    ],
+    "OPENNLP-1011": [
+        "opennlp.tools.postag.POSTaggerFactory"
+    ],
+    "OPENNLP-1039": [
+        "opennlp.tools.ml.perceptron.PerceptronTrainer"
+    ],
+    "OPENNLP-1042": [
+        "opennlp.tools.parser.Parse",
+        "opennlp.tools.parser.ParserEvaluator"
+    ],
+    "OPENNLP-1046": [
+        "opennlp.tools.cmdline.parser.ParserTool"
+    ],
+    "OPENNLP-1056": [
+        "opennlp.tools.lemmatizer.DictionaryLemmatizer",
+        "opennlp.tools.lemmatizer.DictionaryLemmatizerTest"
+    ],
+    "OPENNLP-1061": [
+        "opennlp.tools.lemmatizer.DictionaryLemmatizer",
+        "opennlp.tools.lemmatizer.DictionaryLemmatizerMultiTest"
+    ],
+    "OPENNLP-1078": [
+        "opennlp.tools.formats.irishsentencebank.IrishSentenceBankDocument"
+    ],
+    "OPENNLP-1081": [
+        "opennlp.tools.util.featuregen.GeneratorFactory",
+        "opennlp.tools.util.featuregen.GeneratorFactoryTest"
+    ],
+    "OPENNLP-1083": [
+        "opennlp.tools.formats.conllu.ConlluStream",
+        "opennlp.tools.formats.conllu.ConlluTokenSampleStream",
+        "opennlp.tools.formats.conllu.ConlluWordLine",
+        "opennlp.tools.formats.conllu.ConlluLemmaSampleStreamTest",
+        "opennlp.tools.formats.conllu.ConlluPOSSampleStreamTest",
+        "opennlp.tools.formats.conllu.ConlluTokenSampleStreamTest"
+    ],
+    "OPENNLP-1092": [
+        "opennlp.tools.postag.POSModel",
+        "opennlp.tools.namefind.TokenNameFinderModelTest"
+    ],
+    "OPENNLP-1121": [
+        "opennlp.tools.namefind.NameSample",
+        "opennlp.tools.namefind.NameSampleTest"
+    ],
+    "OPENNLP-1132": [
+        "opennlp.tools.formats.leipzig.LeipzigLanguageSampleStream",
+        "opennlp.tools.formats.leipzig.LeipzigLanguageSampleStreamTest"
+    ],
+    "OPENNLP-1133": [
+        "opennlp.tools.ml.maxent.GISTrainer",
+        "opennlp.tools.ml.maxent.FootballEventStream",
+        "opennlp.tools.ml.maxent.GISTrainerTest",
+        "opennlp.tools.ml.maxent.URLInputStreamFactory"
+    ],
+    "OPENNLP-1158": [
+        "opennlp.bratann.NameFinderResource"
+    ],
+    "OPENNLP-1179": [],
+    "OPENNLP-1193": [
+        "opennlp.tools.formats.brat.BratAnnotationStream",
+        "opennlp.tools.formats.brat.BratDocumentParser",
+        "opennlp.tools.formats.brat.SpanAnnotation",
+        "opennlp.tools.formats.brat.BratDocumentParserTest",
+        "opennlp.tools.formats.brat.BratDocumentTest"
+    ],
+    "OPENNLP-1197": [
+        "opennlp.tools.util.featuregen.FeatureGeneratorUtil",
+        "opennlp.tools.util.featuregen.StringPattern",
+        "opennlp.tools.util.featuregen.FeatureGeneratorUtilTest",
+        "opennlp.tools.util.featuregen.StringPatternTest"
+    ]
+}

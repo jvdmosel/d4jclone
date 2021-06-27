@@ -1,0 +1,1215 @@
+{
+    "IVY-49": [
+        "fr.jayasoft.ivy.ant.IvyResolve",
+        "fr.jayasoft.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-56": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.IvyNode"
+    ],
+    "IVY-59": [
+        "fr.jayasoft.ivy.resolver.RepositoryResolver"
+    ],
+    "IVY-62": [
+        "fr.jayasoft.ivy.DefaultModuleDescriptor"
+    ],
+    "IVY-64": [
+        "fr.jayasoft.ivy.util.XMLHelper"
+    ],
+    "IVY-65": [
+        "org.apache.ivy.ant.IvyTask",
+        "org.apache.ivy.plugins.latest.LatestRevisionStrategy",
+        "org.apache.ivy.util.ChecksumHelper",
+        "org.apache.ivy.plugins.repository.ssh.SshCache",
+        "org.apache.ivy.util.url.ApacheURLLister",
+        "org.apache.ivy.util.StringUtils",
+        "org.apache.ivy.ant.AntBuildTriggerTest",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository"
+    ],
+    "IVY-75": [
+        "fr.jayasoft.ivy.util.IvyPatternHelper",
+        "fr.jayasoft.ivy.util.IvyPatternHelperTest"
+    ],
+    "IVY-76": [
+        "fr.jayasoft.ivy.DefaultModuleDescriptor",
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-84": [
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.IvyNode"
+    ],
+    "IVY-85": [
+        "fr.jayasoft.ivy.ant.IvyResolveTest",
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-86": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-89": [
+        "org.apache.ivy.core.settings.XmlSettingsParser"
+    ],
+    "IVY-90": [
+        "fr.jayasoft.ivy.resolver.MockResolver",
+        "fr.jayasoft.ivy.resolver.ChainResolver",
+        "fr.jayasoft.ivy.resolver.BasicResolver",
+        "fr.jayasoft.ivy.resolver.AbstractResolver",
+        "fr.jayasoft.ivy.resolver.ChainResolverTest"
+    ],
+    "IVY-94": [
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater"
+    ],
+    "IVY-97": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.resolver.FileSystemResolverTest",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-105": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-108": [
+        "fr.jayasoft.ivy.ant.IvyCacheTask",
+        "fr.jayasoft.ivy.ant.IvyCachePath",
+        "fr.jayasoft.ivy.ant.IvyCachePathTest",
+        "fr.jayasoft.ivy.ant.IvyCacheFilesetTest",
+        "fr.jayasoft.ivy.ant.IvyCacheFileset"
+    ],
+    "IVY-112": [
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParser",
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.Main",
+        "fr.jayasoft.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-116": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParser",
+        "fr.jayasoft.ivy.DefaultDependencyArtifactDescriptor"
+    ],
+    "IVY-117": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-119": [
+        "fr.jayasoft.ivy.ant.IvyPublish",
+        "fr.jayasoft.ivy.ant.IvyPublishTest"
+    ],
+    "IVY-123": [
+        "fr.jayasoft.ivy.util.IvyPatternHelper",
+        "fr.jayasoft.ivy.ant.IvyArtifactProperty"
+    ],
+    "IVY-126": [],
+    "IVY-133": [
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater",
+        "fr.jayasoft.ivy.xml.XmlModuleUpdaterTest"
+    ],
+    "IVY-149": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-150": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.ant.IvyReportTest",
+        "fr.jayasoft.ivy.ant.IvyReport"
+    ],
+    "IVY-151": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-153": [
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParser",
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-157": [
+        "fr.jayasoft.ivy.ModuleRevisionId",
+        "fr.jayasoft.ivy.ModuleId"
+    ],
+    "IVY-159": [
+        "fr.jayasoft.ivy.resolver.BasicResolver",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.resolver.ChainResolver",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-164": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-173": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveData"
+    ],
+    "IVY-175": [
+        "fr.jayasoft.ivy.DefaultModuleDescriptor",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParser",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest"
+    ],
+    "IVY-180": [
+        "fr.jayasoft.ivy.ant.IvyRetrieve",
+        "fr.jayasoft.ivy.ant.IvyRetrieveTest",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-181": [
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.IvyNode"
+    ],
+    "IVY-182": [
+        "fr.jayasoft.ivy.DefaultDependencyDescriptor",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-186": [
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-188": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-191": [
+        "fr.jayasoft.ivy.resolver.RepositoryResolver"
+    ],
+    "IVY-193": [
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.Ivy"
+    ],
+    "IVY-195": [
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParserTest",
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-198": [
+        "fr.jayasoft.ivy.ant.IvyResolveTest",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-199": [
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-203": [
+        "fr.jayasoft.ivy.xml.XmlIvyConfigurationParserTest",
+        "fr.jayasoft.ivy.url.HttpClientHandler"
+    ],
+    "IVY-206": [
+        "fr.jayasoft.ivy.resolver.ChainResolver",
+        "fr.jayasoft.ivy.resolver.ChainResolverTest",
+        "fr.jayasoft.ivy.resolver.BasicResolver"
+    ],
+    "IVY-214": [
+        "fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-232": [
+        "org.apache.ivy.ant.IvyAntSettings",
+        "org.apache.ivy.ant.IvyPostResolveTask",
+        "org.apache.ivy.ant.IvyConfigureTest",
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.core.deliver.DeliverEngine",
+        "org.apache.ivy.core.publish.PublishEngine",
+        "org.apache.ivy.plugins.repository.file.FileResource",
+        "org.apache.ivy.plugins.resolver.FileSystemResolver",
+        "org.apache.ivy.ant.IvyReport",
+        "org.apache.ivy.ant.IvyRepositoryReport",
+        "org.apache.ivy.util.Configurator",
+        "org.apache.ivy.util.FileUtil",
+        "org.apache.ivy.ant.IvyPublish",
+        "org.apache.ivy.ant.IvyTaskTest",
+        "org.apache.ivy.plugins.resolver.packager.PackagerResolver",
+        "org.apache.ivy.core.settings.XmlSettingsParserTest",
+        "org.apache.ivy.plugins.repository.vsftp.VsftpRepository",
+        "org.apache.ivy.core.settings.XmlSettingsParser",
+        "org.apache.ivy.plugins.resolver.PackagerResolverTest",
+        "org.apache.ivy.ant.AntBuildTrigger",
+        "org.apache.ivy.core.cache.ParserSettingsMonitor",
+        "org.apache.ivy.core.settings.IvySettings",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater",
+        "org.apache.ivy.core.retrieve.RetrieveEngine",
+        "org.apache.ivy.plugins.trigger.LogTrigger",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.repository.file.FileRepository",
+        "org.apache.ivy.ant.IvyAntSettingsTest",
+        "org.apache.ivy.plugins.resolver.AbstractSshBasedResolver"
+    ],
+    "IVY-233": [
+        "fr.jayasoft.ivy.ModuleRevisionId"
+    ],
+    "IVY-234": [
+        "fr.jayasoft.ivy.resolver.BasicResolver"
+    ],
+    "IVY-237": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource"
+    ],
+    "IVY-239": [
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParser",
+        "fr.jayasoft.ivy.xml.XmlModuleUpdaterTest",
+        "fr.jayasoft.ivy.util.XMLHelper",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater"
+    ],
+    "IVY-240": [
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.IvyNode",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-241": [],
+    "IVY-248": [
+        "fr.jayasoft.ivy.ant.IvyReport"
+    ],
+    "IVY-259": [
+        "fr.jayasoft.ivy.resolver.BasicResolver",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.status.StatusManager",
+        "fr.jayasoft.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-261": [
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ResolveTest",
+        "fr.jayasoft.ivy.IvyNode"
+    ],
+    "IVY-262": [
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParser",
+        "fr.jayasoft.ivy.external.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-272": [
+        "org.apache.ivy.ant.IvyReport",
+        "org.apache.ivy.ant.IvyReportTest"
+    ],
+    "IVY-284": [],
+    "IVY-288": [
+        "fr.jayasoft.ivy.IvyNode"
+    ],
+    "IVY-289": [
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater",
+        "fr.jayasoft.ivy.ant.IvyPublishTest",
+        "fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser"
+    ],
+    "IVY-291": [
+        "fr.jayasoft.ivy.ant.IvyArtifactReport"
+    ],
+    "IVY-292": [
+        "fr.jayasoft.ivy.resolver.RepositoryResolver",
+        "fr.jayasoft.ivy.resolver.VfsResolver",
+        "fr.jayasoft.ivy.repository.vfs.VfsResource",
+        "fr.jayasoft.ivy.resolver.AbstractResolver"
+    ],
+    "IVY-293": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource",
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository"
+    ],
+    "IVY-296": [
+        "fr.jayasoft.ivy.util.ChecksumHelper",
+        "fr.jayasoft.ivy.resolver.FileSystemResolverTest"
+    ],
+    "IVY-303": [
+        "fr.jayasoft.ivy.resolver.AbstractResourceResolver",
+        "fr.jayasoft.ivy.DefaultArtifact",
+        "fr.jayasoft.ivy.resolver.FileSystemResolverTest"
+    ],
+    "IVY-304": [
+        "fr.jayasoft.ivy.Ivy",
+        "fr.jayasoft.ivy.ant.IvyRetrieveTest"
+    ],
+    "IVY-311": [
+        "fr.jayasoft.ivy.ant.IvyTask"
+    ],
+    "IVY-315": [
+        "fr.jayasoft.ivy.ant.IvyRetrieveTest",
+        "fr.jayasoft.ivy.ant.IvyPostResolveTask",
+        "fr.jayasoft.ivy.ant.IvyTask"
+    ],
+    "IVY-318": [
+        "fr.jayasoft.ivy.resolver.RepositoryResolver",
+        "fr.jayasoft.ivy.ResolveTest"
+    ],
+    "IVY-319": [
+        "fr.jayasoft.ivy.xml.XmlIvyConfigurationParserTest",
+        "fr.jayasoft.ivy.util.Configurator",
+        "fr.jayasoft.ivy.xml.XmlIvyConfigurationParser"
+    ],
+    "IVY-326": [
+        "fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser",
+        "fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest"
+    ],
+    "IVY-327": [
+        "fr.jayasoft.ivy.ant.IvyResolve"
+    ],
+    "IVY-331": [
+        "fr.jayasoft.ivy.version.ChainVersionMatcher"
+    ],
+    "IVY-350": [
+        "fr.jayasoft.ivy.resolver.ResolverHelper"
+    ],
+    "IVY-355": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.IvyNodeEviction",
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.VisitNode"
+    ],
+    "IVY-371": [
+        "fr.jayasoft.ivy.repository.AbstractRepository"
+    ],
+    "IVY-374": [
+        "org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor",
+        "org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor"
+    ],
+    "IVY-379": [
+        "org.apache.ivy.core.resolve.IvyNodeEviction"
+    ],
+    "IVY-383": [
+        "org.apache.ivy.plugins.version.ChainVersionMatcher",
+        "org.apache.ivy.plugins.version.SubVersionMatcher",
+        "org.apache.ivy.plugins.version.AbstractVersionMatcher",
+        "org.apache.ivy.plugins.latest.LatestRevisionStrategy",
+        "org.apache.ivy.plugins.version.LatestVersionMatcher",
+        "org.apache.ivy.plugins.conflict.LatestConflictManagerTest",
+        "org.apache.ivy.plugins.version.VersionRangeMatcher",
+        "org.apache.ivy.plugins.version.PatternVersionMatcher"
+    ],
+    "IVY-389": [
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.plugins.resolver.ChainResolver",
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.plugins.resolver.ChainResolverTest"
+    ],
+    "IVY-392": [
+        "org.apache.ivy.external.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.external.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-400": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.VisitNode",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-404": [
+        "org.apache.ivy.ant.IvyDeliverTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser"
+    ],
+    "IVY-417": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-422": [
+        "org.apache.ivy.core.settings.XmlSettingsParser",
+        "org.apache.ivy.plugins.matcher.ModuleIdMatcher",
+        "org.apache.ivy.core.settings.XmlSettingsParserTest",
+        "org.apache.ivy.core.module.id.ModuleId"
+    ],
+    "IVY-423": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-424": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-425": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-427": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.resolver.RepositoryResolver",
+        "org.apache.ivy.plugins.resolver.AbstractResourceResolver"
+    ],
+    "IVY-429": [
+        "org.apache.ivy.ant.IvyResolve",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-430": [
+        "org.apache.ivy.core.cache.CacheManagerTest",
+        "org.apache.ivy.core.cache.CacheManager",
+        "org.apache.ivy.core.cache.ArtifactOrigin",
+        "org.apache.ivy.core.module.id.ArtifactRevisionId"
+    ],
+    "IVY-435": [
+        "org.apache.ivy.plugins.latest.LatestRevisionStrategyTest",
+        "org.apache.ivy.plugins.latest.AbstractLatestStrategy",
+        "org.apache.ivy.plugins.latest.ComparatorLatestStrategy"
+    ],
+    "IVY-436": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-440": [
+        "org.apache.ivy.ant.AntTestHelper",
+        "org.apache.ivy.core.search.SearchEngine",
+        "org.apache.ivy.ant.IvyInstallTest"
+    ],
+    "IVY-442": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParserTest",
+        "org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor"
+    ],
+    "IVY-448": [
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.conflict.LatestConflictManager"
+    ],
+    "IVY-457": [
+        "org.apache.ivy.Main"
+    ],
+    "IVY-465": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-471": [
+        "org.apache.ivy.core.module.id.ArtifactRevisionId",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter"
+    ],
+    "IVY-474": [
+        "org.apache.ivy.plugins.conflict.StrictConflictManager",
+        "org.apache.ivy.plugins.conflict.StrictConflictManagerTest"
+    ],
+    "IVY-477": [
+        "org.apache.ivy.core.settings.IvySettings",
+        "org.apache.ivy.core.install.InstallTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-486": [
+        "org.apache.ivy.util.Credentials"
+    ],
+    "IVY-489": [
+        "org.apache.ivy.ant.IvyArtifactReportTest",
+        "org.apache.ivy.ant.IvyPostResolveTask"
+    ],
+    "IVY-494": [
+        "org.apache.ivy.plugins.version.VersionRangeMatcherTest"
+    ],
+    "IVY-500": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-501": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.resolver.IBiblioResolver"
+    ],
+    "IVY-502": [
+        "org.apache.ivy.util.url.URLHandlerRegistry"
+    ],
+    "IVY-507": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor"
+    ],
+    "IVY-517": [
+        "org.apache.ivy.ant.IvyResolve",
+        "org.apache.ivy.ant.IvyPostResolveTaskTest",
+        "org.apache.ivy.ant.IvyPostResolveTask"
+    ],
+    "IVY-520": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest"
+    ],
+    "IVY-524": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-529": [
+        "org.apache.ivy.util.url.IvyAuthenticator"
+    ],
+    "IVY-537": [
+        "org.apache.ivy.core.report.ConfigurationResolveReport",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser",
+        "org.apache.ivy.core.module.descriptor.DefaultDependencyArtifactDescriptor",
+        "org.apache.ivy.core.resolve.IvyNodeUsage",
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.report.ResolveReport",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-541": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.IvyNodeUsage"
+    ],
+    "IVY-550": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-573": [
+        "org.apache.ivy.core.settings.XmlSettingsParserTest"
+    ],
+    "IVY-578": [
+        "org.apache.ivy.core.resolve.ResolveData",
+        "org.apache.ivy.core.resolve.ResolveEngineTest",
+        "org.apache.ivy.ant.IvyReportTest",
+        "org.apache.ivy.core.report.ConfigurationResolveReport"
+    ],
+    "IVY-583": [
+        "org.apache.ivy.ant.IvyCacheTask"
+    ],
+    "IVY-590": [
+        "org.apache.ivy.core.resolve.IvyNodeEviction",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-592": [
+        "org.apache.ivy.ant.IvyArtifactReport",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-595": [
+        "org.apache.ivy.ant.IvyBuildList",
+        "org.apache.ivy.ant.IvyBuildListTest"
+    ],
+    "IVY-601": [
+        "org.apache.ivy.ant.IvyAntSettingsTest",
+        "org.apache.ivy.ant.IvyAntVariableContainer"
+    ],
+    "IVY-602": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.resolver.AbstractResourceResolver"
+    ],
+    "IVY-603": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.ant.IvyDeliverTest"
+    ],
+    "IVY-610": [
+        "org.apache.ivy.core.IvyContext",
+        "org.apache.ivy.plugins.resolver.BasicResolver"
+    ],
+    "IVY-620": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-624": [
+        "org.apache.ivy.core.sort.ModuleInSort",
+        "org.apache.ivy.core.sort.SortTest"
+    ],
+    "IVY-630": [
+        "org.apache.ivy.ant.IvyResolveTest",
+        "org.apache.ivy.plugins.resolver.util.ResolverHelper"
+    ],
+    "IVY-631": [
+        "org.apache.ivy.ant.IvyRetrieveTest",
+        "org.apache.ivy.core.module.descriptor.MDArtifact"
+    ],
+    "IVY-633": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomReader"
+    ],
+    "IVY-652": [
+        "org.apache.ivy.plugins.repository.url.URLRepository"
+    ],
+    "IVY-656": [
+        "org.apache.ivy.ant.IvyPublish",
+        "org.apache.ivy.ant.IvyPublishTest",
+        "org.apache.ivy.core.publish.PublishEngine",
+        "org.apache.ivy.core.publish.PublishOptions"
+    ],
+    "IVY-659": [
+        "org.apache.ivy.plugins.namespace.Namespace"
+    ],
+    "IVY-661": [
+        "org.apache.ivy.plugins.repository.sftp.SFTPRepository"
+    ],
+    "IVY-663": [
+        "org.apache.ivy.plugins.conflict.LatestCompatibleConflictManager",
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.plugins.conflict.LatestCompatibleConflictManagerTest"
+    ],
+    "IVY-681": [
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.VisitNode",
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-682": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-683": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-690": [
+        "org.apache.ivy.core.resolve.ResolveEngineTest",
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-692": [],
+    "IVY-693": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-696": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParserTest",
+        "org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor"
+    ],
+    "IVY-701": [
+        "org.apache.ivy.plugins.resolver.AbstractResourceResolver"
+    ],
+    "IVY-707": [
+        "org.apache.ivy.ant.IvyDeliverTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-709": [
+        "org.apache.ivy.plugins.repository.ssh.SshCache"
+    ],
+    "IVY-710": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository"
+    ],
+    "IVY-712": [
+        "org.apache.ivy.core.retrieve.RetrieveEngine"
+    ],
+    "IVY-713": [
+        "org.apache.ivy.ant.IvyRetrieveTest"
+    ],
+    "IVY-714": [
+        "org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor"
+    ],
+    "IVY-716": [
+        "org.apache.ivy.core.install.InstallEngine",
+        "org.apache.ivy.core.IvyPatternHelper",
+        "org.apache.ivy.ant.IvyRepositoryReport",
+        "org.apache.ivy.plugins.resolver.RepositoryResolver",
+        "org.apache.ivy.plugins.resolver.AbstractResourceResolver",
+        "org.apache.ivy.ant.IvyRepositoryReportTest",
+        "org.apache.ivy.core.search.SearchEngine",
+        "org.apache.ivy.plugins.resolver.AbstractResolver"
+    ],
+    "IVY-717": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.TestHelper",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-720": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-724": [
+        "org.apache.ivy.ant.IvyDeliverTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater"
+    ],
+    "IVY-726": [
+        "org.apache.ivy.ant.IvyInfoTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser"
+    ],
+    "IVY-728": [
+        "org.apache.ivy.core.install.InstallTest",
+        "org.apache.ivy.core.install.InstallEngine"
+    ],
+    "IVY-729": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-731": [
+        "org.apache.ivy.ant.IvyBuildListTest",
+        "org.apache.ivy.ant.IvyBuildList"
+    ],
+    "IVY-733": [
+        "org.apache.ivy.plugins.resolver.FileSystemResolver"
+    ],
+    "IVY-737": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater",
+        "org.apache.ivy.core.settings.XmlSettingsParser",
+        "org.apache.ivy.util.XMLHelper",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-743": [
+        "org.apache.ivy.core.retrieve.RetrieveEngine",
+        "org.apache.ivy.core.retrieve.RetrieveTest"
+    ],
+    "IVY-759": [
+        "org.apache.ivy.ant.IvyCacheFileset",
+        "org.apache.ivy.ant.IvyCacheFilesetTest"
+    ],
+    "IVY-776": [
+        "org.apache.ivy.ant.IvyResolve",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-778": [
+        "org.apache.ivy.ant.IvyPostResolveTask",
+        "org.apache.ivy.ant.IvyRetrieveBuildFileTest"
+    ],
+    "IVY-779": [
+        "org.apache.ivy.plugins.resolver.RepositoryResolver",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-787": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-791": [
+        "org.apache.ivy.core.module.id.ModuleRevisionId"
+    ],
+    "IVY-797": [
+        "org.apache.ivy.util.IvyPatternHelperTest",
+        "org.apache.ivy.core.IvyPatternHelper"
+    ],
+    "IVY-803": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-805": [
+        "org.apache.ivy.ant.IvyBuildListTest",
+        "org.apache.ivy.ant.IvyBuildList"
+    ],
+    "IVY-809": [
+        "org.apache.ivy.ant.IvyAntSettingsBuildFileTest",
+        "org.apache.ivy.ant.IvyPostResolveTask"
+    ],
+    "IVY-814": [
+        "org.apache.ivy.core.IvyPatternHelper",
+        "org.apache.ivy.plugins.resolver.FileSystemResolverTest"
+    ],
+    "IVY-815": [
+        "org.apache.ivy.plugins.repository.sftp.SFTPRepository"
+    ],
+    "IVY-818": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-821": [
+        "org.apache.ivy.plugins.parser.m2.PomReader"
+    ],
+    "IVY-825": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-826": [
+        "org.apache.ivy.ant.IvyReport",
+        "org.apache.ivy.ant.IvyReportTest"
+    ],
+    "IVY-837": [],
+    "IVY-840": [],
+    "IVY-843": [
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.plugins.resolver.BasicResolver",
+        "org.apache.ivy.plugins.namespace.NameSpaceHelper",
+        "org.apache.ivy.ant.IvyInstallTest"
+    ],
+    "IVY-854": [
+        "org.apache.ivy.util.url.HttpClientHandler"
+    ],
+    "IVY-860": [
+        "org.apache.ivy.util.Configurator",
+        "org.apache.ivy.core.settings.XmlSettingsParserTest",
+        "org.apache.ivy.core.settings.XmlSettingsParser"
+    ],
+    "IVY-861": [
+        "org.apache.ivy.core.resolve.VisitNode",
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.IvyNodeUsage"
+    ],
+    "IVY-864": [
+        "org.apache.ivy.util.url.BasicURLHandler",
+        "org.apache.ivy.util.url.HttpClientHandler"
+    ],
+    "IVY-867": [
+        "org.apache.ivy.core.publish.PublishEngine",
+        "org.apache.ivy.ant.IvyPublish",
+        "org.apache.ivy.core.publish.PublishOptions"
+    ],
+    "IVY-873": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-874": [
+        "org.apache.ivy.core.resolve.IvyNodeUsage",
+        "org.apache.ivy.core.resolve.VisitNode",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-882": [
+        "org.apache.ivy.plugins.resolver.MockResolver",
+        "org.apache.ivy.plugins.resolver.DualResolverTest",
+        "org.apache.ivy.plugins.resolver.BasicResolver",
+        "org.apache.ivy.plugins.resolver.DualResolver",
+        "org.apache.ivy.plugins.resolver.ChainResolverTest",
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.plugins.resolver.ChainResolver",
+        "org.apache.ivy.core.resolve.ResolveData",
+        "org.apache.ivy.plugins.resolver.IBiblioResolverTest"
+    ],
+    "IVY-884": [
+        "org.apache.ivy.plugins.repository.url.URLRepository",
+        "org.apache.ivy.plugins.resolver.URLResolverTest"
+    ],
+    "IVY-885": [
+        "org.apache.ivy.util.url.BasicURLHandler"
+    ],
+    "IVY-888": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater"
+    ],
+    "IVY-898": [
+        "org.apache.ivy.ant.IvyAntSettings",
+        "org.apache.ivy.ant.IvyConfigure",
+        "org.apache.ivy.ant.IvyConfigureTest",
+        "org.apache.ivy.core.settings.IvySettings"
+    ],
+    "IVY-901": [
+        "org.apache.ivy.Main"
+    ],
+    "IVY-920": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-925": [
+        "org.apache.ivy.ant.IvyAntSettings",
+        "org.apache.ivy.ant.IvyAntSettingsBuildFileTest"
+    ],
+    "IVY-926": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.m2.PomReader"
+    ],
+    "IVY-927": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-928": [
+        "org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver"
+    ],
+    "IVY-929": [
+        "org.apache.ivy.plugins.resolver.BasicResolver",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-930": [
+        "org.apache.ivy.util.url.HttpClientHandler"
+    ],
+    "IVY-931": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-932": [
+        "org.apache.ivy.plugins.parser.m2.PomReader",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-935": [],
+    "IVY-936": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-940": [
+        "org.apache.ivy.plugins.resolver.IBiblioResolver"
+    ],
+    "IVY-948": [
+        "org.apache.ivy.ant.IvyCacheFileset"
+    ],
+    "IVY-949": [
+        "org.apache.ivy.plugins.parser.m2.PomReader"
+    ],
+    "IVY-950": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter"
+    ],
+    "IVY-951": [
+        "org.apache.ivy.ant.IvyResolve",
+        "org.apache.ivy.ant.IvyResolveTest"
+    ],
+    "IVY-958": [
+        "org.apache.ivy.ant.IvyPostResolveTask"
+    ],
+    "IVY-959": [
+        "org.apache.ivy.util.url.ApacheURLLister"
+    ],
+    "IVY-968": [
+        "org.apache.ivy.plugins.resolver.FileSystemResolver",
+        "org.apache.ivy.plugins.resolver.FileSystemResolverTest"
+    ],
+    "IVY-974": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder",
+        "org.apache.ivy.plugins.parser.m2.DefaultPomDependencyMgt",
+        "org.apache.ivy.plugins.parser.m2.PomReader",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-982": [
+        "org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor"
+    ],
+    "IVY-987": [
+        "org.apache.ivy.core.resolve.IvyNode"
+    ],
+    "IVY-992": [
+        "org.apache.ivy.ant.IvyRetrieveTest",
+        "org.apache.ivy.ant.IvyPostResolveTask"
+    ],
+    "IVY-999": [
+        "org.apache.ivy.plugins.conflict.LatestConflictManager",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.settings.IvySettings"
+    ],
+    "IVY-1007": [
+        "org.apache.ivy.plugins.repository.url.URLRepository"
+    ],
+    "IVY-1009": [
+        "org.apache.ivy.Main"
+    ],
+    "IVY-1012": [
+        "org.apache.ivy.plugins.resolver.BasicResolver",
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1041": [
+        "org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1052": [
+        "org.apache.ivy.ant.IvyResolve"
+    ],
+    "IVY-1058": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-1066": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-1069": [
+        "org.apache.ivy.core.IvyPatternHelper"
+    ],
+    "IVY-1079": [],
+    "IVY-1102": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest"
+    ],
+    "IVY-1106": [
+        "org.apache.ivy.plugins.repository.url.URLResource"
+    ],
+    "IVY-1111": [
+        "org.apache.ivy.core.deliver.DeliverTest",
+        "org.apache.ivy.core.module.id.ModuleRevisionId"
+    ],
+    "IVY-1119": [
+        "org.apache.ivy.plugins.repository.vsftp.VsftpRepository"
+    ],
+    "IVY-1120": [
+        "org.apache.ivy.ant.IvyBuildNumber"
+    ],
+    "IVY-1124": [
+        "org.apache.ivy.plugins.resolver.IBiblioResolver"
+    ],
+    "IVY-1131": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.ResolveData"
+    ],
+    "IVY-1133": [
+        "org.apache.ivy.plugins.resolver.ChainResolver"
+    ],
+    "IVY-1142": [
+        "org.apache.ivy.util.IvyPatternHelperTest",
+        "org.apache.ivy.core.IvyPatternHelper"
+    ],
+    "IVY-1145": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager"
+    ],
+    "IVY-1147": [
+        "org.apache.ivy.util.XMLHelper"
+    ],
+    "IVY-1150": [
+        "org.apache.ivy.ant.IvyArtifactReport"
+    ],
+    "IVY-1159": [
+        "org.apache.ivy.ant.IvyDeliver",
+        "org.apache.ivy.core.deliver.DeliverEngine",
+        "org.apache.ivy.core.deliver.DeliverOptions",
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.core.resolve.ResolveEngine"
+    ],
+    "IVY-1162": [
+        "org.apache.ivy.core.settings.XmlSettingsParser"
+    ],
+    "IVY-1167": [
+        "org.apache.ivy.plugins.repository.sftp.SFTPRepository"
+    ],
+    "IVY-1168": [
+        "org.apache.ivy.util.url.CredentialsStore",
+        "org.apache.ivy.util.url.BasicURLHandler",
+        "org.apache.ivy.util.url.IvyAuthenticator",
+        "org.apache.ivy.util.url.HttpClientHandler"
+    ],
+    "IVY-1169": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest"
+    ],
+    "IVY-1170": [
+        "org.apache.ivy.plugins.version.LatestVersionMatcher",
+        "org.apache.ivy.plugins.version.LatestVersionMatcherTest"
+    ],
+    "IVY-1175": [
+        "org.apache.ivy.util.url.ApacheURLLister",
+        "org.apache.ivy.util.url.ApacheURLListerTest",
+        "org.apache.ivy.util.url.ArtifactoryListingTest"
+    ],
+    "IVY-1179": [
+        "org.apache.ivy.plugins.resolver.PackagerResolverTest"
+    ],
+    "IVY-1186": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.core.settings.IvySettings",
+        "org.apache.ivy.plugins.resolver.RepositoryResolver",
+        "org.apache.ivy.core.cache.ParserSettingsMonitor",
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.plugins.parser.m2.PomReader",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1206": [
+        "org.apache.ivy.ant.IvyPublishTest",
+        "org.apache.ivy.core.deliver.DeliverEngine"
+    ],
+    "IVY-1207": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriterTest"
+    ],
+    "IVY-1213": [
+        "org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor",
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser",
+        "org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser"
+    ],
+    "IVY-1225": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-1229": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriter",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriterTest"
+    ],
+    "IVY-1232": [
+        "org.apache.ivy.util.url.ApacheURLLister"
+    ],
+    "IVY-1234": [
+        "org.apache.ivy.util.url.IvyAuthenticator"
+    ],
+    "IVY-1236": [
+        "org.apache.ivy.core.resolve.IvyNodeEviction",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1237": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater"
+    ],
+    "IVY-1238": [
+        "org.apache.ivy.plugins.resolver.util.ResolverHelper",
+        "org.apache.ivy.plugins.resolver.util.ResolverHelperTest"
+    ],
+    "IVY-1240": [
+        "org.apache.ivy.core.resolve.IvyNode",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1243": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager",
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.core.cache.CacheMetadataOptions"
+    ],
+    "IVY-1248": [
+        "org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser",
+        "org.apache.ivy.ant.IvyPublishTest"
+    ],
+    "IVY-1250": [
+        "org.apache.ivy.core.settings.IvySettings"
+    ],
+    "IVY-1268": [
+        "org.apache.ivy.util.FileUtil",
+        "org.apache.ivy.plugins.resolver.FileSystemResolver",
+        "org.apache.ivy.util.Checks"
+    ],
+    "IVY-1304": [
+        "org.apache.ivy.osgi.obr.xml.OBRXMLWriter"
+    ],
+    "IVY-1305": [
+        "org.apache.ivy.osgi.repo.AbstractFSManifestIterable"
+    ],
+    "IVY-1320": [
+        "org.apache.ivy.util.url.AbstractURLHandler"
+    ],
+    "IVY-1324": [
+        "org.apache.ivy.ant.IvyInstallTest",
+        "org.apache.ivy.core.IvyPatternHelper"
+    ],
+    "IVY-1325": [],
+    "IVY-1328": [
+        "org.apache.ivy.util.url.HttpClientHandler",
+        "org.apache.ivy.util.url.BasicURLHandler"
+    ],
+    "IVY-1329": [
+        "org.apache.ivy.osgi.obr.filter.UniOperatorFilter",
+        "org.apache.ivy.osgi.obr.RequirementFilterTest",
+        "org.apache.ivy.osgi.obr.filter.RequirementFilterParser"
+    ],
+    "IVY-1335": [
+        "org.apache.ivy.util.url.IvyAuthenticator"
+    ],
+    "IVY-1338": [],
+    "IVY-1340": [
+        "org.apache.ivy.plugins.repository.url.URLRepository",
+        "org.apache.ivy.plugins.resolver.URLResolverTest"
+    ],
+    "IVY-1399": [
+        "org.apache.ivy.plugins.conflict.LatestConflictManager",
+        "org.apache.ivy.plugins.conflict.LatestConflictManagerTest"
+    ],
+    "IVY-1400": [
+        "org.apache.ivy.util.url.HttpClientHandler"
+    ],
+    "IVY-1404": [
+        "org.apache.ivy.core.resolve.ResolveEngine",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1412": [
+        "org.apache.ivy.ant.IvyTask"
+    ],
+    "IVY-1423": [
+        "org.apache.ivy.core.resolve.ResolveTest",
+        "org.apache.ivy.plugins.resolver.BasicResolver"
+    ],
+    "IVY-1424": [
+        "org.apache.ivy.plugins.lock.CreateFileLockStrategy",
+        "org.apache.ivy.plugins.lock.NIOFileLockStrategy",
+        "org.apache.ivy.core.settings.IvySettings",
+        "org.apache.ivy.plugins.lock.ArtifactLockStrategy",
+        "org.apache.ivy.plugins.lock.FileBasedLockStrategy"
+    ],
+    "IVY-1430": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManagerTest",
+        "org.apache.ivy.plugins.resolver.AbstractResolver",
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager"
+    ],
+    "IVY-1438": [
+        "org.apache.ivy.osgi.core.ManifestHeaderValue",
+        "org.apache.ivy.osgi.core.ManifestHeaderTest"
+    ],
+    "IVY-1441": [],
+    "IVY-1444": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder"
+    ],
+    "IVY-1452": [
+        "org.apache.ivy.util.url.ApacheURLLister"
+    ],
+    "IVY-1471": [
+        "org.apache.ivy.plugins.repository.ssh.SshCache"
+    ],
+    "IVY-1472": [
+        "org.apache.ivy.plugins.resolver.util.ResolverHelper"
+    ],
+    "IVY-1482": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager"
+    ],
+    "IVY-1493": [
+        "org.apache.ivy.util.url.ApacheURLLister"
+    ],
+    "IVY-1504": [],
+    "IVY-1526": [
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser"
+    ],
+    "IVY-1539": [
+        "org.apache.ivy.ant.IvyDependencyTreeTest",
+        "org.apache.ivy.ant.IvyDependencyTree"
+    ],
+    "IVY-1545": [
+        "org.apache.ivy.plugins.circular.CircularDependencyException",
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser",
+        "org.apache.ivy.core.resolve.ResolveTest"
+    ],
+    "IVY-1549": [
+        "org.apache.ivy.ant.IvyDependencyUpdateChecker"
+    ],
+    "IVY-1557": [
+        "org.apache.ivy.util.url.IvyAuthenticator",
+        "org.apache.ivy.TestHelper",
+        "org.apache.ivy.util.url.IvyAuthenticatorTest"
+    ],
+    "IVY-1566": [
+        "org.apache.ivy.core.cache.DefaultRepositoryCacheManager"
+    ]
+}

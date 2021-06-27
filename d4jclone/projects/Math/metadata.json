@@ -1,0 +1,7 @@
+{
+    "id": "Math",
+    "program": "commons-math",
+    "build_file": "Math/Math.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "130"
+}

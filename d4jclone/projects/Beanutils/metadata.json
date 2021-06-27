@@ -1,0 +1,7 @@
+{
+    "id": "Beanutils",
+    "program": "commons-beanutils",
+    "build_file": "Beanutils/Beanutils.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "31"
+}

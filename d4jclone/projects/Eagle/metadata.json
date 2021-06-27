@@ -1,0 +1,7 @@
+{
+    "id": "Eagle",
+    "program": "eagle",
+    "build_file": "Eagle/Eagle.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "2"
+}

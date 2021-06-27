@@ -1,0 +1,7 @@
+{
+    "id": "Jcs",
+    "program": "commons-jcs",
+    "build_file": "Jcs/Jcs.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "45"
+}

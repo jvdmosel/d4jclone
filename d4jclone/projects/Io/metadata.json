@@ -1,0 +1,7 @@
+{
+    "id": "Io",
+    "program": "commons-io",
+    "build_file": "Io/Io.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "42"
+}

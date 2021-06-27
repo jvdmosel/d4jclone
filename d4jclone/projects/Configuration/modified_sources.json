@@ -1,0 +1,265 @@
+{
+    "CONFIGURATION-214": [
+        "org.apache.commons.configuration.PropertyConverter",
+        "org.apache.commons.configuration.TestBaseConfiguration",
+        "org.apache.commons.configuration.TestPropertyConverter"
+    ],
+    "CONFIGURATION-220": [
+        "org.apache.commons.configuration.DataConfiguration",
+        "org.apache.commons.configuration.TestDataConfiguration"
+    ],
+    "CONFIGURATION-222": [
+        "org.apache.commons.configuration.PropertiesConfiguration",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-223": [
+        "org.apache.commons.configuration.AbstractFileConfiguration",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-227": [
+        "org.apache.commons.configuration.beanutils.ConfigurationDynaBean",
+        "org.apache.commons.configuration.beanutils.TestConfigurationDynaBeanXMLConfig"
+    ],
+    "CONFIGURATION-228": [
+        "org.apache.commons.configuration.AbstractHierarchicalFileConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-229": [
+        "org.apache.commons.configuration.ConfigurationFactory",
+        "org.apache.commons.configuration.TestConfigurationFactory"
+    ],
+    "CONFIGURATION-230": [
+        "org.apache.commons.configuration.tree.xpath.XPathExpressionEngine",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-233": [
+        "org.apache.commons.configuration.CompositeConfiguration",
+        "org.apache.commons.configuration.TestCompositeConfiguration"
+    ],
+    "CONFIGURATION-235": [
+        "org.apache.commons.configuration.TestBaseConfiguration"
+    ],
+    "CONFIGURATION-241": [
+        "org.apache.commons.configuration.CompositeConfiguration",
+        "org.apache.commons.configuration.TestCompositeConfiguration"
+    ],
+    "CONFIGURATION-242": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestHierarchicalConfiguration",
+        "org.apache.commons.configuration.TestSubnodeConfiguration"
+    ],
+    "CONFIGURATION-252": [
+        "org.apache.commons.configuration.ConfigurationUtils",
+        "org.apache.commons.configuration.TestConfigurationUtils"
+    ],
+    "CONFIGURATION-254": [
+        "org.apache.commons.configuration.XMLConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-255": [
+        "org.apache.commons.configuration.DatabaseConfiguration",
+        "org.apache.commons.configuration.TestDatabaseConfiguration"
+    ],
+    "CONFIGURATION-256": [
+        "org.apache.commons.configuration.MapConfiguration",
+        "org.apache.commons.configuration.web.AppletConfiguration",
+        "org.apache.commons.configuration.web.BaseWebConfiguration",
+        "org.apache.commons.configuration.web.ServletConfiguration",
+        "org.apache.commons.configuration.web.ServletContextConfiguration",
+        "org.apache.commons.configuration.web.ServletFilterConfiguration",
+        "org.apache.commons.configuration.web.ServletRequestConfiguration",
+        "org.apache.commons.configuration.TestAbstractConfiguration",
+        "org.apache.commons.configuration.TestMapConfiguration",
+        "org.apache.commons.configuration.web.TestAppletConfiguration",
+        "org.apache.commons.configuration.web.TestServletConfiguration",
+        "org.apache.commons.configuration.web.TestServletContextConfiguration",
+        "org.apache.commons.configuration.web.TestServletFilterConfiguration",
+        "org.apache.commons.configuration.web.TestServletRequestConfiguration"
+    ],
+    "CONFIGURATION-263": [
+        "org.apache.commons.configuration.XMLConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-264": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.SubnodeConfiguration",
+        "org.apache.commons.configuration.TestSubnodeConfiguration"
+    ],
+    "CONFIGURATION-265": [
+        "org.apache.commons.configuration.AbstractHierarchicalFileConfiguration",
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.SubnodeConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration",
+        "org.apache.commons.configuration.event.AbstractTestConfigurationEvents",
+        "org.apache.commons.configuration.event.TestHierarchicalConfigurationEvents"
+    ],
+    "CONFIGURATION-267": [
+        "org.apache.commons.configuration.INIConfiguration"
+    ],
+    "CONFIGURATION-269": [
+        "org.apache.commons.configuration.PropertiesConfiguration",
+        "org.apache.commons.configuration.PropertiesConfigurationLayout",
+        "org.apache.commons.configuration.ConfigurationAssert",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-272": [
+        "org.apache.commons.configuration.AbstractConfiguration",
+        "org.apache.commons.configuration.ConfigurationUtils",
+        "org.apache.commons.configuration.TestAbstractConfigurationBasicFeatures",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-274": [
+        "org.apache.commons.configuration.PropertiesConfiguration",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-275": [
+        "org.apache.commons.configuration.AbstractConfiguration",
+        "org.apache.commons.configuration.TestAbstractConfigurationBasicFeatures"
+    ],
+    "CONFIGURATION-279": [
+        "org.apache.commons.configuration.PropertiesConfiguration",
+        "org.apache.commons.configuration.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-280": [
+        "org.apache.commons.configuration.AbstractFileConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-281": [
+        "org.apache.commons.configuration.JNDIConfiguration",
+        "org.apache.commons.configuration.MockInitialContextFactory",
+        "org.apache.commons.configuration.TestJNDIConfiguration"
+    ],
+    "CONFIGURATION-282": [
+        "org.apache.commons.configuration.HierarchicalConfiguration"
+    ],
+    "CONFIGURATION-283": [
+        "org.apache.commons.configuration.TestConfigurationUtils",
+        "org.apache.commons.configuration.ConfigurationUtils",
+        "org.apache.commons.configuration.TestCombinedConfiguration"
+    ],
+    "CONFIGURATION-287": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestHierarchicalConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-291": [
+        "org.apache.commons.configuration.AbstractHierarchicalFileConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-294": [
+        "org.apache.commons.configuration.XMLConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-295": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestHierarchicalConfiguration"
+    ],
+    "CONFIGURATION-296": [
+        "org.apache.commons.configuration.XMLConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-299": [
+        "org.apache.commons.configuration.interpol.ConstantLookup",
+        "org.apache.commons.configuration.interpol.TestConstantLookup"
+    ],
+    "CONFIGURATION-301": [
+        "org.apache.commons.configuration.XMLConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-302": [
+        "org.apache.commons.configuration.reloading.FileChangedReloadingStrategy",
+        "org.apache.commons.configuration.reloading.TestFileChangedReloadingStrategy"
+    ],
+    "CONFIGURATION-344": [
+        "org.apache.commons.configuration.AbstractFileConfiguration",
+        "org.apache.commons.configuration.CombinedConfiguration",
+        "org.apache.commons.configuration.TestCombinedConfiguration"
+    ],
+    "CONFIGURATION-346": [
+        "org.apache.commons.configuration.ConfigurationUtils",
+        "org.apache.commons.configuration.TestConfigurationUtils"
+    ],
+    "CONFIGURATION-347": [
+        "org.apache.commons.configuration.AbstractFileConfiguration",
+        "org.apache.commons.configuration.TestFileConfiguration"
+    ],
+    "CONFIGURATION-348": [
+        "org.apache.commons.configuration.AbstractHierarchicalFileConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-349": [
+        "org.apache.commons.configuration.DefaultConfigurationBuilder",
+        "org.apache.commons.configuration.TestDefaultConfigurationBuilder"
+    ],
+    "CONFIGURATION-396": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestHierarchicalConfiguration"
+    ],
+    "CONFIGURATION-445": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestCombinedConfiguration"
+    ],
+    "CONFIGURATION-471": [
+        "org.apache.commons.configuration.CompositeConfiguration",
+        "org.apache.commons.configuration.TestCompositeConfiguration"
+    ],
+    "CONFIGURATION-476": [
+        "org.apache.commons.configuration.CompositeConfiguration",
+        "org.apache.commons.configuration.TestCompositeConfiguration"
+    ],
+    "CONFIGURATION-477": [],
+    "CONFIGURATION-481": [
+        "org.apache.commons.configuration.DefaultConfigurationBuilder",
+        "org.apache.commons.configuration.interpol.ConfigurationInterpolator",
+        "org.apache.commons.configuration.TestDefaultConfigurationBuilder"
+    ],
+    "CONFIGURATION-483": [
+        "org.apache.commons.configuration.DatabaseConfiguration"
+    ],
+    "CONFIGURATION-487": [
+        "org.apache.commons.configuration.PropertyConverter",
+        "org.apache.commons.configuration.TestDataConfiguration",
+        "org.apache.commons.configuration.TestPropertyConverter"
+    ],
+    "CONFIGURATION-495": [
+        "org.apache.commons.configuration.HierarchicalConfiguration",
+        "org.apache.commons.configuration.TestPropertiesConfiguration",
+        "org.apache.commons.configuration.TestXMLConfiguration"
+    ],
+    "CONFIGURATION-501": [
+        "org.apache.commons.configuration.plist.XMLPropertyListConfiguration",
+        "org.apache.commons.configuration.plist.TestXMLPropertyListConfiguration"
+    ],
+    "CONFIGURATION-521": [
+        "org.apache.commons.configuration.ConfigurationUtils",
+        "org.apache.commons.configuration.FileUtils",
+        "org.apache.commons.configuration.TestConfigurationUtils"
+    ],
+    "CONFIGURATION-540": [
+        "org.apache.commons.configuration.MapConfiguration",
+        "org.apache.commons.configuration.TestSystemConfiguration"
+    ],
+    "CONFIGURATION-556": [
+        "org.apache.commons.configuration.MapConfiguration",
+        "org.apache.commons.configuration.TestSystemConfigurationRegression"
+    ],
+    "CONFIGURATION-557": [
+        "org.apache.commons.configuration.MapConfiguration",
+        "org.apache.commons.configuration.TestMapConfigurationRegression"
+    ],
+    "CONFIGURATION-558": [
+        "org.apache.commons.configuration.AbstractConfiguration",
+        "org.apache.commons.configuration.CompositeConfiguration",
+        "org.apache.commons.configuration.TestConfiguration"
+    ],
+    "CONFIGURATION-564": [
+        "org.apache.commons.configuration2.PropertiesConfiguration",
+        "org.apache.commons.configuration2.TestPropertiesConfiguration"
+    ],
+    "CONFIGURATION-633": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator",
+        "org.apache.commons.configuration2.InterpolationTestHelper",
+        "org.apache.commons.configuration2.TestAbstractConfigurationBasicFeatures",
+        "org.apache.commons.configuration2.interpol.TestConfigurationInterpolator"
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "IO-83": [
+        "org.apache.commons.io.FileSystemUtils",
+        "org.apache.commons.io.FileSystemUtilsTestCase"
+    ],
+    "IO-90": [
+        "org.apache.commons.io.FileSystemUtils",
+        "org.apache.commons.io.FileSystemUtilsTestCase"
+    ],
+    "IO-93": [
+        "org.apache.commons.io.FileSystemUtils",
+        "org.apache.commons.io.FileSystemUtilsTestCase"
+    ],
+    "IO-99": [
+        "org.apache.commons.io.FileCleaner",
+        "org.apache.commons.io.FileCleanerTestCase"
+    ],
+    "IO-112": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase",
+        "org.apache.commons.io.testtools.FileBasedTestCase"
+    ],
+    "IO-136": [
+        "org.apache.commons.io.HexDump"
+    ],
+    "IO-141": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-147": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-166": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-175": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-179": [
+        "org.apache.commons.io.FilenameUtils",
+        "org.apache.commons.io.FilenameUtilsTestCase"
+    ],
+    "IO-187": [
+        "org.apache.commons.io.FileSystemUtils"
+    ],
+    "IO-190": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-201": [
+        "org.apache.commons.io.output.CountingOutputStream"
+    ],
+    "IO-207": [
+        "org.apache.commons.io.FileUtils"
+    ],
+    "IO-217": [
+        "org.apache.commons.io.FileUtilsTestCase",
+        "org.apache.commons.io.FileUtils"
+    ],
+    "IO-240": [
+        "org.apache.commons.io.filefilter.FileFilterUtils"
+    ],
+    "IO-243": [
+        "org.apache.commons.io.input.SwappedDataInputStreamTest"
+    ],
+    "IO-246": [
+        "org.apache.commons.io.FilenameUtils",
+        "org.apache.commons.io.FilenameUtilsWildcardTestCase"
+    ],
+    "IO-248": [
+        "org.apache.commons.io.FilenameUtils",
+        "org.apache.commons.io.FilenameUtilsTestCase"
+    ],
+    "IO-257": [
+        "org.apache.commons.io.input.BOMInputStream",
+        "org.apache.commons.io.input.BOMInputStreamTest"
+    ],
+    "IO-258": [
+        "org.apache.commons.io.input.XmlStreamReader",
+        "org.apache.commons.io.input.XmlStreamReaderTest"
+    ],
+    "IO-260": [
+        "org.apache.commons.io.input.ClassLoaderObjectInputStream",
+        "org.apache.commons.io.input.ClassLoaderObjectInputStreamTest"
+    ],
+    "IO-263": [],
+    "IO-266": [],
+    "IO-276": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-299": [
+        "org.apache.commons.io.FilenameUtils",
+        "org.apache.commons.io.FilenameUtilsTestCase"
+    ],
+    "IO-300": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-304": [],
+    "IO-311": [
+        "org.apache.commons.io.IOUtils",
+        "org.apache.commons.io.IOUtilsTestCase"
+    ],
+    "IO-312": [
+        "org.apache.commons.io.input.CharSequenceInputStream"
+    ],
+    "IO-335": [
+        "org.apache.commons.io.input.Tailer",
+        "org.apache.commons.io.input.TailerTest"
+    ],
+    "IO-336": [
+        "org.apache.commons.io.FileUtils"
+    ],
+    "IO-362": [
+        "org.apache.commons.io.IOUtils",
+        "org.apache.commons.io.IOUtilsTestCase"
+    ],
+    "IO-368": [
+        "org.apache.commons.io.input.ClassLoaderObjectInputStream"
+    ],
+    "IO-379": [
+        "org.apache.commons.io.input.CharSequenceInputStream",
+        "org.apache.commons.io.input.CharSequenceInputStreamTest"
+    ],
+    "IO-389": [
+        "org.apache.commons.io.FileUtils"
+    ],
+    "IO-390": [
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.io.FileUtilsTestCase"
+    ],
+    "IO-428": [
+        "org.apache.commons.io.input.BOMInputStream",
+        "org.apache.commons.io.input.BOMInputStreamTest"
+    ],
+    "IO-453": [
+        "org.apache.commons.io.FileUtils"
+    ],
+    "IO-512": [
+        "org.apache.commons.io.output.DeferredFileOutputStream"
+    ],
+    "IO-547": [
+        "org.apache.commons.io.FileSystemUtils"
+    ]
+}

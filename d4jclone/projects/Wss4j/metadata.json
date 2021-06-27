@@ -1,0 +1,7 @@
+{
+    "id": "Wss4j",
+    "program": "wss4j",
+    "build_file": "Wss4j/Wss4j.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "81"
+}

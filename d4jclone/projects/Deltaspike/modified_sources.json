@@ -1,0 +1,18 @@
+{
+    "DELTASPIKE-484": [
+        "org.apache.deltaspike.core.impl.scope.window.WindowBeanHolder",
+        "org.apache.deltaspike.core.impl.scope.window.WindowContextImpl"
+    ],
+    "DELTASPIKE-581": [
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor",
+        "org.apache.deltaspike.data.impl.util.QueryUtils",
+        "org.apache.deltaspike.data.impl.QueryResultTest",
+        "org.apache.deltaspike.data.test.service.SimpleRepository"
+    ],
+    "DELTASPIKE-931": [
+        "org.apache.deltaspike.test.utils.ShrinkWrapArchiveUtil"
+    ],
+    "DELTASPIKE-960": [
+        "org.apache.deltaspike.jsf.impl.component.window.WindowIdHtmlRenderer"
+    ]
+}

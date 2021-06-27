@@ -1,0 +1,7 @@
+{
+    "id": "Giraph",
+    "program": "giraph",
+    "build_file": "Giraph/Giraph.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "127"
+}

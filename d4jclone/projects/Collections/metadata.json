@@ -1,0 +1,7 @@
+{
+    "id": "Collections",
+    "program": "commons-collections",
+    "build_file": "Collections/Collections.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "22"
+}

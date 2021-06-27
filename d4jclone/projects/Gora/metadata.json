@@ -1,0 +1,7 @@
+{
+    "id": "Gora",
+    "program": "gora",
+    "build_file": "Gora/Gora.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "28"
+}

@@ -1,0 +1,8 @@
+{
+    "EAGLE-615": [
+        "org.apache.eagle.security.hive.jobrunning.HiveJobFetchSpout"
+    ],
+    "EAGLE-679": [
+        "org.apache.eagle.jpm.mr.running.parser.MRJobParser"
+    ]
+}

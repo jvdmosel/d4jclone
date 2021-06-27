@@ -1,0 +1,7 @@
+{
+    "id": "Digester",
+    "program": "commons-digester",
+    "build_file": "Digester/Digester.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "12"
+}

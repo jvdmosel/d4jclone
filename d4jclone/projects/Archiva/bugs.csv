@@ -1,0 +1,4 @@
+bug.id,revision.id.buggy,revision.id.fixed,revision.date.fixed,report.id,report.url
+1,61c6ef7e32106f2adf681ad6299318301f4c6927,9bd751e3d523d5be4fc2691958715c0f34c6e413,2009-03-20 16:05:05 +0000,MRM-1136,https://issues.apache.org/jira/browse/MRM-1136
+2,1bdb2ec770e038731b5740dcf0beed0efbd709b5,6ed4fc14c37fe2c58603676705d3bbde0e961219,2012-10-16 22:04:46 +0000,MRM-1698,https://issues.apache.org/jira/browse/MRM-1698
+3,afd02f3a1343b7131d4a3985b9e08b922a2eba0d,90e775b84bcc284eeafa6c8e08e1cd039edc96c0,2014-04-16 04:32:03 +1000,MRM-1830,https://issues.apache.org/jira/browse/MRM-1830

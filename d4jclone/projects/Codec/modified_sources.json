@@ -1,0 +1,54 @@
+{
+    "CODEC-56": [
+        "org.apache.commons.codec.language.RefinedSoundexTest"
+    ],
+    "CODEC-61": [
+        "org.apache.commons.codec.binary.Base64"
+    ],
+    "CODEC-65": [
+        "org.apache.commons.codec.language.Caverphone",
+        "org.apache.commons.codec.language.DoubleMetaphone",
+        "org.apache.commons.codec.language.Metaphone",
+        "org.apache.commons.codec.language.SoundexUtils",
+        "org.apache.commons.codec.StringEncoderAbstractTest"
+    ],
+    "CODEC-81": [
+        "org.apache.commons.codec.binary.Base64",
+        "org.apache.commons.codec.binary.Base64InputStream",
+        "org.apache.commons.codec.binary.Base64OutputStream",
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.binary.Base64Test",
+        "org.apache.commons.codec.binary.Base64TestData",
+        "org.apache.commons.codec.binary.StringUtilsTest"
+    ],
+    "CODEC-98": [
+        "org.apache.commons.codec.binary.Base64OutputStreamTest",
+        "org.apache.commons.codec.binary.Base64TestData",
+        "org.apache.commons.codec.binary.Base64",
+        "org.apache.commons.codec.binary.Base64InputStreamTest"
+    ],
+    "CODEC-160": [
+        "org.apache.commons.codec.binary.Base64"
+    ],
+    "CODEC-175": [],
+    "CODEC-191": [
+        "org.apache.commons.codec.binary.Base32OutputStream",
+        "org.apache.commons.codec.binary.Base64OutputStream"
+    ],
+    "CODEC-200": [
+        "org.apache.commons.codec.binary.Base32",
+        "org.apache.commons.codec.binary.Base32Test"
+    ],
+    "CODEC-225": [
+        "org.apache.commons.codec.language.DaitchMokotoffSoundex",
+        "org.apache.commons.codec.language.bm.Rule"
+    ],
+    "CODEC-229": [
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.binary.StringUtilsTest"
+    ],
+    "CODEC-231": [
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.binary.StringUtilsTest"
+    ]
+}

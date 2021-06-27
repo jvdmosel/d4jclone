@@ -1,0 +1,7 @@
+{
+    "id": "Codec",
+    "program": "commons-codec",
+    "build_file": "Codec/Codec.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "12"
+}

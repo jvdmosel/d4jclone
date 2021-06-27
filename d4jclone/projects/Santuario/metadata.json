@@ -1,0 +1,7 @@
+{
+    "id": "Santuario",
+    "program": "santuario-java",
+    "build_file": "Santuario/Santuario.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "16"
+}

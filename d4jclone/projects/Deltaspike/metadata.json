@@ -1,0 +1,7 @@
+{
+    "id": "Deltaspike",
+    "program": "deltaspike",
+    "build_file": "Deltaspike/Deltaspike.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "4"
+}

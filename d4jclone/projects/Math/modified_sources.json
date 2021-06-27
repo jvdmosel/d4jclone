@@ -1,0 +1,544 @@
+{
+    "MATH-60": [
+        "org.apache.commons.math.fraction.ProperFractionFormat",
+        "org.apache.commons.math.fraction.FractionFormatTest"
+    ],
+    "MATH-85": [
+        "org.apache.commons.math.stat.regression.SimpleRegression",
+        "org.apache.commons.math.stat.regression.SimpleRegressionTest"
+    ],
+    "MATH-151": [
+        "org.apache.commons.math.util.MathUtilsTest",
+        "org.apache.commons.math.util.MathUtils"
+    ],
+    "MATH-153": [
+        "org.apache.commons.math.random.RandomDataImpl",
+        "org.apache.commons.math.random.RandomDataTest"
+    ],
+    "MATH-167": [
+        "org.apache.commons.math.distribution.NormalDistributionTest",
+        "org.apache.commons.math.distribution.NormalDistributionImpl"
+    ],
+    "MATH-175": [
+        "org.apache.commons.math.stat.inference.ChiSquareTestImpl"
+    ],
+    "MATH-182": [
+        "org.apache.commons.math.fraction.Fraction",
+        "org.apache.commons.math.fraction.FractionTest",
+        "org.apache.commons.math.fraction.FractionConversionException",
+        "org.apache.commons.math.MessagesResources_fr"
+    ],
+    "MATH-184": [
+        "org.apache.commons.math.distribution.AbstractIntegerDistribution",
+        "org.apache.commons.math.distribution.IntegerDistributionAbstractTest"
+    ],
+    "MATH-185": [
+        "org.apache.commons.math.random.ValueServer",
+        "org.apache.commons.math.random.EmpiricalDistributionImpl",
+        "org.apache.commons.math.random.ValueServerTest"
+    ],
+    "MATH-198": [
+        "org.apache.commons.math.complex.ComplexFormatAbstractTest",
+        "org.apache.commons.math.complex.ComplexFormat"
+    ],
+    "MATH-199": [
+        "org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest",
+        "org.apache.commons.math.estimation.LevenbergMarquardtEstimator"
+    ],
+    "MATH-200": [
+        "org.apache.commons.math.estimation.GaussNewtonEstimatorTest",
+        "org.apache.commons.math.estimation.AbstractEstimator"
+    ],
+    "MATH-204": [
+        "org.apache.commons.math.analysis.BrentSolver",
+        "org.apache.commons.math.analysis.BrentSolverTest"
+    ],
+    "MATH-209": [
+        "org.apache.commons.math.linear.BigMatrixImplTest",
+        "org.apache.commons.math.linear.RealMatrixImplTest",
+        "org.apache.commons.math.linear.BigMatrixImpl",
+        "org.apache.commons.math.linear.RealMatrixImpl"
+    ],
+    "MATH-226": [
+        "org.apache.commons.math.random.CorrelatedRandomVectorGeneratorTest",
+        "org.apache.commons.math.random.CorrelatedRandomVectorGenerator"
+    ],
+    "MATH-238": [
+        "org.apache.commons.math.util.MathUtils",
+        "org.apache.commons.math.util.MathUtilsTest"
+    ],
+    "MATH-240": [
+        "org.apache.commons.math.util.MathUtils",
+        "org.apache.commons.math.util.MathUtilsTest"
+    ],
+    "MATH-241": [
+        "org.apache.commons.math.util.MathUtils",
+        "org.apache.commons.math.util.MathUtilsTest"
+    ],
+    "MATH-243": [
+        "org.apache.commons.math.util.MathUtils",
+        "org.apache.commons.math.MessagesResources_fr",
+        "org.apache.commons.math.util.MathUtilsTest"
+    ],
+    "MATH-252": [
+        "org.apache.commons.math.fraction.FractionTest",
+        "org.apache.commons.math.fraction.Fraction"
+    ],
+    "MATH-272": [
+        "org.apache.commons.math.optimization.linear.SimplexSolverTest",
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+    ],
+    "MATH-273": [
+        "org.apache.commons.math.optimization.linear.SimplexSolverTest",
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+    ],
+    "MATH-274": [
+        "org.apache.commons.math.linear.CholeskyDecompositionImplTest",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl"
+    ],
+    "MATH-283": [
+        "org.apache.commons.math.optimization.direct.MultiDirectionalTest",
+        "org.apache.commons.math.optimization.direct.MultiDirectional"
+    ],
+    "MATH-288": [
+        "org.apache.commons.math.optimization.linear.SimplexSolver",
+        "org.apache.commons.math.optimization.linear.SimplexSolverTest"
+    ],
+    "MATH-293": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau",
+        "org.apache.commons.math.optimization.linear.SimplexSolverTest"
+    ],
+    "MATH-294": [
+        "org.apache.commons.math.random.RandomDataTest",
+        "org.apache.commons.math.random.RandomDataImpl"
+    ],
+    "MATH-305": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest"
+    ],
+    "MATH-306": [
+        "org.apache.commons.math.complex.Complex",
+        "org.apache.commons.math.complex.ComplexTest"
+    ],
+    "MATH-308": [
+        "org.apache.commons.math.linear.EigenDecompositionImpl",
+        "org.apache.commons.math.linear.EigenDecompositionImplTest"
+    ],
+    "MATH-309": [
+        "org.apache.commons.math.random.RandomDataTest",
+        "org.apache.commons.math.random.RandomDataImpl"
+    ],
+    "MATH-318": [
+        "org.apache.commons.math.linear.EigenDecompositionImpl",
+        "org.apache.commons.math.linear.EigenDecompositionImplTest"
+    ],
+    "MATH-322": [
+        "org.apache.commons.math.ode.events.EventState",
+        "org.apache.commons.math.ode.events.EventStateTest"
+    ],
+    "MATH-326": [
+        "org.apache.commons.math.linear.ArrayRealVector",
+        "org.apache.commons.math.linear.ArrayRealVectorTest",
+        "org.apache.commons.math.linear.AbstractRealVector",
+        "org.apache.commons.math.linear.OpenMapRealVector",
+        "org.apache.commons.math.linear.SparseRealVectorTest"
+    ],
+    "MATH-329": [
+        "org.apache.commons.math.stat.FrequencyTest"
+    ],
+    "MATH-338": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator"
+    ],
+    "MATH-344": [
+        "org.apache.commons.math.analysis.solvers.BrentSolverTest"
+    ],
+    "MATH-352": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest"
+    ],
+    "MATH-358": [
+        "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator",
+        "org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest",
+        "org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest",
+        "org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegrator",
+        "org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegrator",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator"
+    ],
+    "MATH-367": [
+        "org.apache.commons.math.linear.AbstractRealVectorTest",
+        "org.apache.commons.math.linear.AbstractRealVector"
+    ],
+    "MATH-369": [
+        "org.apache.commons.math.analysis.solvers.BisectionSolver",
+        "org.apache.commons.math.analysis.solvers.BisectionSolverTest"
+    ],
+    "MATH-377": [
+        "org.apache.commons.math.linear.EigenDecompositionImpl",
+        "org.apache.commons.math.linear.SingularValueDecompositionImpl",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer"
+    ],
+    "MATH-405": [
+        "org.apache.commons.math.optimization.general.MinpackTest",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer"
+    ],
+    "MATH-406": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer"
+    ],
+    "MATH-410": [
+        "org.apache.commons.math.FunctionEvaluationException"
+    ],
+    "MATH-504": [
+        "org.apache.commons.math.analysis.interpolation.LoessInterpolator"
+    ],
+    "MATH-519": [
+        "org.apache.commons.math.optimization.fitting.GaussianFitter",
+        "org.apache.commons.math.optimization.fitting.GaussianFitterTest"
+    ],
+    "MATH-540": [],
+    "MATH-546": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer"
+    ],
+    "MATH-552": [
+        "org.apache.commons.math.util.MultidimensionalCounter",
+        "org.apache.commons.math.util.MultidimensionalCounterTest"
+    ],
+    "MATH-554": [
+        "org.apache.commons.math.geometry.Vector3D",
+        "org.apache.commons.math.geometry.Vector3DTest"
+    ],
+    "MATH-567": [
+        "org.apache.commons.math.dfp.DfpTest",
+        "org.apache.commons.math.dfp.Dfp"
+    ],
+    "MATH-572": [
+        "org.apache.commons.math.linear.ArrayFieldVector"
+    ],
+    "MATH-584": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer"
+    ],
+    "MATH-618": [
+        "org.apache.commons.math.complex.Complex",
+        "org.apache.commons.math.complex.ComplexTest"
+    ],
+    "MATH-619": [
+        "org.apache.commons.math.stat.regression.RegressionResults"
+    ],
+    "MATH-639": [
+        "org.apache.commons.math.geometry.euclidean.threed.Rotation",
+        "org.apache.commons.math.geometry.euclidean.threed.RotationTest"
+    ],
+    "MATH-645": [
+        "org.apache.commons.math.linear.OpenMapRealVector",
+        "org.apache.commons.math.linear.SparseRealVectorTest"
+    ],
+    "MATH-654": [
+        "org.apache.commons.math.random.ValueServer",
+        "org.apache.commons.math.random.EmpiricalDistributionImpl",
+        "org.apache.commons.math.random.ValueServerTest",
+        "org.apache.commons.math.random.EmpiricalDistributionTest"
+    ],
+    "MATH-679": [
+        "org.apache.commons.math.linear.OpenMapRealMatrix",
+        "org.apache.commons.math.linear.OpenMapRealMatrixTest"
+    ],
+    "MATH-691": [
+        "org.apache.commons.math.stat.descriptive.SummaryStatistics",
+        "org.apache.commons.math.stat.descriptive.SummaryStatisticsTest"
+    ],
+    "MATH-695": [
+        "org.apache.commons.math.ode.events.EventStateTest",
+        "org.apache.commons.math.ode.AbstractIntegrator"
+    ],
+    "MATH-706": [],
+    "MATH-709": [
+        "org.apache.commons.math.fraction.FractionTest",
+        "org.apache.commons.math.fraction.BigFractionTest",
+        "org.apache.commons.math.fraction.Fraction",
+        "org.apache.commons.math.fraction.BigFraction"
+    ],
+    "MATH-713": [
+        "org.apache.commons.math.optimization.linear.SimplexSolverTest",
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+    ],
+    "MATH-716": [
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest",
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+    ],
+    "MATH-724": [
+        "org.apache.commons.math.random.RandomGeneratorAbstractTest",
+        "org.apache.commons.math.random.RandomDataTest",
+        "org.apache.commons.math.random.RandomDataImpl"
+    ],
+    "MATH-728": [
+        "org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest",
+        "org.apache.commons.math.optimization.direct.BOBYQAOptimizer"
+    ],
+    "MATH-780": [
+        "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet"
+    ],
+    "MATH-781": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau",
+        "org.apache.commons.math3.optimization.linear.SimplexSolverTest"
+    ],
+    "MATH-802": [
+        "org.apache.commons.math3.linear.RealVector"
+    ],
+    "MATH-835": [
+        "org.apache.commons.math3.fraction.FractionTest",
+        "org.apache.commons.math3.fraction.Fraction"
+    ],
+    "MATH-844": [
+        "org.apache.commons.math3.optimization.fitting.HarmonicFitter",
+        "org.apache.commons.math3.optimization.fitting.HarmonicFitterTest"
+    ],
+    "MATH-848": [
+        "org.apache.commons.math3.linear.SchurTransformerTest",
+        "org.apache.commons.math3.linear.SchurTransformer",
+        "org.apache.commons.math3.linear.EigenDecompositionTest"
+    ],
+    "MATH-864": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizerTest"
+    ],
+    "MATH-891": [
+        "org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest",
+        "org.apache.commons.math3.stat.correlation.SpearmansCorrelation"
+    ],
+    "MATH-904": [
+        "org.apache.commons.math3.util.FastMath",
+        "org.apache.commons.math3.util.FastMathTest"
+    ],
+    "MATH-915": [
+        "org.apache.commons.math3.random.EmpiricalDistributionTest",
+        "org.apache.commons.math3.random.EmpiricalDistribution"
+    ],
+    "MATH-916": [
+        "org.apache.commons.math3.random.RandomDataImpl",
+        "org.apache.commons.math3.random.ValueServer"
+    ],
+    "MATH-927": [
+        "org.apache.commons.math3.distribution.RealDistributionAbstractTest",
+        "org.apache.commons.math3.random.BitsStreamGenerator"
+    ],
+    "MATH-929": [
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistributionTest"
+    ],
+    "MATH-934": [],
+    "MATH-935": [
+        "org.apache.commons.math3.analysis.differentiation.DSCompiler",
+        "org.apache.commons.math3.analysis.differentiation.DerivativeStructureTest"
+    ],
+    "MATH-936": [
+        "org.apache.commons.math3.random.Well512aTest",
+        "org.apache.commons.math3.stat.ranking.NaturalRanking",
+        "org.apache.commons.math3.random.RandomDataGenerator",
+        "org.apache.commons.math3.random.BitsStreamGenerator",
+        "org.apache.commons.math3.random.MersenneTwisterTest",
+        "org.apache.commons.math3.random.RandomDataGeneratorTest"
+    ],
+    "MATH-949": [
+        "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest",
+        "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest",
+        "org.apache.commons.math3.optim.BaseOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizerAbstractTest",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest"
+    ],
+    "MATH-950": [
+        "org.apache.commons.math3.ode.AbstractIntegrator",
+        "org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest"
+    ],
+    "MATH-960": [
+        "org.apache.commons.math3.ode.ExpandableStatefulODE"
+    ],
+    "MATH-961": [
+        "org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegrator",
+        "org.apache.commons.math3.ode.AbstractIntegrator",
+        "org.apache.commons.math3.ode.MultistepIntegrator",
+        "org.apache.commons.math3.ode.nonstiff.AdamsBashforthIntegrator",
+        "org.apache.commons.math3.ode.ContinuousOutputModel"
+    ],
+    "MATH-984": [
+        "org.apache.commons.math3.distribution.ConstantRealDistributionTest",
+        "org.apache.commons.math3.distribution.ConstantRealDistribution",
+        "org.apache.commons.math3.random.EmpiricalDistribution",
+        "org.apache.commons.math3.random.EmpiricalDistributionTest"
+    ],
+    "MATH-988": [
+        "org.apache.commons.math3.geometry.euclidean.threed.SubLine",
+        "org.apache.commons.math3.geometry.euclidean.threed.SubLineTest",
+        "org.apache.commons.math3.geometry.euclidean.twod.SubLine",
+        "org.apache.commons.math3.geometry.euclidean.twod.SubLineTest"
+    ],
+    "MATH-996": [
+        "org.apache.commons.math3.fraction.Fraction",
+        "org.apache.commons.math3.fraction.BigFractionTest",
+        "org.apache.commons.math3.fraction.BigFraction",
+        "org.apache.commons.math3.fraction.FractionTest"
+    ],
+    "MATH-1005": [
+        "org.apache.commons.math3.util.MathArrays",
+        "org.apache.commons.math3.util.MathArraysTest"
+    ],
+    "MATH-1019": [
+        "org.apache.commons.math3.random.RandomDataGenerator",
+        "org.apache.commons.math3.util.MathArrays"
+    ],
+    "MATH-1020": [
+        "org.apache.commons.math3.random.RandomDataGenerator",
+        "org.apache.commons.math3.util.MathArrays"
+    ],
+    "MATH-1021": [
+        "org.apache.commons.math3.distribution.HypergeometricDistribution",
+        "org.apache.commons.math3.distribution.HypergeometricDistributionTest"
+    ],
+    "MATH-1029": [
+        "org.apache.commons.math3.fraction.BigFraction",
+        "org.apache.commons.math3.fraction.BigFractionTest"
+    ],
+    "MATH-1033": [
+        "org.apache.commons.math3.filter.KalmanFilter"
+    ],
+    "MATH-1051": [
+        "org.apache.commons.math3.linear.SchurTransformer",
+        "org.apache.commons.math3.linear.EigenDecompositionTest"
+    ],
+    "MATH-1056": [],
+    "MATH-1058": [
+        "org.apache.commons.math3.distribution.LogNormalDistribution",
+        "org.apache.commons.math3.distribution.WeibullDistribution",
+        "org.apache.commons.math3.special.BetaTest",
+        "org.apache.commons.math3.distribution.LogNormalDistributionTest",
+        "org.apache.commons.math3.distribution.WeibullDistributionTest",
+        "org.apache.commons.math3.special.Beta"
+    ],
+    "MATH-1065": [
+        "org.apache.commons.math3.distribution.EnumeratedRealDistribution",
+        "org.apache.commons.math3.distribution.EnumeratedRealDistributionTest"
+    ],
+    "MATH-1067": [
+        "org.apache.commons.math3.special.Beta",
+        "org.apache.commons.math3.special.BetaTest"
+    ],
+    "MATH-1070": [
+        "org.apache.commons.math3.util.Precision",
+        "org.apache.commons.math3.util.PrecisionTest"
+    ],
+    "MATH-1093": [
+        "org.apache.commons.math3.geometry.spherical.oned.ArcsSetTest",
+        "org.apache.commons.math3.geometry.spherical.oned.ArcsSet"
+    ],
+    "MATH-1101": [
+        "org.apache.commons.math3.linear.QRDecomposition",
+        "org.apache.commons.math3.linear.RRQRDecomposition",
+        "org.apache.commons.math3.linear.QRDecompositionTest"
+    ],
+    "MATH-1103": [
+        "org.apache.commons.math3.fitting.leastsquares.GaussNewtonOptimizer",
+        "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+        "org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer",
+        "org.apache.commons.math3.fitting.leastsquares.EvaluationTest",
+        "org.apache.commons.math3.fitting.leastsquares.AbstractLeastSquaresOptimizerAbstractTest"
+    ],
+    "MATH-1106": [
+        "org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizerTest"
+    ],
+    "MATH-1107": [
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer"
+    ],
+    "MATH-1115": [
+        "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSet",
+        "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest"
+    ],
+    "MATH-1117": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest"
+    ],
+    "MATH-1123": [
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.ConvexHullGenerator2DAbstractTest",
+        "org.apache.commons.math3.geometry.partitioning.BSPTree"
+    ],
+    "MATH-1127": [
+        "org.apache.commons.math3.util.Precision",
+        "org.apache.commons.math3.util.PrecisionTest"
+    ],
+    "MATH-1129": [
+        "org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest",
+        "org.apache.commons.math3.stat.descriptive.rank.Percentile"
+    ],
+    "MATH-1135": [
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.ConvexHullGenerator2DAbstractTest"
+    ],
+    "MATH-1136": [
+        "org.apache.commons.math3.distribution.BinomialDistribution",
+        "org.apache.commons.math3.distribution.BinomialDistributionTest"
+    ],
+    "MATH-1145": [
+        "org.apache.commons.math3.stat.inference.MannWhitneyUTestTest",
+        "org.apache.commons.math3.stat.inference.MannWhitneyUTest"
+    ],
+    "MATH-1148": [
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.MonotoneChainTest",
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.MonotoneChain",
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.ConvexHullGenerator2DAbstractTest",
+        "org.apache.commons.math3.geometry.euclidean.twod.hull.ConvexHull2D"
+    ],
+    "MATH-1149": [
+        "org.apache.commons.math3.ode.sampling.DummyStepInterpolator"
+    ],
+    "MATH-1165": [
+        "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+        "org.apache.commons.math3.ml.clustering.FuzzyKMeansClustererTest"
+    ],
+    "MATH-1167": [
+        "org.apache.commons.math3.stat.regression.OLSMultipleLinearRegression"
+    ],
+    "MATH-1174": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest"
+    ],
+    "MATH-1175": [
+        "org.apache.commons.math3.distribution.LaplaceDistribution"
+    ],
+    "MATH-1223": [
+        "org.apache.commons.math3.util.FastMath",
+        "org.apache.commons.math3.util.MathArrays",
+        "org.apache.commons.math3.util.FastMathTest",
+        "org.apache.commons.math3.util.MathArraysTest"
+    ],
+    "MATH-1230": [
+        "org.apache.commons.math4.optim.linear.SimplexSolverTest",
+        "org.apache.commons.math4.optim.linear.SimplexTableau",
+        "org.apache.commons.math4.optim.linear.SimplexSolver"
+    ],
+    "MATH-1342": [
+        "org.apache.commons.math4.ode.AbstractIntegrator",
+        "org.apache.commons.math4.ode.events.CloseEventsTest"
+    ],
+    "MATH-1356": [
+        "org.apache.commons.math4.distribution.SaddlePointExpansion",
+        "org.apache.commons.math4.distribution.HypergeometricDistributionTest"
+    ],
+    "MATH-1376": [
+        "org.apache.commons.math4.optim.nonlinear.scalar.noderiv.SimplexOptimizer"
+    ],
+    "MATH-1381": [],
+    "MATH-1396": [
+        "org.apache.commons.math4.distribution.UniformIntegerDistribution",
+        "org.apache.commons.math4.distribution.UniformIntegerDistributionTest"
+    ],
+    "MATH-1421": [
+        "org.apache.commons.math4.stat.interval.WilsonScoreInterval",
+        "org.apache.commons.math4.stat.interval.WilsonScoreIntervalTest"
+    ]
+}

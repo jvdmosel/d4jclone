@@ -1,0 +1,309 @@
+{
+    "NET-46": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-155": [
+        "org.apache.commons.net.nntp.NewsgroupInfo"
+    ],
+    "NET-170": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParserTest"
+    ],
+    "NET-180": [
+        "org.apache.commons.net.telnet.Telnet",
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-182": [
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory"
+    ],
+    "NET-185": [
+        "org.apache.commons.net.nntp.Threader"
+    ],
+    "NET-216": [
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-232": [
+        "org.apache.commons.net.SocketClient",
+        "org.apache.commons.net.telnet.TelnetClient"
+    ],
+    "NET-236": [
+        "org.apache.commons.net.util.SubnetUtils"
+    ],
+    "NET-242": [
+        "org.apache.commons.net.ftp.FTPSClient",
+        "org.apache.commons.net.ftp.FTPSServerSocketFactory",
+        "org.apache.commons.net.ftp.FTPSSocketFactory"
+    ],
+    "NET-250": [
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory"
+    ],
+    "NET-257": [
+        "org.apache.commons.net.ftp.FTP"
+    ],
+    "NET-259": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParserTest"
+    ],
+    "NET-264": [
+        "org.apache.commons.net.telnet.Telnet"
+    ],
+    "NET-265": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParserTest"
+    ],
+    "NET-270": [],
+    "NET-274": [
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-277": [],
+    "NET-279": [
+        "org.apache.commons.net.smtp.SMTP"
+    ],
+    "NET-289": [],
+    "NET-300": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-302": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-305": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-326": [],
+    "NET-327": [
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-328": [
+        "org.apache.commons.net.io.FromNetASCIIInputStream"
+    ],
+    "NET-334": [
+        "org.apache.commons.net.io.FromNetASCIIInputStream"
+    ],
+    "NET-341": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-345": [
+        "org.apache.commons.net.telnet.Telnet",
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-348": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-350": [
+        "org.apache.commons.net.SocketClient"
+    ],
+    "NET-354": [
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-359": [
+        "org.apache.commons.net.io.CopyStreamAdapter"
+    ],
+    "NET-362": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-363": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-364": [
+        "org.apache.commons.net.nntp.Article"
+    ],
+    "NET-365": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser"
+    ],
+    "NET-366": [
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory"
+    ],
+    "NET-399": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-402": [
+        "org.apache.commons.net.imap.IMAPSClient",
+        "org.apache.commons.net.nntp.NNTP",
+        "org.apache.commons.net.pop3.POP3",
+        "org.apache.commons.net.smtp.SMTP"
+    ],
+    "NET-409": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-410": [],
+    "NET-412": [
+        "org.apache.commons.net.tftp.TFTPClient"
+    ],
+    "NET-414": [
+        "org.apache.commons.net.tftp.TFTPClient"
+    ],
+    "NET-421": [
+        "org.apache.commons.net.smtp.SMTPSClient"
+    ],
+    "NET-422": [
+        "examples.ftp.FTPClientExample",
+        "org.apache.commons.net.ftp.FTPClient",
+        "org.apache.commons.net.ftp.FTPHTTPClient"
+    ],
+    "NET-423": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-428": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-430": [
+        "org.apache.commons.net.pop3.POP3",
+        "org.apache.commons.net.pop3.POP3SClient"
+    ],
+    "NET-434": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-437": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-442": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-444": [
+        "org.apache.commons.net.ftp.parser.FTPTimestampParserImpl",
+        "org.apache.commons.net.ftp.parser.FTPTimestampParserImplTest"
+    ],
+    "NET-449": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-456": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-458": [
+        "org.apache.commons.net.ftp.parser.MVSFTPEntryParser"
+    ],
+    "NET-466": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-467": [
+        "org.apache.commons.net.imap.IMAP",
+        "org.apache.commons.net.imap.IMAPReply"
+    ],
+    "NET-473": [
+        "org.apache.commons.net.SocketClient"
+    ],
+    "NET-477": [
+        "org.apache.commons.net.tftp.TFTPClient"
+    ],
+    "NET-480": [
+        "org.apache.commons.net.ftp.FTPHTTPClient"
+    ],
+    "NET-483": [
+        "org.apache.commons.net.util.Base64",
+        "org.apache.commons.net.util.Base64Test"
+    ],
+    "NET-494": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-501": [
+        "org.apache.commons.net.telnet.TelnetInputStream"
+    ],
+    "NET-511": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-514": [
+        "examples.mail.IMAPImportMbox",
+        "org.apache.commons.net.imap.IMAPClient"
+    ],
+    "NET-516": [
+        "org.apache.commons.net.ftp.parser.NTFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.NTFTPEntryParserTest"
+    ],
+    "NET-518": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-520": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-521": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-529": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-530": [
+        "org.apache.commons.net.ftp.FTP"
+    ],
+    "NET-539": [
+        "org.apache.commons.net.nntp.Threader",
+        "org.apache.commons.net.nntp.TestThreader"
+    ],
+    "NET-543": [
+        "org.apache.commons.net.telnet.Telnet"
+    ],
+    "NET-549": [
+        "org.apache.commons.net.telnet.TelnetOutputStream"
+    ],
+    "NET-552": [
+        "org.apache.commons.net.ftp.FTP",
+        "org.apache.commons.net.ftp.FTPClient",
+        "org.apache.commons.net.ftp.FTPHTTPClient"
+    ],
+    "NET-579": [
+        "org.apache.commons.net.imap.IMAPSClient",
+        "org.apache.commons.net.pop3.POP3SClient",
+        "org.apache.commons.net.smtp.SMTPSClient",
+        "org.apache.commons.net.util.SSLSocketUtils",
+        "org.apache.commons.net.SocketClient",
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-581": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader",
+        "org.apache.commons.net.smtp.SimpleSMTPHeaderTestCase"
+    ],
+    "NET-583": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-588": [
+        "org.apache.commons.net.ftp.FTPClient",
+        "org.apache.commons.net.ftp.FTPClientTest"
+    ],
+    "NET-592": [
+        "org.apache.commons.net.ftp.FTPSClient"
+    ],
+    "NET-593": [
+        "org.apache.commons.net.SocketClient"
+    ],
+    "NET-594": [
+        "org.apache.commons.net.telnet.TelnetClient"
+    ],
+    "NET-596": [
+        "org.apache.commons.net.telnet.TelnetClient"
+    ],
+    "NET-602": [
+        "org.apache.commons.net.ftp.FTPClientConfig",
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory"
+    ],
+    "NET-609": [
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactoryTest"
+    ],
+    "NET-610": [
+        "org.apache.commons.net.ftp.FTPClient"
+    ],
+    "NET-611": [
+        "org.apache.commons.net.ftp.FTP"
+    ],
+    "NET-614": [],
+    "NET-631": [
+        "org.apache.commons.net.ftp.parser.MVSFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.MVSFTPEntryParserTest"
+    ],
+    "NET-639": [
+        "org.apache.commons.net.ftp.parser.MVSFTPEntryParser",
+        "org.apache.commons.net.ftp.parser.MVSFTPEntryParserTest"
+    ],
+    "NET-641": [
+        "org.apache.commons.net.util.SubnetUtils",
+        "org.apache.commons.net.SubnetUtilsTest"
+    ],
+    "NET-643": [
+        "org.apache.commons.net.telnet.TelnetClient"
+    ]
+}

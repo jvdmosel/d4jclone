@@ -1,0 +1,7 @@
+{
+    "id": "Jspwiki",
+    "program": "jspwiki",
+    "build_file": "Jspwiki/Jspwiki.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "1"
+}

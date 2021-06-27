@@ -1,0 +1,7 @@
+{
+    "id": "Archiva",
+    "program": "archiva",
+    "build_file": "Archiva/Archiva.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "3"
+}

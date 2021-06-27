@@ -1,0 +1,20 @@
+{
+    "SYSTEMML-864": [
+        "org.apache.sysml.hops.OptimizerUtils",
+        "org.apache.sysml.runtime.instructions.cp.AggregateUnaryCPInstruction"
+    ],
+    "SYSTEMML-1668": [],
+    "SYSTEMML-1715": [
+        "org.apache.sysml.parser.ParForStatementBlock"
+    ],
+    "SYSTEMML-1806": [
+        "org.apache.sysml.conf.DMLConfig",
+        "org.apache.sysml.test.unit.UtilsTest"
+    ],
+    "SYSTEMML-2058": [
+        "org.apache.sysml.runtime.matrix.data.MatrixBlock"
+    ],
+    "SYSTEMML-2431": [
+        "org.apache.sysml.hops.codegen.template.TemplateCell"
+    ]
+}

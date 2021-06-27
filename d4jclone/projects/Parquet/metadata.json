@@ -1,0 +1,7 @@
+{
+    "id": "Parquet",
+    "program": "parquet-mr",
+    "build_file": "Parquet/Parquet.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "49"
+}

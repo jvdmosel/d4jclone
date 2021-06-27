@@ -1,0 +1,7 @@
+{
+    "id": "Opennlp",
+    "program": "opennlp",
+    "build_file": "Opennlp/Opennlp.build.xml",
+    "vcs": "Git",
+    "number_of_bugs": "86"
+}

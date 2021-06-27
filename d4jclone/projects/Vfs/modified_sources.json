@@ -1,0 +1,247 @@
+{
+    "VFS-50": [
+        "org.apache.commons.vfs.provider.AbstractFileObject"
+    ],
+    "VFS-69": [
+        "org.apache.commons.vfs.impl.DefaultFileMonitor",
+        "org.apache.commons.vfs.provider.ftp.FtpFileObject"
+    ],
+    "VFS-73": [
+        "org.apache.commons.vfs.provider.AbstractFileObject",
+        "org.apache.commons.vfs.provider.local.LocalFile"
+    ],
+    "VFS-76": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler"
+    ],
+    "VFS-78": [
+        "org.apache.commons.vfs.impl.DefaultFileMonitor"
+    ],
+    "VFS-81": [
+        "org.apache.commons.vfs.provider.AbstractFileProvider",
+        "org.apache.commons.vfs.provider.AbstractOriginatingFileProvider",
+        "org.apache.commons.vfs.test.AbstractProviderTestCase",
+        "org.apache.commons.vfs.test.ProviderCacheStrategyTests"
+    ],
+    "VFS-82": [
+        "org.apache.commons.vfs.provider.AbstractFileObject",
+        "org.apache.commons.vfs.provider.local.LocalFile"
+    ],
+    "VFS-83": [],
+    "VFS-93": [
+        "org.apache.commons.vfs.provider.sftp.SftpClientFactory"
+    ],
+    "VFS-107": [
+        "org.apache.commons.vfs.provider.sftp.SftpFileObject",
+        "org.apache.commons.vfs.RunTest"
+    ],
+    "VFS-111": [
+        "org.apache.commons.vfs.util.MonitorOutputStream"
+    ],
+    "VFS-112": [
+        "org.apache.commons.vfs.provider.AbstractFileSystem"
+    ],
+    "VFS-113": [
+        "org.apache.commons.vfs.provider.sftp.SftpFileObject"
+    ],
+    "VFS-126": [
+        "org.apache.commons.vfs.FileSystemOptions"
+    ],
+    "VFS-134": [
+        "org.apache.commons.vfs.provider.DefaultFileContent",
+        "org.apache.commons.vfs.provider.FileContentThreadData"
+    ],
+    "VFS-138": [
+        "org.apache.commons.vfs.provider.AbstractFileName"
+    ],
+    "VFS-140": [
+        "org.apache.commons.vfs.provider.AbstractFileObject"
+    ],
+    "VFS-142": [
+        "org.apache.commons.vfs2.provider.DefaultFileContent"
+    ],
+    "VFS-143": [
+        "org.apache.commons.vfs.provider.DelegateFileObject",
+        "org.apache.commons.vfs.util.WeakRefFileListener"
+    ],
+    "VFS-144": [
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager"
+    ],
+    "VFS-172": [
+        "org.apache.commons.vfs.provider.sftp.SftpFileObject"
+    ],
+    "VFS-190": [
+        "org.apache.commons.vfs.provider.ram.RamFileRandomAccessContent"
+    ],
+    "VFS-191": [
+        "org.apache.commons.vfs.provider.bzip2.CBZip2InputStream"
+    ],
+    "VFS-192": [
+        "org.apache.commons.vfs.provider.jar.JarFileSystem"
+    ],
+    "VFS-200": [],
+    "VFS-202": [
+        "org.apache.commons.vfs2.provider.http.HttpFileObject",
+        "org.apache.commons.vfs2.provider.http.test.HttpProviderTestCase"
+    ],
+    "VFS-236": [
+        "org.apache.commons.vfs2.provider.smb.SmbFileObject"
+    ],
+    "VFS-243": [
+        "org.apache.commons.vfs.provider.http.HttpRandomAccessContent"
+    ],
+    "VFS-245": [
+        "org.apache.commons.vfs2.provider.AbstractFileName"
+    ],
+    "VFS-279": [
+        "org.apache.commons.vfs2.provider.local.LocalFileSystem",
+        "org.apache.commons.vfs2.test.VerifyingFileSelector"
+    ],
+    "VFS-285": [
+        "org.apache.commons.vfs2.provider.AbstractFileObject"
+    ],
+    "VFS-286": [
+        "org.apache.commons.vfs.provider.sftp.SftpFileObject"
+    ],
+    "VFS-289": [
+        "org.apache.commons.vfs.provider.ftp.FtpFileObject"
+    ],
+    "VFS-293": [
+        "org.apache.commons.vfs2.provider.ftp.FtpFileSystem",
+        "org.apache.commons.vfs2.provider.AbstractFileSystem"
+    ],
+    "VFS-319": [
+        "org.apache.commons.vfs.provider.ftps.FtpsFileSystemConfigBuilder"
+    ],
+    "VFS-325": [
+        "org.apache.commons.vfs2.provider.local.LocalFile",
+        "org.apache.commons.vfs2.provider.local.LocalFileName",
+        "org.apache.commons.vfs2.provider.local.test.LocalProviderTestCase",
+        "org.apache.commons.vfs2.provider.local.test.UrlTests"
+    ],
+    "VFS-338": [
+        "org.apache.commons.vfs2.provider.local.test.LocalProviderTestCase",
+        "org.apache.commons.vfs2.provider.local.test.WindowsFileNameTests"
+    ],
+    "VFS-343": [
+        "org.apache.commons.vfs2.provider.AbstractFileSystem"
+    ],
+    "VFS-355": [
+        "org.apache.commons.vfs2.provider.ram.RamFileRandomAccessContent"
+    ],
+    "VFS-359": [
+        "org.apache.commons.vfs2.provider.ram.RamFileObject"
+    ],
+    "VFS-382": [
+        "org.apache.commons.vfs2.provider.sftp.SftpFileObject"
+    ],
+    "VFS-407": [
+        "org.apache.commons.vfs2.provider.ram.test.CustomRamProviderTest"
+    ],
+    "VFS-408": [
+        "org.apache.commons.vfs2.provider.compressed.CompressedFileFileObject"
+    ],
+    "VFS-424": [
+        "org.apache.commons.vfs2.impl.StandardFileSystemManager"
+    ],
+    "VFS-430": [
+        "org.apache.commons.vfs2.cache.SoftRefFilesCache"
+    ],
+    "VFS-432": [
+        "org.apache.commons.vfs2.provider.http.HttpFileObject",
+        "org.apache.commons.vfs2.provider.http.HttpFileSystemConfigBuilder",
+        "org.apache.commons.vfs2.provider.webdav.WebdavFileObject",
+        "org.apache.commons.vfs2.provider.webdav.WebdavFileSystemConfigBuilder",
+        "org.apache.commons.vfs2.provider.http.test.HttpProviderTestCase"
+    ],
+    "VFS-435": [
+        "org.apache.commons.vfs2.FileSystemConfigBuilder"
+    ],
+    "VFS-437": [
+        "org.apache.commons.vfs2.provider.ftp.FtpFileObject"
+    ],
+    "VFS-449": [
+        "org.apache.commons.vfs2.provider.hdfs.HdfsFileObject",
+        "org.apache.commons.vfs2.provider.hdfs.HdfsFileSystem",
+        "org.apache.commons.vfs2.provider.hdfs.test.HdfsFileProviderTest"
+    ],
+    "VFS-450": [],
+    "VFS-464": [
+        "org.apache.commons.vfs2.auth.StaticUserAuthenticator",
+        "org.apache.commons.vfs2.auth.StaticUserAuthenticatorTestCase"
+    ],
+    "VFS-480": [
+        "org.apache.commons.vfs2.cache.SoftRefFilesCache"
+    ],
+    "VFS-487": [
+        "org.apache.commons.vfs2.impl.DefaultFileMonitor",
+        "org.apache.commons.vfs2.impl.test.DefaultFileMonitorTests"
+    ],
+    "VFS-490": [
+        "org.apache.commons.vfs2.impl.FileTypeMap",
+        "org.apache.commons.vfs2.impl.test.VfsClassLoaderTests",
+        "org.apache.commons.vfs2.test.ProviderReadTests"
+    ],
+    "VFS-521": [
+        "org.apache.commons.vfs2.util.MonitorOutputStream"
+    ],
+    "VFS-523": [
+        "org.apache.commons.vfs2.provider.hdfs.HdfsFileObject"
+    ],
+    "VFS-544": [
+        "org.apache.commons.vfs2.impl.DefaultFileSystemManager",
+        "org.apache.commons.vfs2.impl.VirtualFileProvider",
+        "org.apache.commons.vfs2.impl.VirtualFileSystem"
+    ],
+    "VFS-545": [
+        "org.apache.commons.vfs2.cache.AbstractFilesCache",
+        "org.apache.commons.vfs2.cache.DefaultFilesCache",
+        "org.apache.commons.vfs2.cache.LRUFilesCache",
+        "org.apache.commons.vfs2.cache.NullFilesCache",
+        "org.apache.commons.vfs2.cache.SoftRefFilesCache",
+        "org.apache.commons.vfs2.cache.LRUFilesCacheTests",
+        "org.apache.commons.vfs2.cache.NullFilesCacheTests",
+        "org.apache.commons.vfs2.test.CacheTestSuite"
+    ],
+    "VFS-558": [
+        "org.apache.commons.vfs2.provider.AbstractFileObject",
+        "org.apache.commons.vfs2.test.ProviderRenameTests"
+    ],
+    "VFS-560": [
+        "org.apache.commons.vfs2.provider.http.HttpClientFactory"
+    ],
+    "VFS-567": [
+        "org.apache.commons.vfs2.provider.ftp.FTPClientWrapper"
+    ],
+    "VFS-583": [
+        "org.apache.commons.vfs2.provider.AbstractLayeredFileProvider",
+        "org.apache.commons.vfs2.provider.tar.test.NestedTarTestCase",
+        "org.apache.commons.vfs2.test.UrlTests"
+    ],
+    "VFS-589": [
+        "org.apache.commons.vfs2.provider.sftp.SftpFileSystem",
+        "org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder"
+    ],
+    "VFS-614": [
+        "org.apache.commons.vfs2.util.MonitorInputStream",
+        "org.apache.commons.vfs2.provider.DefaultFileContentTest"
+    ],
+    "VFS-620": [
+        "org.apache.commons.vfs2.provider.ftp.test.MultipleConnectionTestCase",
+        "org.apache.commons.vfs2.provider.ftp.FtpFileObject",
+        "org.apache.commons.vfs2.provider.ftp.test.FtpProviderTestCase",
+        "org.apache.commons.vfs2.provider.ftp.test.FtpProviderUserDirTestCase"
+    ],
+    "VFS-644": [
+        "org.apache.commons.vfs2.provider.AbstractFileSystem"
+    ],
+    "VFS-667": [
+        "org.apache.commons.vfs2.provider.res.ResourceFileProvider"
+    ],
+    "VFS-669": [
+        "org.apache.commons.vfs2.util.CombinedResources"
+    ],
+    "VFS-675": [
+        "org.apache.commons.vfs2.provider.AbstractFileObject"
+    ]
+}
