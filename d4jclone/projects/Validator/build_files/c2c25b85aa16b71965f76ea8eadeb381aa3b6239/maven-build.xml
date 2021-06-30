@@ -31,7 +31,7 @@
   <property name="maven.build.resourceDir.0" value="."/>
   <property name="maven.build.testOutputDir" value="${maven.build.dir}/test-classes"/>
   <property name="maven.build.testDir.0" value="src/test"/>
-  <property name="maven.build.testResourceDir.0" value="${pom.build.unitTestSourceDirectory}"/>
+  <property name="maven.build.testResourceDir.0" value="src/test"/>
   <property name="maven.test.reports" value="${maven.build.dir}/test-reports"/>
   <property name="maven.reporting.outputDirectory" value="${maven.build.dir}/site"/>
 
@@ -75,7 +75,8 @@
 
   <target name="compile" depends="get-deps" description="Compile the code">
     <mkdir dir="${maven.build.outputDir}"/>
-    <javac destdir="${maven.build.outputDir}" 
+    <javac destdir="${maven.build.outputDir}"
+           encoding="UTF-8"
            nowarn="false" 
            debug="true" 
            optimize="false" 
@@ -95,6 +96,9 @@
         <include name="NOTICE.txt"/>
       </fileset>
     </copy>
+    <copy todir="${maven.build.outputDir}">
+      <fileset dir="${maven.build.srcDir.0}" includes="**/*.xml"/>
+    </copy>
   </target>
 
   <!-- ====================================================================== -->
@@ -107,6 +111,7 @@
           unless="maven.test.skip">
     <mkdir dir="${maven.build.testOutputDir}"/>
     <javac destdir="${maven.build.testOutputDir}" 
+           encoding="UTF-8"
            nowarn="false" 
            debug="true" 
            optimize="false" 
@@ -123,8 +128,8 @@
         <pathelement location="${maven.build.outputDir}"/>
       </classpath>
     </javac>
-     <copy    todir="${maven.build.testOutputDir}" filtering="on">
-      <fileset dir="${maven.build.testDir.0}" excludes="**/*.java"/>
+    <copy todir="${maven.build.testOutputDir}">
+      <fileset dir="${maven.build.testResourceDir.0}" includes="**/*.xml"/>
     </copy>
   </target>
 
