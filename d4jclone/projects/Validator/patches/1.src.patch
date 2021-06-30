@@ -1,0 +1,13 @@
+diff --git a/src/share/org/apache/commons/validator/Validator.java b/src/share/org/apache/commons/validator/Validator.java
+index 5c8fcf8d..85f2da4d 100644
+--- a/src/share/org/apache/commons/validator/Validator.java
++++ b/src/share/org/apache/commons/validator/Validator.java
+@@ -347,7 +347,7 @@ public class Validator implements Serializable {
+ 
+         Form form = this.resources.getForm(locale, this.formName);
+         if (form != null) {
+-            this.setParameter(FORM_PARAM, form);
++            this.setParameter(FORM_PARAM, this);
+             return form.validate(
+                 this.parameters,
+                 this.resources.getValidatorActions(),

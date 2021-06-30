@@ -1,0 +1,21 @@
+diff --git a/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java b/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
+index 3bcc9bfc..a01e87fe 100644
+--- a/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
++++ b/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
+@@ -80,7 +80,7 @@ public final class IBANCheckDigit implements CheckDigit, Serializable {
+      * Calculate the <i>Check Digit</i> for an IBAN code.
+      * <p>
+      * <b>Note:</b> The check digit is the third and fourth
+-     * characters and is set to the value "<code>00</code>".
++     * characters and and should contain value "<code>00</code>".
+      *
+      * @param code The code to calculate the Check Digit for
+      * @return The calculated Check Digit as 2 numeric decimal characters, e.g. "42"
+@@ -92,7 +92,6 @@ public final class IBANCheckDigit implements CheckDigit, Serializable {
+             throw new CheckDigitException("Invalid Code length=" +
+                     (code == null ? 0 : code.length()));
+         }
+-        code = code.substring(0, 2) + "00" + code.substring(4);
+         int modulusResult = calculateModulus(code);
+         int charValue = (98 - modulusResult);
+         String checkDigit = Integer.toString(charValue);

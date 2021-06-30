@@ -1,0 +1,22 @@
+diff --git a/src/main/java/org/apache/commons/validator/util/Flags.java b/src/main/java/org/apache/commons/validator/util/Flags.java
+index 15fd8660..670dd062 100644
+--- a/src/main/java/org/apache/commons/validator/util/Flags.java
++++ b/src/main/java/org/apache/commons/validator/util/Flags.java
+@@ -82,7 +82,7 @@ public class Flags implements Serializable, Cloneable {
+      * @return whether the specified flag value is on.
+      */
+     public boolean isOn(long flag) {
+-        return (this.flags & flag) == flag;
++        return (this.flags & flag) > 0;
+     }
+ 
+     /**
+@@ -136,7 +136,7 @@ public class Flags implements Serializable, Cloneable {
+      * Turn on all 64 flags.
+      */
+     public void turnOnAll() {
+-        this.flags = 0xFFFFFFFFFFFFFFFFl;
++        this.flags = Long.MAX_VALUE;
+     }
+ 
+     /**

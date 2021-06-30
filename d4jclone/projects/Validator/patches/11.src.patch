@@ -1,0 +1,177 @@
+diff --git a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+index 0830ea2e..b8c2e77e 100644
+--- a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+@@ -68,19 +68,10 @@ public class DomainValidator implements Serializable {
+     private static final String DOMAIN_NAME_REGEX =
+             "^(?:" + DOMAIN_LABEL_REGEX + "\\.)+" + "(" + TOP_LABEL_REGEX + ")$";
+ 
+-    private final boolean allowLocal;
+-    
+     /**
+-     * Singleton instance of this validator, which
+-     *  doesn't consider local addresses as valid.
++     * Singleton instance of this validator.
+      */
+-    private static final DomainValidator DOMAIN_VALIDATOR = new DomainValidator(false);
+-    
+-    /**
+-     * Singleton instance of this validator, which does
+-     *  consider local addresses valid.
+-     */
+-    private static final DomainValidator DOMAIN_VALIDATOR_WITH_LOCAL = new DomainValidator(true);
++    private static final DomainValidator DOMAIN_VALIDATOR = new DomainValidator();
+ 
+     /**
+      * RegexValidator for matching domains.
+@@ -89,30 +80,15 @@ public class DomainValidator implements Serializable {
+             new RegexValidator(DOMAIN_NAME_REGEX);
+ 
+     /**
+-     * Returns the singleton instance of this validator. It
+-     *  will not consider local addresses as valid.
++     * Returns the singleton instance of this validator.
+      * @return the singleton instance of this validator
+      */
+     public static DomainValidator getInstance() {
+         return DOMAIN_VALIDATOR;
+     }
+-    
+-    /**
+-     * Returns the singleton instance of this validator,
+-     *  with local validation as required.
+-     * @param allowLocal Should local addresses be considered valid?
+-     */
+-    public static DomainValidator getInstance(boolean allowLocal) {
+-       if(allowLocal) {
+-          return DOMAIN_VALIDATOR_WITH_LOCAL;
+-       }
+-       return DOMAIN_VALIDATOR;
+-    }
+ 
+     /** Private constructor. */
+-    private DomainValidator(boolean allowLocal) {
+-       this.allowLocal = allowLocal;
+-    }
++    private DomainValidator() {}
+ 
+     /**
+      * Returns true if the specified <code>String</code> parses
+@@ -125,12 +101,9 @@ public class DomainValidator implements Serializable {
+         String[] groups = domainRegex.match(domain);
+         if (groups != null && groups.length > 0) {
+             return isValidTld(groups[0]);
+-        } else if(allowLocal) {
+-            if ("localhost".equals(domain)) {
+-               return true;
+-            }
++        } else {
++            return false;
+         }
+-        return false;
+     }
+ 
+     /**
+@@ -141,9 +114,6 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is a TLD
+      */
+     public boolean isValidTld(String tld) {
+-        if(allowLocal && isValidLocalTld(tld)) {
+-           return true;
+-        }
+         return isValidInfrastructureTld(tld)
+                 || isValidGenericTld(tld)
+                 || isValidCountryCodeTld(tld);
+@@ -182,17 +152,6 @@ public class DomainValidator implements Serializable {
+         return COUNTRY_CODE_TLD_LIST.contains(chompLeadingDot(ccTld.toLowerCase()));
+     }
+ 
+-    /**
+-     * Returns true if the specified <code>String</code> matches any
+-     * widely used "local" domains (localhost or localdomain). Leading dots are
+-     *  ignored if present. The search is case-sensitive.
+-     * @param iTld the parameter to check for local TLD status
+-     * @return true if the parameter is an local TLD
+-     */
+-    public boolean isValidLocalTld(String iTld) {
+-        return LOCAL_TLD_LIST.contains(chompLeadingDot(iTld.toLowerCase()));
+-    }
+-
+     private String chompLeadingDot(String str) {
+         if (str.startsWith(".")) {
+             return str.substring(1);
+@@ -486,13 +445,7 @@ public class DomainValidator implements Serializable {
+         "zw",                 // Zimbabwe
+     };
+ 
+-    private static final String[] LOCAL_TLDS = new String[] {
+-       "localhost",           // RFC2606 defined
+-       "localdomain"          // Also widely used as localhost.localdomain
+-   };
+-
+     private static final List INFRASTRUCTURE_TLD_LIST = Arrays.asList(INFRASTRUCTURE_TLDS);
+     private static final List GENERIC_TLD_LIST = Arrays.asList(GENERIC_TLDS);
+     private static final List COUNTRY_CODE_TLD_LIST = Arrays.asList(COUNTRY_CODE_TLDS);
+-    private static final List LOCAL_TLD_LIST = Arrays.asList(LOCAL_TLDS);
+ }
+diff --git a/src/main/java/org/apache/commons/validator/routines/EmailValidator.java b/src/main/java/org/apache/commons/validator/routines/EmailValidator.java
+index b85e93a9..1fab56f2 100644
+--- a/src/main/java/org/apache/commons/validator/routines/EmailValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/EmailValidator.java
+@@ -55,19 +55,10 @@ public class EmailValidator implements Serializable {
+     private static final Pattern IP_DOMAIN_PATTERN = Pattern.compile(IP_DOMAIN_REGEX);
+     private static final Pattern USER_PATTERN = Pattern.compile(USER_REGEX);
+ 
+-    private final boolean allowLocal;
+-    
+     /**
+-     * Singleton instance of this class, which
+-     *  doesn't consider local addresses as valid.
++     * Singleton instance of this class.
+      */
+-    private static final EmailValidator EMAIL_VALIDATOR = new EmailValidator(false);
+-    
+-    /**
+-     * Singleton instance of this class, which does
+-     *  consider local addresses valid.
+-     */
+-    private static final EmailValidator EMAIL_VALIDATOR_WITH_LOCAL = new EmailValidator(true);
++    private static final EmailValidator EMAIL_VALIDATOR = new EmailValidator();
+ 
+     /**
+      * Returns the Singleton instance of this validator.
+@@ -78,24 +69,11 @@ public class EmailValidator implements Serializable {
+         return EMAIL_VALIDATOR;
+     }
+ 
+-    /**
+-     * Returns the Singleton instance of this validator,
+-     *  with local validation as required.
+-     * @param allowLocal Should local addresses be considered valid?
+-     */
+-    public static EmailValidator getInstance(boolean allowLocal) {
+-        if(allowLocal) {
+-           return EMAIL_VALIDATOR_WITH_LOCAL;
+-        }
+-        return EMAIL_VALIDATOR;
+-    }
+-
+     /**                                       
+      * Protected constructor for subclasses to use.
+      */
+-    protected EmailValidator(boolean allowLocal) {
++    protected EmailValidator() {
+         super();
+-        this.allowLocal = allowLocal;
+     }
+ 
+     /**
+@@ -153,7 +131,7 @@ public class EmailValidator implements Serializable {
+         } else {
+             // Domain is symbolic name
+             DomainValidator domainValidator =
+-                    DomainValidator.getInstance(allowLocal);
++                    DomainValidator.getInstance();
+             return domainValidator.isValid(domain);
+         }
+     }

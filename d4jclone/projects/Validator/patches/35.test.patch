@@ -1,0 +1,13 @@
+diff --git a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
+index 8297ad9a..e6140a62 100644
+--- a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
+@@ -500,8 +500,4 @@ public class EmailValidatorTest extends TestCase {
+                 "Etiamnisinislvenenatisvelauctorutullamcorperinjusto.Proinvelligulaerat.Phasellusvestibulumgravidamassanonfeugiat."+
+                 "Maecenaspharetraeuismodmetusegetefficitur.Suspendisseamet@gmail.com"));
+     }
+-
+-    public void testValidator374() {
+-        assertTrue(validator.isValid("abc@school.school"));
+-    }
+ }

@@ -1,0 +1,50 @@
+diff --git a/src/main/java/org/apache/commons/validator/GenericTypeValidator.java b/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
+index c6bd6c11..4100496f 100644
+--- a/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
++++ b/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
+@@ -371,38 +371,22 @@ public class GenericTypeValidator implements Serializable {
+         }
+ 
+         try {
+-            // Get the formatters to check against
+-            DateFormat formatterShort = null;
+-            DateFormat formatterDefault = null;
++            DateFormat formatter = null;
+             if (locale != null) {
+-                formatterShort = 
+-                   DateFormat.getDateInstance(DateFormat.SHORT, locale);
+-                formatterDefault = 
+-                   DateFormat.getDateInstance(DateFormat.DEFAULT, locale);
++                formatter =
++                    DateFormat.getDateInstance(DateFormat.SHORT, locale);
+             } else {
+-                formatterShort =
++                formatter =
+                     DateFormat.getDateInstance(
+                     DateFormat.SHORT,
+                     Locale.getDefault());
+-                formatterDefault =
+-                   DateFormat.getDateInstance(
+-                   DateFormat.DEFAULT,
+-                   Locale.getDefault());
+             }
+ 
+-            // Turn off lenient parsing
+-            formatterShort.setLenient(false);
+-            formatterDefault.setLenient(false);
++            formatter.setLenient(false);
+ 
+-            // Firstly, try with the short form
+-            try {
+-               date = formatterShort.parse(value);
+-            } catch (ParseException e) {
+-               // Fall back on the default one
+-               date = formatterDefault.parse(value);
+-            }
++            date = formatter.parse(value);
+         } catch (ParseException e) {
+-            // Bad date, so log and return null
++            // Bad date so return null
+             Log log = LogFactory.getLog(GenericTypeValidator.class);
+             if (log.isDebugEnabled()) {
+                 log.debug("Date parse failed value=[" + value  + "], " +

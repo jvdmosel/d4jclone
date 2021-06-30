@@ -1,0 +1,18 @@
+diff --git a/src/test/java/org/apache/commons/validator/EmailTest.java b/src/test/java/org/apache/commons/validator/EmailTest.java
+index d944c9bc..1192b9e9 100644
+--- a/src/test/java/org/apache/commons/validator/EmailTest.java
++++ b/src/test/java/org/apache/commons/validator/EmailTest.java
+@@ -218,12 +218,7 @@ public class EmailTest extends AbstractCommonTest {
+       ValueBean info = new ValueBean();
+ 
+       info.setValue("m@de");
+-      valueTest(info, false);
+-
+-       org.apache.commons.validator.routines.EmailValidator validator =
+-               org.apache.commons.validator.routines.EmailValidator.getInstance(true, true);
+-      boolean result = validator.isValid("m@de");
+-      assertTrue("Result should have been true", result);
++      valueTest(info, true);
+ 
+    }
+ 

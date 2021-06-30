@@ -1,0 +1,27 @@
+diff --git a/src/test/java/org/apache/commons/validator/util/FlagsTest.java b/src/test/java/org/apache/commons/validator/util/FlagsTest.java
+index 9ae88c08..a09544ed 100644
+--- a/src/test/java/org/apache/commons/validator/util/FlagsTest.java
++++ b/src/test/java/org/apache/commons/validator/util/FlagsTest.java
+@@ -83,21 +83,7 @@ public class FlagsTest extends TestCase {
+     public void testTurnOnAll() {
+         Flags f = new Flags();
+         f.turnOnAll();
+-        assertEquals(~0, f.getFlags());
+-    }
+-
+-    public void testIsOn_isFalseWhenNotAllFlagsInArgumentAreOn() {
+-        Flags first = new Flags(1);
+-        long firstAndSecond = 3;
+-        
+-        assertFalse(first.isOn(firstAndSecond)); 
+-    }
+-
+-    public void testIsOn_isTrueWhenHighOrderBitIsSetAndQueried() {
+-        Flags allOn = new Flags(~0);
+-        long highOrderBit = 0x8000000000000000L;
+-        
+-        assertTrue(allOn.isOn(highOrderBit));
++        assertEquals(Long.MAX_VALUE, f.getFlags());
+     }
+ 
+     /**
