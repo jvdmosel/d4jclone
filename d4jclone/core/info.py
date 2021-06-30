@@ -31,10 +31,10 @@ def bug_info(project_id, bug_id):
     print('Root cause in triggering tests:\n' + 'UNKNOWN' + sep)
     srcs = getModifiedSources(bug)
     if len(srcs) > 0:
-        srcs = '\n - '.join(getModifiedSources(bug))
+        srcs = '\n - '.join(srcs)
     else:
         srcs = 'UNKNOWN'
-        print('List of modified sources:\n - ' + srcs + sep)
+    print('List of modified sources:\n - ' + srcs + sep)
         
 def info(project_id, bug_id = None):
     if project_id in projects.keys():
