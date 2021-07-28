@@ -155,6 +155,7 @@
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
     <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
+      <jvmarg value="-verbose:class" if:true="${test.monitor}"/>
       <sysproperty key="basedir" value="."/>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
