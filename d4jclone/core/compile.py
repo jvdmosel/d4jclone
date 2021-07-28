@@ -13,5 +13,5 @@ def compile(workdir = None, task = 'compile', arg = 'compile'):
     if 'BUILD SUCCESSFUL' in result.stdout:
         print('OK')
     else:
-        print(checkout.rev)
+        print('FAIL')
         print(result.stdout, result.stderr)
