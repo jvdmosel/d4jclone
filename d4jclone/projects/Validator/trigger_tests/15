@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.DomainValidatorTest::testRFC2396toplabel
+java.lang.NoSuchMethodError: org.apache.commons.validator.routines.DomainValidator.isValidDomainSyntax(Ljava/lang/String;)Z
+	at org.apache.commons.validator.routines.DomainValidatorTest.testRFC2396toplabel(DomainValidatorTest.java:151)

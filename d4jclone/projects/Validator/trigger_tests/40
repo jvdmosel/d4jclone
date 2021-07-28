@@ -1,0 +1,4 @@
+--- org.apache.commons.validator.routines.UrlValidatorTest::testValidator391FAILS
+java.lang.NullPointerException
+	at org.apache.commons.validator.routines.UrlValidator.isValid(UrlValidator.java:316)
+	at org.apache.commons.validator.routines.UrlValidatorTest.testValidator391FAILS(UrlValidatorTest.java:287)

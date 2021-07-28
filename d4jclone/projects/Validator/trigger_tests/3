@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.EmailTest::testEmailWithControlChars
+junit.framework.AssertionFailedError: Test control char 0
+	at org.apache.commons.validator.EmailTest.testEmailWithControlChars(EmailTest.java:231)

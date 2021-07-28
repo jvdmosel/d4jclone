@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.ParameterTest::testAllValid
+junit.framework.AssertionFailedError: Validator.validate() threw org.apache.commons.validator.ValidatorException: argument type mismatch
+	at org.apache.commons.validator.ParameterTest.testAllValid(ParameterTest.java:113)
