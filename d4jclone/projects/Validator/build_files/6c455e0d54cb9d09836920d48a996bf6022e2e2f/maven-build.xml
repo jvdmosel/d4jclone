@@ -15,7 +15,7 @@
 <!--                                                                        -->
 <!-- ====================================================================== -->
 
-<project name="commons-validator-from-maven" default="package" basedir=".">
+<project name="commons-validator-from-maven" default="package" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
 
   <!-- ====================================================================== -->
   <!-- Build environment properties                                           -->
@@ -142,7 +142,7 @@
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
     <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
-      <jvmarg value="-verbose:class"/>
+      <jvmarg value="-verbose:class" if:true="${test.monitor}"/>
       <sysproperty key="basedir" value="."/>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
@@ -151,16 +151,10 @@
         <pathelement location="${maven.build.outputDir}"/>
         <pathelement location="${maven.build.testOutputDir}"/>
       </classpath>
-      <batchtest todir="${maven.test.reports}" unless="test">
+      <test name="${test.entry.class}" methods="${test.entry.method}" if="test.entry.class" />
+      <batchtest todir="${maven.test.reports}" unless="test.entry.class">
         <fileset dir="${maven.build.testDir.0}">
           <include name="**/*Test.java"/>
-          <exclude name="**/routines/BaseCalendarValidatorTest.java"/>
-          <exclude name="**/routines/BaseNumberValidatorTest.java"/>
-        </fileset>
-      </batchtest>
-      <batchtest todir="${maven.test.reports}" if="test">
-        <fileset dir="${maven.build.testDir.0}">
-          <include name="**/${test}.java"/>
           <exclude name="**/routines/BaseCalendarValidatorTest.java"/>
           <exclude name="**/routines/BaseNumberValidatorTest.java"/>
         </fileset>
