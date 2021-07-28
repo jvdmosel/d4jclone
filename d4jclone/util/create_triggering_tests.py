@@ -1,15 +1,15 @@
-from logging import raiseExceptions
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from d4jclone.config import PROJECTDIR
 from d4jclone.core.checkout import checkout, checkoutVersion
 from d4jclone.core.compile import compile
-from d4jclone.core.test import test as _test, testFails
+from d4jclone.core.test import test as _test
+from d4jclone.core.test import testFails
 from d4jclone.parser.bugParser import parseBug
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
 
-import xml.etree.ElementTree as ET
 
 def createTriggeringTests(project_id, workdir):
     if project_id in projects.keys():
