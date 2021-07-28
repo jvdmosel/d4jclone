@@ -1,0 +1,2 @@
+org.apache.commons.validator.routines.ISBNValidatorTest
+org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigitTest
