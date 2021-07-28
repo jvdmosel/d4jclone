@@ -4,11 +4,12 @@ from pathlib import Path
 from d4jclone.config import PROJECTDIR
 
 class Checkout():
-    def __init__(self, project, project_dir, bug, rev):
+    def __init__(self, project, project_dir, bug, rev, version):
         self.project = project
         self.project_dir = project_dir
         self.bug = bug
         self.rev = rev
+        self.version = version
 
 def parseCheckout(dir):
     parts = dir.name.split('_')
@@ -17,4 +18,5 @@ def parseCheckout(dir):
     project_dir = Path(PROJECTDIR) / project.id
     bug = parseBug(project.id, parts[1])
     rev = bug.rev_buggy if parts[2] == 'buggy' else bug.rev_fixed
-    return Checkout(project, project_dir, bug, rev)
+    version = "BUGGY" if parts[2] == 'buggy' else "FIXED"
+    return Checkout(project, project_dir, bug, rev, version)
