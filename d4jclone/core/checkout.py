@@ -6,6 +6,7 @@ from subprocess import DEVNULL
 
 from d4jclone.config import PROJECTDIR, REPODIR
 from d4jclone.parser.bugParser import parseBug
+from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.formatting import fill
 from d4jclone.util.projects import projects
@@ -54,6 +55,16 @@ def checkoutRevision(project, bug_id, rev, tag, workdir = None):
     repo.git.checkout(rev)
     print('OK')
     return checkout
+
+def checkoutVersion(workdir, version):
+    path = Path(workdir)
+    if path.is_dir():
+        checkout = parseCheckout(path)
+        tag = 'D4JCLONE_' + checkout.project.id + '_' + str(checkout.bug.id) + '_' + version
+        result = subprocess.call(['git', '-C', path, 'checkout', tag])
+    else:
+        raise Exception('Couldn\'t find directory!')
+    return bool(result)
     
 def initLocalRepo(workdir):
     print(fill('Init local repository'), end ='')
