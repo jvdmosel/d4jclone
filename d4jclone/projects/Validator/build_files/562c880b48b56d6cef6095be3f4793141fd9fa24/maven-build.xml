@@ -154,6 +154,27 @@
           unless="junit.skipped" 
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
+    <loadfile srcfile="${test.relevant}"
+              property="rel.files"
+              if:set="test.relevant">
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="\." replace="/" flags="g"/>
+        </tokenfilter>
+        <suffixlines suffix=".*,"/>
+        <striplinebreaks/>
+      </filterchain>
+    </loadfile>
+    <condition property="test.all">
+      <and>
+        <not>  
+          <isset property="test.entry.class"/>
+        </not>
+        <not>
+          <isset property="test.relevant"/>
+        </not>
+      </and>
+    </condition>
     <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
       <jvmarg value="-verbose:class" if:true="${test.monitor}"/>
       <sysproperty key="basedir" value="."/>
@@ -165,7 +186,10 @@
         <pathelement location="${maven.build.testOutputDir}"/>
       </classpath>
       <test name="${test.entry.class}" methods="${test.entry.method}" if="test.entry.class" />
-      <batchtest todir="${maven.test.reports}" unless="test.entry.class">
+      <batchtest todir="${maven.test.reports}" if="test.relevant">
+        <fileset dir="${maven.build.testDir.0}" includes="${rel.files}"/>
+      </batchtest>
+      <batchtest todir="${maven.test.reports}" if="test.all">
         <fileset dir="${maven.build.testDir.0}">
           <include name="**/Test*.java"/>
           <include name="**/*Test.java"/>
