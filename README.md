@@ -8,8 +8,11 @@ Add to path
 ```
 export PATH=$PATH:/home/"USER"/.local/bin
 ```
+
 ## TODO
 - Finish test command 
 - Add mutation command
+- Patch minimization
+- Remove build files for buggy versions (not needed)
 - Add list of working versions
 - Make project repositories and libaries available
