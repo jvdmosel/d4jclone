@@ -1,33 +1,40 @@
+import re
 from pathlib import Path
 from subprocess import PIPE, run
-import subprocess
+
+from d4jclone.core.checkout import checkoutVersion
+from d4jclone.core.compile import compile
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.util.formatting import fill
-from d4jclone.core.compile import compile
-import xml.etree.ElementTree as ET
 
-def test(workdir = None, relevant = False, single = False, suite = None):
-    compile(workdir, 'compile.tests', 'compile-tests')
+class_method = re.compile('([^:]+::[^:]+)')
+
+def test(workdir = None, testcase = None, relevant = False, suite = None, monitor = False): 
     workdir = Path(workdir) if workdir != None else Path.cwd()
+    compile(workdir, 'compile.tests', 'compile-tests')
     checkout = parseCheckout(workdir)
+    args = ['ant', 
+            '-Dbasedir=' + str(workdir), 
+            '-Dprojectdir=' + str(checkout.project_dir)]
+    if testcase != None and bool(class_method.match(testcase)):
+        args.extend(['-Dtest.entry.class=' + testcase.split('::')[0], 
+                     '-Dtest.entry.method=' + testcase.split('::')[1]])
+    elif relevant:
+        args.extend(['-Dtest.relevant=' + str(checkout.project_dir) + '/relevant_tests/' + str(checkout.bug.id)])
+    if monitor:
+        args.extend(['-Dtest.monitor=True'])
     print(fill('Running ant (test)'), end ='')
-    args = ['ant', '-Dbasedir=' + str(workdir), '-Dprojectdir=' + str(checkout.project_dir), '-buildfile', checkout.project.build_file, 'test']
+    args.extend(['-buildfile', checkout.project.build_file, 'test'])
     result = run(args, stdout=PIPE, stderr=PIPE, universal_newlines=True)
-    if len(result.stderr) != 0:
-        print(result.stdout)
-        failing_tests = result.stderr
-        #print(failing_tests)
-        failing_tests = failing_tests.replace('[junit]','')
-        failing_tests = failing_tests.replace(' Test ','')
-        failing_tests = failing_tests.replace('FAILED','')
-        failing_tests = failing_tests.replace(',','')
-        failing_tests = failing_tests.replace(' ','').split('\n')
-        tree = ET.parse(str(workdir) + '/target/test-reports/' + 'TEST-' + failing_tests[1] + '.xml')
-        root = tree.getroot()
-        for test in root.findall('testcase'):
-            error = test.find('error').text
-            if error != None:
-                print(test.get('classname') + '::' + test.get('name'))
+    print('OK')
+    return result
+
+def testFails(workdir, testcase, version):
+    workdir = Path(workdir)
+    if workdir.is_dir():
+        checkoutVersion(workdir, version)
+        compile(workdir)
+        result = test(workdir, testcase)
+        return True if len(result.stderr) > 0 else False
     else:
-        print(result.stdout)
-    
+        raise Exception('Couldn\'t find directory!')
