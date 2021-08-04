@@ -1,7 +1,7 @@
 import linecache
 import json
 from pathlib import Path
-from d4jclone.config import PROJECTDIR
+from d4jclone.config import ENV
 
 
 class Bug():
@@ -15,13 +15,13 @@ class Bug():
         self.url = url
 
 def parseBug(project, bug_id):
-    path = Path(PROJECTDIR) / project / 'bugs.csv'
+    path = Path(ENV['PROJECTDIR']) / project / 'bugs.csv'
     bug = linecache.getline(str(path), int(bug_id)+1).split(',')
     return Bug(project, bug_id, bug[1], bug[2], bug[3], bug[4], bug[5][:-1])
 
 def getModifiedSources(bug):
     srcs = []
-    path = Path(PROJECTDIR) / bug.project / 'modified_sources.json'
+    path = Path(ENV['PROJECTDIR']) / bug.project / 'modified_sources.json'
     with open(path) as json_file:
         modified = json.load(json_file)
         srcs = modified[bug.external_id]

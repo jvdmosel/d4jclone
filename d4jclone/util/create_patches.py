@@ -3,14 +3,14 @@ import os
 import subprocess
 from pathlib import Path
 
-from d4jclone.config import BASEDIR, PROJECTDIR
+from d4jclone.config import ENV
 from d4jclone.core.checkout import checkout
 from d4jclone.parser.bugParser import getModifiedSources, parseBug
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
 
 def determineLayout(project_id, bug_id):
-    with open(PROJECTDIR + '/' + project_id + '/dir-layout.csv', 'r') as layout_file:
+    with open(ENV['PROJECTDIR'] + '/' + project_id + '/dir-layout.csv', 'r') as layout_file:
         csv_reader = csv.reader(layout_file)
         # filters csv file for row of unique bug id
         layout = next(filter(lambda x: str(bug_id) in x, csv_reader))
@@ -21,10 +21,10 @@ def createPatches(project_id):
         project = parseProject(project_id)
         for i in range(1, project.number_of_bugs+1):
             bug = parseBug(project_id, i)
-            checkout(project_id, i, 'f', BASEDIR + '/test')
-            checkoutdir =  BASEDIR + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
-            outsrc = PROJECTDIR + '/' + project_id + '/patches/' + str(i) + '.src.patch'
-            outtest = PROJECTDIR + '/' + project_id + '/patches/' + str(i) + '.test.patch'
+            checkout(project_id, i, 'f', ENV['BASEDIR'] + '/test')
+            checkoutdir =  ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
+            outsrc = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.src.patch'
+            outtest = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.test.patch'
             cwd = Path.cwd()
             os.chdir(checkoutdir)
             modified = getModifiedSources(bug)

@@ -9,10 +9,14 @@ import d4jclone.core.info as info
 import d4jclone.core.checkout as checkout
 import d4jclone.core.compile as compile
 import d4jclone.core.test as test
+import d4jclone.core.env as env
+import d4jclone.core as core
 import d4jclone.test as createTest
-
-def fill(s):
-    return s + '.' * (75-len(s)) + ' ' if len(s) < 75 else s
+import d4jclone.util.create_patches as patches
+import d4jclone.util.create_triggering_tests as triggeringTests
+import d4jclone.util.create_relevant_tests as relevantTests
+import d4jclone.util.verified_lines as verified_lines
+from d4jclone.util.create_layout import createLayout
 
 class D4jclone(object):
     
@@ -64,12 +68,13 @@ class D4jclone(object):
         parser.add_argument('-t', help='Only run this single test method. By default all tests are executed. Format: <test_class>::<test_method>.', required=False)
         parser.add_argument('-s', help='The archive file name of an external test suite. The default test suite is the developer-written test suite of the checked-out project version', required=False)
         args = parser.parse_args(sys.argv[2:])
-        test.test(args.w, args.r, args.t, args.s)
+        test.test(args.w, args.t, args.r, args.s)
+    
+    def env(self):
+        env.env()
 
 def main():
     D4jclone()
-    #createTest.test('Bcel', 1, 1, True, False)
-    #metadata is specific to system, cannot upload as that, generate path on the fly (do not save)?
     
 if __name__ == '__main__':
     main()

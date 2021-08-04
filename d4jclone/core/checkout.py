@@ -4,7 +4,7 @@ from pathlib import Path
 from shutil import copyfile, copytree
 from subprocess import DEVNULL
 
-from d4jclone.config import PROJECTDIR, REPODIR
+from d4jclone.config import ENV
 from d4jclone.parser.bugParser import parseBug
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.parser.projectParser import parseProject
@@ -27,14 +27,14 @@ def checkout(project_id, bug_id, version, workdir = None):
                 raise Exception('Wrong version_id: ' + version)
             checkout = checkoutRevision(project, bug_id, bug.rev_fixed, tag, workdir)
             initLocalRepo(checkout)
-            fixBuild(Path(PROJECTDIR) / project.id, checkout, bug, bug.rev_fixed)
-            print(fill('Initialize fixed program version'), end ='')
+            fixBuild(Path(ENV['PROJECTDIR']) / project.id, checkout, bug, bug.rev_fixed)
+            print(fill('Initialize fixed program version', 75), end ='')
             tagRevision(checkout, project_id, bug_id, 'FIXED')
             applyPatch(checkout, bug)
-            print(fill('Initialize buggy program version'), end ='')
+            print(fill('Initialize buggy program version', 75), end ='')
             tagRevision(checkout, project_id, bug_id, 'BUGGY')
             tag_name = 'D4JCLONE_' + project.id + '_' + str(bug.id) + '_' + tag
-            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version), end ='')
+            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version, 75), end ='')
             repo = Repo(checkout)
             repo.git.checkout(tag_name)
             print('OK')
@@ -45,13 +45,13 @@ def checkout(project_id, bug_id, version, workdir = None):
 
 def checkoutRevision(project, bug_id, rev, tag, workdir = None): 
     checkout = workdir + '/' + project.id.lower() + '_' + str(bug_id)
-    project_repo = Path(REPODIR) / (project.program + '.git')
+    project_repo = Path(ENV['REPODIR']) / (project.program + '.git')
     checkout = Path(checkout + '_' + tag.lower())
     if checkout.is_dir():
         subprocess.call(['rm', '-f', '-r', checkout])
     repo = Repo.init(project_repo, bare=True).clone(checkout)
     short_sha = repo.git.rev_parse(rev, short=8)
-    print(fill('Checking out ' +  short_sha + ' to ' + workdir), end ='')
+    print(fill('Checking out ' +  short_sha + ' to ' + workdir, 75), end ='')
     repo.git.checkout(rev)
     print('OK')
     return checkout
@@ -67,7 +67,7 @@ def checkoutVersion(workdir, version):
     return bool(result)
     
 def initLocalRepo(workdir):
-    print(fill('Init local repository'), end ='')
+    print(fill('Init local repository', 75), end ='')
     workdir = Path(workdir)
     if workdir.is_dir():
         subprocess.call(['git', '-C', workdir, 'init'], stdout=DEVNULL, stderr=DEVNULL)
@@ -95,9 +95,9 @@ def tagRevision(workdir, pid, bid, version):
         raise Exception('Couldn\'t tag ' + tag + ' revision!')
         
 def applyPatch(workdir, bug):
-    print(fill('Apply patch'), end ='')
+    print(fill('Apply patch', 75), end ='')
     workdir = Path(workdir)
-    patch = PROJECTDIR + '/' + bug.project + '/patches/' + str(bug.id) + '.src.patch'
+    patch = ENV['PROJECTDIR'] + '/' + bug.project + '/patches/' + str(bug.id) + '.src.patch'
     if workdir.is_dir():
         subprocess.call(['git', '-C', workdir, 'apply', patch], stdout=DEVNULL, stderr=DEVNULL)
         print('OK')
@@ -105,7 +105,7 @@ def applyPatch(workdir, bug):
         print('FAIL')
 
 def fixBuild(project_dir, basedir, bug, rev):
-    print(fill('Copy generated Ant build file'), end ='')
+    print(fill('Copy generated Ant build file', 75), end ='')
     if (project_dir / 'project_root.json').is_file():
         with open(project_dir / 'project_root.json') as json_file:
             project_root = json.load(json_file)

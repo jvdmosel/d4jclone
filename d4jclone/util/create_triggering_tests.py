@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from d4jclone.config import PROJECTDIR
+from d4jclone.config import ENV
 from d4jclone.core.checkout import checkout, checkoutVersion
 from d4jclone.core.compile import compile
 from d4jclone.core.test import test as _test
@@ -45,7 +45,7 @@ def createTriggeringTests(project_id, workdir):
                 if compile_error:
                     continue
                 # create dir
-                path = Path(PROJECTDIR) / project_id / 'trigger_tests'
+                path = Path(ENV['PROJECTDIR']) / project_id / 'trigger_tests'
                 if not path.is_dir():
                     path.mkdir()
                 fp = path / str(bug.id)

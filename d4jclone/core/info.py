@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from d4jclone.config import BASEDIR, SCRIPTDIR, REPODIR
+from d4jclone.config import ENV
 from d4jclone.parser.bugParser import getModifiedSources, parseBug
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
@@ -10,15 +10,15 @@ sep = '\n'+ '-' * 80
 def project_info(project_id):
     project = parseProject(project_id)
     print('Summary of configuration for Project: ' + project.id + sep)
-    print('    Script dir: ' + SCRIPTDIR)
-    print('      Base dir: ' + BASEDIR)
-    print('      Repo dir: ' + REPODIR + sep)
+    print('    Script dir: ' + ENV['SCRIPTDIR'])
+    print('      Base dir: ' + ENV['BASEDIR'])
+    print('      Repo dir: ' + ENV['REPODIR'] + sep)
     print('    Project ID: ' + project.id)
     print('       Program: ' + project.program)
     print('    Build File: ' + project.build_file + sep)
     print('           Vcs: ' + 'Vcs::' + project.vcs)
-    print('    Repository: ' + str(Path(REPODIR) / (projects.get(project.id) + '.git')))
-    print('     Commit db: ' + str(Path(SCRIPTDIR) / 'projects' / project.id / 'bugs.csv'))
+    print('    Repository: ' + str(Path(ENV['REPODIR']) / (projects.get(project.id) + '.git')))
+    print('     Commit db: ' + str(Path(ENV['SCRIPTDIR']) / 'projects' / project.id / 'bugs.csv'))
     print('Number of bugs: ' + str(project.number_of_bugs))
 
 def bug_info(project_id, bug_id):

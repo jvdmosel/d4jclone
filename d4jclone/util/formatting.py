@@ -1,3 +1,3 @@
 
-def fill(s):
-    return s + '.' * (75-len(s)) + ' ' if len(s) < 75 else s
+def fill(s, total_length, postfix = ' '):
+    return s + '.' * (total_length-len(s)) + postfix if len(s) < total_length else s
