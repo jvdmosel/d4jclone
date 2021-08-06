@@ -23,7 +23,7 @@ def test(workdir = None, testcase = None, relevant = False, suite = None, monito
         args.extend(['-Dtest.relevant=' + str(checkout.project_dir) + '/relevant_tests/' + str(checkout.bug.id)])
     if monitor:
         args.extend(['-Dtest.monitor=True'])
-    print(fill('Running ant (test)', 75), end ='')
+    print(fill('Running ant (test)', '.', 75), end ='')
     args.extend(['-buildfile', checkout.project.build_file, 'test'])
     result = run(args, stdout=PIPE, stderr=PIPE, universal_newlines=True)
     print('OK')

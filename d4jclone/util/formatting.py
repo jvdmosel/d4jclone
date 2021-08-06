@@ -1,3 +1,6 @@
 
-def fill(s, total_length, postfix = ' '):
-    return s + '.' * (total_length-len(s)) + postfix if len(s) < total_length else s
+def fill(seq, char, total_length, postfix = ' '):
+    if len(seq) < total_length:
+        return seq + char * (total_length-len(seq)) + postfix
+    else:
+        return seq

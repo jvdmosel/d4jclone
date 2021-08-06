@@ -28,13 +28,13 @@ def checkout(project_id, bug_id, version, workdir = None):
             checkout = checkoutRevision(project, bug_id, bug.rev_fixed, tag, workdir)
             initLocalRepo(checkout)
             fixBuild(Path(ENV['PROJECTDIR']) / project.id, checkout, bug, bug.rev_fixed)
-            print(fill('Initialize fixed program version', 75), end ='')
+            print(fill('Initialize fixed program version', '.', 75), end ='')
             tagRevision(checkout, project_id, bug_id, 'FIXED')
             applyPatch(checkout, bug)
-            print(fill('Initialize buggy program version', 75), end ='')
+            print(fill('Initialize buggy program version', '.', 75), end ='')
             tagRevision(checkout, project_id, bug_id, 'BUGGY')
             tag_name = 'D4JCLONE_' + project.id + '_' + str(bug.id) + '_' + tag
-            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version, 75), end ='')
+            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version, '.', 75), end ='')
             repo = Repo(checkout)
             repo.git.checkout(tag_name)
             print('OK')
@@ -51,7 +51,7 @@ def checkoutRevision(project, bug_id, rev, tag, workdir = None):
         subprocess.call(['rm', '-f', '-r', checkout])
     repo = Repo.init(project_repo, bare=True).clone(checkout)
     short_sha = repo.git.rev_parse(rev, short=8)
-    print(fill('Checking out ' +  short_sha + ' to ' + workdir, 75), end ='')
+    print(fill('Checking out ' +  short_sha + ' to ' + workdir, '.', 75), end ='')
     repo.git.checkout(rev)
     print('OK')
     return checkout
@@ -95,7 +95,7 @@ def tagRevision(workdir, pid, bid, version):
         raise Exception('Couldn\'t tag ' + tag + ' revision!')
         
 def applyPatch(workdir, bug):
-    print(fill('Apply patch', 75), end ='')
+    print(fill('Apply patch', '.', 75), end ='')
     workdir = Path(workdir)
     patch = ENV['PROJECTDIR'] + '/' + bug.project + '/patches/' + str(bug.id) + '.src.patch'
     if workdir.is_dir():
@@ -105,7 +105,7 @@ def applyPatch(workdir, bug):
         print('FAIL')
 
 def fixBuild(project_dir, basedir, bug, rev):
-    print(fill('Copy generated Ant build file', 75), end ='')
+    print(fill('Copy generated Ant build file', '.', 75), end ='')
     if (project_dir / 'project_root.json').is_file():
         with open(project_dir / 'project_root.json') as json_file:
             project_root = json.load(json_file)

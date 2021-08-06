@@ -16,18 +16,18 @@ def env():
           + (' ' * int((80 - len(header)) / 2)))
     print(sep)
     # General enviroment
-    print(fill('PWD', 30, '') + env['PWD'])
-    print(fill('SHELL', 30, '') + env['SHELL'])
-    print(fill('TZ', 30, '') + ENV['TZ'])
+    print(fill('PWD', '.', 30, '') + env['PWD'])
+    print(fill('SHELL', '.', 30, '') + env['SHELL'])
+    print(fill('TZ', '.', 30, '') + ENV['TZ'])
     # Java enviroment
-    print(fill('JAVA_HOME', 30, '') + run_cmd('echo $JAVA_HOME'))
-    print(fill('Java Exec', 30, '') + run_cmd('which java'))
-    print(fill('Java Exec Resolved', 30, '') + run_cmd('realpath $(which java)'))
+    print(fill('JAVA_HOME', '.', 30, '') + run_cmd('echo $JAVA_HOME'))
+    print(fill('Java Exec', '.', 30, '') + run_cmd('which java'))
+    print(fill('Java Exec Resolved', '.', 30, '') + run_cmd('realpath $(which java)'))
     print('Java Version:' + run_multiline_cmd('java -version 2>&1'))
     # VCS enviroment
-    print(fill('Git version', 30, '') + run_cmd('git --version'))
-    print(fill('SVN version', 30, '') + run_cmd('svn --version --quiet'))
-    print(fill('Perl version', 30, '') + str(re.search(r'v\d+\.\d+\.\d+', run_cmd('perl -v')).group()))
+    print(fill('Git version', '.', 30, '') + run_cmd('git --version'))
+    print(fill('SVN version', '.', 30, '') + run_cmd('svn --version --quiet'))
+    print(fill('Perl version', '.', 30, '') + str(re.search(r'v\d+\.\d+\.\d+', run_cmd('perl -v')).group()))
     print(sep)
 
 def run_multiline_cmd(args):
