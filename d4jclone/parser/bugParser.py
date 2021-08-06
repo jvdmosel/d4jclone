@@ -24,6 +24,10 @@ def getModifiedSources(bug):
     srcs.sort()
     return srcs
 
+def getLoadedClasses(bug):
+    srcs = parseLines(bug, 'loaded_classes', '.src')
+    return srcs
+
 def getRelevantTests(bug):
     tests = parseLines(bug, 'relevant_tests')
     return tests

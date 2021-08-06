@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from d4jclone.parser.bugParser import getModifiedSources, getRelevantTests
+from d4jclone.parser.bugParser import getModifiedSources, getRelevantTests, getLoadedClasses, getLayout
+from d4jclone.util.create_loaded_classes import getClasses
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.parser.triggerTestParser import parseTriggerTests
 from d4jclone.util.formatting import fill
@@ -27,7 +28,8 @@ def export(property, out_file = None, workdir = None):
             for src in getModifiedSources(checkout.bug):
                 print(src)
         elif property == 'classes.relevant':
-            pass
+            for src in getLoadedClasses(checkout.bug):
+                print(src)
         elif property == 'cp.compile':
             pass
         elif property == 'cp.test':
@@ -41,7 +43,8 @@ def export(property, out_file = None, workdir = None):
         elif property == 'dir.src.tests':
             pass
         elif property == 'tests.all':
-            pass
+            for test in sorted(getClasses(workdir, getLayout(checkout.bug)[1])):
+                print(test)
         elif property == 'tests.relevant':
             for test in getRelevantTests(checkout.bug):
                 print(test)
