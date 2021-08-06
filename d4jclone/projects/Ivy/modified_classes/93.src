@@ -1,0 +1,3 @@
+org.apache.ivy.plugins.latest.LatestRevisionStrategyTest
+org.apache.ivy.plugins.latest.AbstractLatestStrategy
+org.apache.ivy.plugins.latest.ComparatorLatestStrategy

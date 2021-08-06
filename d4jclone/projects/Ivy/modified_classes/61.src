@@ -1,0 +1,3 @@
+fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater
+fr.jayasoft.ivy.ant.IvyPublishTest
+fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser

@@ -1,0 +1,3 @@
+opennlp.tools.cmdline.AbstractCmdLineTool
+opennlp.tools.cmdline.CLI
+opennlp.tools.cmdline.tokenizer.SimpleTokenizerTool

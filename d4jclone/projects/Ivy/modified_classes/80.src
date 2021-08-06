@@ -1,0 +1,8 @@
+org.apache.ivy.plugins.version.ChainVersionMatcher
+org.apache.ivy.plugins.version.SubVersionMatcher
+org.apache.ivy.plugins.version.AbstractVersionMatcher
+org.apache.ivy.plugins.latest.LatestRevisionStrategy
+org.apache.ivy.plugins.version.LatestVersionMatcher
+org.apache.ivy.plugins.conflict.LatestConflictManagerTest
+org.apache.ivy.plugins.version.VersionRangeMatcher
+org.apache.ivy.plugins.version.PatternVersionMatcher

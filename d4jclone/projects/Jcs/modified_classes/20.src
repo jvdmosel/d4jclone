@@ -1,0 +1,2 @@
+org.apache.commons.jcs.auxiliary.remote.server.RemoteCacheServer
+org.apache.commons.jcs.auxiliary.remote.server.RemoteCacheServerUnitTest

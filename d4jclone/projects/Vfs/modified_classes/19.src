@@ -1,0 +1,2 @@
+org.apache.commons.vfs.provider.DelegateFileObject
+org.apache.commons.vfs.util.WeakRefFileListener

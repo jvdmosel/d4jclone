@@ -1,0 +1,2 @@
+org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
+org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamTest

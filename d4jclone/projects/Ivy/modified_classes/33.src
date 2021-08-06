@@ -1,0 +1,3 @@
+fr.jayasoft.ivy.DefaultModuleDescriptor
+fr.jayasoft.ivy.xml.XmlModuleDescriptorParser
+fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest

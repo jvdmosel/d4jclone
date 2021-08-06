@@ -1,0 +1,8 @@
+org.apache.ivy.ant.IvyTask
+org.apache.ivy.plugins.latest.LatestRevisionStrategy
+org.apache.ivy.util.ChecksumHelper
+org.apache.ivy.plugins.repository.ssh.SshCache
+org.apache.ivy.util.url.ApacheURLLister
+org.apache.ivy.util.StringUtils
+org.apache.ivy.ant.AntBuildTriggerTest
+org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository

@@ -1,0 +1,3 @@
+org.apache.commons.validator.ValidatorResources
+org.apache.commons.validator.CustomValidatorResourcesTest
+org.apache.commons.validator.custom.CustomValidatorResources

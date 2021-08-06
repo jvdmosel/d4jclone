@@ -1,0 +1,2 @@
+org.apache.commons.scxml.invoke.SimpleSCXMLInvoker
+org.apache.commons.scxml.invoke.InvokeTest

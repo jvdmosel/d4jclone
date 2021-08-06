@@ -1,0 +1,3 @@
+org.apache.commons.configuration.HierarchicalConfiguration
+org.apache.commons.configuration.TestHierarchicalConfiguration
+org.apache.commons.configuration.TestXMLConfiguration

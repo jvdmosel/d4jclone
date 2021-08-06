@@ -1,0 +1,2 @@
+org.apache.commons.vfs.provider.DefaultFileContent
+org.apache.commons.vfs.provider.FileContentThreadData

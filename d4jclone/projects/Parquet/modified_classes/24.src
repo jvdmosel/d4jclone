@@ -1,0 +1,6 @@
+parquet.scrooge.ScroogeStructConverter
+parquet.thrift.BufferedProtocolReadToWrite
+parquet.thrift.ThriftSchemaConverter
+parquet.thrift.struct.ThriftType
+parquet.thrift.TestProtocolReadToWrite
+parquet.thrift.struct.TestThriftType

@@ -1,0 +1,2 @@
+org.apache.commons.configuration.reloading.FileChangedReloadingStrategy
+org.apache.commons.configuration.reloading.TestFileChangedReloadingStrategy

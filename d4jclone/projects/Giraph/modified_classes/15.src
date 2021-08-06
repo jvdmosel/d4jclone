@@ -1,0 +1,2 @@
+org.apache.giraph.examples.SimpleTriangleClosingVertex
+org.apache.giraph.examples.SimpleTriangleClosingVertexTest

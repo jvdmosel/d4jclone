@@ -1,0 +1,3 @@
+org.apache.giraph.graph.BspServiceWorker
+org.apache.giraph.graph.GraphMapper
+org.apache.giraph.graph.partition.RangeWorkerPartitioner

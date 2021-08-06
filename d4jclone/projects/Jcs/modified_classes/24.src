@@ -1,0 +1,3 @@
+org.apache.commons.jcs.auxiliary.disk.jdbc.JDBCDiskCache
+org.apache.commons.jcs.auxiliary.disk.jdbc.JDBCDiskCachePoolAccessManager
+org.apache.commons.jcs.auxiliary.disk.jdbc.JDBCDiskCachePoolAccessManagerUnitTest

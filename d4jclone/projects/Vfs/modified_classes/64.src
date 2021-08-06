@@ -1,0 +1,2 @@
+org.apache.commons.vfs2.util.MonitorInputStream
+org.apache.commons.vfs2.provider.DefaultFileContentTest

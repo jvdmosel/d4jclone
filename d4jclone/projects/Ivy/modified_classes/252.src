@@ -1,0 +1,2 @@
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriter
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriterTest

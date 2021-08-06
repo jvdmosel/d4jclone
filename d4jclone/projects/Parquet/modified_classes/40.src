@@ -1,0 +1,4 @@
+org.apache.parquet.thrift.ThriftSchemaConvertVisitor
+org.apache.parquet.thrift.ThriftSchemaConverter
+org.apache.parquet.thrift.struct.ThriftType
+org.apache.parquet.hadoop.thrift.TestBinary

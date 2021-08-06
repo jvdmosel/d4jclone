@@ -1,0 +1,6 @@
+org.apache.commons.configuration.AbstractHierarchicalFileConfiguration
+org.apache.commons.configuration.HierarchicalConfiguration
+org.apache.commons.configuration.SubnodeConfiguration
+org.apache.commons.configuration.TestXMLConfiguration
+org.apache.commons.configuration.event.AbstractTestConfigurationEvents
+org.apache.commons.configuration.event.TestHierarchicalConfigurationEvents

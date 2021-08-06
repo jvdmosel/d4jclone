@@ -1,0 +1,3 @@
+org.apache.xml.security.stax.impl.securityToken.SecurityTokenFactoryImpl
+org.apache.xml.security.test.stax.encryption.DecryptionTest
+org.apache.xml.security.test.stax.encryption.EncryptionCreationTest

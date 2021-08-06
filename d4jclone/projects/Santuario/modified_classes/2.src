@@ -1,0 +1,3 @@
+org.apache.xml.security.c14n.implementations.Canonicalizer11
+org.apache.xml.security.test.ModuleTest
+org.apache.xml.security.test.c14n.implementations.Santuario191Test

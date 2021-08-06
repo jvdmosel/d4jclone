@@ -1,0 +1,2 @@
+org.apache.commons.bcel6.Constants
+org.apache.commons.bcel6.verifier.statics.Pass3aVerifier

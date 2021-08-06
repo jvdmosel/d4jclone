@@ -1,0 +1,2 @@
+org.apache.parquet.scrooge.ScroogeStructConverter
+org.apache.parquet.scrooge.ScroogeStructConverterTest

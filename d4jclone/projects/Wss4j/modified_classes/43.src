@@ -1,0 +1,7 @@
+org.apache.ws.security.saml.ext.bean.SubjectBean
+org.apache.ws.security.saml.ext.builder.SAML1ComponentBuilder
+org.apache.ws.security.saml.ext.builder.SAML2ComponentBuilder
+org.apache.ws.security.common.AbstractSAMLCallbackHandler
+org.apache.ws.security.common.SAML1CallbackHandler
+org.apache.ws.security.common.SAML2CallbackHandler
+org.apache.ws.security.saml.SamlTokenTest

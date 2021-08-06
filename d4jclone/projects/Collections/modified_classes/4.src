@@ -1,0 +1,4 @@
+org.apache.commons.collections.TreeBag
+org.apache.commons.collections.bag.TreeBag
+org.apache.commons.collections.TestTreeBag
+org.apache.commons.collections.bag.TestTreeBag

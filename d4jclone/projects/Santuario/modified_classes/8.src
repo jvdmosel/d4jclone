@@ -1,0 +1,15 @@
+org.apache.xml.security.stax.ext.stax.XMLSecEventFactory
+org.apache.xml.security.stax.impl.stax.XMLSecAttributeImpl
+org.apache.xml.security.stax.impl.stax.XMLSecCharactersImpl
+org.apache.xml.security.stax.impl.stax.XMLSecCommentImpl
+org.apache.xml.security.stax.impl.stax.XMLSecDTDImpl
+org.apache.xml.security.stax.impl.stax.XMLSecEndDocumentImpl
+org.apache.xml.security.stax.impl.stax.XMLSecEndElementImpl
+org.apache.xml.security.stax.impl.stax.XMLSecEntityDeclarationImpl
+org.apache.xml.security.stax.impl.stax.XMLSecEntityReferenceImpl
+org.apache.xml.security.stax.impl.stax.XMLSecEventBaseImpl
+org.apache.xml.security.stax.impl.stax.XMLSecNamespaceImpl
+org.apache.xml.security.stax.impl.stax.XMLSecProcessingInstructionImpl
+org.apache.xml.security.stax.impl.stax.XMLSecStartDocumentImpl
+org.apache.xml.security.stax.impl.stax.XMLSecStartElementImpl
+org.apache.xml.security.test.stax.XMLSecEventTest

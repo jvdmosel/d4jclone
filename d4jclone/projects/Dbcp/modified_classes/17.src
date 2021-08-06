@@ -1,0 +1,15 @@
+org.apache.commons.dbcp2.DelegatingConnection
+org.apache.commons.dbcp2.DelegatingDatabaseMetaData
+org.apache.commons.dbcp2.DelegatingResultSet
+org.apache.commons.dbcp2.DelegatingStatement
+org.apache.commons.dbcp2.datasources.InstanceKeyObjectFactory
+org.apache.commons.dbcp2.managed.TransactionRegistry
+org.apache.commons.dbcp2.TestDelegatingCallableStatement
+org.apache.commons.dbcp2.TestDelegatingConnection
+org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData
+org.apache.commons.dbcp2.TestDelegatingPreparedStatement
+org.apache.commons.dbcp2.TestDelegatingStatement
+org.apache.commons.dbcp2.TestPoolingDataSource
+org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource
+org.apache.commons.dbcp2.managed.TestManagedDataSource
+org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx

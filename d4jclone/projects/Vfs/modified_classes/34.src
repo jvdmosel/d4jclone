@@ -1,0 +1,2 @@
+org.apache.commons.vfs2.provider.ftp.FtpFileSystem
+org.apache.commons.vfs2.provider.AbstractFileSystem

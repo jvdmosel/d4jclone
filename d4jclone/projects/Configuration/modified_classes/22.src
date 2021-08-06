@@ -1,0 +1,4 @@
+org.apache.commons.configuration.AbstractConfiguration
+org.apache.commons.configuration.ConfigurationUtils
+org.apache.commons.configuration.TestAbstractConfigurationBasicFeatures
+org.apache.commons.configuration.TestPropertiesConfiguration

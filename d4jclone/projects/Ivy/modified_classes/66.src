@@ -1,0 +1,3 @@
+fr.jayasoft.ivy.resolver.AbstractResourceResolver
+fr.jayasoft.ivy.DefaultArtifact
+fr.jayasoft.ivy.resolver.FileSystemResolverTest

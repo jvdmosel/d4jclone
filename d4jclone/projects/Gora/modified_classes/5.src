@@ -1,0 +1,2 @@
+org.apache.gora.solr.store.SolrStore
+org.apache.gora.solr.store.TestSolrStore

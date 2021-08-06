@@ -1,0 +1,9 @@
+org.apache.bcel.verifier.statics.Pass3aVerifier
+org.apache.bcel.verifier.AbstractVerifierTestCase
+org.apache.bcel.verifier.VerifierInvokeTestCase
+org.apache.bcel.verifier.tests.TestLegalInvokeInterface01
+org.apache.bcel.verifier.tests.TestLegalInvokeSpecial01
+org.apache.bcel.verifier.tests.TestLegalInvokeSpecial02
+org.apache.bcel.verifier.tests.TestLegalInvokeStatic01
+org.apache.bcel.verifier.tests.TestLegalInvokeVirtual01
+org.apache.bcel.verifier.tests.TestLegalInvokeVirtual02

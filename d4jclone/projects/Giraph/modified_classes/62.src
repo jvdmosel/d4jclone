@@ -1,0 +1,6 @@
+org.apache.giraph.io.internal.WrappedVertexInputFormat
+org.apache.giraph.io.internal.WrappedVertexReader
+org.apache.giraph.io.formats.multi.MultiEdgeInputFormat
+org.apache.giraph.io.formats.multi.MultiVertexInputFormat
+org.apache.giraph.io.internal.WrappedEdgeInputFormat
+org.apache.giraph.io.internal.WrappedEdgeReader

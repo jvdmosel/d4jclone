@@ -1,0 +1,2 @@
+org.apache.parquet.avro.AvroSchemaConverter
+org.apache.parquet.avro.TestReadWrite

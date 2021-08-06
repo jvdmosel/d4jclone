@@ -1,0 +1,4 @@
+org.apache.commons.net.imap.IMAPSClient
+org.apache.commons.net.nntp.NNTP
+org.apache.commons.net.pop3.POP3
+org.apache.commons.net.smtp.SMTP

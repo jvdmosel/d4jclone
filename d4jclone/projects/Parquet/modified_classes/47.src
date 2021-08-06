@@ -1,0 +1,2 @@
+org.apache.parquet.pig.PigSchemaConverter
+org.apache.parquet.pig.TestPigSchemaConverter

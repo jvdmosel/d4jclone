@@ -1,0 +1,2 @@
+org.apache.ws.security.processor.SignatureProcessor
+org.apache.ws.security.util.WSSecurityUtil

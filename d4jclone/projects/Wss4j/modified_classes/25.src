@@ -1,0 +1,2 @@
+org.apache.ws.security.handler.WSHandler
+wssec.TestWSSecurityGetPassword

@@ -1,0 +1,4 @@
+parquet.column.ParquetProperties
+parquet.example.data.simple.SimpleGroup
+parquet.io.ValidatingRecordConsumer
+parquet.io.TestColumnIO

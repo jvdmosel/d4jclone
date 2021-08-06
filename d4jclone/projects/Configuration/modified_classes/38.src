@@ -1,0 +1,3 @@
+org.apache.commons.configuration.AbstractFileConfiguration
+org.apache.commons.configuration.CombinedConfiguration
+org.apache.commons.configuration.TestCombinedConfiguration

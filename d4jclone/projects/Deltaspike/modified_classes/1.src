@@ -1,0 +1,2 @@
+org.apache.deltaspike.core.impl.scope.window.WindowBeanHolder
+org.apache.deltaspike.core.impl.scope.window.WindowContextImpl

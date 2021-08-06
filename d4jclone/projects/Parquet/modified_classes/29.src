@@ -1,0 +1,5 @@
+org.apache.parquet.format.converter.ParquetMetadataConverter
+org.apache.parquet.hadoop.ColumnChunkPageWriteStore
+org.apache.parquet.hadoop.ParquetFileReader
+org.apache.parquet.hadoop.ParquetFileWriter
+org.apache.parquet.format.converter.TestParquetMetadataConverter

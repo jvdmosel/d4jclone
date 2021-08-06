@@ -1,0 +1,4 @@
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl
+org.apache.xml.security.c14n.implementations.CanonicalizerBase
+org.apache.xml.security.c14n.implementations.CanonicalizerPhysical

@@ -1,0 +1,4 @@
+fr.jayasoft.ivy.resolver.RepositoryResolver
+fr.jayasoft.ivy.resolver.VfsResolver
+fr.jayasoft.ivy.repository.vfs.VfsResource
+fr.jayasoft.ivy.resolver.AbstractResolver

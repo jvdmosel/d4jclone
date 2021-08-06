@@ -1,0 +1,4 @@
+org.apache.commons.codec.binary.Base64OutputStreamTest
+org.apache.commons.codec.binary.Base64TestData
+org.apache.commons.codec.binary.Base64
+org.apache.commons.codec.binary.Base64InputStreamTest

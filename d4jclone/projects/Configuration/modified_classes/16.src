@@ -1,0 +1,14 @@
+org.apache.commons.configuration.MapConfiguration
+org.apache.commons.configuration.web.AppletConfiguration
+org.apache.commons.configuration.web.BaseWebConfiguration
+org.apache.commons.configuration.web.ServletConfiguration
+org.apache.commons.configuration.web.ServletContextConfiguration
+org.apache.commons.configuration.web.ServletFilterConfiguration
+org.apache.commons.configuration.web.ServletRequestConfiguration
+org.apache.commons.configuration.TestAbstractConfiguration
+org.apache.commons.configuration.TestMapConfiguration
+org.apache.commons.configuration.web.TestAppletConfiguration
+org.apache.commons.configuration.web.TestServletConfiguration
+org.apache.commons.configuration.web.TestServletContextConfiguration
+org.apache.commons.configuration.web.TestServletFilterConfiguration
+org.apache.commons.configuration.web.TestServletRequestConfiguration

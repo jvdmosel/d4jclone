@@ -1,0 +1,5 @@
+fr.jayasoft.ivy.ant.IvyCacheTask
+fr.jayasoft.ivy.ant.IvyCachePath
+fr.jayasoft.ivy.ant.IvyCachePathTest
+fr.jayasoft.ivy.ant.IvyCacheFilesetTest
+fr.jayasoft.ivy.ant.IvyCacheFileset

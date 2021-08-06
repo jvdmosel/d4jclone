@@ -1,0 +1,7 @@
+org.apache.ws.security.message.EnvelopeIdResolver
+org.apache.ws.security.message.WSSecDKSign
+org.apache.ws.security.message.WSSecSignature
+org.apache.ws.security.message.WSSignEnvelope
+org.apache.ws.security.processor.SignatureProcessor
+org.apache.ws.security.saml.WSSecSignatureSAML
+org.apache.ws.security.saml.WSSignSAMLEnvelope

@@ -1,0 +1,3 @@
+org.apache.gora.cassandra.serializers.GoraSerializerTypeInferer
+org.apache.gora.cassandra.store.CassandraClient
+org.apache.gora.cassandra.store.CassandraStore

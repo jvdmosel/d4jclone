@@ -1,0 +1,2 @@
+org.apache.ivy.core.deliver.DeliverTest
+org.apache.ivy.core.module.id.ModuleRevisionId

@@ -1,0 +1,4 @@
+org.apache.commons.vfs2.provider.local.LocalFile
+org.apache.commons.vfs2.provider.local.LocalFileName
+org.apache.commons.vfs2.provider.local.test.LocalProviderTestCase
+org.apache.commons.vfs2.provider.local.test.UrlTests

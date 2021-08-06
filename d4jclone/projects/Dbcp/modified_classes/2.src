@@ -1,0 +1,5 @@
+org.apache.commons.dbcp.datasources.CPDSConnectionFactory
+org.apache.commons.dbcp.datasources.InstanceKeyDataSource
+org.apache.commons.dbcp.datasources.KeyedCPDSConnectionFactory
+org.apache.commons.dbcp.datasources.PerUserPoolDataSource
+org.apache.commons.dbcp.datasources.SharedPoolDataSource

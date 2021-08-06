@@ -1,0 +1,6 @@
+org.apache.bcel.generic.ReferenceType
+org.apache.bcel.generic.Type
+org.apache.bcel.verifier.structurals.Pass3bVerifier
+org.apache.bcel.verifier.VerifierReturnTestCase
+org.apache.bcel.verifier.tests.TestArray01
+org.apache.bcel.verifier.tests.TestReturn02

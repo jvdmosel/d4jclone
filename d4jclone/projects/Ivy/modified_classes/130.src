@@ -1,0 +1,2 @@
+org.apache.ivy.ant.IvyRetrieveTest
+org.apache.ivy.core.module.descriptor.MDArtifact

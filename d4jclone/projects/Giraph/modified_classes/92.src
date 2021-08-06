@@ -1,0 +1,2 @@
+org.apache.giraph.graph.GraphTaskManager
+org.apache.giraph.worker.WorkerProgressWriter

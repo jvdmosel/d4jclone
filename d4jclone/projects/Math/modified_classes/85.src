@@ -1,0 +1,13 @@
+org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer
+org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest
+org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest
+org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest
+org.apache.commons.math3.optim.BaseOptimizer
+org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizerAbstractTest
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest

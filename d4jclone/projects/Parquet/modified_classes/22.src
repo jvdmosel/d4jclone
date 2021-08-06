@@ -1,0 +1,4 @@
+org.apache.parquet.filter2.predicate.PrimitiveToBoxedClass
+org.apache.parquet.filter2.predicate.SchemaCompatibilityValidator
+org.apache.parquet.filter2.predicate.ValidTypeMap
+org.apache.parquet.filter2.predicate.TestValidTypeMap

@@ -1,0 +1,2 @@
+org.apache.commons.io.input.CharSequenceInputStream
+org.apache.commons.io.input.CharSequenceInputStreamTest

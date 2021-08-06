@@ -1,0 +1,2 @@
+org.apache.commons.dbcp.BasicDataSource
+org.apache.commons.dbcp.cpdsadapter.DriverAdapterCPDS

@@ -1,0 +1,5 @@
+org.apache.ws.security.components.crypto.BouncyCastle
+org.apache.ws.security.components.crypto.CryptoBase
+org.apache.ws.security.components.crypto.CryptoFactory
+org.apache.ws.security.components.crypto.Merlin
+wssec.TestWSSecurityWSS86

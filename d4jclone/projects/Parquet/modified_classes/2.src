@@ -1,0 +1,2 @@
+parquet.avro.TestSpecificReadWrite
+parquet.hadoop.InternalParquetRecordReader

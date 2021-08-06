@@ -1,0 +1,7 @@
+org.apache.commons.dbcp.BasicDataSource
+org.apache.commons.dbcp.PoolableConnectionFactory
+org.apache.commons.dbcp.managed.BasicManagedDataSource
+org.apache.commons.dbcp.managed.PoolableManagedConnection
+org.apache.commons.dbcp.managed.PoolableManagedConnectionFactory
+org.apache.commons.dbcp.managed.TransactionRegistry
+org.apache.commons.dbcp.managed.TestBasicManagedDataSource

@@ -1,0 +1,3 @@
+org.apache.ivy.core.cache.DefaultRepositoryCacheManager
+org.apache.ivy.plugins.resolver.AbstractResolver
+org.apache.ivy.core.cache.CacheMetadataOptions

@@ -1,0 +1,2 @@
+org.apache.xml.security.stax.impl.XMLSecurityStreamWriter
+org.apache.xml.security.test.stax.XMLSecurityStreamWriterTest

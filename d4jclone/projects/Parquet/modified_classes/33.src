@@ -1,0 +1,2 @@
+org.apache.parquet.hadoop.ParquetFileWriter
+org.apache.parquet.hadoop.TestParquetFileWriter

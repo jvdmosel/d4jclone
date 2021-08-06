@@ -1,0 +1,3 @@
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
+org.apache.ivy.plugins.parser.m2.PomReader

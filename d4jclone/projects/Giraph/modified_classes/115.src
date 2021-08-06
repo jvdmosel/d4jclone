@@ -1,0 +1,2 @@
+org.apache.giraph.utils.ByteArrayVertexIdMessages
+org.apache.giraph.comm.messages.TestIntFloatPrimitiveMessageStores

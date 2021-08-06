@@ -1,0 +1,2 @@
+org.apache.gora.memory.store.MemStore
+org.apache.gora.memory.store.MemStoreTest

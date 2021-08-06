@@ -1,0 +1,3 @@
+components.TestReference
+org.apache.ws.security.message.token.Reference
+components.PackageTests

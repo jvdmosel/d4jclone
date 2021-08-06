@@ -1,0 +1,2 @@
+org.apache.commons.digester3.xmlrules.IncludeRule
+org.apache.commons.digester3.xmlrules.IncludeTest

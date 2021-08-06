@@ -1,0 +1,2 @@
+org.apache.commons.scxml.invoke.AsyncTrigger
+org.apache.commons.scxml.invoke.SimpleSCXMLInvoker

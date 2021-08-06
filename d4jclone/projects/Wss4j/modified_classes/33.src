@@ -1,0 +1,7 @@
+org.apache.ws.security.message.EnvelopeIdResolver
+org.apache.ws.security.message.WSSecEncrypt
+org.apache.ws.security.message.WSSecSignatureBase
+org.apache.ws.security.message.token.DerivedKeyToken
+org.apache.ws.security.util.WSSecurityUtil
+org.apache.ws.security.message.EncryptionPartsTest
+org.apache.ws.security.message.SignaturePartsTest

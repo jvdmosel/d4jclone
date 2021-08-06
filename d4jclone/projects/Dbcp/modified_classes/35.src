@@ -1,0 +1,2 @@
+org.apache.commons.dbcp2.managed.ManagedConnection
+org.apache.commons.dbcp2.managed.TestManagedDataSourceInTx

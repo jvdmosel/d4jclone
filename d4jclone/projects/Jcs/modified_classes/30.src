@@ -1,0 +1,2 @@
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDisk
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheOptimizationUnitTest

@@ -1,0 +1,3 @@
+org.apache.commons.digester3.annotations.processor.DigesterAnnotationsProcessor
+org.apache.commons.digester3.ObjectCreateRule
+org.apache.commons.digester3.Digester162TestCase

@@ -1,0 +1,3 @@
+org.apache.giraph.graph.BspServiceMaster
+org.apache.giraph.graph.MasterThread
+org.apache.giraph.TestNotEnoughMapTasks

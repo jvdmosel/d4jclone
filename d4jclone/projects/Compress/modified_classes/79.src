@@ -1,0 +1,3 @@
+org.apache.commons.compress.archivers.tar.TarArchiveEntry
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream
+org.apache.commons.compress.archivers.TarTestCase

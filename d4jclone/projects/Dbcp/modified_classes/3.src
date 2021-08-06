@@ -1,0 +1,3 @@
+org.apache.commons.dbcp.PoolableConnectionFactory
+org.apache.commons.dbcp.datasources.CPDSConnectionFactory
+org.apache.commons.dbcp.datasources.KeyedCPDSConnectionFactory

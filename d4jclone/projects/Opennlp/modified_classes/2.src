@@ -1,0 +1,3 @@
+opennlp.tools.namefind.DefaultNameContextGenerator
+opennlp.tools.namefind.BigramNameFeatureGenerator
+opennlp.tools.namefind.NameFinderME

@@ -1,0 +1,2 @@
+org.apache.gora.mongodb.utils.BSONDecorator
+org.apache.gora.mongodb.utils.TestBSONDecorator

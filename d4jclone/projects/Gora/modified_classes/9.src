@@ -1,0 +1,2 @@
+org.apache.gora.cassandra.store.CassandraClient
+org.apache.gora.mapreduce.GoraRecordReader

@@ -1,0 +1,4 @@
+fr.jayasoft.ivy.ResolveTest
+fr.jayasoft.ivy.IvyNode
+fr.jayasoft.ivy.xml.XmlModuleDescriptorParser
+fr.jayasoft.ivy.DefaultDependencyArtifactDescriptor

@@ -1,0 +1,4 @@
+org.apache.parquet.tools.read.SimpleRecord
+org.apache.parquet.tools.read.TestJsonRecordFormatter
+org.apache.parquet.tools.command.CatCommand
+org.apache.parquet.tools.json.JsonRecordFormatter

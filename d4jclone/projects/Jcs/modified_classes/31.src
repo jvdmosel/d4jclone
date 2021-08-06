@@ -1,0 +1,2 @@
+org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCacheFactory
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheFactory

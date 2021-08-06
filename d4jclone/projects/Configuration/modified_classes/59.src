@@ -1,0 +1,4 @@
+org.apache.commons.configuration2.interpol.ConfigurationInterpolator
+org.apache.commons.configuration2.InterpolationTestHelper
+org.apache.commons.configuration2.TestAbstractConfigurationBasicFeatures
+org.apache.commons.configuration2.interpol.TestConfigurationInterpolator

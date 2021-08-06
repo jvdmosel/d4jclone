@@ -1,0 +1,8 @@
+org.apache.commons.vfs2.cache.AbstractFilesCache
+org.apache.commons.vfs2.cache.DefaultFilesCache
+org.apache.commons.vfs2.cache.LRUFilesCache
+org.apache.commons.vfs2.cache.NullFilesCache
+org.apache.commons.vfs2.cache.SoftRefFilesCache
+org.apache.commons.vfs2.cache.LRUFilesCacheTests
+org.apache.commons.vfs2.cache.NullFilesCacheTests
+org.apache.commons.vfs2.test.CacheTestSuite

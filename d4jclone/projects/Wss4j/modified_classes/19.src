@@ -1,0 +1,3 @@
+org.apache.ws.security.WSConstants
+org.apache.ws.security.message.token.SecurityTokenReference
+org.apache.ws.security.processor.SignatureProcessor

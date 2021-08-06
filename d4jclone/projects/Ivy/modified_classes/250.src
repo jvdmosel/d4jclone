@@ -1,0 +1,3 @@
+org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser

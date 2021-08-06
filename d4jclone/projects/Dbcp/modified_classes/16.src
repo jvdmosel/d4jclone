@@ -1,0 +1,3 @@
+org.apache.commons.dbcp.managed.DataSourceXAConnectionFactory
+org.apache.commons.dbcp.managed.TestDataSourceXAConnectionFactory
+org.apache.commons.dbcp.managed.TesterBasicXAConnection

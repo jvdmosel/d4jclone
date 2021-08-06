@@ -1,0 +1,2 @@
+org.apache.giraph.io.formats.SrcIdDstIdEdgeValueTextOutputFormat
+org.apache.giraph.io.formats.TextEdgeOutputFormat

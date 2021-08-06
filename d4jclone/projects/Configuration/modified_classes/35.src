@@ -1,0 +1,2 @@
+org.apache.commons.configuration.interpol.ConstantLookup
+org.apache.commons.configuration.interpol.TestConstantLookup

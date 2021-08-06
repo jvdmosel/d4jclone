@@ -1,0 +1,2 @@
+org.apache.giraph.partition.ByteArrayPartition
+org.apache.giraph.partition.TestPartitionStores

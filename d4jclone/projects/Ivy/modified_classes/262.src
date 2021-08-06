@@ -1,0 +1,3 @@
+org.apache.ivy.util.FileUtil
+org.apache.ivy.plugins.resolver.FileSystemResolver
+org.apache.ivy.util.Checks

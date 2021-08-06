@@ -1,0 +1,4 @@
+org.apache.ivy.ant.IvyPublish
+org.apache.ivy.ant.IvyPublishTest
+org.apache.ivy.core.publish.PublishEngine
+org.apache.ivy.core.publish.PublishOptions

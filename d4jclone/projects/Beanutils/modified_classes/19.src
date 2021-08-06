@@ -1,0 +1,3 @@
+org.apache.commons.beanutils.PropertyUtilsBean
+org.apache.commons.beanutils.PropertyUtilsTestCase
+org.apache.commons.beanutils.TestBean

@@ -1,0 +1,3 @@
+org.apache.commons.math.random.RandomGeneratorAbstractTest
+org.apache.commons.math.random.RandomDataTest
+org.apache.commons.math.random.RandomDataImpl

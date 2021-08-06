@@ -1,0 +1,4 @@
+org.apache.ws.security.handler.WSHandler
+org.apache.ws.security.handler.WSHandlerConstants
+wssec.TestWSSecurityNewST2
+wssec.TestWSSecurityUserProcessor

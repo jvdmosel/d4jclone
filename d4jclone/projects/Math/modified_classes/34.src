@@ -1,0 +1,5 @@
+org.apache.commons.math.linear.ArrayRealVector
+org.apache.commons.math.linear.ArrayRealVectorTest
+org.apache.commons.math.linear.AbstractRealVector
+org.apache.commons.math.linear.OpenMapRealVector
+org.apache.commons.math.linear.SparseRealVectorTest

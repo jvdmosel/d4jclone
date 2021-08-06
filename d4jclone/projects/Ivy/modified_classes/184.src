@@ -1,0 +1,2 @@
+org.apache.ivy.util.url.BasicURLHandler
+org.apache.ivy.util.url.HttpClientHandler

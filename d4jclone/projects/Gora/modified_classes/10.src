@@ -1,0 +1,2 @@
+org.apache.gora.cassandra.query.CassandraResult
+org.apache.gora.cassandra.store.CassandraStore

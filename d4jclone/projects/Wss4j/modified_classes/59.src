@@ -1,0 +1,9 @@
+org.apache.wss4j.policy.stax.PolicyEnforcer
+org.apache.wss4j.policy.stax.PolicyEnforcerFactory
+org.apache.wss4j.policy.stax.assertionStates.OnlySignEntireHeadersAndBodyAssertionState
+org.apache.wss4j.policy.stax.assertionStates.TokenProtectionAssertionState
+org.apache.wss4j.policy.stax.test.AbstractPolicyTestBase
+org.apache.wss4j.policy.stax.test.AsymmetricBindingIntegrationTest
+org.apache.wss4j.policy.stax.test.AsymmetricBindingTest
+org.apache.wss4j.policy.stax.test.SymmetricBindingTest
+org.apache.wss4j.policy.stax.test.VulnerabliltyVectorsTest

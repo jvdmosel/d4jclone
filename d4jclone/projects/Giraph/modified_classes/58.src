@@ -1,0 +1,2 @@
+org.apache.giraph.partition.DiskBackedPartitionStore
+org.apache.giraph.partition.TestPartitionStores

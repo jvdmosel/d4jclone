@@ -1,0 +1,3 @@
+org.apache.commons.jcs.engine.control.CompositeCacheConfigurator
+org.apache.commons.jcs.engine.control.CompositeCacheManager
+org.apache.commons.jcs.engine.control.CompositeCacheConfiguratorUnitTest

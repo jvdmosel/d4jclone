@@ -1,0 +1,3 @@
+org.apache.commons.vfs2.impl.DefaultFileSystemManager
+org.apache.commons.vfs2.impl.VirtualFileProvider
+org.apache.commons.vfs2.impl.VirtualFileSystem

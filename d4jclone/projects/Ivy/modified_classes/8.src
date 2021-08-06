@@ -1,0 +1,4 @@
+fr.jayasoft.ivy.DefaultModuleDescriptor
+fr.jayasoft.ivy.IvyNode
+fr.jayasoft.ivy.Ivy
+fr.jayasoft.ivy.ResolveTest

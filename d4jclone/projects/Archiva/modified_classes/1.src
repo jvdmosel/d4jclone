@@ -1,0 +1,2 @@
+org.apache.maven.archiva.repository.metadata.RepositoryMetadataReader
+org.apache.maven.archiva.xml.XMLReaderTest

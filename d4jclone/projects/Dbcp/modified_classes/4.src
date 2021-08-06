@@ -1,0 +1,3 @@
+org.apache.commons.dbcp.DelegatingConnection
+org.apache.commons.dbcp.managed.ManagedConnection
+org.apache.commons.dbcp.managed.TestManagedDataSource

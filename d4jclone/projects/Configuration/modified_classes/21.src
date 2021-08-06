@@ -1,0 +1,4 @@
+org.apache.commons.configuration.PropertiesConfiguration
+org.apache.commons.configuration.PropertiesConfigurationLayout
+org.apache.commons.configuration.ConfigurationAssert
+org.apache.commons.configuration.TestPropertiesConfiguration

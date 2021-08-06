@@ -1,0 +1,2 @@
+org.apache.ivy.core.IvyContext
+org.apache.ivy.plugins.resolver.BasicResolver

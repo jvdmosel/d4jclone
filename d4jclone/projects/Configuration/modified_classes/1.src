@@ -1,0 +1,3 @@
+org.apache.commons.configuration.PropertyConverter
+org.apache.commons.configuration.TestBaseConfiguration
+org.apache.commons.configuration.TestPropertyConverter

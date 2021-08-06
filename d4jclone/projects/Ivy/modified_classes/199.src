@@ -1,0 +1,2 @@
+org.apache.ivy.plugins.resolver.BasicResolver
+org.apache.ivy.core.resolve.ResolveTest

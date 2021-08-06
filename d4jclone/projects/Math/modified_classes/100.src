@@ -1,0 +1,6 @@
+org.apache.commons.math3.distribution.LogNormalDistribution
+org.apache.commons.math3.distribution.WeibullDistribution
+org.apache.commons.math3.special.BetaTest
+org.apache.commons.math3.distribution.LogNormalDistributionTest
+org.apache.commons.math3.distribution.WeibullDistributionTest
+org.apache.commons.math3.special.Beta

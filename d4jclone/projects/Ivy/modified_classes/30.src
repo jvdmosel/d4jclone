@@ -1,0 +1,4 @@
+fr.jayasoft.ivy.resolver.BasicResolver
+fr.jayasoft.ivy.ResolveTest
+fr.jayasoft.ivy.resolver.ChainResolver
+fr.jayasoft.ivy.Ivy

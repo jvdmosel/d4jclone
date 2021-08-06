@@ -1,0 +1,2 @@
+org.apache.bcel.classfile.ConstantPoolTestCase
+org.apache.bcel.data.SimpleClassWithDefaultConstructor

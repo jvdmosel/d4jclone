@@ -1,0 +1,2 @@
+org.apache.commons.vfs.provider.sftp.SftpFileObject
+org.apache.commons.vfs.RunTest

@@ -1,0 +1,4 @@
+org.apache.ivy.plugins.resolver.AbstractResolver
+org.apache.ivy.plugins.resolver.ChainResolver
+org.apache.ivy.core.cache.DefaultRepositoryCacheManager
+org.apache.ivy.plugins.resolver.ChainResolverTest

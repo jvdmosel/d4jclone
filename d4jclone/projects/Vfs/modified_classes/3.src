@@ -1,0 +1,2 @@
+org.apache.commons.vfs.provider.AbstractFileObject
+org.apache.commons.vfs.provider.local.LocalFile

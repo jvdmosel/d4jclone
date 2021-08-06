@@ -1,0 +1,4 @@
+org.apache.ws.security.message.WSSecUsernameToken
+org.apache.ws.security.message.token.UsernameToken
+org.apache.ws.security.processor.UsernameTokenProcessor
+wssec.TestWSSecurityNew5

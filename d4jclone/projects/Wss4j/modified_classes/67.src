@@ -1,0 +1,2 @@
+org.apache.wss4j.policy.stax.assertionStates.AlgorithmSuiteAssertionState
+org.apache.wss4j.stax.securityToken.WSSecurityTokenConstants

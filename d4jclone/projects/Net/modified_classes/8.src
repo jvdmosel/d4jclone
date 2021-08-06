@@ -1,0 +1,2 @@
+org.apache.commons.net.SocketClient
+org.apache.commons.net.telnet.TelnetClient

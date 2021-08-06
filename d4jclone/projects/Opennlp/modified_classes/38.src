@@ -1,0 +1,2 @@
+opennlp.uima.chunker.ChunkerTrainer
+opennlp.uima.sentdetect.SentenceDetectorTrainer

@@ -1,0 +1,2 @@
+org.apache.gora.util.AvroUtils
+org.apache.gora.util.TestAvroUtils

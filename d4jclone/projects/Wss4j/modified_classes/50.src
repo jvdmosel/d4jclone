@@ -1,0 +1,2 @@
+org.apache.ws.security.validate.SignatureTrustValidator
+org.apache.ws.security.message.SignatureCRLTest

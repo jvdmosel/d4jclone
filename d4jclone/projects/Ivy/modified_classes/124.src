@@ -1,0 +1,2 @@
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.plugins.resolver.AbstractResourceResolver

@@ -1,0 +1,2 @@
+parquet.column.values.dictionary.DictionaryValuesWriter
+parquet.column.values.dictionary.TestDictionary

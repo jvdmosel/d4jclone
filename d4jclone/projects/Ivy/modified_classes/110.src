@@ -1,0 +1,3 @@
+org.apache.ivy.ant.IvyResolve
+org.apache.ivy.ant.IvyPostResolveTaskTest
+org.apache.ivy.ant.IvyPostResolveTask

@@ -1,0 +1,6 @@
+org.apache.ws.security.saml.ext.bean.AuthenticationStatementBean
+org.apache.ws.security.saml.ext.bean.SubjectLocalityBean
+org.apache.ws.security.saml.ext.builder.SAML1ComponentBuilder
+org.apache.ws.security.saml.ext.builder.SAML2ComponentBuilder
+org.apache.ws.security.common.AbstractSAMLCallbackHandler
+org.apache.ws.security.saml.SamlTokenTest

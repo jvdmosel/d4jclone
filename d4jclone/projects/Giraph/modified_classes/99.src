@@ -1,0 +1,2 @@
+org.apache.giraph.worker.BspServiceWorker
+org.apache.giraph.worker.WorkerProgressWriter

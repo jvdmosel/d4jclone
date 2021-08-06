@@ -1,0 +1,2 @@
+com.ecyrd.jspwiki.auth.authorize.JDBCGroupDatabase
+com.ecyrd.jspwiki.auth.user.JDBCUserDatabase

@@ -1,0 +1,2 @@
+org.apache.giraph.comm.netty.SaslNettyClient
+org.apache.giraph.comm.netty.SaslNettyServer

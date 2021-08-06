@@ -1,0 +1,3 @@
+parquet.cascading.ParquetTBaseScheme
+parquet.cascading.ParquetValueScheme
+parquet.scrooge.ParquetScroogeScheme

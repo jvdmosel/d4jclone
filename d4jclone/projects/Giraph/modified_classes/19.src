@@ -1,0 +1,5 @@
+org.apache.giraph.graph.BspService
+org.apache.giraph.graph.BspServiceMaster
+org.apache.giraph.graph.BspServiceWorker
+org.apache.giraph.zk.PredicateLock
+org.apache.giraph.TestPredicateLock

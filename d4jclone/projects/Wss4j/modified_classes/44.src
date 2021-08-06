@@ -1,0 +1,3 @@
+org.apache.ws.security.saml.ext.AssertionWrapper
+org.apache.ws.security.saml.ext.builder.SAML1ComponentBuilder
+org.apache.ws.security.saml.ext.builder.SAML2ComponentBuilder

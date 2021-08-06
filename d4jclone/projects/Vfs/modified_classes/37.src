@@ -1,0 +1,2 @@
+org.apache.commons.vfs2.provider.local.test.LocalProviderTestCase
+org.apache.commons.vfs2.provider.local.test.WindowsFileNameTests

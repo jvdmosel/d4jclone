@@ -1,0 +1,2 @@
+org.apache.ivy.external.m2.PomModuleDescriptorParser
+org.apache.ivy.external.m2.PomModuleDescriptorParserTest

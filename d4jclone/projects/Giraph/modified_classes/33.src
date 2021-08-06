@@ -1,0 +1,11 @@
+org.apache.giraph.comm.ServerData
+org.apache.giraph.comm.netty.NettyWorkerClientServer
+org.apache.giraph.comm.netty.NettyWorkerServer
+org.apache.giraph.graph.BspServiceWorker
+org.apache.giraph.graph.partition.DiskBackedPartitionStore
+org.apache.giraph.graph.partition.Partition
+org.apache.giraph.graph.partition.SimplePartitionStore
+org.apache.giraph.comm.ConnectionTest
+org.apache.giraph.comm.RequestFailureTest
+org.apache.giraph.comm.RequestTest
+org.apache.giraph.graph.partition.TestPartitionStores

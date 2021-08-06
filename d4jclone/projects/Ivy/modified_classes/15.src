@@ -1,0 +1,3 @@
+fr.jayasoft.ivy.IvyNode
+fr.jayasoft.ivy.resolver.FileSystemResolverTest
+fr.jayasoft.ivy.ResolveTest

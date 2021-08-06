@@ -1,0 +1,4 @@
+org.apache.gora.hbase.store.HBaseColumn
+org.apache.gora.hbase.store.HBaseMapping
+org.apache.gora.hbase.store.HBaseStore
+org.apache.gora.hbase.store.HBaseTableConnection

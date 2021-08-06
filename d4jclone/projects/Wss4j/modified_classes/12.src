@@ -1,0 +1,6 @@
+org.apache.ws.security.WSConstants
+org.apache.ws.security.message.WSSecEncrypt
+org.apache.ws.security.message.WSSecHeader
+org.apache.ws.security.util.WSSecurityUtil
+wssec.PackageTests
+wssec.TestWSSecurityWSS60

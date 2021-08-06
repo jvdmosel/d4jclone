@@ -1,0 +1,2 @@
+org.apache.commons.beanutils.BeanUtilsBean
+org.apache.commons.beanutils.bugs.Jira368TestCase

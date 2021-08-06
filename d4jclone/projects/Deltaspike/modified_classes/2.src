@@ -1,0 +1,4 @@
+org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor
+org.apache.deltaspike.data.impl.util.QueryUtils
+org.apache.deltaspike.data.impl.QueryResultTest
+org.apache.deltaspike.data.test.service.SimpleRepository

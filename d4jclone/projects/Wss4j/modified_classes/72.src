@@ -1,0 +1,3 @@
+org.apache.wss4j.stax.impl.processor.input.EncryptedDataInputHandler
+org.apache.wss4j.stax.impl.processor.input.SecurityHeaderInputProcessor
+org.apache.wss4j.stax.test.SignatureEncryptionTest

@@ -1,0 +1,2 @@
+org.apache.commons.vfs2.provider.AbstractFileObject
+org.apache.commons.vfs2.test.ProviderRenameTests

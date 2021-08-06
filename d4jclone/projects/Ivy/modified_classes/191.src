@@ -1,0 +1,2 @@
+org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater

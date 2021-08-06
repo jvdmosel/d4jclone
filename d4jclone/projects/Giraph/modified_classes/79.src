@@ -1,0 +1,2 @@
+org.apache.giraph.bsp.BspOutputFormat
+org.apache.giraph.job.GiraphConfigurationValidator

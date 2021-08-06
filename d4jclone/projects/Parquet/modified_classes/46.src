@@ -1,0 +1,2 @@
+org.apache.parquet.tools.Main
+org.apache.parquet.tools.command.DumpCommand

@@ -1,0 +1,2 @@
+org.apache.parquet.column.statistics.BinaryStatistics
+org.apache.parquet.format.converter.TestParquetMetadataConverter

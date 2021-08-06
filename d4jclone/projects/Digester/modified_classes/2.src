@@ -1,0 +1,2 @@
+org.apache.commons.digester.SetPropertyRule
+org.apache.commons.digester.SetPropertyRuleTestCase

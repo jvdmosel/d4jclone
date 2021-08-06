@@ -1,0 +1,2 @@
+org.apache.ws.security.message.WSSecSignature
+org.apache.ws.security.message.SignatureTest

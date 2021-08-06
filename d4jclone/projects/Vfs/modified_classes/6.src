@@ -1,0 +1,4 @@
+org.apache.commons.vfs.provider.AbstractFileProvider
+org.apache.commons.vfs.provider.AbstractOriginatingFileProvider
+org.apache.commons.vfs.test.AbstractProviderTestCase
+org.apache.commons.vfs.test.ProviderCacheStrategyTests

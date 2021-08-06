@@ -1,0 +1,3 @@
+org.apache.ivy.plugins.conflict.LatestConflictManager
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.core.settings.IvySettings

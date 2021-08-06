@@ -1,0 +1,4 @@
+org.apache.ivy.ant.IvyAntSettings
+org.apache.ivy.ant.IvyConfigure
+org.apache.ivy.ant.IvyConfigureTest
+org.apache.ivy.core.settings.IvySettings

@@ -1,0 +1,2 @@
+org.apache.gora.mongodb.filters.DefaultFactory
+org.apache.gora.mongodb.filters.DefaultFactoryTest

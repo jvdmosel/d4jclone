@@ -1,0 +1,4 @@
+org.apache.parquet.io.RecordReaderImplementation
+org.apache.parquet.encoding.bitpacking.ByteBasedBitPackingGenerator
+org.apache.parquet.encoding.bitpacking.IntBasedBitPackingGenerator
+org.apache.parquet.version.VersionGenerator

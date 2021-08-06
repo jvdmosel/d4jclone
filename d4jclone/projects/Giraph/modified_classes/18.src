@@ -1,0 +1,2 @@
+org.apache.giraph.aggregators.TestDoubleAggregators
+org.apache.giraph.aggregators.TestFloatAggregators

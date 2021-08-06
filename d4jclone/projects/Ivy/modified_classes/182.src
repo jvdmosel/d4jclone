@@ -1,0 +1,3 @@
+org.apache.ivy.util.Configurator
+org.apache.ivy.core.settings.XmlSettingsParserTest
+org.apache.ivy.core.settings.XmlSettingsParser

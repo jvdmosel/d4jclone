@@ -1,0 +1,5 @@
+org.apache.commons.bcel6.generic.BranchInstruction
+org.apache.commons.bcel6.generic.GOTO
+org.apache.commons.bcel6.generic.Instruction
+org.apache.commons.bcel6.generic.JSR
+org.apache.commons.bcel6.generic.PUSH

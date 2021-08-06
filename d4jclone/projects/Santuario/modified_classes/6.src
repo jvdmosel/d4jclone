@@ -1,0 +1,2 @@
+org.apache.xml.security.stax.impl.processor.output.XMLEncryptOutputProcessor
+org.apache.xml.security.test.stax.encryption.EncryptionCreationTest

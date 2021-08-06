@@ -1,0 +1,11 @@
+org.apache.jcs.JCS
+org.apache.jcs.access.CacheAccess
+org.apache.jcs.access.exception.CacheException
+org.apache.jcs.admin.JCSAdminBean
+org.apache.jcs.auxiliary.lateral.socket.tcp.LateralTCPListener
+org.apache.jcs.auxiliary.remote.AbsractRemoteCacheListener
+org.apache.jcs.auxiliary.remote.http.server.RemoteHttpCacheServlet
+org.apache.jcs.auxiliary.remote.server.RemoteCacheServer
+org.apache.jcs.auxiliary.remote.server.RemoteCacheStartupServlet
+org.apache.jcs.engine.control.CompositeCacheManager
+org.apache.jcs.utils.servlet.JCSServletContextListener

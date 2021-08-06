@@ -1,0 +1,3 @@
+org.apache.commons.configuration.JNDIConfiguration
+org.apache.commons.configuration.MockInitialContextFactory
+org.apache.commons.configuration.TestJNDIConfiguration

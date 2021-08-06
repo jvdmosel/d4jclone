@@ -1,0 +1,3 @@
+org.apache.ivy.osgi.obr.filter.UniOperatorFilter
+org.apache.ivy.osgi.obr.RequirementFilterTest
+org.apache.ivy.osgi.obr.filter.RequirementFilterParser

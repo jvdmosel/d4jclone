@@ -1,0 +1,6 @@
+org.apache.commons.math3.random.Well512aTest
+org.apache.commons.math3.stat.ranking.NaturalRanking
+org.apache.commons.math3.random.RandomDataGenerator
+org.apache.commons.math3.random.BitsStreamGenerator
+org.apache.commons.math3.random.MersenneTwisterTest
+org.apache.commons.math3.random.RandomDataGeneratorTest

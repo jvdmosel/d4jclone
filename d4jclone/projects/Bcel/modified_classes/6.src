@@ -1,0 +1,3 @@
+org.apache.bcel.classfile.ParameterAnnotations
+org.apache.bcel.classfile.RuntimeInvisibleParameterAnnotations
+org.apache.bcel.classfile.RuntimeVisibleParameterAnnotations

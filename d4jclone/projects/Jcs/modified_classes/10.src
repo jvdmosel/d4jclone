@@ -1,0 +1,2 @@
+org.apache.jcs.admin.JCSAdminBean
+org.apache.jcs.auxiliary.remote.server.RemoteCacheServer

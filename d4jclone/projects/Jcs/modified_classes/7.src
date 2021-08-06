@@ -1,0 +1,13 @@
+org.apache.jcs.auxiliary.lateral.ZombieLateralCacheService
+org.apache.jcs.auxiliary.lateral.socket.tcp.LateralTCPSender
+org.apache.jcs.auxiliary.lateral.socket.tcp.LateralTCPService
+org.apache.jcs.auxiliary.lateral.socket.tcp.TCPLateralCacheAttributes
+org.apache.jcs.auxiliary.lateral.socket.tcp.discovery.UDPDiscoveryMessage
+org.apache.jcs.auxiliary.lateral.socket.tcp.discovery.UDPDiscoveryReceiver
+org.apache.jcs.auxiliary.lateral.socket.tcp.discovery.UDPDiscoverySenderThread
+org.apache.jcs.auxiliary.lateral.socket.tcp.discovery.UDPDiscoveryService
+org.apache.jcs.auxiliary.remote.RemoteCacheListener
+org.apache.jcs.auxiliary.remote.server.RemoteCacheStartupServlet
+org.apache.jcs.utils.net.HostNameUtil
+org.apache.jcs.auxiliary.lateral.socket.tcp.discovery.UDPDiscoveryUnitTest
+org.apache.jcs.utils.net.HostNameUtilUnitTest
