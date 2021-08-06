@@ -1,11 +1,10 @@
-import csv
 import os
 import subprocess
 from pathlib import Path
 
 from d4jclone.config import ENV
 from d4jclone.core.checkout import checkout
-from d4jclone.parser.bugParser import getModifiedSources, parseBug, getLayout
+from d4jclone.parser.bugParser import getLayout, getModifiedSources, parseBug
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
 
