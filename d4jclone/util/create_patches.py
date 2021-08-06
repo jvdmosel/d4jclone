@@ -5,16 +5,9 @@ from pathlib import Path
 
 from d4jclone.config import ENV
 from d4jclone.core.checkout import checkout
-from d4jclone.parser.bugParser import getModifiedSources, parseBug
+from d4jclone.parser.bugParser import getModifiedSources, parseBug, getLayout
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
-
-def determineLayout(project_id, bug_id):
-    with open(ENV['PROJECTDIR'] + '/' + project_id + '/dir-layout.csv', 'r') as layout_file:
-        csv_reader = csv.reader(layout_file)
-        # filters csv file for row of unique bug id
-        layout = next(filter(lambda x: str(bug_id) in x, csv_reader))
-        return (layout[1],layout[2])
 
 def createPatches(project_id):
     if project_id in projects.keys():
@@ -30,7 +23,7 @@ def createPatches(project_id):
             modified = getModifiedSources(bug)
             testfiles = []
             srcfiles = []
-            layout = determineLayout(project_id, bug.id)
+            layout = getLayout(bug)
             for src in modified:
                 if 'Test' in src:
                     s = layout[1] + src.replace('.', '/') + '.java'
