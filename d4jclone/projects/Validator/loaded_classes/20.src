@@ -1,0 +1,9 @@
+org.apache.commons.validator.routines.CodeValidator
+org.apache.commons.validator.routines.ISBNValidator
+org.apache.commons.validator.routines.RegexValidator
+org.apache.commons.validator.routines.checkdigit.CheckDigit
+org.apache.commons.validator.routines.checkdigit.CheckDigitException
+org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit
+org.apache.commons.validator.routines.checkdigit.IBANCheckDigit
+org.apache.commons.validator.routines.checkdigit.ISBN10CheckDigit
+org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit

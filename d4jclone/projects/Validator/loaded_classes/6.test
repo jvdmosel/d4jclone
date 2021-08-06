@@ -1,0 +1,4 @@
+org.apache.commons.validator.ResultPair
+org.apache.commons.validator.routines.UrlValidatorTest
+org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest

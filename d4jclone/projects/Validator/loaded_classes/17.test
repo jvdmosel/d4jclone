@@ -1,0 +1,3 @@
+org.apache.commons.validator.CustomValidatorResourcesTest
+org.apache.commons.validator.ValidatorResourcesTest
+org.apache.commons.validator.util.FlagsTest

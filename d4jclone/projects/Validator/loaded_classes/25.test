@@ -1,0 +1,3 @@
+org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.ISINCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest

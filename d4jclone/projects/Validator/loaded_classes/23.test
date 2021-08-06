@@ -1,0 +1,3 @@
+org.apache.commons.validator.routines.checkdigit.AbstractCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest
