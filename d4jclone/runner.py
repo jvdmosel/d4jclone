@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
+from d4jclone.core.export import export
 import sys
 
 import d4jclone.core.pids as pids
@@ -72,9 +73,19 @@ class D4jclone(object):
     
     def env(self):
         env.env()
+        
+    def export(self):
+        parser = argparse.ArgumentParser(description='Export parser')
+        parser.add_argument('-p', help='Export the value(s) of this property.', required=True)
+        parser.add_argument('-o', help='Write output to this file (optional). By default the script prints the value(s) of the property to stdout. Note that all diagnostic messages are sent to stderr.', required=False)
+        parser.add_argument('-w', help='The working directory of the checked-out project version (optional). Default is the current directory.', required=False)
+        args = parser.parse_args(sys.argv[2:])
+        export.export(args.p, args.o, args.w)
+        
 
 def main():
     D4jclone()
+    
     
 if __name__ == '__main__':
     main()
