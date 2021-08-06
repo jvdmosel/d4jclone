@@ -67,7 +67,7 @@ def checkoutVersion(workdir, version):
     return bool(result)
     
 def initLocalRepo(workdir):
-    print(fill('Init local repository', 75), end ='')
+    print(fill('Init local repository', '.', 75), end ='')
     workdir = Path(workdir)
     if workdir.is_dir():
         subprocess.call(['git', '-C', workdir, 'init'], stdout=DEVNULL, stderr=DEVNULL)
