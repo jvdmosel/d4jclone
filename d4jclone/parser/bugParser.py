@@ -1,5 +1,4 @@
 import linecache
-import json
 from pathlib import Path
 from d4jclone.config import ENV
 
@@ -20,10 +19,14 @@ def parseBug(project, bug_id):
     return Bug(project, bug_id, bug[1], bug[2], bug[3], bug[4], bug[5][:-1])
 
 def getModifiedSources(bug):
-    srcs = []
-    path = Path(ENV['PROJECTDIR']) / bug.project / 'modified_sources.json'
-    with open(path) as json_file:
-        modified = json.load(json_file)
-        srcs = modified[bug.external_id]
+    srcs = parseLines(bug, 'modified_classes', '.src')
     srcs.sort()
     return srcs
+
+def parseLines(bug, dir_name, postfix = None):
+    lines = []
+    path = Path(ENV['PROJECTDIR']) / bug.project / dir_name / (str(bug.id) + postfix)
+    with open(path, 'r') as file:
+        lines = file.readlines()
+    lines = [line.strip() for line in lines]
+    return lines
