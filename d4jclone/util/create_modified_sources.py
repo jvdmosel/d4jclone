@@ -1,7 +1,7 @@
-import json
 from pathlib import Path
 
 from d4jclone.util.db import dbConnect
+from d4jclone.config import ENV
 from d4jclone.parser.bugParser import parseBug
 from d4jclone.util.projects import projects
 from pycoshark.mongomodels import CodeEntityState, CodeGroupState, Commit, FileAction
@@ -12,14 +12,16 @@ def createModifiedSources():
     dbConnect()
     
     for project in projects.keys():
-        path = Path.cwd() / 'd4jclone/projects' / project
-        with open(path / 'bugs.csv') as f:
+        path = Path(ENV['PROJECTDIR']) / project / 'modified_classes'
+        if not path.is_dir():
+            path.mkdir()
+        with open(Path(ENV['PROJECTDIR']) / project / 'bugs.csv') as f:
             modified = {}
             # calculate number of bugs for this project
             number_of_bugs = sum(1 for line in f)
             for i in range(1, number_of_bugs):
                 bug = parseBug(project, str(i))
-                modified[bug.external_id] = []
+                modified[bug.id] = []
                 # commit of the bugfix
                 commit_fixed = Commit.objects().get(revision_hash=bug.rev_fixed)
                 # get files modified in this commit
@@ -31,7 +33,8 @@ def createModifiedSources():
                         # make sure the code entity is not an inner class
                         for code_group_id in code_entity.cg_ids:
                             if (CodeGroupState.objects(id=code_group_id).filter(cg_type = 'package').count() > 0):
-                                modified[bug.external_id].append(code_entity.long_name)
-            # write modified sources to json file
-            with open(path /  'modified_sources.json', 'w') as json_file:
-                json.dump(modified, json_file, indent=4)
+                                modified[bug.id].append(code_entity.long_name)
+            # write modified classes
+            for i in range(1, number_of_bugs):
+                with open(path /  (str(i) + '.src'), 'w') as file:
+                    file.write('\n'.join(modified[str(i)]))
