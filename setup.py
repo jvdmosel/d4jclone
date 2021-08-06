@@ -1,5 +1,4 @@
-from setuptools import setup, find_namespace_packages
-from pathlib import Path
+from setuptools import setup
 import os
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
