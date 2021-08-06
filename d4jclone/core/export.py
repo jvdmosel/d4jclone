@@ -1,8 +1,9 @@
-from d4jclone.util.formatting import fill
-from d4jclone.parser.checkoutParser import parseCheckout
-from d4jclone.parser.bugParser import getModifiedSources
-from d4jclone.parser.triggerTestParser import parseTriggerTests
 from pathlib import Path
+
+from d4jclone.parser.bugParser import getModifiedSources, getRelevantTests
+from d4jclone.parser.checkoutParser import parseCheckout
+from d4jclone.parser.triggerTestParser import parseTriggerTests
+from d4jclone.util.formatting import fill
 
 properties = {
     'classes.modified': 'Classes modified by the bug fix',
@@ -42,7 +43,8 @@ def export(property, out_file = None, workdir = None):
         elif property == 'tests.all':
             pass
         elif property == 'tests.relevant':
-            pass
+            for test in getRelevantTests(checkout.bug):
+                print(test)
         elif property == 'tests.trigger':
             trigger_tests = parseTriggerTests(checkout.project.id, checkout.bug.id)
             if trigger_tests != None:

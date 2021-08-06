@@ -23,7 +23,11 @@ def getModifiedSources(bug):
     srcs.sort()
     return srcs
 
-def parseLines(bug, dir_name, postfix = None):
+def getRelevantTests(bug):
+    tests = parseLines(bug, 'relevant_tests')
+    return tests
+
+def parseLines(bug, dir_name, postfix = ''):
     lines = []
     path = Path(ENV['PROJECTDIR']) / bug.project / dir_name / (str(bug.id) + postfix)
     with open(path, 'r') as file:
