@@ -39,11 +39,11 @@ def export(property, out_file = None, workdir = None):
         elif property == 'dir.bin.tests':
             pass
         elif property == 'dir.src.classes':
-            pass
+            print(getLayout(checkout.bug, 'b')[0])
         elif property == 'dir.src.tests':
-            pass
+            print(getLayout(checkout.bug, 'b')[1])
         elif property == 'tests.all':
-            for test in sorted(getClasses(workdir, getLayout(checkout.bug)[1])):
+            for test in sorted(getClasses(workdir, getLayout(checkout.bug, 'f')[1])):
                 print(test)
         elif property == 'tests.relevant':
             for test in getRelevantTests(checkout.bug):
