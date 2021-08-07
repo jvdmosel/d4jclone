@@ -1,10 +1,14 @@
 from pathlib import Path
 
-from d4jclone.parser.bugParser import getModifiedSources, getRelevantTests, getLoadedClasses, getLayout
-from d4jclone.util.create_loaded_classes import getClasses
+from d4jclone.config import ENV
+from d4jclone.parser.bugParser import (getLayout, getLoadedClasses,
+                                       getModifiedSources, getRelevantTests,
+                                       parseBug)
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.parser.triggerTestParser import parseTriggerTests
+from d4jclone.util.create_loaded_classes import getClasses
 from d4jclone.util.formatting import fill
+from d4jclone.util.projects import projects
 
 properties = {
     'classes.modified': 'Classes modified by the bug fix',
@@ -34,16 +38,14 @@ def export(property, out_file = None, workdir = None):
             pass
         elif property == 'cp.test':
             pass
-        elif property == 'dir.bin.classes':
-            pass
-        elif property == 'dir.bin.tests':
-            pass
-        elif property == 'dir.src.classes':
-            print(getLayout(checkout.bug, 'b')[0])
-        elif property == 'dir.src.tests':
-            print(getLayout(checkout.bug, 'b')[1])
+        elif property == 'dir.bin.classes' or property == 'dir.bin.tests':
+            src, test = parseProperty(checkout.project.id, checkout.bug.id, 'b')
+            print(src if property == 'dir.bin.classes' else test)
+        elif property == 'dir.src.classes' or property == 'dir.src.tests':
+            src, test = getLayout(checkout.bug, 'b')
+            print(src if property == 'dir.src.classes' else test)
         elif property == 'tests.all':
-            for test in sorted(getClasses(workdir, getLayout(checkout.bug, 'f')[1])):
+            for test in sorted(getClasses(workdir, getLayout(checkout.bug, 'b')[1])):
                 print(test)
         elif property == 'tests.relevant':
             for test in getRelevantTests(checkout.bug):
@@ -59,3 +61,23 @@ def export(property, out_file = None, workdir = None):
         print('Properties:')
         for p in properties.keys():
             print(fill('  ' + p, ' ', 20) + properties[p])
+
+def parseProperty(project_id, bug_id, version):
+    if project_id in projects.keys():
+        bug = parseBug(project_id, bug_id)
+        rev = bug.rev_buggy if version == 'b' else bug.rev_fixed
+        path = Path(ENV['PROJECTDIR']) / project_id / 'build_files' / rev / 'maven-build.properties'
+        with open(path, 'r') as properties:
+            dirs = {'maven.build.dir=': None,
+                    'maven.build.outputDir=': None,
+                    'maven.build.testOutputDir=': None}
+            for line in properties:
+                for key in dirs.keys():
+                    if line.startswith(key):
+                        dirs[key] = line[len(key):].strip()
+            prefix = dirs['maven.build.dir=']
+            output_dir = dirs['maven.build.outputDir='].replace('${maven.build.dir}', prefix)
+            test_dir = dirs['maven.build.testOutputDir='].replace('${maven.build.dir}', prefix)
+            return (output_dir, test_dir)
+    else:
+        raise Exception('Invalid project_id:' + project_id)
