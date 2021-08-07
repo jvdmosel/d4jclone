@@ -9,22 +9,29 @@ from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.projects import projects
 
 # list of possible layouts for each project
-project_layouts = {'Validator': [('src/main/java/', 'src/test/java/'), ('src/share/', 'src/test/')]}
+project_layouts = {'Validator': [('src/main/java', 'src/test/java'), ('src/share', 'src/test')]}
+
+def findLayout(checkout_dir, project_id):
+    # greedy approach, works for now
+    for layout in project_layouts[project_id]:
+        if (Path(checkout_dir) / layout[0]).is_dir():
+            return layout
 
 def createLayout(project_id):
     if project_id in projects.keys():
         project = parseProject(project_id)
         fp = Path(ENV['PROJECTDIR']) / project_id / 'dir-layout.csv'
         with open(fp, 'w') as csv_file:
+            writer = csv.writer(csv_file)
             for i in range(1, project.number_of_bugs+1):
                 bug = parseBug(project_id, i)
+                # write layout for fixed version
+                checkout(project_id, i, 'b', ENV['BASEDIR'] + '/test')
+                checkout_dir = ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_buggy'
+                buggy_layout = findLayout(checkout_dir, project_id)
+                writer.writerow([bug.rev_buggy, buggy_layout[0], buggy_layout[1]])
+                # write layout for buggy version
                 checkout(project_id, i, 'f', ENV['BASEDIR'] + '/test')
-                checkoutdir = ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
-                os.chdir(checkoutdir)
-                for layout in project_layouts[project_id]:
-                    # a bit greedy, requires only one layout to exist
-                    # works for now
-                    if (Path(checkoutdir) / layout[0]).is_dir():
-                        writer = csv.writer(csv_file)
-                        writer.writerow([bug.id, layout[0], layout[1]])
-                        break
+                checkout_dir = ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
+                fixed_layout = findLayout(checkout_dir, project_id)
+                writer.writerow([bug.rev_fixed, fixed_layout[0], fixed_layout[1]])
