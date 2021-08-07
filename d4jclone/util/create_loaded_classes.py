@@ -25,17 +25,17 @@ def createLoadedClasses(project_id, workdir):
             bug = parseBug(project_id, i)
             # checkout fixed version
             checkout(project_id, i, 'f', workdir)
-            checkoutdir = workdir + '/' + project_id.lower() + '_' + str(i) + '_fixed'
+            checkout_dir = workdir + '/' + project_id.lower() + '_' + str(i) + '_fixed'
             # compile src
-            compile(checkoutdir)
+            compile(checkout_dir)
             # compile and run tests
-            result = test(checkoutdir, relevant=True, monitor = True)
+            result = test(checkout_dir, relevant=True, monitor = True)
             # pattern for finding classes in result
             pattern = re.compile('[a-zA-Z]*\..*\sfrom')
             # get lists of src and test classes
-            src_dir, test_dir = getLayout(bug)
-            src_classes = getClasses(checkoutdir, src_dir)
-            test_classes = getClasses(checkoutdir, test_dir)
+            src_dir, test_dir = getLayout(bug, 'f')
+            src_classes = getClasses(checkout_dir, src_dir)
+            test_classes = getClasses(checkout_dir, test_dir)
             # set of loaded src classes
             src_loaded_set = set()
             test_loaded_set = set()

@@ -17,11 +17,11 @@ def createRelevantTests(project_id, workdir):
             bug = parseBug(project_id, i)
             # checkout fixed version
             checkout(project_id, i, 'f', workdir)
-            checkoutdir = workdir + '/' + project_id.lower() + '_' + str(i) + '_fixed'
+            checkout_dir = workdir + '/' + project_id.lower() + '_' + str(i) + '_fixed'
             # compile src
-            compile(checkoutdir)
+            compile(checkout_dir)
             # compile and run tests
-            result = test(checkoutdir, monitor = True)
+            result = test(checkout_dir, monitor = True)
             pattern = re.compile('[a-zA-Z]*\..*\sfrom')
             # set of loaded classes
             loaded_set = set()

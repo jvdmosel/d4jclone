@@ -32,11 +32,12 @@ def getRelevantTests(bug):
     tests = parseLines(bug, 'relevant_tests')
     return tests
 
-def getLayout(bug):
+def getLayout(bug, version):
     with open(ENV['PROJECTDIR'] + '/' + bug.project + '/dir-layout.csv', 'r') as layout_file:
         csv_reader = csv.reader(layout_file)
-        # filters csv file for row of unique bug id
-        layout = next(filter(lambda x: str(bug.id) in x, csv_reader))
+        rev = bug.rev_buggy if version == 'b' else bug.rev_fixed
+        # filters csv file for row of unique revision
+        layout = next(filter(lambda x: rev in x, csv_reader))
         return (layout[1],layout[2])
 
 def parseLines(bug, dir_name, postfix = ''):

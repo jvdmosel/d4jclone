@@ -14,15 +14,15 @@ def createPatches(project_id):
         for i in range(1, project.number_of_bugs+1):
             bug = parseBug(project_id, i)
             checkout(project_id, i, 'f', ENV['BASEDIR'] + '/test')
-            checkoutdir =  ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
+            checkout_dir =  ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
             outsrc = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.src.patch'
             outtest = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.test.patch'
             cwd = Path.cwd()
-            os.chdir(checkoutdir)
+            os.chdir(checkout_dir)
             modified = getModifiedSources(bug)
             testfiles = []
             srcfiles = []
-            layout = getLayout(bug)
+            layout = getLayout(bug, 'f')
             for src in modified:
                 if 'Test' in src:
                     s = layout[1] + src.replace('.', '/') + '.java'

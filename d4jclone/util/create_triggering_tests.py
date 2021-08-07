@@ -18,19 +18,19 @@ def createTriggeringTests(project_id, workdir):
             bug = parseBug(project_id, i)
             # checkout fixed version
             checkout(project_id, i, 'b', workdir)
-            checkoutdir = workdir + '/' + project_id.lower() + '_' + str(i) + '_buggy'
-            checkoutVersion(checkoutdir, 'FIXED')
+            checkout_dir = workdir + '/' + project_id.lower() + '_' + str(i) + '_buggy'
+            checkoutVersion(checkout_dir, 'FIXED')
             # compile src
-            compile(checkoutdir)
+            compile(checkout_dir)
             # compile and run tests and verify that all tests pass
-            result = _test(checkoutdir)
+            result = _test(checkout_dir)
             if len(result.stderr) == 0:
                 # checkout buggy version
-                checkoutVersion(checkoutdir, 'BUGGY')
+                checkoutVersion(checkout_dir, 'BUGGY')
                 # compile src
-                compile(checkoutdir)
+                compile(checkout_dir)
                 # compile and run tests
-                result = _test(checkoutdir)
+                result = _test(checkout_dir)
                 # retrieve failing tests
                 trigger_tests = []
                 to_remove = ['[junit]', 'Test', 'FAILED', ',', '']
@@ -52,7 +52,7 @@ def createTriggeringTests(project_id, workdir):
                 # determine triggering (bug exposing) testcases
                 if len(trigger_tests) > 0:
                     for test in trigger_tests:
-                        tree = ET.parse(str(checkoutdir) + '/target/test-reports/' + 'TEST-' + test + '.xml')
+                        tree = ET.parse(str(checkout_dir) + '/target/test-reports/' + 'TEST-' + test + '.xml')
                         root = tree.getroot()
                         for test in root.findall('testcase'):
                             fail = test.find('failure')
@@ -65,7 +65,7 @@ def createTriggeringTests(project_id, workdir):
                             if message != None:
                                 testcase = test.get('classname') + '::' + test.get('name')
                                 # run in isolation and verify the testcase fails for the buggy version but not for the fixed version
-                                if not testFails(checkoutdir, testcase, 'FIXED') and testFails(checkoutdir, testcase, 'BUGGY'):
+                                if not testFails(checkout_dir, testcase, 'FIXED') and testFails(checkout_dir, testcase, 'BUGGY'):
                                     with open(fp, 'w') as file:
                                         file.write('--- ' + testcase + '\n')
                                         file.write(message)
