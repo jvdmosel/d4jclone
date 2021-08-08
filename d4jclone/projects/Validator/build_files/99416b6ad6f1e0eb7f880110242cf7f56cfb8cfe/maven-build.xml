@@ -59,6 +59,14 @@
     <pathelement location="${maven.repo.local}/junit/junit/3.8.2/junit-3.8.2.jar"/>
   </path>
 
+  <target name="print-classpath">
+     <echo>${toString:build.classpath}</echo>
+  </target>
+
+  <target name="print-test.classpath">
+     <echo>${toString:build.test.classpath}</echo>
+  </target>
+
   <!-- ====================================================================== -->
   <!-- Cleaning up target                                                     -->
   <!-- ====================================================================== -->
