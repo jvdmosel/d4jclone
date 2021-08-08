@@ -1,6 +1,6 @@
 import re
-from pathlib import Path
 import sys
+from pathlib import Path
 from subprocess import PIPE, run
 
 from d4jclone.config import ENV
