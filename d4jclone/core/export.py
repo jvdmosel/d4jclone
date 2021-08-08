@@ -1,5 +1,6 @@
 import re
 from pathlib import Path
+import sys
 from subprocess import PIPE, run
 
 from d4jclone.config import ENV
@@ -26,9 +27,13 @@ properties = {
     'tests.trigger': 'Trigger tests that expose the bug',    
 }
 
-def export(property, out_file = None, workdir = None):
+def export(property, file = None, workdir = None):
     if property in properties.keys():
-        workdir = Path(workdir) if workdir != None else Path.cwd
+        f = None
+        if file != None:
+            f = open(file, 'w')
+            sys.stdout = f
+        workdir = Path(workdir) if workdir != None else Path.cwd()
         checkout = parseCheckout(workdir)
         # Classes modified by the bug fix
         if property == 'classes.modified':
@@ -66,6 +71,8 @@ def export(property, out_file = None, workdir = None):
             if trigger_tests != None:
                 for test in trigger_tests.keys():
                     print(test)
+        if f != None:
+            f.close()
     else:
         print('Unknown property ' + property)
         print('usage: d4jclone export -p property_name [-o output_file] [-w work_dir]\n')
