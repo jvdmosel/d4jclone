@@ -1,4 +1,6 @@
+import re
 from pathlib import Path
+from subprocess import PIPE, run
 
 from d4jclone.config import ENV
 from d4jclone.parser.bugParser import (getLayout, getLoadedClasses,
@@ -28,28 +30,37 @@ def export(property, out_file = None, workdir = None):
     if property in properties.keys():
         workdir = Path(workdir) if workdir != None else Path.cwd
         checkout = parseCheckout(workdir)
+        # Classes modified by the bug fix
         if property == 'classes.modified':
             for src in getModifiedSources(checkout.bug):
                 print(src)
+        # Classes loaded by the triggering tests
         elif property == 'classes.relevant':
             for src in getLoadedClasses(checkout.bug):
                 print(src)
+        # Classpath to compile the project
         elif property == 'cp.compile':
-            pass
+            print(parseClasspath(workdir))
+        # Classpath to compile and run the developer-written tests
         elif property == 'cp.test':
-            pass
+            print(parseClasspath(workdir, 'test.classpath'))
+        # Target directory of classes and test classes
         elif property == 'dir.bin.classes' or property == 'dir.bin.tests':
             src, test = parseProperty(checkout.project.id, checkout.bug.id, 'b')
             print(src if property == 'dir.bin.classes' else test)
+        # Source directory of classes and tests
         elif property == 'dir.src.classes' or property == 'dir.src.tests':
             src, test = getLayout(checkout.bug, 'b')
             print(src if property == 'dir.src.classes' else test)
+        # List of all developer-written tests
         elif property == 'tests.all':
             for test in sorted(getClasses(workdir, getLayout(checkout.bug, 'b')[1])):
                 print(test)
+        # Relevant tests that touch at least one of the modified sources
         elif property == 'tests.relevant':
             for test in getRelevantTests(checkout.bug):
                 print(test)
+        # Trigger tests that expose the bug
         elif property == 'tests.trigger':
             trigger_tests = parseTriggerTests(checkout.project.id, checkout.bug.id)
             if trigger_tests != None:
@@ -81,3 +92,16 @@ def parseProperty(project_id, bug_id, version):
             return (output_dir, test_dir)
     else:
         raise Exception('Invalid project_id:' + project_id)
+
+def parseClasspath(workdir, arg = 'classpath'):
+    checkout = parseCheckout(workdir)
+    args = ['ant', 
+            '-Dbasedir=' + str(workdir), 
+            '-Dprojectdir=' + str(checkout.project_dir), 
+            '-buildfile', checkout.project.build_file, 
+            'print-' + arg]
+    result = run(args, stdout=PIPE, stderr=PIPE, universal_newlines=True)
+    for line in result.stdout.split('\n'):
+        line = line.strip()
+        if line.startswith('[echo] '):
+            return line[len('[echo] '):]
