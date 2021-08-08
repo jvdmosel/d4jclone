@@ -32,6 +32,7 @@ def export(property, file = None, workdir = None):
         f = None
         if file != None:
             f = open(file, 'w')
+            # print() now prints to file instead of stdout
             sys.stdout = f
         workdir = Path(workdir) if workdir != None else Path.cwd()
         checkout = parseCheckout(workdir)
