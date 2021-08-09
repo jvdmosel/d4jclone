@@ -1,1 +1,2 @@
-opennlp.tools.parser.ParserModel
+opennlp.tools.namefind.NameFinderME
+opennlp.tools.namefind.TokenNameFinderFactory

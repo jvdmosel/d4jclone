@@ -1,3 +1,2 @@
+org.apache.ivy.core.resolve.IvyNodeEviction
 org.apache.ivy.core.resolve.ResolveTest
-org.apache.ivy.core.resolve.IvyNode
-org.apache.ivy.core.resolve.IvyNodeUsage

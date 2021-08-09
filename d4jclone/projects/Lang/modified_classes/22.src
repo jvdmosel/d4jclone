@@ -1,2 +1,2 @@
-org.apache.commons.lang3.builder.HashCodeBuilder
-org.apache.commons.lang3.builder.HashCodeBuilderTest
+org.apache.commons.lang.IDKey
+org.apache.commons.lang.builder.HashCodeBuilder

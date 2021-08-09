@@ -1,3 +1,5 @@
-org.apache.ivy.osgi.obr.filter.UniOperatorFilter
-org.apache.ivy.osgi.obr.RequirementFilterTest
-org.apache.ivy.osgi.obr.filter.RequirementFilterParser
+org.apache.ivy.plugins.lock.CreateFileLockStrategy
+org.apache.ivy.plugins.lock.NIOFileLockStrategy
+org.apache.ivy.core.settings.IvySettings
+org.apache.ivy.plugins.lock.ArtifactLockStrategy
+org.apache.ivy.plugins.lock.FileBasedLockStrategy

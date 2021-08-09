@@ -1,1 +1,2 @@
-org.apache.commons.net.telnet.Telnet
+org.apache.commons.net.smtp.SimpleSMTPHeader
+org.apache.commons.net.smtp.SimpleSMTPHeaderTestCase

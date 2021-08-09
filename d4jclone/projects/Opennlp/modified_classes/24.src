@@ -1,2 +1,1 @@
-opennlp.tools.ml.maxent.io.GISModelWriter
-opennlp.tools.ml.model.AbstractDataIndexer
+opennlp.tools.tokenize.TokenizerFactory

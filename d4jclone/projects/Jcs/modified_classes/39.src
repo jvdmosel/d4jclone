@@ -1,2 +1,1 @@
-org.apache.commons.jcs.jcache.JCSCache
-org.apache.commons.jcs.jcache.CacheTest
+org.apache.commons.jcs.jcache.cdi.CacheInvocationContextImpl

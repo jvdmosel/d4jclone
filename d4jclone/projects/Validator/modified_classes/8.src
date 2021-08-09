@@ -1,1 +1,2 @@
-org.apache.commons.validator.routines.EmailValidatorTest
+org.apache.commons.validator.GenericTypeValidator
+org.apache.commons.validator.GenericTypeValidatorTest

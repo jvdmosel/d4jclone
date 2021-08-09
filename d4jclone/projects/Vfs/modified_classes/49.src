@@ -1,3 +1,2 @@
-org.apache.commons.vfs2.provider.hdfs.HdfsFileObject
-org.apache.commons.vfs2.provider.hdfs.HdfsFileSystem
-org.apache.commons.vfs2.provider.hdfs.test.HdfsFileProviderTest
+org.apache.commons.vfs2.auth.StaticUserAuthenticator
+org.apache.commons.vfs2.auth.StaticUserAuthenticatorTestCase

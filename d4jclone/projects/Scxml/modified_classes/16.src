@@ -1,4 +1,4 @@
-org.apache.commons.scxml2.model.SCXML
-org.apache.commons.scxml2.SCXMLTestHelper
-org.apache.commons.scxml2.model.ScxmlInitialAttributeTest
-org.apache.commons.scxml2.io.ModelUpdater
+org.apache.commons.scxml2.SCInstance
+org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl
+org.apache.commons.scxml2.semantics.Step
+org.apache.commons.scxml2.SCInstanceTest

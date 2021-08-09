@@ -1,2 +1,2 @@
-examples.mail.IMAPImportMbox
-org.apache.commons.net.imap.IMAPClient
+org.apache.commons.net.util.SubnetUtils
+org.apache.commons.net.SubnetUtilsTest

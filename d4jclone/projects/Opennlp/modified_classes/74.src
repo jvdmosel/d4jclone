@@ -1,2 +1,2 @@
-opennlp.tools.lemmatizer.DictionaryLemmatizer
-opennlp.tools.lemmatizer.DictionaryLemmatizerTest
+opennlp.tools.util.featuregen.GeneratorFactory
+opennlp.tools.util.featuregen.GeneratorFactoryTest

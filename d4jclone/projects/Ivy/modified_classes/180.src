@@ -1,4 +1,4 @@
-org.apache.ivy.plugins.resolver.AbstractResolver
-org.apache.ivy.plugins.resolver.BasicResolver
-org.apache.ivy.plugins.namespace.NameSpaceHelper
-org.apache.ivy.ant.IvyInstallTest
+org.apache.ivy.core.resolve.IvyNodeUsage
+org.apache.ivy.core.resolve.VisitNode
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.core.resolve.ResolveEngine

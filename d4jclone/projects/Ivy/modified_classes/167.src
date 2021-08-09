@@ -1,1 +1,2 @@
-org.apache.ivy.core.module.id.ModuleRevisionId
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser

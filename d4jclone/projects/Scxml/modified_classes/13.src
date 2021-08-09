@@ -1,2 +1,4 @@
-org.apache.commons.scxml.issues.Issue112Test
-org.apache.commons.scxml.issues.IssuesTestSuite
+org.apache.commons.scxml2.model.SCXML
+org.apache.commons.scxml2.SCXMLTestHelper
+org.apache.commons.scxml2.model.ScxmlInitialAttributeTest
+org.apache.commons.scxml2.io.ModelUpdater

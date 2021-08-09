@@ -1,2 +1,3 @@
-org.apache.parquet.pig.PigSchemaConverter
-org.apache.parquet.pig.TestPigSchemaConverter
+org.apache.parquet.schema.Type
+org.apache.parquet.schema.Types
+org.apache.parquet.format.converter.ParquetMetadataConverter

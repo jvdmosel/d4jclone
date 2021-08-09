@@ -1,2 +1,2 @@
-org.apache.commons.digester3.xmlrules.IncludeRule
-org.apache.commons.digester3.xmlrules.IncludeTest
+org.apache.commons.digester3.binder.BinderClassLoader
+org.apache.commons.digester3.binder.BinderClassLoaderTestCase

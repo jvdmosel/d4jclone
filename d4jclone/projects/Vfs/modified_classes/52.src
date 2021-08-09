@@ -1,1 +1,3 @@
-org.apache.commons.vfs2.cache.SoftRefFilesCache
+org.apache.commons.vfs2.impl.FileTypeMap
+org.apache.commons.vfs2.impl.test.VfsClassLoaderTests
+org.apache.commons.vfs2.test.ProviderReadTests

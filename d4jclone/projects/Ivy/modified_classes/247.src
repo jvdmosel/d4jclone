@@ -1,9 +1,2 @@
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
-org.apache.ivy.core.cache.DefaultRepositoryCacheManager
-org.apache.ivy.core.settings.IvySettings
-org.apache.ivy.plugins.resolver.RepositoryResolver
-org.apache.ivy.core.cache.ParserSettingsMonitor
-org.apache.ivy.plugins.resolver.AbstractResolver
-org.apache.ivy.plugins.parser.m2.PomReader
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.core.resolve.IvyNodeEviction
 org.apache.ivy.core.resolve.ResolveTest

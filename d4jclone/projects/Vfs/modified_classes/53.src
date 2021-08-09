@@ -1,2 +1,1 @@
-org.apache.commons.vfs2.impl.DefaultFileMonitor
-org.apache.commons.vfs2.impl.test.DefaultFileMonitorTests
+org.apache.commons.vfs2.util.MonitorOutputStream

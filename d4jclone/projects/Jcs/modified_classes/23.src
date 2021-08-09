@@ -1,1 +1,2 @@
-org.apache.commons.jcs.auxiliary.remote.server.RemoteCacheServer
+org.apache.commons.jcs.jcache.extras.web.InMemoryResponse
+org.apache.commons.jcs.jcache.extras.web.JCacheFilterTest

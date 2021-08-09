@@ -1,7 +1,2 @@
-org.apache.commons.beanutils.JDBCDynaClass
-org.apache.commons.beanutils.ResultSetDynaClass
-org.apache.commons.beanutils.ResultSetIterator
-org.apache.commons.beanutils.RowSetDynaClass
-org.apache.commons.beanutils.DynaResultSetTestCase
-org.apache.commons.beanutils.DynaRowSetTestCase
-org.apache.commons.beanutils.TestResultSet
+org.apache.commons.beanutils.LazyDynaList
+org.apache.commons.beanutils.LazyDynaListTestCase

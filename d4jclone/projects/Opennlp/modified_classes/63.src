@@ -1,2 +1,4 @@
-opennlp.tools.ml.maxent.GISTrainer
-opennlp.tools.ml.maxent.GISTestIndexing
+opennlp.tools.formats.brat.AnnotationConfiguration
+opennlp.tools.formats.brat.BratAnnotation
+opennlp.tools.formats.brat.BratAnnotationStream
+opennlp.tools.formats.brat.EventAnnotation

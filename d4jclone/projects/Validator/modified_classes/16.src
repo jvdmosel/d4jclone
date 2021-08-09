@@ -1,2 +1,1 @@
-org.apache.commons.validator.routines.DomainValidator
-org.apache.commons.validator.routines.DomainValidatorTest
+org.apache.commons.validator.routines.checkdigit.IBANCheckDigit

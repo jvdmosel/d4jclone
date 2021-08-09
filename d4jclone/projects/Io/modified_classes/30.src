@@ -1,2 +1,1 @@
-org.apache.commons.io.IOUtils
-org.apache.commons.io.IOUtilsTestCase
+org.apache.commons.io.input.CharSequenceInputStream

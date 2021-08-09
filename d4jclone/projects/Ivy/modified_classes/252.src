@@ -1,2 +1,2 @@
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriter
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriterTest
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.ant.IvyPublishTest

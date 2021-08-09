@@ -1,1 +1,5 @@
-org.apache.commons.vfs2.impl.StandardFileSystemManager
+org.apache.commons.vfs2.provider.http.HttpFileObject
+org.apache.commons.vfs2.provider.http.HttpFileSystemConfigBuilder
+org.apache.commons.vfs2.provider.webdav.WebdavFileObject
+org.apache.commons.vfs2.provider.webdav.WebdavFileSystemConfigBuilder
+org.apache.commons.vfs2.provider.http.test.HttpProviderTestCase

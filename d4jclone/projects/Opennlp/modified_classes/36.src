@@ -1,1 +1,1 @@
-opennlp.tools.ml.TrainerFactory
+opennlp.tools.namefind.TokenNameFinderFactory

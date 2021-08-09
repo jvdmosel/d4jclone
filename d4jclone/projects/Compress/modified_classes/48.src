@@ -1,7 +1,1 @@
-org.apache.commons.compress.archivers.sevenz.AES256SHA256Decoder
-org.apache.commons.compress.archivers.sevenz.CoderBase
-org.apache.commons.compress.archivers.sevenz.Coders
-org.apache.commons.compress.archivers.sevenz.DeltaDecoder
-org.apache.commons.compress.archivers.sevenz.Folder
-org.apache.commons.compress.archivers.sevenz.LZMA2Decoder
-org.apache.commons.compress.archivers.sevenz.SevenZFile
+org.apache.commons.compress.archivers.ArchiveStreamFactory

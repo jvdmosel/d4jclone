@@ -1,2 +1,2 @@
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriterTest
+org.apache.ivy.plugins.resolver.util.ResolverHelper
+org.apache.ivy.plugins.resolver.util.ResolverHelperTest

@@ -1,4 +1,2 @@
-org.apache.commons.beanutils.BeanUtilsBean
 org.apache.commons.beanutils.PropertyUtilsBean
-org.apache.commons.beanutils.bugs.Jira61TestCase
-org.apache.commons.beanutils.bugs.other.Jira61BeanFactory
+org.apache.commons.beanutils.PropertyUtilsTestCase

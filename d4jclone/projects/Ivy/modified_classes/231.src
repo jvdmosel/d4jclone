@@ -1,1 +1,5 @@
-org.apache.ivy.ant.IvyBuildNumber
+org.apache.ivy.ant.IvyDeliver
+org.apache.ivy.core.deliver.DeliverEngine
+org.apache.ivy.core.deliver.DeliverOptions
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.core.resolve.ResolveEngine

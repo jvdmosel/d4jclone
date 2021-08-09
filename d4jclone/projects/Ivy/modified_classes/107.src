@@ -1,2 +1,2 @@
-org.apache.ivy.core.resolve.ResolveTest
-org.apache.ivy.plugins.resolver.IBiblioResolver
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater
+org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest

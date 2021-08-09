@@ -1,3 +1,7 @@
-org.apache.commons.beanutils.MethodUtils
-org.apache.commons.beanutils.bugs.Jira273TestCase
-org.apache.commons.beanutils.bugs.other.Jira273BeanFactory
+org.apache.commons.beanutils.JDBCDynaClass
+org.apache.commons.beanutils.ResultSetDynaClass
+org.apache.commons.beanutils.ResultSetIterator
+org.apache.commons.beanutils.RowSetDynaClass
+org.apache.commons.beanutils.DynaResultSetTestCase
+org.apache.commons.beanutils.DynaRowSetTestCase
+org.apache.commons.beanutils.TestResultSet

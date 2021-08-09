@@ -1,2 +1,2 @@
-org.apache.commons.codec.binary.Base32OutputStream
-org.apache.commons.codec.binary.Base64OutputStream
+org.apache.commons.codec.binary.StringUtils
+org.apache.commons.codec.binary.StringUtilsTest

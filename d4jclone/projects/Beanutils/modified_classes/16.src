@@ -1,2 +1,1 @@
-org.apache.commons.beanutils.LazyDynaList
-org.apache.commons.beanutils.LazyDynaListTestCase
+org.apache.commons.beanutils.locale.LocaleConvertUtilsTestCase

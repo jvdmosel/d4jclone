@@ -1,1 +1,3 @@
-org.apache.wss4j.policy.stax.PolicyEnforcer
+org.apache.wss4j.policy.stax.assertionStates.TokenProtectionAssertionState
+org.apache.wss4j.policy.stax.test.TokenProtectionTest
+org.apache.wss4j.stax.ext.WSSUtils

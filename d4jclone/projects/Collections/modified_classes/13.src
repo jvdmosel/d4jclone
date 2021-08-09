@@ -1,2 +1,2 @@
-org.apache.commons.collections4.map.MultiKeyMap
-org.apache.commons.collections4.map.MultiKeyMapTest
+org.apache.commons.collections4.set.ListOrderedSet
+org.apache.commons.collections4.set.ListOrderedSetTest

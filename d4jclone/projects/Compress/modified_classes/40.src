@@ -1,2 +1,2 @@
-org.apache.commons.compress.archivers.tar.TarUtils
-org.apache.commons.compress.archivers.tar.TarUtilsTest
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest

@@ -1,1 +1,2 @@
-org.apache.ws.security.str.SignatureSTRParser
+org.apache.ws.security.action.UsernameTokenAction
+org.apache.ws.security.message.UsernameTokenTest

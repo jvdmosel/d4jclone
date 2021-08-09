@@ -1,2 +1,2 @@
-org.apache.commons.compress.archivers.zip.ZipFile
-org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest
+org.apache.commons.compress.archivers.ArchiveStreamFactory
+org.apache.commons.compress.archivers.ArchiveStreamFactoryTest

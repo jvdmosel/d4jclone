@@ -1,1 +1,1 @@
-org.apache.commons.vfs2.provider.res.ResourceFileProvider
+org.apache.commons.vfs2.provider.AbstractFileObject

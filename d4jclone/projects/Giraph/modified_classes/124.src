@@ -1,5 +1,4 @@
-org.apache.giraph.block_app.framework.block.RepeatUntilBlock
-org.apache.giraph.block_app.library.Pieces
-org.apache.giraph.block_app.framework.BlockExecutionTest
-org.apache.giraph.block_app.framework.block.BlockTestingUtils
-org.apache.giraph.block_app.framework.block.TestRepeatUntilBlock
+org.apache.giraph.edge.IdAndNullArrayEdges
+org.apache.giraph.edge.IdAndValueArrayEdges
+org.apache.giraph.edge.IdAndNullArrayEdgesTest
+org.apache.giraph.edge.IdAndValueArrayEdgesTest

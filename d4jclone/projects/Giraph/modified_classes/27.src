@@ -1,1 +1,1 @@
-org.apache.giraph.comm.netty.handler.ResponseClientHandler
+org.apache.giraph.graph.LocalityInfoSorter

@@ -1,2 +1,1 @@
-fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser
-fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest
+fr.jayasoft.ivy.version.ChainVersionMatcher

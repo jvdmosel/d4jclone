@@ -1,1 +1,2 @@
-org.apache.wss4j.stax.impl.InboundWSSecurityContextImpl
+org.apache.wss4j.stax.impl.processor.input.SAMLTokenInputHandler
+org.apache.wss4j.stax.impl.securityToken.SamlSecurityTokenImpl

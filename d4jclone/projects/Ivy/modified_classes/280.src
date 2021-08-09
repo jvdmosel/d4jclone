@@ -1,2 +1,2 @@
-org.apache.ivy.osgi.core.ManifestHeaderValue
-org.apache.ivy.osgi.core.ManifestHeaderTest
+org.apache.ivy.ant.IvyDependencyTreeTest
+org.apache.ivy.ant.IvyDependencyTree

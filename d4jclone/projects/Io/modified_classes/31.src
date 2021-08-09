@@ -1,1 +1,2 @@
-org.apache.commons.io.input.CharSequenceInputStream
+org.apache.commons.io.input.Tailer
+org.apache.commons.io.input.TailerTest

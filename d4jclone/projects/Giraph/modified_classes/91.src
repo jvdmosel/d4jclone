@@ -1,4 +1,2 @@
-org.apache.giraph.conf.GiraphConfiguration
-org.apache.giraph.zk.ComputationDoneName
-org.apache.giraph.zk.ZooKeeperManager
-org.apache.giraph.zk.ComputationDoneNameTest
+org.apache.giraph.graph.GraphTaskManager
+org.apache.giraph.worker.WorkerProgressWriter

@@ -1,2 +1,2 @@
-org.apache.commons.math.util.MultidimensionalCounter
-org.apache.commons.math.util.MultidimensionalCounterTest
+org.apache.commons.math.geometry.Vector3D
+org.apache.commons.math.geometry.Vector3DTest

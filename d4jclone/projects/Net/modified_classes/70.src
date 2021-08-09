@@ -1,2 +1,1 @@
-org.apache.commons.net.util.SubnetUtils
-org.apache.commons.net.SubnetUtilsTest
+org.apache.commons.net.telnet.Telnet

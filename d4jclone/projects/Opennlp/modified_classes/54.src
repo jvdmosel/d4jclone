@@ -1,2 +1,2 @@
-opennlp.tools.postag.POSModel
-opennlp.tools.postag.POSTaggerME
+opennlp.tools.namefind.NameFinderME
+opennlp.tools.namefind.TokenNameFinderModel

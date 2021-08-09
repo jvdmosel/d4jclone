@@ -1,1 +1,2 @@
-org.apache.commons.compress.archivers.zip.ZipFile
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream
+org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream

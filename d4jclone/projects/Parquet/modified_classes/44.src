@@ -1,4 +1,2 @@
-org.apache.parquet.io.RecordReaderImplementation
-org.apache.parquet.encoding.bitpacking.ByteBasedBitPackingGenerator
-org.apache.parquet.encoding.bitpacking.IntBasedBitPackingGenerator
-org.apache.parquet.version.VersionGenerator
+org.apache.parquet.avro.AvroSchemaConverter
+org.apache.parquet.avro.TestReadWrite

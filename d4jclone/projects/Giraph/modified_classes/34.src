@@ -1,5 +1,0 @@
-org.apache.giraph.io.hbase.HBaseVertexInputFormat
-org.apache.giraph.io.hbase.HBaseVertexOutputFormat
-org.apache.giraph.io.hbase.TestHBaseRootMarkerVertextFormat
-org.apache.giraph.io.hbase.edgemarker.TableEdgeInputFormat
-org.apache.giraph.io.hbase.edgemarker.TableEdgeOutputFormat

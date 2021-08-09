@@ -1,2 +1,2 @@
-org.apache.giraph.utils.ProgressableUtils
-org.apache.giraph.utils.TestProgressableUtils
+org.apache.giraph.utils.UnsafeByteArrayOutputStream
+org.apache.giraph.utils.TestUnsafeByteArrayOutputStream

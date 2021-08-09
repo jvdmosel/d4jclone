@@ -1,1 +1,1 @@
-org.apache.giraph.hive.HiveGiraphRunner
+org.apache.giraph.edge.EdgeStore

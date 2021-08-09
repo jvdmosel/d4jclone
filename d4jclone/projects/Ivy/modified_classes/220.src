@@ -1,4 +1,1 @@
-org.apache.ivy.plugins.resolver.BasicResolver
-org.apache.ivy.core.cache.DefaultRepositoryCacheManager
-org.apache.ivy.plugins.resolver.AbstractResolver
-org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.plugins.repository.url.URLResource

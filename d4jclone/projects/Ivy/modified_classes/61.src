@@ -1,3 +1,4 @@
-fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater
-fr.jayasoft.ivy.ant.IvyPublishTest
-fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser
+fr.jayasoft.ivy.resolver.RepositoryResolver
+fr.jayasoft.ivy.resolver.VfsResolver
+fr.jayasoft.ivy.repository.vfs.VfsResource
+fr.jayasoft.ivy.resolver.AbstractResolver

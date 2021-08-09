@@ -1,1 +1,4 @@
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest
+org.apache.ivy.core.cache.CacheManagerTest
+org.apache.ivy.core.cache.CacheManager
+org.apache.ivy.core.cache.ArtifactOrigin
+org.apache.ivy.core.module.id.ArtifactRevisionId

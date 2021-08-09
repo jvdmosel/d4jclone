@@ -1,1 +1,3 @@
-org.apache.commons.net.SocketClient
+org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory
+org.apache.commons.net.ftp.parser.UnixFTPEntryParser
+org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactoryTest

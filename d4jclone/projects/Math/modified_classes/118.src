@@ -1,1 +1,4 @@
-org.apache.commons.math3.ode.sampling.DummyStepInterpolator
+org.apache.commons.math3.util.FastMath
+org.apache.commons.math3.util.MathArrays
+org.apache.commons.math3.util.FastMathTest
+org.apache.commons.math3.util.MathArraysTest

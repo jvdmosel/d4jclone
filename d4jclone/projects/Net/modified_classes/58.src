@@ -1,2 +1,2 @@
-org.apache.commons.net.imap.IMAP
-org.apache.commons.net.imap.IMAPReply
+org.apache.commons.net.util.Base64
+org.apache.commons.net.util.Base64Test

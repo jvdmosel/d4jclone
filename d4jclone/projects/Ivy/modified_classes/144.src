@@ -1,1 +1,8 @@
+org.apache.ivy.core.install.InstallEngine
+org.apache.ivy.core.IvyPatternHelper
+org.apache.ivy.ant.IvyRepositoryReport
+org.apache.ivy.plugins.resolver.RepositoryResolver
 org.apache.ivy.plugins.resolver.AbstractResourceResolver
+org.apache.ivy.ant.IvyRepositoryReportTest
+org.apache.ivy.core.search.SearchEngine
+org.apache.ivy.plugins.resolver.AbstractResolver

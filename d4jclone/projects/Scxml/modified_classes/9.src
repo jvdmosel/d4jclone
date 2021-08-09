@@ -1,4 +1,2 @@
-org.apache.commons.scxml.semantics.SCXMLSemanticsImpl
-org.apache.commons.scxml.model.StatelessModelTest
-org.apache.commons.scxml.SCInstance
-org.apache.commons.scxml.model.State
+org.apache.commons.scxml.invoke.AsyncTrigger
+org.apache.commons.scxml.invoke.SimpleSCXMLInvoker

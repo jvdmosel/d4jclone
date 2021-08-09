@@ -1,1 +1,2 @@
-opennlp.tools.ml.model.SequenceStreamEventStream
+opennlp.tools.ml.maxent.GISTrainer
+opennlp.tools.ml.maxent.GISTestIndexing

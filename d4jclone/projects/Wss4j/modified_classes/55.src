@@ -1,2 +1,9 @@
-org.apache.ws.security.action.UsernameTokenAction
-org.apache.ws.security.message.UsernameTokenTest
+org.apache.wss4j.dom.handler.WSHandler
+org.apache.wss4j.dom.util.WSSecurityUtil
+org.apache.wss4j.stax.WSSec
+org.apache.wss4j.stax.ext.OutboundWSSec
+org.apache.wss4j.stax.ext.WSSConstants
+org.apache.wss4j.stax.ext.WSSSecurityProperties
+org.apache.wss4j.stax.impl.processor.output.WSSSignatureOutputProcessor
+org.apache.wss4j.stax.test.AbstractTestBase
+org.apache.wss4j.stax.test.SignatureConfirmationTest

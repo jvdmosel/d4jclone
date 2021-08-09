@@ -1,2 +1,2 @@
-fr.jayasoft.ivy.util.ChecksumHelper
-fr.jayasoft.ivy.resolver.FileSystemResolverTest
+fr.jayasoft.ivy.Ivy
+fr.jayasoft.ivy.ant.IvyRetrieveTest

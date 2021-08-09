@@ -1,1 +1,2 @@
-opennlp.uima.namefind.NameFinderTrainer
+opennlp.tools.cmdline.ArgumentParser
+opennlp.tools.cmdline.ArgumentParserTest

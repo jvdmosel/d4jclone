@@ -1,1 +1,1 @@
-org.apache.ivy.core.resolve.IvyNode
+org.apache.ivy.ant.IvyResolve

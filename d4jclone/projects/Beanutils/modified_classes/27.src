@@ -1,2 +1,2 @@
-org.apache.commons.beanutils.MethodUtils
-org.apache.commons.beanutils.MethodUtilsTestCase
+org.apache.commons.beanutils.BeanUtilsBean
+org.apache.commons.beanutils.converters.AbstractConverter

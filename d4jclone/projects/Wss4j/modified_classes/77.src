@@ -1,1 +1,2 @@
-org.apache.ws.security.util.WSSecurityUtil
+org.apache.wss4j.dom.WSSecurityEngine
+org.apache.wss4j.dom.WSSecurityEngineResult

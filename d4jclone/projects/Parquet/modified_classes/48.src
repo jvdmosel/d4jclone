@@ -1,3 +1,0 @@
-org.apache.parquet.schema.Type
-org.apache.parquet.schema.Types
-org.apache.parquet.format.converter.ParquetMetadataConverter

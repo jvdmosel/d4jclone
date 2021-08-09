@@ -1,2 +1,2 @@
-org.apache.commons.lang.LocaleUtils
-org.apache.commons.lang.LocaleUtilsTest
+org.apache.commons.lang.<error>.Enum
+org.apache.commons.lang.enums.Enum

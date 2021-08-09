@@ -1,2 +1,2 @@
-org.apache.commons.compress.archivers.zip.ZipArchiveInputStream
-org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream
+org.apache.commons.compress.changes.ChangeSetPerformer
+org.apache.commons.compress.changes.ChangeSetTestCase

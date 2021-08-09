@@ -1,2 +1,2 @@
-org.apache.commons.math3.distribution.EnumeratedRealDistribution
-org.apache.commons.math3.distribution.EnumeratedRealDistributionTest
+org.apache.commons.math3.util.Precision
+org.apache.commons.math3.util.PrecisionTest

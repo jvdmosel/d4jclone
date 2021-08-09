@@ -1,4 +1,3 @@
-org.apache.ivy.core.settings.XmlSettingsParser
-org.apache.ivy.plugins.matcher.ModuleIdMatcher
-org.apache.ivy.core.settings.XmlSettingsParserTest
-org.apache.ivy.core.module.id.ModuleId
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.plugins.resolver.RepositoryResolver
+org.apache.ivy.plugins.resolver.AbstractResourceResolver

@@ -1,3 +1,1 @@
-fr.jayasoft.ivy.xml.XmlIvyConfigurationParserTest
-fr.jayasoft.ivy.util.Configurator
-fr.jayasoft.ivy.xml.XmlIvyConfigurationParser
+fr.jayasoft.ivy.ant.IvyResolve

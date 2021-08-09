@@ -1,1 +1,1 @@
-opennlp.tools.cmdline.namefind.TokenNameFinderTrainerTool
+opennlp.tools.cmdline.chunker.ChunkerMETool

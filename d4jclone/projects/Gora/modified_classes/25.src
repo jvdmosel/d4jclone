@@ -1,2 +1,0 @@
-org.apache.gora.hbase.store.HBaseStore
-org.apache.gora.infinispan.store.InfinispanStore

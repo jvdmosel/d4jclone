@@ -1,2 +1,2 @@
-org.apache.ws.security.saml.ext.builder.SAML1ComponentBuilder
-org.apache.ws.security.saml.ext.builder.SAML2ComponentBuilder
+org.apache.ws.security.validate.SignatureTrustValidator
+org.apache.ws.security.message.SignatureCRLTest

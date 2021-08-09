@@ -1,1 +1,2 @@
-opennlp.tools.cmdline.chunker.ChunkerMETool
+opennlp.tools.chunker.ChunkerME
+opennlp.tools.chunker.ChunkerModel

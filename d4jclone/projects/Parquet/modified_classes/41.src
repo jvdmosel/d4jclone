@@ -1,4 +1,4 @@
-org.apache.parquet.tools.command.DumpCommand
-org.apache.parquet.tools.command.ShowSchemaCommand
-org.apache.parquet.tools.read.SimpleMapRecord
-org.apache.parquet.tools.read.TestSimpleMapRecord
+org.apache.parquet.tools.read.SimpleRecord
+org.apache.parquet.tools.read.TestJsonRecordFormatter
+org.apache.parquet.tools.command.CatCommand
+org.apache.parquet.tools.json.JsonRecordFormatter

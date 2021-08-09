@@ -1,2 +1,1 @@
-org.apache.ivy.ant.IvyReport
-org.apache.ivy.ant.IvyReportTest
+fr.jayasoft.ivy.IvyNode

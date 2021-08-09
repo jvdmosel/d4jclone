@@ -1,3 +1,2 @@
-org.apache.commons.math.random.RandomGeneratorAbstractTest
-org.apache.commons.math.random.RandomDataTest
-org.apache.commons.math.random.RandomDataImpl
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest
+org.apache.commons.math.optimization.direct.BOBYQAOptimizer

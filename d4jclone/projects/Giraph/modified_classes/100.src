@@ -1,1 +1,1 @@
-org.apache.giraph.comm.netty.NettyClient
+org.apache.giraph.edge.ByteArrayEdges

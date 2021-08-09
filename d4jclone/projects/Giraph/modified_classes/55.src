@@ -1,1 +1,3 @@
-org.apache.giraph.edge.EdgeStore
+org.apache.giraph.io.iterables.EdgeReaderWrapper
+org.apache.giraph.io.iterables.VertexReaderWrapper
+org.apache.giraph.hive.output.HiveVertexOutputFormat

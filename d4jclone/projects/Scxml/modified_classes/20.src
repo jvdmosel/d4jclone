@@ -1,1 +1,2 @@
-org.apache.commons.scxml2.SCXMLExecutor
+org.apache.commons.scxml2.env.javascript.JSBindings
+org.apache.commons.scxml2.env.javascript.JSFunctions

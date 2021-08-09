@@ -1,5 +1,4 @@
-org.apache.giraph.comm.netty.NettyClient
-org.apache.giraph.comm.netty.NettyServer
-org.apache.giraph.graph.GraphTaskManager
-org.apache.giraph.metrics.GiraphMetrics
-org.apache.giraph.metrics.GiraphMetricsRegistry
+org.apache.giraph.edge.MutableEdgesIterable
+org.apache.giraph.edge.MutableEdgesWrapper
+org.apache.giraph.graph.Vertex
+org.apache.giraph.graph.TestVertexAndEdges

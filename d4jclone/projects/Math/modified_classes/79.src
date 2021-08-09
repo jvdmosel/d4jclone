@@ -1,2 +1,2 @@
-org.apache.commons.math3.random.RandomDataImpl
-org.apache.commons.math3.random.ValueServer
+org.apache.commons.math3.distribution.RealDistributionAbstractTest
+org.apache.commons.math3.random.BitsStreamGenerator

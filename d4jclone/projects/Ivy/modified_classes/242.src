@@ -1,4 +1,3 @@
-org.apache.ivy.util.url.CredentialsStore
-org.apache.ivy.util.url.BasicURLHandler
-org.apache.ivy.util.url.IvyAuthenticator
-org.apache.ivy.util.url.HttpClientHandler
+org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.plugins.parser.AbstractModuleDescriptorParser

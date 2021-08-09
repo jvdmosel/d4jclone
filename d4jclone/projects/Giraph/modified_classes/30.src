@@ -1,10 +1,1 @@
-org.apache.giraph.format.accumulo.AccumuloVertexInputFormat
-org.apache.giraph.format.accumulo.AccumuloVertexOutputFormat
-org.apache.giraph.format.hbase.HBaseVertexInputFormat
-org.apache.giraph.format.hbase.HBaseVertexOutputFormat
-org.apache.giraph.format.hcatalog.HCatalogVertexInputFormat
-org.apache.giraph.format.hcatalog.HCatalogVertexOutputFormat
-org.apache.giraph.format.hcatalog.HiveGiraphRunner
-org.apache.giraph.format.hbase.TestHBaseRootMarkerVertextFormat
-org.apache.giraph.format.hbase.edgemarker.TableEdgeInputFormat
-org.apache.giraph.format.hbase.edgemarker.TableEdgeOutputFormat
+org.apache.giraph.graph.BspServiceWorker

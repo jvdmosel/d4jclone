@@ -1,0 +1,2 @@
+org.apache.parquet.hadoop.ParquetRecordReader
+org.apache.parquet.hadoop.example.TestInputOutputFormat

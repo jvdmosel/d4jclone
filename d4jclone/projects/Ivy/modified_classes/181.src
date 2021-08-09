@@ -1,1 +1,9 @@
-org.apache.ivy.util.url.HttpClientHandler
+org.apache.ivy.plugins.resolver.MockResolver
+org.apache.ivy.plugins.resolver.DualResolverTest
+org.apache.ivy.plugins.resolver.BasicResolver
+org.apache.ivy.plugins.resolver.DualResolver
+org.apache.ivy.plugins.resolver.ChainResolverTest
+org.apache.ivy.plugins.resolver.AbstractResolver
+org.apache.ivy.plugins.resolver.ChainResolver
+org.apache.ivy.core.resolve.ResolveData
+org.apache.ivy.plugins.resolver.IBiblioResolverTest

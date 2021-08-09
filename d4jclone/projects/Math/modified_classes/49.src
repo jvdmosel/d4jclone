@@ -1,2 +1,2 @@
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest
-org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer
+org.apache.commons.math.util.MultidimensionalCounter
+org.apache.commons.math.util.MultidimensionalCounterTest

@@ -1,11 +1,1 @@
-org.apache.giraph.edge.ByteArrayEdges
-org.apache.giraph.edge.EdgeStore
-org.apache.giraph.edge.HashMapEdges
-org.apache.giraph.edge.LongDoubleArrayEdges
-org.apache.giraph.edge.LongDoubleHashMapEdges
-org.apache.giraph.edge.LongNullArrayEdges
-org.apache.giraph.edge.LongNullHashSetEdges
-org.apache.giraph.graph.Vertex
-org.apache.giraph.comm.netty.NettyWorkerClientRequestProcessor
-org.apache.giraph.conf.ImmutableClassesGiraphConfiguration
-org.apache.giraph.edge.ArrayListEdges
+org.apache.giraph.hive.HiveGiraphRunner

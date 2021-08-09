@@ -1,3 +1,2 @@
-opennlp.tools.cmdline.AbstractCmdLineTool
-opennlp.tools.cmdline.CLI
-opennlp.tools.cmdline.tokenizer.SimpleTokenizerTool
+opennlp.tools.ml.maxent.io.GISModelWriter
+opennlp.tools.ml.model.AbstractDataIndexer

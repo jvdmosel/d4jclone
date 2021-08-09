@@ -1,3 +1,1 @@
-org.apache.giraph.comm.netty.NettyClient
-org.apache.giraph.comm.netty.NettyServer
-org.apache.giraph.utils.ProgressableUtils
+org.apache.giraph.zk.ZooKeeperManager

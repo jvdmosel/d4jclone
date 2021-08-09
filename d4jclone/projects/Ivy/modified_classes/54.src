@@ -1,1 +1,3 @@
-fr.jayasoft.ivy.ant.IvyReport
+fr.jayasoft.ivy.Ivy
+fr.jayasoft.ivy.ResolveTest
+fr.jayasoft.ivy.IvyNode

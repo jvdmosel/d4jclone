@@ -1,1 +1,2 @@
-org.apache.commons.jcs.auxiliary.remote.RemoteCacheFactory
+org.apache.commons.jcs.jcache.JCSCache
+org.apache.commons.jcs.jcache.CacheTest

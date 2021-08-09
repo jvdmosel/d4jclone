@@ -1,1 +1,2 @@
-fr.jayasoft.ivy.ant.IvyArtifactReport
+fr.jayasoft.ivy.repository.vfs.VfsResource
+fr.jayasoft.ivy.repository.vfs.VfsRepository

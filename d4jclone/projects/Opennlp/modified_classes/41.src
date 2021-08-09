@@ -1,3 +1,1 @@
-opennlp.uima.util.AnnotationComboIterator
-opennlp.uima.util.AnnotationComboIteratorTest
-opennlp.uima.util.CasUtil
+opennlp.tools.sentdetect.SentenceDetectorME

@@ -1,2 +1,2 @@
-org.apache.commons.collections4.set.ListOrderedSet
-org.apache.commons.collections4.set.ListOrderedSetTest
+org.apache.commons.collections4.trie.AbstractPatriciaTrie
+org.apache.commons.collections4.trie.PatriciaTrieTest

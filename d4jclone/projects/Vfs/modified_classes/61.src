@@ -1,1 +1,2 @@
-org.apache.commons.vfs2.provider.ftp.FTPClientWrapper
+org.apache.commons.vfs2.provider.sftp.SftpFileSystem
+org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder

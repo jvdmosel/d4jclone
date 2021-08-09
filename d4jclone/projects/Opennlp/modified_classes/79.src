@@ -1,2 +1,4 @@
-opennlp.tools.postag.POSModel
-opennlp.tools.namefind.TokenNameFinderModelTest
+opennlp.tools.ml.maxent.GISTrainer
+opennlp.tools.ml.maxent.FootballEventStream
+opennlp.tools.ml.maxent.GISTrainerTest
+opennlp.tools.ml.maxent.URLInputStreamFactory

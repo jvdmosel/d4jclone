@@ -1,4 +1,2 @@
-org.apache.commons.lang.math.IEEE754rUtils
-org.apache.commons.lang.math.NumberUtils
-org.apache.commons.lang.math.IEEE754rUtilsTest
-org.apache.commons.lang.math.NumberUtilsTest
+org.apache.commons.lang.text.StrBuilder
+org.apache.commons.lang.text.StrBuilderTest

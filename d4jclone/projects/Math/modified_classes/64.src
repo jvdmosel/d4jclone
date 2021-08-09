@@ -1,4 +1,2 @@
-org.apache.commons.math.fraction.FractionTest
-org.apache.commons.math.fraction.BigFractionTest
-org.apache.commons.math.fraction.Fraction
-org.apache.commons.math.fraction.BigFraction
+org.apache.commons.math.optimization.linear.SimplexSolverTest
+org.apache.commons.math.optimization.linear.SimplexTableau

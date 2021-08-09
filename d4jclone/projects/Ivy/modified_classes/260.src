@@ -1,2 +1,3 @@
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
-org.apache.ivy.ant.IvyPublishTest
+org.apache.ivy.osgi.obr.filter.UniOperatorFilter
+org.apache.ivy.osgi.obr.RequirementFilterTest
+org.apache.ivy.osgi.obr.filter.RequirementFilterParser

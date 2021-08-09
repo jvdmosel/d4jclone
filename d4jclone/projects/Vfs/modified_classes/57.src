@@ -1,3 +1,2 @@
-org.apache.commons.vfs2.impl.DefaultFileSystemManager
-org.apache.commons.vfs2.impl.VirtualFileProvider
-org.apache.commons.vfs2.impl.VirtualFileSystem
+org.apache.commons.vfs2.provider.AbstractFileObject
+org.apache.commons.vfs2.test.ProviderRenameTests

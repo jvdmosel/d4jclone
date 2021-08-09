@@ -1,4 +1,1 @@
-org.apache.giraph.edge.MutableEdgesIterable
-org.apache.giraph.edge.MutableEdgesWrapper
-org.apache.giraph.graph.Vertex
-org.apache.giraph.graph.TestVertexAndEdges
+org.apache.giraph.partition.DiskBackedPartitionStore

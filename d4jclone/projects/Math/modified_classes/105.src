@@ -1,3 +1,1 @@
-org.apache.commons.math3.linear.QRDecomposition
-org.apache.commons.math3.linear.RRQRDecomposition
-org.apache.commons.math3.linear.QRDecompositionTest
+org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer

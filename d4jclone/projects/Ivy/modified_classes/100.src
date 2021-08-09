@@ -1,2 +1,2 @@
-org.apache.ivy.core.module.id.ArtifactRevisionId
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter
+org.apache.ivy.ant.IvyArtifactReportTest
+org.apache.ivy.ant.IvyPostResolveTask

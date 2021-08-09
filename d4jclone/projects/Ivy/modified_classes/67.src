@@ -1,2 +1,3 @@
-fr.jayasoft.ivy.Ivy
 fr.jayasoft.ivy.ant.IvyRetrieveTest
+fr.jayasoft.ivy.ant.IvyPostResolveTask
+fr.jayasoft.ivy.ant.IvyTask

@@ -1,2 +1,2 @@
-org.apache.commons.lang3.time.DurationFormatUtilsTest
-org.apache.commons.lang3.time.FastDateParserTest
+org.apache.commons.lang3.time.FastDateParser
+org.apache.commons.lang3.time.FastDateParserSDFTest

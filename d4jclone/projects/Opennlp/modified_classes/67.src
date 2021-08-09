@@ -1,1 +1,1 @@
-opennlp.tools.ml.AbstractEventTrainer
+opennlp.tools.postag.POSTaggerFactory

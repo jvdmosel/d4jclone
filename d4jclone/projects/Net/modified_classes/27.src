@@ -1,1 +1,2 @@
-org.apache.commons.net.io.FromNetASCIIInputStream
+org.apache.commons.net.telnet.Telnet
+org.apache.commons.net.telnet.TelnetInputStream

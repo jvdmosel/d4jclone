@@ -1,2 +1,4 @@
-org.apache.commons.vfs2.provider.sftp.SftpFileSystem
-org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder
+org.apache.commons.vfs2.provider.ftp.test.MultipleConnectionTestCase
+org.apache.commons.vfs2.provider.ftp.FtpFileObject
+org.apache.commons.vfs2.provider.ftp.test.FtpProviderTestCase
+org.apache.commons.vfs2.provider.ftp.test.FtpProviderUserDirTestCase

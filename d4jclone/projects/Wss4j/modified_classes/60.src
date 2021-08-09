@@ -1,2 +1,1 @@
-org.apache.wss4j.stax.impl.processor.output.SecurityHeaderReorderProcessor
-org.apache.wss4j.stax.test.HeaderOrderingTest
+org.apache.wss4j.policy.stax.assertionStates.TokenProtectionAssertionState

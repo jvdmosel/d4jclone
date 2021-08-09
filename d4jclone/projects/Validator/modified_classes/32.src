@@ -1,2 +1,2 @@
-org.apache.commons.validator.routines.UrlValidator
-org.apache.commons.validator.routines.UrlValidatorTest
+org.apache.commons.validator.routines.IBANValidator
+org.apache.commons.validator.routines.IBANValidatorTest

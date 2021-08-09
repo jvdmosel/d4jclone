@@ -1,2 +1,5 @@
-org.apache.commons.lang3.time.DateUtils
-org.apache.commons.lang3.time.DateUtilsTest
+org.apache.commons.lang3.reflect.TypeUtils
+org.apache.commons.lang3.reflect.TypeUtilsTest
+org.apache.commons.lang3.reflect.AAClass
+org.apache.commons.lang3.reflect.AAAClass
+org.apache.commons.lang3.reflect.AClass

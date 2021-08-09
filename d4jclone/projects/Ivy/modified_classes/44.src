@@ -1,2 +1,3 @@
-fr.jayasoft.ivy.xml.XmlIvyConfigurationParserTest
-fr.jayasoft.ivy.url.HttpClientHandler
+fr.jayasoft.ivy.resolver.ChainResolver
+fr.jayasoft.ivy.resolver.ChainResolverTest
+fr.jayasoft.ivy.resolver.BasicResolver

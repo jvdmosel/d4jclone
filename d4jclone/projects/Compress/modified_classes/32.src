@@ -1,1 +1,2 @@
-org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+org.apache.commons.compress.archivers.ArchiveStreamFactory
+org.apache.commons.compress.compressors.CompressorStreamFactory

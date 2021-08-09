@@ -1,2 +1,2 @@
-org.apache.commons.net.util.Base64
-org.apache.commons.net.util.Base64Test
+examples.mail.IMAPImportMbox
+org.apache.commons.net.imap.IMAPClient

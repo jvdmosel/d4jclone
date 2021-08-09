@@ -1,5 +1,1 @@
-opennlp.tools.formats.ad.ADSentenceStream
-opennlp.tools.formats.ad.ADNameSampleStreamTest
-opennlp.tools.formats.ad.ADParagraphStreamTest
-opennlp.tools.formats.ad.ADSentenceSampleStreamTest
-opennlp.tools.formats.ad.ADTokenSampleStreamTest
+opennlp.uima.namefind.AbstractNameFinder

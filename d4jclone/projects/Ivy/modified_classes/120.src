@@ -1,2 +1,2 @@
-org.apache.ivy.core.resolve.IvyNodeEviction
-org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.core.IvyContext
+org.apache.ivy.plugins.resolver.BasicResolver

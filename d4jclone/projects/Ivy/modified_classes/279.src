@@ -1,3 +1,2 @@
-org.apache.ivy.core.cache.DefaultRepositoryCacheManagerTest
-org.apache.ivy.plugins.resolver.AbstractResolver
-org.apache.ivy.core.cache.DefaultRepositoryCacheManager
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser

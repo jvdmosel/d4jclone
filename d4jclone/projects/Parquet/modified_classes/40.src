@@ -1,4 +1,4 @@
-org.apache.parquet.thrift.ThriftSchemaConvertVisitor
-org.apache.parquet.thrift.ThriftSchemaConverter
-org.apache.parquet.thrift.struct.ThriftType
-org.apache.parquet.hadoop.thrift.TestBinary
+org.apache.parquet.tools.command.DumpCommand
+org.apache.parquet.tools.command.ShowSchemaCommand
+org.apache.parquet.tools.read.SimpleMapRecord
+org.apache.parquet.tools.read.TestSimpleMapRecord

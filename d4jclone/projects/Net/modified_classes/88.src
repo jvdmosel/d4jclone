@@ -1,1 +1,2 @@
-org.apache.commons.net.ftp.FTP
+org.apache.commons.net.util.SubnetUtils
+org.apache.commons.net.SubnetUtilsTest

@@ -1,1 +1,2 @@
-opennlp.tools.ml.perceptron.PerceptronTrainer
+opennlp.tools.lemmatizer.DictionaryLemmatizer
+opennlp.tools.lemmatizer.DictionaryLemmatizerTest

@@ -1,2 +1,2 @@
-org.apache.commons.net.util.SubnetUtils
-org.apache.commons.net.SubnetUtilsTest
+org.apache.commons.net.nntp.Threader
+org.apache.commons.net.nntp.TestThreader

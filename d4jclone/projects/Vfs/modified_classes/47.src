@@ -1,1 +1,3 @@
-org.apache.commons.vfs2.FileSystemConfigBuilder
+org.apache.commons.vfs2.provider.hdfs.HdfsFileObject
+org.apache.commons.vfs2.provider.hdfs.HdfsFileSystem
+org.apache.commons.vfs2.provider.hdfs.test.HdfsFileProviderTest

@@ -1,1 +1,8 @@
-org.apache.gora.store.DataStoreFactory
+org.apache.gora.examples.generated.Employee
+org.apache.gora.examples.generated.Metadata
+org.apache.gora.examples.generated.WebPage
+org.apache.gora.memory.store.MemStoreTest
+org.apache.gora.store.DataStoreTestBase
+org.apache.gora.store.DataStoreTestUtil
+org.apache.gora.solr.store.SolrStore
+org.apache.gora.tutorial.log.generated.MetricDatum

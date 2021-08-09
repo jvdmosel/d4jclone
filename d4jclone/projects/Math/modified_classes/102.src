@@ -1,2 +1,2 @@
-org.apache.commons.math3.special.Beta
-org.apache.commons.math3.special.BetaTest
+org.apache.commons.math3.geometry.spherical.oned.ArcsSetTest
+org.apache.commons.math3.geometry.spherical.oned.ArcsSet

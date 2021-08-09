@@ -1,2 +1,2 @@
-org.apache.commons.lang.ObjectUtils
-org.apache.commons.lang.ObjectUtilsTest
+org.apache.commons.lang.StringEscapeUtils
+org.apache.commons.lang.StringEscapeUtilsTest

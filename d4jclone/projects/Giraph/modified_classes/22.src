@@ -1,1 +1,1 @@
-org.apache.giraph.graph.BspServiceWorker
+org.apache.giraph.graph.BspServiceMaster

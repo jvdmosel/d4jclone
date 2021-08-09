@@ -1,3 +1,2 @@
-org.apache.commons.net.ftp.FTP
 org.apache.commons.net.ftp.FTPClient
-org.apache.commons.net.ftp.FTPHTTPClient
+org.apache.commons.net.ftp.FTPClientTest

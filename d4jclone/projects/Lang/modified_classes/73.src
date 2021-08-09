@@ -1,2 +1,2 @@
-org.apache.commons.lang3.time.FastDatePrinter
-org.apache.commons.lang3.time.FastDateFormatTest
+org.apache.commons.lang3.time.DateUtils
+org.apache.commons.lang3.time.DateUtilsTest

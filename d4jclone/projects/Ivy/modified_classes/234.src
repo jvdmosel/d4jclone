@@ -1,1 +1,4 @@
-org.apache.ivy.plugins.resolver.ChainResolver
+org.apache.ivy.util.url.CredentialsStore
+org.apache.ivy.util.url.BasicURLHandler
+org.apache.ivy.util.url.IvyAuthenticator
+org.apache.ivy.util.url.HttpClientHandler

@@ -1,1 +1,1 @@
-org.apache.commons.beanutils.MappedPropertyDescriptor
+org.apache.commons.beanutils.JDBCDynaClass

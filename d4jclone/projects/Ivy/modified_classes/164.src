@@ -1,2 +1,2 @@
+org.apache.ivy.ant.IvyAntSettingsBuildFileTest
 org.apache.ivy.ant.IvyPostResolveTask
-org.apache.ivy.ant.IvyRetrieveBuildFileTest

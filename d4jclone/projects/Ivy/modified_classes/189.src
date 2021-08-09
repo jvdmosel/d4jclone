@@ -1,2 +1,2 @@
-org.apache.ivy.plugins.repository.url.URLRepository
-org.apache.ivy.plugins.resolver.URLResolverTest
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest
+org.apache.ivy.plugins.parser.m2.PomReader

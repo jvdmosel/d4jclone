@@ -1,3 +1,2 @@
-opennlp.tools.formats.brat.AnnotationConfiguration
-opennlp.tools.formats.brat.AttributeAnnotation
-opennlp.tools.formats.brat.BratAnnotationStream
+opennlp.tools.postag.POSModel
+opennlp.tools.postag.POSTaggerME

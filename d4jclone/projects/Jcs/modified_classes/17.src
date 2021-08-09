@@ -1,1 +1,2 @@
-org.apache.jcs.engine.control.CompositeCache
+org.apache.jcs.auxiliary.disk.block.BlockDiskCache
+org.apache.jcs.auxiliary.disk.indexed.IndexedDiskCache

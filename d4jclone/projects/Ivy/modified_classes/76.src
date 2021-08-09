@@ -1,4 +1,2 @@
-org.apache.ivy.core.resolve.ResolveEngine
-org.apache.ivy.core.resolve.IvyNodeEviction
-org.apache.ivy.core.resolve.IvyNode
-org.apache.ivy.core.resolve.VisitNode
+org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
+org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor

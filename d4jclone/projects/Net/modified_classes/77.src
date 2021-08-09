@@ -1,6 +1,1 @@
-org.apache.commons.net.imap.IMAPSClient
-org.apache.commons.net.pop3.POP3SClient
-org.apache.commons.net.smtp.SMTPSClient
-org.apache.commons.net.util.SSLSocketUtils
-org.apache.commons.net.SocketClient
 org.apache.commons.net.ftp.FTPSClient

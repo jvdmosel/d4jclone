@@ -1,1 +1,4 @@
-org.apache.ivy.util.url.IvyAuthenticator
+org.apache.ivy.core.resolve.ResolveData
+org.apache.ivy.core.resolve.ResolveEngineTest
+org.apache.ivy.ant.IvyReportTest
+org.apache.ivy.core.report.ConfigurationResolveReport

@@ -1,2 +1,2 @@
-org.apache.commons.lang3.text.ExtendedMessageFormat
-org.apache.commons.lang3.text.ExtendedMessageFormatTest
+org.apache.commons.lang3.time.DurationFormatUtils
+org.apache.commons.lang3.time.DurationFormatUtilsTest

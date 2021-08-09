@@ -1,2 +1,2 @@
-org.apache.commons.jcs.jcache.extras.web.InMemoryResponse
-org.apache.commons.jcs.jcache.extras.web.JCacheFilterTest
+org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCacheFactory
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheFactory

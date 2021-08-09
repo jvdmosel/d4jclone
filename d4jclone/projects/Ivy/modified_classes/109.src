@@ -1,2 +1,1 @@
-org.apache.ivy.core.resolve.ResolveTest
-org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
+org.apache.ivy.util.url.IvyAuthenticator

@@ -1,2 +1,2 @@
-org.apache.commons.lang3.StringUtils
-org.apache.commons.lang3.StringUtilsEqualsIndexOfTest
+org.apache.commons.lang3.RandomStringUtils
+org.apache.commons.lang3.RandomStringUtilsTest

@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyInfoTest
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.ant.IvyCacheFileset
+org.apache.ivy.ant.IvyCacheFilesetTest

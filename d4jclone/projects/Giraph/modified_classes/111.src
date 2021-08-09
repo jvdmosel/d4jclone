@@ -1,1 +1,3 @@
-org.apache.giraph.master.AggregatorToGlobalCommTranslation
+org.apache.giraph.bsp.BspService
+org.apache.giraph.master.BspServiceMaster
+org.apache.giraph.worker.BspServiceWorker

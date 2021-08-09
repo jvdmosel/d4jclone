@@ -1,1 +1,2 @@
-opennlp.tools.parser.ParserModel
+opennlp.tools.sentdetect.NewlineSentenceDetector
+opennlp.tools.sentdetect.NewlineSentenceDetectorTest

@@ -1,2 +1,11 @@
-org.apache.commons.scxml.invoke.AsyncTrigger
-org.apache.commons.scxml.invoke.SimpleSCXMLInvoker
+org.apache.commons.scxml.io.ModelUpdater
+org.apache.commons.scxml.io.SCXMLDigester
+org.apache.commons.scxml.io.SCXMLParser
+org.apache.commons.scxml.model.Path
+org.apache.commons.scxml.model.SCXML
+org.apache.commons.scxml.model.State
+org.apache.commons.scxml.model.TransitionTarget
+org.apache.commons.scxml.semantics.SCXMLSemanticsImpl
+org.apache.commons.scxml.SCXMLTestHelper
+org.apache.commons.scxml.model.ParallelTest
+org.apache.commons.scxml.model.PathTest

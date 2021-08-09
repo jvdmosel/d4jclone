@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyArtifactReport
-org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest

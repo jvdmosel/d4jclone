@@ -1,1 +1,2 @@
-org.apache.ivy.ant.IvyCacheTask
+org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.ant.IvyDeliverTest

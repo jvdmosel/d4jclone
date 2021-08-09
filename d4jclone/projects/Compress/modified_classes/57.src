@@ -1,2 +1,2 @@
-org.apache.commons.compress.archivers.zip.X7875_NewUnix
-org.apache.commons.compress.archivers.zip.X7875_NewUnixTest
+org.apache.commons.compress.archivers.tar.TarUtils
+org.apache.commons.compress.archivers.tar.TarUtilsTest

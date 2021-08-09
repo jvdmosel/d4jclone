@@ -1,6 +1,2 @@
-org.apache.wss4j.stax.ext.OutboundWSSec
-org.apache.wss4j.stax.impl.processor.output.EncryptEndingOutputProcessor
-org.apache.wss4j.stax.impl.processor.output.EncryptedKeyOutputProcessor
-org.apache.wss4j.stax.impl.processor.output.ReferenceListOutputProcessor
-org.apache.wss4j.stax.impl.processor.output.SecurityContextTokenOutputProcessor
-org.apache.wss4j.stax.test.SignatureEncryptionTest
+org.apache.wss4j.policy.stax.assertionStates.AlgorithmSuiteAssertionState
+org.apache.wss4j.stax.securityToken.WSSecurityTokenConstants

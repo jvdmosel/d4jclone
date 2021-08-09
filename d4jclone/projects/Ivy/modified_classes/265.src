@@ -1,1 +1,1 @@
-org.apache.ivy.util.url.AbstractURLHandler
+org.apache.ivy.util.url.HttpClientHandler

@@ -1,2 +1,0 @@
-org.apache.ivy.plugins.repository.url.URLRepository
-org.apache.ivy.plugins.resolver.URLResolverTest

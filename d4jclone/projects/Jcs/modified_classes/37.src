@@ -1,2 +1,2 @@
-org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache
 org.apache.commons.jcs.engine.control.CompositeCache
+org.apache.commons.jcs.engine.control.CompositeCacheConfigurator

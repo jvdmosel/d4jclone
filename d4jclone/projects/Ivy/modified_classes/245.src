@@ -1,3 +1,1 @@
 org.apache.ivy.util.url.ApacheURLLister
-org.apache.ivy.util.url.ApacheURLListerTest
-org.apache.ivy.util.url.ArtifactoryListingTest

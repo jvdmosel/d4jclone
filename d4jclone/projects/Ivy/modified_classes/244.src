@@ -1,2 +1,2 @@
-org.apache.ivy.plugins.version.LatestVersionMatcher
-org.apache.ivy.plugins.version.LatestVersionMatcherTest
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriter
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorWriterTest

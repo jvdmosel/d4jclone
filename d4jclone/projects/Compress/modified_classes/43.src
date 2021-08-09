@@ -1,1 +1,7 @@
-org.apache.commons.compress.changes.ChangeSet
+org.apache.commons.compress.archivers.arj.ArjArchiveInputStream
+org.apache.commons.compress.archivers.dump.DumpArchiveInputStream
+org.apache.commons.compress.archivers.sevenz.SevenZFile
+org.apache.commons.compress.archivers.sevenz.SevenZOutputFile
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream

@@ -1,3 +1,0 @@
-org.apache.ivy.plugins.circular.CircularDependencyException
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
-org.apache.ivy.core.resolve.ResolveTest

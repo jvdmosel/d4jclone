@@ -1,2 +1,2 @@
-org.apache.commons.math.linear.OpenMapRealMatrix
-org.apache.commons.math.linear.OpenMapRealMatrixTest
+org.apache.commons.math.stat.descriptive.SummaryStatistics
+org.apache.commons.math.stat.descriptive.SummaryStatisticsTest

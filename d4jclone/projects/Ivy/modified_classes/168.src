@@ -1,2 +1,1 @@
-org.apache.ivy.util.IvyPatternHelperTest
-org.apache.ivy.core.IvyPatternHelper
+org.apache.ivy.plugins.parser.m2.PomReader

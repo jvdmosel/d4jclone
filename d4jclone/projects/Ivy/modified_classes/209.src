@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyResolve
-org.apache.ivy.ant.IvyResolveTest
+org.apache.ivy.ant.IvyRetrieveTest
+org.apache.ivy.ant.IvyPostResolveTask

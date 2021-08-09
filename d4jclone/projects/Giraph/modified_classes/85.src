@@ -1,1 +1,3 @@
-org.apache.giraph.utils.ConfigurationUtils
+org.apache.giraph.conf.GiraphConfiguration
+org.apache.giraph.utils.InternalVertexRunner
+org.apache.giraph.zk.GiraphZooKeeperAdmin

@@ -1,3 +1,2 @@
-org.apache.ivy.core.cache.DefaultRepositoryCacheManager
-org.apache.ivy.plugins.resolver.AbstractResolver
-org.apache.ivy.core.cache.CacheMetadataOptions
+org.apache.ivy.util.url.HttpClientHandler
+org.apache.ivy.util.url.BasicURLHandler

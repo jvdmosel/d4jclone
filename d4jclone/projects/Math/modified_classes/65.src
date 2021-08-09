@@ -1,2 +1,2 @@
-org.apache.commons.math.optimization.linear.SimplexSolverTest
-org.apache.commons.math.optimization.linear.SimplexTableau
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver

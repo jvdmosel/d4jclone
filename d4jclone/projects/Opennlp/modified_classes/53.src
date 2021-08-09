@@ -1,2 +1,1 @@
-opennlp.tools.chunker.ChunkerME
-opennlp.tools.chunker.ChunkerModel
+opennlp.tools.formats.brat.AnnotationConfiguration

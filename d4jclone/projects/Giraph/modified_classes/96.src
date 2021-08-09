@@ -1,1 +1,2 @@
-org.apache.giraph.metrics.GiraphMetrics
+org.apache.giraph.conf.GiraphConfiguration
+org.apache.giraph.zk.ZooKeeperManager

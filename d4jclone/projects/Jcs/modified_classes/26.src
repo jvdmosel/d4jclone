@@ -1,2 +1,2 @@
-org.apache.commons.jcs.auxiliary.remote.RemoteUtils
-org.apache.commons.jcs.auxiliary.remote.RemoteUtilsUnitTest
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDisk
+org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCacheOptimizationUnitTest

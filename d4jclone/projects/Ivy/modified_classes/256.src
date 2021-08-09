@@ -1,1 +1,1 @@
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater
+org.apache.ivy.osgi.repo.AbstractFSManifestIterable

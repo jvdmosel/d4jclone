@@ -1,2 +1,2 @@
-org.apache.commons.beanutils.bugs.Jira87TestCase
-org.apache.commons.beanutils.bugs.other.Jira87BeanFactory
+org.apache.commons.beanutils.BeanUtilsBean
+org.apache.commons.beanutils.bugs.Jira157TestCase

@@ -1,2 +1,2 @@
-org.apache.ivy.core.install.InstallTest
-org.apache.ivy.core.install.InstallEngine
+org.apache.ivy.ant.IvyResolve
+org.apache.ivy.ant.IvyResolveTest

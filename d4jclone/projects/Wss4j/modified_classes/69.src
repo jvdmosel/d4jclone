@@ -1,1 +1,2 @@
-org.apache.wss4j.stax.impl.processor.output.DerivedKeyTokenOutputProcessor
+org.apache.wss4j.policy.stax.assertionStates.EncryptedElementsAssertionState
+org.apache.wss4j.policy.stax.assertionStates.SignedElementsAssertionState

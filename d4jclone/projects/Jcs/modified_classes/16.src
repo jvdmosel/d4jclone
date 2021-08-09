@@ -1,1 +1,1 @@
-org.apache.jcs.utils.discovery.UDPDiscoveryReceiver
+org.apache.jcs.engine.control.CompositeCache

@@ -1,1 +1,2 @@
-org.apache.commons.beanutils.JDBCDynaClass
+org.apache.commons.beanutils.BeanUtilsBean
+org.apache.commons.beanutils.bugs.Jira339TestCase

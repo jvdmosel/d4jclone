@@ -1,2 +1,2 @@
-org.apache.parquet.hadoop.ParquetRecordReader
-org.apache.parquet.hadoop.example.TestInputOutputFormat
+org.apache.parquet.scrooge.ScroogeStructConverter
+org.apache.parquet.scrooge.ScroogeStructConverterTest

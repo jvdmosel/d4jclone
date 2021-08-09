@@ -1,2 +1,2 @@
-org.apache.giraph.worker.BspServiceWorker
-org.apache.giraph.hive.output.HiveOutputTest
+org.apache.giraph.utils.ProgressableUtils
+org.apache.giraph.utils.TestProgressableUtils

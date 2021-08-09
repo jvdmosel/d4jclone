@@ -1,1 +1,2 @@
-org.apache.ivy.plugins.repository.sftp.SFTPRepository
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriterTest

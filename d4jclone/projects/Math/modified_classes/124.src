@@ -1,3 +1,2 @@
-org.apache.commons.math4.optim.linear.SimplexSolverTest
-org.apache.commons.math4.optim.linear.SimplexTableau
-org.apache.commons.math4.optim.linear.SimplexSolver
+org.apache.commons.math4.stat.interval.WilsonScoreInterval
+org.apache.commons.math4.stat.interval.WilsonScoreIntervalTest

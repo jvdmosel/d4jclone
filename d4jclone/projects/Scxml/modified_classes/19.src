@@ -1,4 +1,3 @@
-org.apache.commons.scxml2.SCInstance
-org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl
-org.apache.commons.scxml2.semantics.Step
-org.apache.commons.scxml2.SCInstanceTest
+org.apache.commons.scxml2.io.SCXMLReader
+org.apache.commons.scxml2.model.Cancel
+org.apache.commons.scxml2.model.CancelTest

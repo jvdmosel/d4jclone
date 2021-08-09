@@ -1,2 +1,1 @@
-org.apache.ws.security.validate.SignatureTrustValidator
-org.apache.ws.security.message.SignatureCRLTest
+org.apache.ws.security.message.token.UsernameToken

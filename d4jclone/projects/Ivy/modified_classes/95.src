@@ -1,3 +1,2 @@
-org.apache.ivy.ant.AntTestHelper
-org.apache.ivy.core.search.SearchEngine
-org.apache.ivy.ant.IvyInstallTest
+org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.core.resolve.ResolveTest

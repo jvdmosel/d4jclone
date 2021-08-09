@@ -1,1 +1,2 @@
-org.apache.ivy.core.IvyPatternHelper
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.core.resolve.ResolveData

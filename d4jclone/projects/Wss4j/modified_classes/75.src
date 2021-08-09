@@ -1,1 +1,1 @@
-org.apache.wss4j.stax.impl.InboundWSSecurityContextImpl
+org.apache.wss4j.dom.util.WSSecurityUtil

@@ -1,3 +1,2 @@
-org.apache.commons.lang3.SerializationUtils
-org.apache.commons.lang3.SerializationUtilsTest
-org.apache.commons.lang3.ClassNotFoundSerialization
+org.apache.commons.lang3.time.FastDatePrinter
+org.apache.commons.lang3.time.FastDatePrinterTest

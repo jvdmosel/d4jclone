@@ -1,1 +1,2 @@
-org.apache.commons.validator.routines.EmailValidatorTest
+org.apache.commons.validator.routines.InetAddressValidator
+org.apache.commons.validator.routines.InetAddressValidatorTest

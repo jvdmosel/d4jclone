@@ -1,3 +1,8 @@
-org.apache.ivy.ant.IvyResolve
-org.apache.ivy.ant.IvyPostResolveTaskTest
-org.apache.ivy.ant.IvyPostResolveTask
+org.apache.ivy.core.report.ConfigurationResolveReport
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.core.module.descriptor.DefaultDependencyArtifactDescriptor
+org.apache.ivy.core.resolve.IvyNodeUsage
+org.apache.ivy.core.resolve.IvyNode
+org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.core.report.ResolveReport
+org.apache.ivy.core.resolve.ResolveTest

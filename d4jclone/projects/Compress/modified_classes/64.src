@@ -1,2 +1,2 @@
-org.apache.commons.compress.archivers.tar.TarArchiveInputStream
-org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest
+org.apache.commons.compress.utils.BitInputStream
+org.apache.commons.compress.utils.BitInputStreamTest

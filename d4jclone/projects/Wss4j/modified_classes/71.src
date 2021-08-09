@@ -1,2 +1,1 @@
-org.apache.wss4j.policy.stax.assertionStates.EncryptedElementsAssertionState
-org.apache.wss4j.policy.stax.assertionStates.SignedElementsAssertionState
+org.apache.wss4j.policy.stax.PolicyEnforcer

@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyAntSettingsTest
-org.apache.ivy.ant.IvyAntVariableContainer
+org.apache.ivy.ant.IvyResolveTest
+org.apache.ivy.plugins.resolver.util.ResolverHelper

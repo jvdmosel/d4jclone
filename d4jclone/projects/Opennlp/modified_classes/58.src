@@ -1,2 +1,1 @@
-opennlp.tools.sentdetect.NewlineSentenceDetector
-opennlp.tools.sentdetect.NewlineSentenceDetectorTest
+opennlp.tools.util.eval.Evaluator

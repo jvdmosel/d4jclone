@@ -1,2 +1,2 @@
-org.apache.commons.compress.changes.ChangeSetPerformer
-org.apache.commons.compress.changes.ChangeSetTestCase
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest

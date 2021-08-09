@@ -1,2 +1,4 @@
-org.apache.commons.lang.time.FastDateFormat
-org.apache.commons.lang.time.FastDateFormatTest
+org.apache.commons.lang.math.IEEE754rUtils
+org.apache.commons.lang.math.NumberUtils
+org.apache.commons.lang.math.IEEE754rUtilsTest
+org.apache.commons.lang.math.NumberUtilsTest

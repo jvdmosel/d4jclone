@@ -1,5 +1,3 @@
-fr.jayasoft.ivy.xml.XmlModuleDescriptorParser
-fr.jayasoft.ivy.xml.XmlModuleUpdaterTest
-fr.jayasoft.ivy.util.XMLHelper
-fr.jayasoft.ivy.xml.XmlModuleDescriptorParserTest
-fr.jayasoft.ivy.xml.XmlModuleDescriptorUpdater
+fr.jayasoft.ivy.Ivy
+fr.jayasoft.ivy.IvyNode
+fr.jayasoft.ivy.ResolveTest

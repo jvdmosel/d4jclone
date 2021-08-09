@@ -1,3 +1,2 @@
-org.apache.commons.vfs2.provider.AbstractLayeredFileProvider
-org.apache.commons.vfs2.provider.tar.test.NestedTarTestCase
-org.apache.commons.vfs2.test.UrlTests
+org.apache.commons.vfs2.util.MonitorInputStream
+org.apache.commons.vfs2.provider.DefaultFileContentTest

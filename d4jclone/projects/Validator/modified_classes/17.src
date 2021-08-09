@@ -1,2 +1,2 @@
-org.apache.commons.validator.util.Flags
-org.apache.commons.validator.util.FlagsTest
+org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigit
+org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest

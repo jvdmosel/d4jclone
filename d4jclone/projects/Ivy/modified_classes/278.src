@@ -1,5 +1,1 @@
-org.apache.ivy.plugins.lock.CreateFileLockStrategy
-org.apache.ivy.plugins.lock.NIOFileLockStrategy
-org.apache.ivy.core.settings.IvySettings
-org.apache.ivy.plugins.lock.ArtifactLockStrategy
-org.apache.ivy.plugins.lock.FileBasedLockStrategy
+org.apache.ivy.util.url.ApacheURLLister

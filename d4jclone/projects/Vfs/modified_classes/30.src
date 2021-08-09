@@ -1,2 +1,1 @@
-org.apache.commons.vfs2.provider.local.LocalFileSystem
-org.apache.commons.vfs2.test.VerifyingFileSelector
+org.apache.commons.vfs2.provider.AbstractFileObject

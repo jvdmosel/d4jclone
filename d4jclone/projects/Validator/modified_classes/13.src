@@ -1,2 +1,2 @@
-org.apache.commons.validator.routines.CodeValidator
-org.apache.commons.validator.routines.CodeValidatorTest
+org.apache.commons.validator.util.Flags
+org.apache.commons.validator.util.FlagsTest

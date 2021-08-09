@@ -1,4 +1,2 @@
-org.apache.giraph.edge.AbstractEdgeStore
-org.apache.giraph.edge.SimpleEdgeStore
-org.apache.giraph.edge.primitives.IntEdgeStore
-org.apache.giraph.edge.primitives.LongEdgeStore
+org.apache.giraph.comm.netty.SaslNettyClient
+org.apache.giraph.comm.netty.SaslNettyServer

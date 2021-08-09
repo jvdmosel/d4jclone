@@ -1,2 +1,2 @@
-org.apache.commons.lang3.LocaleUtils
-org.apache.commons.lang3.LocaleUtilsTest
+org.apache.commons.lang3.builder.EqualsBuilder
+org.apache.commons.lang3.builder.EqualsBuilderTest

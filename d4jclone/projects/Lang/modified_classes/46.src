@@ -1,2 +1,2 @@
-org.apache.commons.lang3.builder.EqualsBuilder
-org.apache.commons.lang3.builder.EqualsBuilderTest
+org.apache.commons.lang3.BooleanUtils
+org.apache.commons.lang3.BooleanUtilsTest

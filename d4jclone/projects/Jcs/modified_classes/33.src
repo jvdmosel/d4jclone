@@ -1,11 +1,2 @@
-org.apache.commons.jcs.auxiliary.disk.indexed.IndexDiskCacheUnitTestAbstract
 org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache
-org.apache.commons.jcs.auxiliary.disk.block.BlockDiskKeyStore
-org.apache.commons.jcs.auxiliary.disk.indexed.IndexedDiskCache
-org.apache.commons.jcs.utils.struct.AbstractLRUMap
-org.apache.commons.jcs.utils.struct.LRUMap
-org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCacheCountUnitTest
-org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCacheSizeUnitTest
 org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCacheUnitTestAbstract
-org.apache.commons.jcs.auxiliary.disk.indexed.IndexDiskCacheCountUnitTest
-org.apache.commons.jcs.auxiliary.disk.indexed.IndexDiskCacheSizeUnitTest

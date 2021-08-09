@@ -1,2 +1,3 @@
 org.apache.giraph.graph.GraphTaskManager
-org.apache.giraph.worker.WorkerProgressWriter
+org.apache.giraph.metrics.AggregatedMetrics
+org.apache.giraph.worker.BspServiceWorker

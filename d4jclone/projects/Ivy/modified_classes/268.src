@@ -1,2 +1,2 @@
-org.apache.ivy.util.url.HttpClientHandler
-org.apache.ivy.util.url.BasicURLHandler
+org.apache.ivy.core.resolve.ResolveTest
+org.apache.ivy.plugins.resolver.BasicResolver

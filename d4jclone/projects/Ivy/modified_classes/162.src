@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyCacheFileset
-org.apache.ivy.ant.IvyCacheFilesetTest
+org.apache.ivy.core.cache.DefaultRepositoryCacheManager
+org.apache.ivy.core.resolve.ResolveTest

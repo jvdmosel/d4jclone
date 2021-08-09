@@ -1,1 +1,2 @@
-org.apache.ivy.core.settings.XmlSettingsParserTest
+org.apache.ivy.ant.IvyBuildList
+org.apache.ivy.ant.IvyBuildListTest

@@ -1,1 +1,2 @@
-opennlp.tools.namefind.TokenNameFinderEvaluator
+opennlp.tools.sentdetect.SentenceDetectorME
+opennlp.tools.sentdetect.SentenceDetectorMETest

@@ -1,2 +1,2 @@
-org.apache.commons.net.ftp.parser.NTFTPEntryParser
-org.apache.commons.net.ftp.parser.NTFTPEntryParserTest
+org.apache.commons.net.util.SubnetUtils
+org.apache.commons.net.SubnetUtilsTest

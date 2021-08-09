@@ -1,2 +1,2 @@
-org.apache.parquet.avro.AvroSchemaConverter
-org.apache.parquet.avro.TestReadWrite
+org.apache.parquet.tools.Main
+org.apache.parquet.tools.command.DumpCommand

@@ -1,2 +1,3 @@
-opennlp.uima.chunker.ChunkerTrainer
-opennlp.uima.sentdetect.SentenceDetectorTrainer
+opennlp.uima.util.AnnotationComboIterator
+opennlp.uima.util.AnnotationComboIteratorTest
+opennlp.uima.util.CasUtil

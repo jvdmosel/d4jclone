@@ -1,2 +1,1 @@
-org.apache.ivy.core.resolve.ResolveTest
-org.apache.ivy.core.resolve.ResolveData
+org.apache.ivy.plugins.repository.sftp.SFTPRepository

@@ -1,2 +1,2 @@
-org.apache.commons.codec.binary.Base32
-org.apache.commons.codec.binary.Base32Test
+org.apache.commons.codec.binary.StringUtils
+org.apache.commons.codec.binary.StringUtilsTest

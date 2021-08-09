@@ -1,2 +1,1 @@
-opennlp.tools.sentdetect.SentenceDetectorME
-opennlp.tools.sentdetect.SentenceDetectorMETest
+opennlp.tools.util.eval.Evaluator

@@ -1,1 +1,2 @@
-opennlp.tools.formats.brat.BratNameSampleStream
+opennlp.tools.namefind.NameFinderSequenceValidator
+opennlp.tools.namefind.NameFinderSequenceValidatorTest

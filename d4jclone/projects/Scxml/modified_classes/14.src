@@ -1,2 +1,4 @@
-org.apache.commons.scxml2.semantics.TransitionTargetComparatorTest
-org.apache.commons.scxml2.semantics.TransitionTargetComparator
+org.apache.commons.scxml2.SCXMLExecutorTest
+org.apache.commons.scxml2.SCXMLTestHelper
+org.apache.commons.scxml2.model.If
+org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl

@@ -1,2 +1,2 @@
-org.apache.commons.lang.IDKey
-org.apache.commons.lang.builder.HashCodeBuilder
+org.apache.commons.lang.builder.EqualsBuilder
+org.apache.commons.lang.builder.EqualsBuilderTest

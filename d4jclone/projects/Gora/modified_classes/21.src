@@ -1,1 +1,1 @@
-org.apache.gora.hbase.util.HBaseClusterSingleton
+org.apache.gora.cassandra.query.CassandraSubColumn

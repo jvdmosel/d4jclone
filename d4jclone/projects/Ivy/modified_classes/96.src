@@ -1,2 +1,2 @@
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParserTest
-org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
+org.apache.ivy.core.module.id.ArtifactRevisionId
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorWriter

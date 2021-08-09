@@ -1,1 +1,2 @@
-org.apache.commons.lang.StringEscapeUtilsTest
+org.apache.commons.lang.LocaleUtils
+org.apache.commons.lang.LocaleUtilsTest

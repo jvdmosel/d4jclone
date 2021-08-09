@@ -1,8 +1,1 @@
-org.apache.wss4j.policy.stax.test.AsymmetricBindingIntegrationTest
-org.apache.wss4j.stax.impl.processor.input.SAMLTokenInputHandler
-org.apache.wss4j.stax.impl.processor.input.WSSSignatureReferenceVerifyInputProcessor
-org.apache.wss4j.stax.test.AbstractTestBase
-org.apache.wss4j.stax.test.DerivedKeyTokenTest
-org.apache.wss4j.stax.test.InteroperabilityTest
-org.apache.wss4j.stax.test.SecurityContextTokenTest
-org.apache.wss4j.stax.test.SignatureTest
+org.apache.wss4j.stax.impl.InboundWSSecurityContextImpl

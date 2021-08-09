@@ -1,5 +1,2 @@
-opennlp.model.FileEventStream
-opennlp.model.RealValueFileEventStream
-opennlp.model.TwoPassDataIndexer
-opennlp.maxent.RealValueModelTest
-opennlp.maxent.io.RealValueFileEventStreamTest
+opennlp.tools.namefind.RegexNameFinder
+opennlp.tools.namefind.RegexNameFinderTest

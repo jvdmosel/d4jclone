@@ -1,1 +1,1 @@
-opennlp.tools.postag.POSTaggerFactory
+opennlp.tools.cmdline.parser.ParserTool

@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyBuildListTest
-org.apache.ivy.ant.IvyBuildList
+org.apache.ivy.plugins.resolver.RepositoryResolver
+org.apache.ivy.ant.IvyResolveTest

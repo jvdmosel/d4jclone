@@ -1,2 +1,1 @@
-org.apache.ivy.plugins.conflict.LatestConflictManager
-org.apache.ivy.plugins.conflict.LatestConflictManagerTest
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder

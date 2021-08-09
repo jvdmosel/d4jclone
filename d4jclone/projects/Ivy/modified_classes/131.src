@@ -1,3 +1,4 @@
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder
-org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
-org.apache.ivy.plugins.parser.m2.PomReader
+org.apache.ivy.core.resolve.IvyNode
+org.apache.ivy.core.resolve.VisitNode
+org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.core.resolve.ResolveTest

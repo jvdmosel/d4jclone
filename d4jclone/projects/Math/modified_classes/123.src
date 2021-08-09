@@ -1,4 +1,2 @@
-org.apache.commons.math3.util.FastMath
-org.apache.commons.math3.util.MathArrays
-org.apache.commons.math3.util.FastMathTest
-org.apache.commons.math3.util.MathArraysTest
+org.apache.commons.math4.distribution.UniformIntegerDistribution
+org.apache.commons.math4.distribution.UniformIntegerDistributionTest

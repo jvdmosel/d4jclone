@@ -1,1 +1,4 @@
-org.apache.giraph.graph.LocalityInfoSorter
+org.apache.giraph.format.hcatalog.HiveGiraphRunner
+org.apache.giraph.BspCase
+org.apache.giraph.format.accumulo.TestAccumuloVertexFormat
+org.apache.giraph.format.hbase.TestHBaseRootMarkerVertextFormat

@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyDeliverTest
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater
+org.apache.ivy.core.retrieve.RetrieveEngine
+org.apache.ivy.core.retrieve.RetrieveTest

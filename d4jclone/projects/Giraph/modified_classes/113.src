@@ -1,3 +1,2 @@
-org.apache.giraph.bsp.BspService
-org.apache.giraph.master.BspServiceMaster
-org.apache.giraph.worker.BspServiceWorker
+org.apache.giraph.utils.ByteArrayVertexIdMessages
+org.apache.giraph.comm.messages.TestIntFloatPrimitiveMessageStores

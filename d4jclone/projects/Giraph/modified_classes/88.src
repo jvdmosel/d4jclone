@@ -1,2 +1,1 @@
-org.apache.giraph.partition.ByteArrayPartition
-org.apache.giraph.partition.TestPartitionStores
+org.apache.giraph.yarn.GiraphYarnClient

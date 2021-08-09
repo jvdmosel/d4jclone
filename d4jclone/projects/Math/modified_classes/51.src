@@ -1,2 +1,2 @@
-org.apache.commons.math.geometry.Vector3D
-org.apache.commons.math.geometry.Vector3DTest
+org.apache.commons.math.dfp.DfpTest
+org.apache.commons.math.dfp.Dfp

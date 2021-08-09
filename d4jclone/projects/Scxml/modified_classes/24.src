@@ -1,2 +1,3 @@
-org.apache.commons.scxml2.SCInstance
-org.apache.commons.scxml2.SCInstanceTest
+org.apache.commons.scxml2.model.Final
+org.apache.commons.scxml2.model.Invoke
+org.apache.commons.scxml2.model.Send

@@ -1,1 +1,1 @@
-org.apache.commons.compress.archivers.sevenz.SevenZFile
+org.apache.commons.compress.compressors.CompressorStreamFactory

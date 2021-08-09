@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyDeliverTest
-org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorParser
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest

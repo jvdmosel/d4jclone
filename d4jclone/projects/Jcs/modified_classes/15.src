@@ -1,1 +1,1 @@
-org.apache.jcs.auxiliary.disk.block.BlockDiskUnitTest
+org.apache.jcs.utils.discovery.UDPDiscoveryReceiver

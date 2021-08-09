@@ -1,2 +1,1 @@
-org.apache.commons.compress.DetectArchiverTestCase
-org.apache.commons.compress.archivers.tar.TarUtils
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream

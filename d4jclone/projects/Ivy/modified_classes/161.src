@@ -1,2 +1,2 @@
-org.apache.ivy.core.retrieve.RetrieveEngine
-org.apache.ivy.core.retrieve.RetrieveTest
+org.apache.ivy.util.IvyPatternHelperTest
+org.apache.ivy.core.IvyPatternHelper

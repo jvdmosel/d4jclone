@@ -1,2 +1,3 @@
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest
-org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+org.apache.commons.math.random.RandomGeneratorAbstractTest
+org.apache.commons.math.random.RandomDataTest
+org.apache.commons.math.random.RandomDataImpl

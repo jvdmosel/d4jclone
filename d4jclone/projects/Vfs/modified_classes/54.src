@@ -1,3 +1,1 @@
-org.apache.commons.vfs2.impl.FileTypeMap
-org.apache.commons.vfs2.impl.test.VfsClassLoaderTests
-org.apache.commons.vfs2.test.ProviderReadTests
+org.apache.commons.vfs2.provider.hdfs.HdfsFileObject

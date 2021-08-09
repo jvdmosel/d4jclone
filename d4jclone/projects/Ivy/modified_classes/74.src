@@ -1,1 +1,4 @@
-fr.jayasoft.ivy.version.ChainVersionMatcher
+org.apache.ivy.core.resolve.ResolveEngine
+org.apache.ivy.core.resolve.IvyNodeEviction
+org.apache.ivy.core.resolve.IvyNode
+org.apache.ivy.core.resolve.VisitNode

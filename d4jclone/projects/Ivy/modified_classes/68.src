@@ -1,1 +1,2 @@
-fr.jayasoft.ivy.ant.IvyTask
+fr.jayasoft.ivy.resolver.RepositoryResolver
+fr.jayasoft.ivy.ResolveTest

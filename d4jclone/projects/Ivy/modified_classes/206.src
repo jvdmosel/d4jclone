@@ -1,1 +1,4 @@
-org.apache.ivy.ant.IvyCacheFileset
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorBuilder
+org.apache.ivy.plugins.parser.m2.DefaultPomDependencyMgt
+org.apache.ivy.plugins.parser.m2.PomReader
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest

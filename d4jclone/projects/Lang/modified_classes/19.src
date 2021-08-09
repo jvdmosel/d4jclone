@@ -1,2 +1,2 @@
-org.apache.commons.lang.text.StrBuilder
-org.apache.commons.lang.text.StrBuilderTest
+org.apache.commons.lang.WordUtils
+org.apache.commons.lang.WordUtilsTest

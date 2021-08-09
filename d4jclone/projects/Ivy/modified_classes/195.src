@@ -1,2 +1,2 @@
-org.apache.ivy.ant.IvyAntSettings
-org.apache.ivy.ant.IvyAntSettingsBuildFileTest
+org.apache.ivy.plugins.parser.m2.PomReader
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest

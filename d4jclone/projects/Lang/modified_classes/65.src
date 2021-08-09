@@ -1,2 +1,2 @@
-org.apache.commons.lang3.builder.DiffBuilder
-org.apache.commons.lang3.builder.DiffBuilderTest
+org.apache.commons.lang3.text.StrBuilder
+org.apache.commons.lang3.text.StrBuilderTest

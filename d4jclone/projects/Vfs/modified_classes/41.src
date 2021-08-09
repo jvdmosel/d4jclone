@@ -1,1 +1,1 @@
-org.apache.commons.vfs2.provider.sftp.SftpFileObject
+org.apache.commons.vfs2.provider.compressed.CompressedFileFileObject

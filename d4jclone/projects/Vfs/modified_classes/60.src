@@ -1,1 +1,3 @@
-org.apache.commons.vfs2.provider.http.HttpClientFactory
+org.apache.commons.vfs2.provider.AbstractLayeredFileProvider
+org.apache.commons.vfs2.provider.tar.test.NestedTarTestCase
+org.apache.commons.vfs2.test.UrlTests

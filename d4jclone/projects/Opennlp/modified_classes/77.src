@@ -1,2 +1,2 @@
-opennlp.tools.util.featuregen.GeneratorFactory
-opennlp.tools.util.featuregen.GeneratorFactoryTest
+opennlp.tools.namefind.NameSample
+opennlp.tools.namefind.NameSampleTest

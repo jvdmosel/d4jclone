@@ -1,2 +1,2 @@
-opennlp.tools.parser.Parse
-opennlp.tools.parser.ParserEvaluator
+opennlp.tools.lemmatizer.DictionaryLemmatizer
+opennlp.tools.lemmatizer.DictionaryLemmatizerMultiTest

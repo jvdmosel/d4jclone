@@ -1,3 +1,2 @@
-fr.jayasoft.ivy.resolver.ChainResolver
-fr.jayasoft.ivy.resolver.ChainResolverTest
-fr.jayasoft.ivy.resolver.BasicResolver
+fr.jayasoft.ivy.parser.AbstractModuleDescriptorParser
+fr.jayasoft.ivy.ResolveTest

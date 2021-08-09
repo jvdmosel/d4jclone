@@ -1,2 +1,1 @@
-opennlp.tools.namefind.RegexNameFinder
-opennlp.tools.namefind.RegexNameFinderTest
+opennlp.tools.parser.Parse

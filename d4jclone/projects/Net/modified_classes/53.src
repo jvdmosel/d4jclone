@@ -1,2 +1,1 @@
-org.apache.commons.net.ftp.parser.FTPTimestampParserImpl
-org.apache.commons.net.ftp.parser.FTPTimestampParserImplTest
+org.apache.commons.net.ftp.parser.MVSFTPEntryParser

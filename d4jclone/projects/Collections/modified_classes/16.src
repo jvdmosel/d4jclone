@@ -1,1 +1,2 @@
-org.apache.commons.collections4.CollectionUtils
+org.apache.commons.collections.ExtendedProperties
+org.apache.commons.collections.TestExtendedProperties

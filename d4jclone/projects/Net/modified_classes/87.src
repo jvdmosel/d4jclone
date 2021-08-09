@@ -1,1 +1,2 @@
-org.apache.commons.net.ftp.FTPClient
+org.apache.commons.net.ftp.parser.MVSFTPEntryParser
+org.apache.commons.net.ftp.parser.MVSFTPEntryParserTest

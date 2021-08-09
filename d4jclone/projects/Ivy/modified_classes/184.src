@@ -1,2 +1,2 @@
-org.apache.ivy.util.url.BasicURLHandler
-org.apache.ivy.util.url.HttpClientHandler
+org.apache.ivy.plugins.parser.xml.XmlModuleUpdaterTest
+org.apache.ivy.plugins.parser.xml.XmlModuleDescriptorUpdater

@@ -1,2 +1,2 @@
-org.apache.commons.collections.ExtendedProperties
-org.apache.commons.collections.TestExtendedProperties
+org.apache.commons.collections4.bag.TreeBag
+org.apache.commons.collections4.bag.TreeBagTest

@@ -1,3 +1,2 @@
-org.apache.ivy.core.resolve.ResolveTest
-org.apache.ivy.plugins.resolver.RepositoryResolver
-org.apache.ivy.plugins.resolver.AbstractResourceResolver
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser
+org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParserTest

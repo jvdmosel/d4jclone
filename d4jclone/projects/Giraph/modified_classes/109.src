@@ -1,2 +1,1 @@
-org.apache.giraph.comm.netty.SaslNettyClient
-org.apache.giraph.comm.netty.SaslNettyServer
+org.apache.giraph.master.AggregatorToGlobalCommTranslation

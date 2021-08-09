@@ -1,2 +1,2 @@
-org.apache.parquet.tools.Main
-org.apache.parquet.tools.command.DumpCommand
+org.apache.parquet.pig.PigSchemaConverter
+org.apache.parquet.pig.TestPigSchemaConverter

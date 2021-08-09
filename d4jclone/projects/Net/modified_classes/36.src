@@ -1,1 +1,1 @@
-org.apache.commons.net.nntp.Article
+org.apache.commons.net.ftp.parser.DefaultFTPFileEntryParserFactory

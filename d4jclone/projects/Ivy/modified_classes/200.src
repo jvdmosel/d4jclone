@@ -1,1 +1,1 @@
-org.apache.ivy.util.url.HttpClientHandler
+org.apache.ivy.plugins.parser.m2.PomReader
