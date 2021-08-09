@@ -4,6 +4,6 @@
     "build_file": "Archiva.build.xml",
     "vcs": "Vcs::Git",
     "repository": "archiva.git",
-    "bugs.csv": "Archiva/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "3"
 }

@@ -4,6 +4,6 @@
     "build_file": "Scxml.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-scxml.git",
-    "bugs.csv": "Scxml/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "25"
 }

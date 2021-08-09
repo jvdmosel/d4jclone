@@ -4,6 +4,6 @@
     "build_file": "Net.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-net.git",
-    "bugs.csv": "Net/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "89"
 }

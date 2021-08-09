@@ -4,6 +4,6 @@
     "build_file": "Opennlp.build.xml",
     "vcs": "Vcs::Git",
     "repository": "opennlp.git",
-    "bugs.csv": "Opennlp/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "83"
 }

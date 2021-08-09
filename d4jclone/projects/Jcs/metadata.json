@@ -4,6 +4,6 @@
     "build_file": "Jcs.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-jcs.git",
-    "bugs.csv": "Jcs/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "40"
 }

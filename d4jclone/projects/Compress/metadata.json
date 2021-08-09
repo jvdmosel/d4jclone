@@ -4,6 +4,6 @@
     "build_file": "Compress.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-compress.git",
-    "bugs.csv": "Compress/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "74"
 }

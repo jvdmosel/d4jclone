@@ -4,6 +4,6 @@
     "build_file": "Systemml.build.xml",
     "vcs": "Vcs::Git",
     "repository": "systemml.git",
-    "bugs.csv": "Systemml/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "6"
 }

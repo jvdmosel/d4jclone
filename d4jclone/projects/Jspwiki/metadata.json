@@ -4,6 +4,6 @@
     "build_file": "Jspwiki.build.xml",
     "vcs": "Vcs::Git",
     "repository": "jspwiki.git",
-    "bugs.csv": "Jspwiki/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "1"
 }

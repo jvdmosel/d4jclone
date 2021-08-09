@@ -4,6 +4,6 @@
     "build_file": "Math.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-math.git",
-    "bugs.csv": "Math/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "124"
 }

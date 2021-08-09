@@ -4,6 +4,6 @@
     "build_file": "Dbcp.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-dbcp.git",
-    "bugs.csv": "Dbcp/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "36"
 }

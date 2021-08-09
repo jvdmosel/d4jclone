@@ -4,6 +4,6 @@
     "build_file": "Ivy.build.xml",
     "vcs": "Vcs::Git",
     "repository": "ant-ivy.git",
-    "bugs.csv": "Ivy/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "284"
 }

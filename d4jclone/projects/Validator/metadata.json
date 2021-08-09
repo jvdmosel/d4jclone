@@ -4,6 +4,6 @@
     "build_file": "Validator.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-validator.git",
-    "bugs.csv": "Validator/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "34"
 }

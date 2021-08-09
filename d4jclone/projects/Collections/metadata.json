@@ -4,6 +4,6 @@
     "build_file": "Collections.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-collections.git",
-    "bugs.csv": "Collections/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "21"
 }

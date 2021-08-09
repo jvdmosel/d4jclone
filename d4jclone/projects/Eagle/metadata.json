@@ -4,6 +4,6 @@
     "build_file": "Eagle.build.xml",
     "vcs": "Vcs::Git",
     "repository": "eagle.git",
-    "bugs.csv": "Eagle/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "2"
 }

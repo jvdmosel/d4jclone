@@ -4,6 +4,6 @@
     "build_file": "Lang.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-lang.git",
-    "bugs.csv": "Lang/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "84"
 }

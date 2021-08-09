@@ -4,6 +4,6 @@
     "build_file": "Bcel.build.xml",
     "vcs": "Vcs::Git",
     "repository": "commons-bcel.git",
-    "bugs.csv": "Bcel/bugs.csv",
+    "bugs.csv": "bugs.csv",
     "number_of_bugs": "18"
 }
