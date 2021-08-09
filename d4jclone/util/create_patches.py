@@ -15,8 +15,11 @@ def createPatches(project_id):
             bug = parseBug(project_id, i)
             checkout(project_id, i, 'f', ENV['BASEDIR'] + '/test')
             checkout_dir =  ENV['BASEDIR'] + '/test/' + project_id.lower() + '_' + str(i) + '_fixed'
-            outsrc = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.src.patch'
-            outtest = ENV['PROJECTDIR'] + '/' + project_id + '/patches/' + str(i) + '.test.patch'
+            path = Path(ENV['PROJECTDIR']) / project_id / 'patches'
+            if not path.is_dir():
+                path.mkdir()
+            outsrc = path / (str(i) + '.src.patch')
+            outtest = path / (str(i) + '.test.patch')
             cwd = Path.cwd()
             os.chdir(checkout_dir)
             modified = getModifiedSources(bug)
@@ -24,12 +27,15 @@ def createPatches(project_id):
             srcfiles = []
             layout = getLayout(bug, 'f')
             for src in modified:
-                if 'Test' in src:
-                    s = layout[1] + src.replace('.', '/') + '.java'
-                    testfiles.append(s)
+                # greedy and buggy ... better way? 
+                src_path = Path(layout[0]) / (src.replace('.', '/') + '.java')
+                test_path = Path(layout[1]) / (src.replace('.', '/') + '.java')
+                if src_path.is_file():
+                    testfiles.append(str(src_path))
+                elif test_path.is_file():
+                    srcfiles.append(str(test_path))
                 else:
-                    s = layout[0] + src.replace('.', '/') + '.java'
-                    srcfiles.append(s)
+                    raise Exception(src + ' does not exist in ' + checkout_dir)
             if len(testfiles) > 0:
                 f = open(outtest, 'w')
                 for file in testfiles:
