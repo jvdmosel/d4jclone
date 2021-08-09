@@ -1,7 +1,9 @@
 {
     "id": "Jcs",
     "program": "commons-jcs",
-    "build_file": "Jcs/Jcs.build.xml",
-    "vcs": "Git",
+    "build_file": "Jcs.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-jcs.git",
+    "bugs.csv": "Jcs/bugs.csv",
     "number_of_bugs": "45"
 }

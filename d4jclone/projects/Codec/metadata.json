@@ -1,7 +1,9 @@
 {
     "id": "Codec",
     "program": "commons-codec",
-    "build_file": "Codec/Codec.build.xml",
-    "vcs": "Git",
+    "build_file": "Codec.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-codec.git",
+    "bugs.csv": "Codec/bugs.csv",
     "number_of_bugs": "12"
 }

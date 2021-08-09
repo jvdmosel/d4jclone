@@ -1,7 +1,9 @@
 {
     "id": "Wss4j",
     "program": "wss4j",
-    "build_file": "Wss4j/Wss4j.build.xml",
-    "vcs": "Git",
+    "build_file": "Wss4j.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "wss4j.git",
+    "bugs.csv": "Wss4j/bugs.csv",
     "number_of_bugs": "81"
 }

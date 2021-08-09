@@ -1,7 +1,9 @@
 {
     "id": "Configuration",
     "program": "commons-configuration",
-    "build_file": "Configuration/Configuration.build.xml",
-    "vcs": "Git",
+    "build_file": "Configuration.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-configuration.git",
+    "bugs.csv": "Configuration/bugs.csv",
     "number_of_bugs": "59"
 }

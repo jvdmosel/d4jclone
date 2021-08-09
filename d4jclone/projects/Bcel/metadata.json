@@ -1,7 +1,9 @@
 {
     "id": "Bcel",
     "program": "commons-bcel",
-    "build_file": "Bcel/Bcel.build.xml",
-    "vcs": "Git",
+    "build_file": "Bcel.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-bcel.git",
+    "bugs.csv": "Bcel/bugs.csv",
     "number_of_bugs": "18"
 }

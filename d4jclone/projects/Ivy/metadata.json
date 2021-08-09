@@ -1,7 +1,9 @@
 {
     "id": "Ivy",
     "program": "ant-ivy",
-    "build_file": "Ivy/Ivy.build.xml",
-    "vcs": "Git",
+    "build_file": "Ivy.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "ant-ivy.git",
+    "bugs.csv": "Ivy/bugs.csv",
     "number_of_bugs": "294"
 }

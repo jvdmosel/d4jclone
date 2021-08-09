@@ -1,7 +1,9 @@
 {
     "id": "Vfs",
     "program": "commons-vfs",
-    "build_file": "Vfs/Vfs.build.xml",
-    "vcs": "Git",
+    "build_file": "Vfs.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-vfs.git",
+    "bugs.csv": "Vfs/bugs.csv",
     "number_of_bugs": "69"
 }

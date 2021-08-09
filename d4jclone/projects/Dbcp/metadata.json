@@ -1,7 +1,9 @@
 {
     "id": "Dbcp",
     "program": "commons-dbcp",
-    "build_file": "Dbcp/Dbcp.build.xml",
-    "vcs": "Git",
+    "build_file": "Dbcp.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-dbcp.git",
+    "bugs.csv": "Dbcp/bugs.csv",
     "number_of_bugs": "36"
 }

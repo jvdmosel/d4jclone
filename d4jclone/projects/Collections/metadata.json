@@ -1,7 +1,9 @@
 {
     "id": "Collections",
     "program": "commons-collections",
-    "build_file": "Collections/Collections.build.xml",
-    "vcs": "Git",
+    "build_file": "Collections.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-collections.git",
+    "bugs.csv": "Collections/bugs.csv",
     "number_of_bugs": "22"
 }

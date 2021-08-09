@@ -1,7 +1,9 @@
 {
     "id": "Parquet",
     "program": "parquet-mr",
-    "build_file": "Parquet/Parquet.build.xml",
-    "vcs": "Git",
+    "build_file": "Parquet.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "parquet-mr.git",
+    "bugs.csv": "Parquet/bugs.csv",
     "number_of_bugs": "49"
 }

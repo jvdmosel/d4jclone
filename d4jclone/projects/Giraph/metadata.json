@@ -1,7 +1,9 @@
 {
     "id": "Giraph",
     "program": "giraph",
-    "build_file": "Giraph/Giraph.build.xml",
-    "vcs": "Git",
+    "build_file": "Giraph.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "giraph.git",
+    "bugs.csv": "Giraph/bugs.csv",
     "number_of_bugs": "127"
 }

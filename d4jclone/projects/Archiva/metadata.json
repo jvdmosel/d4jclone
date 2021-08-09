@@ -1,7 +1,9 @@
 {
     "id": "Archiva",
     "program": "archiva",
-    "build_file": "Archiva/Archiva.build.xml",
-    "vcs": "Git",
+    "build_file": "Archiva.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "archiva.git",
+    "bugs.csv": "Archiva/bugs.csv",
     "number_of_bugs": "3"
 }

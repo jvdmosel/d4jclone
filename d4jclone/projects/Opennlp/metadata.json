@@ -1,7 +1,9 @@
 {
     "id": "Opennlp",
     "program": "opennlp",
-    "build_file": "Opennlp/Opennlp.build.xml",
-    "vcs": "Git",
+    "build_file": "Opennlp.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "opennlp.git",
+    "bugs.csv": "Opennlp/bugs.csv",
     "number_of_bugs": "86"
 }

@@ -1,7 +1,9 @@
 {
     "id": "Validator",
     "program": "commons-validator",
-    "build_file": "Validator/Validator.build.xml",
-    "vcs": "Git",
+    "build_file": "Validator.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-validator.git",
+    "bugs.csv": "Validator/bugs.csv",
     "number_of_bugs": "44"
 }

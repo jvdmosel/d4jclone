@@ -1,7 +1,9 @@
 {
     "id": "Beanutils",
     "program": "commons-beanutils",
-    "build_file": "Beanutils/Beanutils.build.xml",
-    "vcs": "Git",
+    "build_file": "Beanutils.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-beanutils.git",
+    "bugs.csv": "Beanutils/bugs.csv",
     "number_of_bugs": "31"
 }

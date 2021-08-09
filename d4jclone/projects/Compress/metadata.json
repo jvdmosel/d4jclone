@@ -1,7 +1,9 @@
 {
     "id": "Compress",
     "program": "commons-compress",
-    "build_file": "Compress/Compress.build.xml",
-    "vcs": "Git",
+    "build_file": "Compress.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-compress.git",
+    "bugs.csv": "Compress/bugs.csv",
     "number_of_bugs": "79"
 }

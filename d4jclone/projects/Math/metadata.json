@@ -1,7 +1,9 @@
 {
     "id": "Math",
     "program": "commons-math",
-    "build_file": "Math/Math.build.xml",
-    "vcs": "Git",
+    "build_file": "Math.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "commons-math.git",
+    "bugs.csv": "Math/bugs.csv",
     "number_of_bugs": "130"
 }

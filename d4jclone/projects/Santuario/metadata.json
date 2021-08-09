@@ -1,7 +1,9 @@
 {
     "id": "Santuario",
     "program": "santuario-java",
-    "build_file": "Santuario/Santuario.build.xml",
-    "vcs": "Git",
+    "build_file": "Santuario.build.xml",
+    "vcs": "Vcs::Git",
+    "repository": "santuario-java.git",
+    "bugs.csv": "Santuario/bugs.csv",
     "number_of_bugs": "16"
 }
