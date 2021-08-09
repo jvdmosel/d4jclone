@@ -1,7 +1,7 @@
-bug.id,revision.id.buggy,revision.id.fixed,revision.date.fixed,report.id,report.url
-1,0827a46385b08848ffa5556c1ac2f15e5c860585,7c12992af95b013b9380acd3a6843ee89fae7a3e,2016-08-22 21:38:35 -0700,SYSTEMML-864,https://issues.apache.org/jira/browse/SYSTEMML-864
-2,fe4779cefd2e146c352059f0a10b60436c583d13,d0c5c5d29d4cc299649573fed3a2e112e828412d,2017-06-08 23:22:28 -0700,SYSTEMML-1668,https://issues.apache.org/jira/browse/SYSTEMML-1668
-3,1001b3faac4accdfbb5f98a39ac3233befe2d1d7,723a7517ab937096135e911631c18188a634a922,2017-06-17 20:11:35 -0700,SYSTEMML-1715,https://issues.apache.org/jira/browse/SYSTEMML-1715
-4,7ae1b1c4c46ab8741b06a5a77d4fff1aa2f06f87,3fd8e495e26ba70eed22bf16c51a7bf69474c1c3,2017-07-26 21:24:53 -0700,SYSTEMML-1806,https://issues.apache.org/jira/browse/SYSTEMML-1806
-5,cc90a0e59e9d4fe54c5cc27a32d5c77034190726,ebdf770c872429a03ca125f2d69b25db59d0fa8c,2018-01-05 01:53:53 -0800,SYSTEMML-2058,https://issues.apache.org/jira/browse/SYSTEMML-2058
-6,d065c3d13c15f8a8bb4c5e882856e6b0d648675d,f1bf97baf342035764c676b50d361e36e2bbae62,2018-07-13 00:46:30 -0700,SYSTEMML-2431,https://issues.apache.org/jira/browse/SYSTEMML-2431
+bug.id,revision.id.buggy,revision.id.fixed,revision.date.buggy,revision.date.fixed,report.id,report.url
+1,0827a46385b08848ffa5556c1ac2f15e5c860585,7c12992af95b013b9380acd3a6843ee89fae7a3e,2016-08-19 23:28:06 -0700,2016-08-22 21:38:35 -0700,SYSTEMML-864,https://issues.apache.org/jira/browse/SYSTEMML-864
+2,fe4779cefd2e146c352059f0a10b60436c583d13,d0c5c5d29d4cc299649573fed3a2e112e828412d,2017-06-08 22:51:29 -0700,2017-06-08 23:22:28 -0700,SYSTEMML-1668,https://issues.apache.org/jira/browse/SYSTEMML-1668
+3,1001b3faac4accdfbb5f98a39ac3233befe2d1d7,723a7517ab937096135e911631c18188a634a922,2017-06-17 20:11:33 -0700,2017-06-17 20:11:35 -0700,SYSTEMML-1715,https://issues.apache.org/jira/browse/SYSTEMML-1715
+4,7ae1b1c4c46ab8741b06a5a77d4fff1aa2f06f87,3fd8e495e26ba70eed22bf16c51a7bf69474c1c3,2017-07-26 21:24:22 -0700,2017-07-26 21:24:53 -0700,SYSTEMML-1806,https://issues.apache.org/jira/browse/SYSTEMML-1806
+5,cc90a0e59e9d4fe54c5cc27a32d5c77034190726,ebdf770c872429a03ca125f2d69b25db59d0fa8c,2018-01-04 23:31:26 -0800,2018-01-05 01:53:53 -0800,SYSTEMML-2058,https://issues.apache.org/jira/browse/SYSTEMML-2058
+6,d065c3d13c15f8a8bb4c5e882856e6b0d648675d,f1bf97baf342035764c676b50d361e36e2bbae62,2018-07-13 00:11:14 -0700,2018-07-13 00:46:30 -0700,SYSTEMML-2431,https://issues.apache.org/jira/browse/SYSTEMML-2431

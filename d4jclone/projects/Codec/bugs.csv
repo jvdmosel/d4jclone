@@ -1,13 +1,10 @@
-bug.id,revision.id.buggy,revision.id.fixed,revision.date.fixed,report.id,report.url
-1,e65d67e1c41746e811503255fadacef6de645eec,a50a203248662d2b4fe6f5b6952d3066ab3ab8ba,2007-10-27 06:48:26 +0000,CODEC-56,https://issues.apache.org/jira/browse/CODEC-56
-2,3b398a0715d4848a6b71506615b9d230fbf3e60e,f5185b0229f93097be2433386c2d4022e70545d1,2008-02-04 20:20:41 +0000,CODEC-61,https://issues.apache.org/jira/browse/CODEC-61
-3,9c0cabead7cf075308b11362172ae1a48d41321c,52d82d1dfff8c2b2ded9d843e0b03017af6d747c,2008-04-27 00:35:56 +0000,CODEC-65,https://issues.apache.org/jira/browse/CODEC-65
-4,84235691b5d1ae6d4705dba63c19dc1f6450021b,20a88d9b49beda71ddee69af92872716fd00f13a,2009-07-27 23:41:58 +0000,CODEC-81,https://issues.apache.org/jira/browse/CODEC-81
-5,4c6eea410d34d7ff4aa5c30fb7a2fa7c349dae18,800f0531068ebaf2f2d257bb1bd805781ddd4760,2010-06-01 21:52:33 +0000,CODEC-98,https://issues.apache.org/jira/browse/CODEC-98
-6,ca5047cdc0a682af5db270423cc8705f2820d91d,bedf8732cf2d09f4d5fd1360e2f23e7891af48aa,2012-10-09 18:26:22 +0000,CODEC-160,https://issues.apache.org/jira/browse/CODEC-160
-7,298527f9ed4ed5b8b902238c7edcadbe8cdbabe2,214efefd4469bbee6303dfc93871f897683c1c87,2013-11-07 20:43:15 +0000,CODEC-175,https://issues.apache.org/jira/browse/CODEC-175
-8,05bcf7d1cda34baa41333da83b0d743b6ad4d658,d2d757416ed62f48afc65e570c08f7c08315a98f,2014-11-01 14:19:04 +0000,CODEC-191,https://issues.apache.org/jira/browse/CODEC-191
-9,38357dffa2dd39c91c4523beade08c12e8009acb,c82fe35c48bd0082c16644d16d82d1be79d6b9d1,2015-06-04 14:01:15 +0000,CODEC-200,https://issues.apache.org/jira/browse/CODEC-200
-10,f0028e1b90f8d10266f3fe26bafa0882a81ffe82,efe3699122699151984e8499da9d42673a42851a,2016-09-14 12:14:26 +0000,CODEC-225,https://issues.apache.org/jira/browse/CODEC-225
-11,1a4d9cc2572d220664f1b7c377cd318cd253052e,d2f27093d7d95a07da901902f894d88b4ecc3e95,2017-03-26 17:22:08 +0000,CODEC-229,https://issues.apache.org/jira/browse/CODEC-229
-12,ca30fae3acb59a5caef3c3c21eecae7c928827e0,5ef5bd199a4e3df74479b4b363fa29b0b3092547,2017-03-26 21:43:36 +0000,CODEC-231,https://issues.apache.org/jira/browse/CODEC-231
+bug.id,revision.id.buggy,revision.id.fixed,revision.date.buggy,revision.date.fixed,report.id,report.url
+1,e65d67e1c41746e811503255fadacef6de645eec,a50a203248662d2b4fe6f5b6952d3066ab3ab8ba,2007-10-24 23:04:56 +0000,2007-10-27 06:48:26 +0000,CODEC-56,https://issues.apache.org/jira/browse/CODEC-56
+2,3b398a0715d4848a6b71506615b9d230fbf3e60e,f5185b0229f93097be2433386c2d4022e70545d1,2008-01-15 23:44:54 +0000,2008-02-04 20:20:41 +0000,CODEC-61,https://issues.apache.org/jira/browse/CODEC-61
+3,9c0cabead7cf075308b11362172ae1a48d41321c,52d82d1dfff8c2b2ded9d843e0b03017af6d747c,2008-04-27 00:33:06 +0000,2008-04-27 00:35:56 +0000,CODEC-65,https://issues.apache.org/jira/browse/CODEC-65
+4,84235691b5d1ae6d4705dba63c19dc1f6450021b,20a88d9b49beda71ddee69af92872716fd00f13a,2009-07-26 14:32:18 +0000,2009-07-27 23:41:58 +0000,CODEC-81,https://issues.apache.org/jira/browse/CODEC-81
+5,4c6eea410d34d7ff4aa5c30fb7a2fa7c349dae18,800f0531068ebaf2f2d257bb1bd805781ddd4760,2010-06-01 21:04:06 +0000,2010-06-01 21:52:33 +0000,CODEC-98,https://issues.apache.org/jira/browse/CODEC-98
+6,38357dffa2dd39c91c4523beade08c12e8009acb,c82fe35c48bd0082c16644d16d82d1be79d6b9d1,2015-06-04 13:29:28 +0000,2015-06-04 14:01:15 +0000,CODEC-200,https://issues.apache.org/jira/browse/CODEC-200
+7,f0028e1b90f8d10266f3fe26bafa0882a81ffe82,efe3699122699151984e8499da9d42673a42851a,2016-07-25 21:50:39 +0000,2016-09-14 12:14:26 +0000,CODEC-225,https://issues.apache.org/jira/browse/CODEC-225
+8,1a4d9cc2572d220664f1b7c377cd318cd253052e,d2f27093d7d95a07da901902f894d88b4ecc3e95,2016-11-19 04:18:00 +0000,2017-03-26 17:22:08 +0000,CODEC-229,https://issues.apache.org/jira/browse/CODEC-229
+9,ca30fae3acb59a5caef3c3c21eecae7c928827e0,5ef5bd199a4e3df74479b4b363fa29b0b3092547,2017-03-26 18:34:51 +0000,2017-03-26 21:43:36 +0000,CODEC-231,https://issues.apache.org/jira/browse/CODEC-231

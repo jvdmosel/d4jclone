@@ -1,5 +1,5 @@
-bug.id,revision.id.buggy,revision.id.fixed,revision.date.fixed,report.id,report.url
-1,eced5f1e67991c73b87c5285d9c31cdb08213b58,48811a5871ce0123a2592ad473368b7753e679dd,2014-01-02 19:20:36 +0100,DELTASPIKE-484,https://issues.apache.org/jira/browse/DELTASPIKE-484
-2,b68774d4b8975f6ac44c70812b465bcb88598c93,356f8f7d9f4ddf996b705e6167e5b725dbdcf881,2014-04-30 08:55:17 +0200,DELTASPIKE-581,https://issues.apache.org/jira/browse/DELTASPIKE-581
-3,e224405e127d293630502af476e8bfc218b211a8,029435236c08e79f66f1461f8e684ea690c1b7cd,2015-06-16 08:52:03 +0200,DELTASPIKE-931,https://issues.apache.org/jira/browse/DELTASPIKE-931
-4,104df5f6f57fad12c4fd2fbbea2cc7450f407cef,e0aabe00b3578fbe65095b34faf3533689c053c5,2015-07-19 15:18:43 +0200,DELTASPIKE-960,https://issues.apache.org/jira/browse/DELTASPIKE-960
+bug.id,revision.id.buggy,revision.id.fixed,revision.date.buggy,revision.date.fixed,report.id,report.url
+1,eced5f1e67991c73b87c5285d9c31cdb08213b58,48811a5871ce0123a2592ad473368b7753e679dd,2014-01-02 17:08:28 +0100,2014-01-02 19:20:36 +0100,DELTASPIKE-484,https://issues.apache.org/jira/browse/DELTASPIKE-484
+2,b68774d4b8975f6ac44c70812b465bcb88598c93,356f8f7d9f4ddf996b705e6167e5b725dbdcf881,2014-04-30 08:32:44 +0200,2014-04-30 08:55:17 +0200,DELTASPIKE-581,https://issues.apache.org/jira/browse/DELTASPIKE-581
+3,e224405e127d293630502af476e8bfc218b211a8,029435236c08e79f66f1461f8e684ea690c1b7cd,2015-06-16 08:31:45 +0200,2015-06-16 08:52:03 +0200,DELTASPIKE-931,https://issues.apache.org/jira/browse/DELTASPIKE-931
+4,104df5f6f57fad12c4fd2fbbea2cc7450f407cef,e0aabe00b3578fbe65095b34faf3533689c053c5,2015-07-19 15:18:42 +0200,2015-07-19 15:18:43 +0200,DELTASPIKE-960,https://issues.apache.org/jira/browse/DELTASPIKE-960
