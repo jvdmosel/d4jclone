@@ -15,7 +15,7 @@ def getClasses(workdir, layout):
     # remove everything before the package name
     classes =  [file[file.find(layout)+len(layout):] for file in java_files]
     # replace slashes with dots and remove .java postfix
-    classes = [cls.replace('/', '.')[:-5] for cls in classes]    
+    classes = [cls.replace('/', '.')[1:-5] for cls in classes]    
     return classes
 
 def createLoadedClasses(project_id, workdir):
