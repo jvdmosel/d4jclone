@@ -1,18 +1,48 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java b/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
-index c6489f7a..62395444 100644
---- a/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
-@@ -101,12 +101,7 @@ public class IBANCheckDigitTest extends AbstractCheckDigitTest {
-          *  https://intranet.birmingham.ac.uk/finance/documents/public/IBAN.pdf
-          *  http://www.paymentscouncil.org.uk/resources_and_publications/ibans_in_europe/
-          */
--        invalid = new String[] {
--                "510007+47061BE63",
--                "IE01AIBK93118702569045",
--                "AA0000000000089",
--                "AA9900000000053",
--        };
-+        invalid = new String[] {"510007+47061BE63"};
-         zeroSum = null;
-         missingMessage = "Invalid Code length=0";
+diff --git a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+index da1062d1..684a6441 100644
+--- a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+@@ -18,7 +18,6 @@ package org.apache.commons.validator.routines;
  
+ import java.io.Serializable;
+ import java.util.Arrays;
+-import java.util.Locale;
+ 
+ /**
+  * <p><b>Domain name</b> validation routines.</p>
+@@ -161,7 +160,7 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is an infrastructure TLD
+      */
+     public boolean isValidInfrastructureTld(String iTld) {
+-        return Arrays.binarySearch(INFRASTRUCTURE_TLDS, (chompLeadingDot(iTld.toLowerCase(Locale.ENGLISH)))) >= 0;
++        return Arrays.binarySearch(INFRASTRUCTURE_TLDS, (chompLeadingDot(iTld.toLowerCase()))) >= 0;
+     }
+ 
+     /**
+@@ -172,7 +171,7 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is a generic TLD
+      */
+     public boolean isValidGenericTld(String gTld) {
+-        return Arrays.binarySearch(GENERIC_TLDS, chompLeadingDot(gTld.toLowerCase(Locale.ENGLISH))) >= 0;
++        return Arrays.binarySearch(GENERIC_TLDS, chompLeadingDot(gTld.toLowerCase())) >= 0;
+     }
+ 
+     /**
+@@ -183,7 +182,7 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is a country code TLD
+      */
+     public boolean isValidCountryCodeTld(String ccTld) {
+-        return Arrays.binarySearch(COUNTRY_CODE_TLDS, chompLeadingDot(ccTld.toLowerCase(Locale.ENGLISH))) >= 0;
++        return Arrays.binarySearch(COUNTRY_CODE_TLDS, chompLeadingDot(ccTld.toLowerCase())) >= 0;
+     }
+ 
+     /**
+@@ -194,7 +193,7 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is an local TLD
+      */
+     public boolean isValidLocalTld(String iTld) {
+-        return Arrays.binarySearch(LOCAL_TLDS, chompLeadingDot(iTld.toLowerCase(Locale.ENGLISH))) >= 0;
++        return Arrays.binarySearch(LOCAL_TLDS, chompLeadingDot(iTld.toLowerCase())) >= 0;
+     }
+ 
+     private String chompLeadingDot(String str) {

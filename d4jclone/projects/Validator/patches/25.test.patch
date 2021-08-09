@@ -1,25 +1,42 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java b/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
-index 82d6b235..371a9c09 100644
---- a/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
-@@ -48,20 +48,4 @@ public class ISINCheckDigitTest extends AbstractCheckDigitTest {
-                               };
-         invalid = new String[] {"0378#3100"};
-     }
--
--    private static String invalidCheckDigits[] =
--                             {"US037833100O", // proper check digit is '5', see above
--                              "BMG8571G109D", // proper check digit is '6', see above
--                              "AU0000XVGZAD", // proper check digit is '3', see above
--                              "GB000263494I", // proper check digit is '6', see above
--                              "FR000402625C", // proper check digit is '0', see above
--                              "DK000976334H", // proper check digit is '4', see above
--                              };
--
--    public void testVALIDATOR_345() {
--        for (int i = 0; i < invalidCheckDigits.length; i++) {
--            String invalidCheckDigit = invalidCheckDigits[i];
--            assertFalse("Should fail: " + invalidCheckDigit, routine.isValid(invalidCheckDigit));
+diff --git a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+index d9c56f64..4a28e371 100644
+--- a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+@@ -17,8 +17,6 @@
+ package org.apache.commons.validator.routines;
+ 
+ import java.io.Serializable;
+-import java.net.URI;
+-import java.net.URISyntaxException;
+ import java.util.Collections;
+ import java.util.HashSet;
+ import java.util.Locale;
+@@ -437,22 +435,17 @@ public class UrlValidator implements Serializable {
+             return false;
+         }
+ 
+-        try {
+-            URI uri = new URI(null,null,path,null);
+-            String norm = uri.normalize().getPath();
+-            if (norm.startsWith("/../") // Trying to go via the parent dir 
+-             || norm.equals("/..")) {   // Trying to go to the parent dir
+-                return false;
+-            }
+-        } catch (URISyntaxException e) {
+-            return false;
 -        }
--    }
- }
+-        
+         int slash2Count = countToken("//", path);
+         if (isOff(ALLOW_2_SLASHES) && (slash2Count > 0)) {
+             return false;
+         }
+ 
++        int slashCount = countToken("/", path);
++        int dot2Count = countToken("..", path);
++        if (dot2Count > 0 && (slashCount - slash2Count - 1) <= dot2Count) {
++            return false;
++        }
++
+         return true;
+     }
+ 

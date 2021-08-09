@@ -1,13 +1,17 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-index 3e4173ed..08772845 100644
---- a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-+++ b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-@@ -138,7 +138,7 @@ public class UrlValidator implements Serializable {
-      */
-     private static final int PARSE_AUTHORITY_EXTRA = 3;
+diff --git a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+index 8dc3f1c0..c0a91fc1 100644
+--- a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+@@ -146,12 +146,6 @@ public class UrlValidatorTest extends TestCase {
+        assertTrue(urlValidator.isValid("http://tech.yahoo.com/rc/desktops/102;_ylt=Ao8yevQHlZ4On0O3ZJGXLEQFLZA5"));
+    }
  
--    private static final String PATH_PATTERN = "^(/[-\\w:@&?=+,.!/~*'%$_;\\(\\)]*)?$";
-+    private static final String PATH_PATTERN = "^(/[-\\w:@&?=+,.!/~*'%$_;]*)?$";
- 
-     private static final String QUERY_PATTERN = "^(.*)$";
- 
+-   public void testValidator218() {
+-       UrlValidator validator = new UrlValidator(UrlValidator.ALLOW_2_SLASHES);
+-       assertTrue("parentheses should be valid in URLs",
+-               validator.isValid("http://somewhere.com/pathxyz/file(1).html"));
+-   }
+-
+    static boolean incrementTestPartsIndex(int[] testPartsIndex, Object[] testParts) {
+       boolean carry = true;  //add 1 to lowest order part.
+       boolean maxIndex = true;

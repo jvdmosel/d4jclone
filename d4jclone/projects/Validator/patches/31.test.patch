@@ -1,16 +1,13 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-index 18688876..19882b32 100644
---- a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-@@ -409,11 +409,6 @@ public class UrlValidatorTest extends TestCase {
- //        assertTrue(validator.isValid("http://test.xn--hlcj6aya9esc7a")); // Tamil
-     }
+diff --git a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+index 28a9f3bd..36e9f558 100644
+--- a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+@@ -312,7 +312,7 @@ public class UrlValidator implements Serializable {
  
--   public void testValidator361() {
--       UrlValidator validator = new UrlValidator();
--       assertTrue(validator.isValid("http://hello.tokyo/"));
--    }
--
-    
-    /**
-     * Only used to debug the unit tests.
+         String authority = urlMatcher.group(PARSE_URL_AUTHORITY);
+         if ("file".equals(scheme)) {// Special case - file: allows an empty authority
+-            if (authority != null) {
++            if (!"".equals(authority)) {
+                 if (authority.contains(":")) { // but cannot allow trailing :
+                     return false;
+                 }

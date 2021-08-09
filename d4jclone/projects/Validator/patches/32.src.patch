@@ -1,42 +1,15 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-index d9c56f64..4a28e371 100644
---- a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-+++ b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
-@@ -17,8 +17,6 @@
- package org.apache.commons.validator.routines;
+diff --git a/src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java
+index 74faf59e..49c49ef4 100644
+--- a/src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java
+@@ -107,9 +107,7 @@ public class IBANValidatorTest {
+             "AE070331234567890123456",
+             "GB29NWBK60161331926819",
+             "VG96VPVG0000012345678901",
+-            "SC18SSCB11010000000000001497USD",
+-            "UA213996220000026007233566001"
+-    };
++            };
  
- import java.io.Serializable;
--import java.net.URI;
--import java.net.URISyntaxException;
- import java.util.Collections;
- import java.util.HashSet;
- import java.util.Locale;
-@@ -437,22 +435,17 @@ public class UrlValidator implements Serializable {
-             return false;
-         }
- 
--        try {
--            URI uri = new URI(null,null,path,null);
--            String norm = uri.normalize().getPath();
--            if (norm.startsWith("/../") // Trying to go via the parent dir 
--             || norm.equals("/..")) {   // Trying to go to the parent dir
--                return false;
--            }
--        } catch (URISyntaxException e) {
--            return false;
--        }
--        
-         int slash2Count = countToken("//", path);
-         if (isOff(ALLOW_2_SLASHES) && (slash2Count > 0)) {
-             return false;
-         }
- 
-+        int slashCount = countToken("/", path);
-+        int dot2Count = countToken("..", path);
-+        if (dot2Count > 0 && (slashCount - slash2Count - 1) <= dot2Count) {
-+            return false;
-+        }
-+
-         return true;
-     }
- 
+     private final String[] invalidIBANFormat = new String[] {
+             "",                        // empty

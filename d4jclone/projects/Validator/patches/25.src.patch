@@ -1,25 +1,24 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java b/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-index cca1538a..cd72efe2 100644
---- a/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-+++ b/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-@@ -67,20 +67,12 @@ public final class ISINCheckDigit extends ModulusCheckDigit {
-      */
-     protected int calculateModulus(String code, boolean includesCheckDigit) throws CheckDigitException {
-         StringBuffer transformed = new  StringBuffer(code.length() * 2);
--        if (includesCheckDigit) {
--            char checkDigit = code.charAt(code.length()-1); // fetch the last character
--            if (!Character.isDigit(checkDigit)){
--                throw new CheckDigitException("Invalid checkdigit["+ checkDigit+ "] in " + code);
--            }
--        }
-         for (int i = 0; i < code.length(); i++) {
-             int charValue = Character.getNumericValue(code.charAt(i));
-             if (charValue < 0 || charValue > 35) {
-                 throw new CheckDigitException("Invalid Character[" +
-                         (i + 1) + "] = '" + charValue + "'");
-             }
--             // this converts alphanumerics to two digits
--             // so there is no need to overload toInt()
-             transformed.append(charValue);
-         }
-         return super.calculateModulus(transformed.toString(), includesCheckDigit);
+diff --git a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+index b9b691cc..0d96a78e 100644
+--- a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+@@ -414,19 +414,6 @@ public class UrlValidatorTest extends TestCase {
+        assertTrue(validator.isValid("http://hello.tokyo/"));
+     }
+ 
+-   public void testValidator363(){
+-        UrlValidator urlValidator = new UrlValidator();
+-        assertTrue(urlValidator.isValid("http://www.example.org/a/b/hello..world"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/a/hello..world"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/hello.world/"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/hello..world/"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/hello.world"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/hello..world"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/..world"));
+-        assertTrue(urlValidator.isValid("http://www.example.org/.../world"));
+-        assertFalse(urlValidator.isValid("http://www.example.org/../world"));
+-    }
+-
+    public void testValidator375() {
+        UrlValidator validator = new UrlValidator();
+        String url = "http://[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:80/index.html";

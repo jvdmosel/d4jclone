@@ -1,21 +1,38 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java b/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
-index 3bcc9bfc..a01e87fe 100644
---- a/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
-+++ b/src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java
-@@ -80,7 +80,7 @@ public final class IBANCheckDigit implements CheckDigit, Serializable {
-      * Calculate the <i>Check Digit</i> for an IBAN code.
-      * <p>
-      * <b>Note:</b> The check digit is the third and fourth
--     * characters and is set to the value "<code>00</code>".
-+     * characters and and should contain value "<code>00</code>".
-      *
-      * @param code The code to calculate the Check Digit for
-      * @return The calculated Check Digit as 2 numeric decimal characters, e.g. "42"
-@@ -92,7 +92,6 @@ public final class IBANCheckDigit implements CheckDigit, Serializable {
-             throw new CheckDigitException("Invalid Code length=" +
-                     (code == null ? 0 : code.length()));
-         }
--        code = code.substring(0, 2) + "00" + code.substring(4);
-         int modulusResult = calculateModulus(code);
-         int charValue = (98 - modulusResult);
-         String checkDigit = Integer.toString(charValue);
+diff --git a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+index 143d9798..8fd11a95 100644
+--- a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
+@@ -16,10 +16,10 @@
+  */
+ package org.apache.commons.validator.routines;
+ 
+-import org.apache.commons.validator.ResultPair;
+-
+ import junit.framework.TestCase;
+ 
++import org.apache.commons.validator.ResultPair;
++
+ /**
+  * Performs Validation Test for url validations.
+  *
+@@ -424,19 +424,7 @@ public class UrlValidatorTest extends TestCase {
+        assertFalse("IPv6 address without [] should not validate: " + url, validator.isValid(url));
+     }
+ 
+-
+-   public void testValidator353() { // userinfo
+-       UrlValidator validator = new UrlValidator();
+-       assertTrue(validator.isValid("http://www.apache.org:80/path"));
+-       assertTrue(validator.isValid("http://user:pass@www.apache.org:80/path"));
+-       assertTrue(validator.isValid("http://user:@www.apache.org:80/path"));
+-       assertTrue(validator.isValid("http://us%00er:-._~!$&'()*+,;=@www.apache.org:80/path"));
+-       assertFalse(validator.isValid("http://:pass@www.apache.org:80/path"));
+-       assertFalse(validator.isValid("http://:@www.apache.org:80/path"));
+-       assertFalse(validator.isValid("http://user:pa:ss@www.apache.org/path"));
+-       assertFalse(validator.isValid("http://user:pa@ss@www.apache.org/path"));
+-   }
+-
++   
+    /**
+     * Only used to debug the unit tests.
+     * @param argv

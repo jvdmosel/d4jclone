@@ -1,32 +1,18 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
-index 2f0a9dfd..11cfd442 100644
---- a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
-+++ b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
-@@ -65,13 +65,8 @@ public class DomainValidator implements Serializable {
-     private static final long serialVersionUID = -4407125112880174009L;
+diff --git a/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java b/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
+index c6489f7a..62395444 100644
+--- a/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java
+@@ -101,12 +101,7 @@ public class IBANCheckDigitTest extends AbstractCheckDigitTest {
+          *  https://intranet.birmingham.ac.uk/finance/documents/public/IBAN.pdf
+          *  http://www.paymentscouncil.org.uk/resources_and_publications/ibans_in_europe/
+          */
+-        invalid = new String[] {
+-                "510007+47061BE63",
+-                "IE01AIBK93118702569045",
+-                "AA0000000000089",
+-                "AA9900000000053",
+-        };
++        invalid = new String[] {"510007+47061BE63"};
+         zeroSum = null;
+         missingMessage = "Invalid Code length=0";
  
-     // Regular expression strings for hostnames (derived from RFC2396 and RFC 1123)
--
--    // RFC2396: domainlabel   = alphanum | alphanum *( alphanum | "-" ) alphanum
-     private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]*\\p{Alnum})*";
--
--    // RFC2396 toplabel = alpha | alpha *( alphanum | "-" ) alphanum
--    private static final String TOP_LABEL_REGEX = "\\p{Alpha}|(?:\\p{Alpha}(?:[\\p{Alnum}-])*\\p{Alnum})";
--
-+    private static final String TOP_LABEL_REGEX = "\\p{Alpha}{2,}";
-     private static final String DOMAIN_NAME_REGEX =
-             "^(?:" + DOMAIN_LABEL_REGEX + "\\.)+" + "(" + TOP_LABEL_REGEX + ")$";
- 
-@@ -142,12 +137,6 @@ public class DomainValidator implements Serializable {
-         return allowLocal && hostnameRegex.isValid(domain);
-     }
- 
--    // package protected for unit test access 
--    final boolean isValidDomainSyntax(String domain) {
--        String[] groups = domainRegex.match(domain);
--        return (groups != null && groups.length > 0);
--    }
--
-     /**
-      * Returns true if the specified <code>String</code> matches any
-      * IANA-defined top-level domain. Leading dots are ignored if present.

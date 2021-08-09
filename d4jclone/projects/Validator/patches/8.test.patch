@@ -1,16 +1,50 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-index 22ef37dd..19705983 100644
---- a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-@@ -141,11 +141,6 @@ public class EmailValidatorTest extends TestCase {
-         assertTrue(validator.isValid("me@att.net")); // Make sure TLD is not the cause of the failure
-     }
+diff --git a/src/main/java/org/apache/commons/validator/GenericTypeValidator.java b/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
+index c6bd6c11..4100496f 100644
+--- a/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
++++ b/src/main/java/org/apache/commons/validator/GenericTypeValidator.java
+@@ -371,38 +371,22 @@ public class GenericTypeValidator implements Serializable {
+         }
  
--    public void testVALIDATOR_278() {
--        assertFalse(validator.isValid("someone@-test.com"));// hostname starts with dash/hyphen
--        assertFalse(validator.isValid("someone@test-.com"));// hostname ends with dash/hyphen
--    }
--
-     /**
-     * Tests the email validation with commas.
-     */
+         try {
+-            // Get the formatters to check against
+-            DateFormat formatterShort = null;
+-            DateFormat formatterDefault = null;
++            DateFormat formatter = null;
+             if (locale != null) {
+-                formatterShort = 
+-                   DateFormat.getDateInstance(DateFormat.SHORT, locale);
+-                formatterDefault = 
+-                   DateFormat.getDateInstance(DateFormat.DEFAULT, locale);
++                formatter =
++                    DateFormat.getDateInstance(DateFormat.SHORT, locale);
+             } else {
+-                formatterShort =
++                formatter =
+                     DateFormat.getDateInstance(
+                     DateFormat.SHORT,
+                     Locale.getDefault());
+-                formatterDefault =
+-                   DateFormat.getDateInstance(
+-                   DateFormat.DEFAULT,
+-                   Locale.getDefault());
+             }
+ 
+-            // Turn off lenient parsing
+-            formatterShort.setLenient(false);
+-            formatterDefault.setLenient(false);
++            formatter.setLenient(false);
+ 
+-            // Firstly, try with the short form
+-            try {
+-               date = formatterShort.parse(value);
+-            } catch (ParseException e) {
+-               // Fall back on the default one
+-               date = formatterDefault.parse(value);
+-            }
++            date = formatter.parse(value);
+         } catch (ParseException e) {
+-            // Bad date, so log and return null
++            // Bad date so return null
+             Log log = LogFactory.getLog(GenericTypeValidator.class);
+             if (log.isDebugEnabled()) {
+                 log.debug("Date parse failed value=[" + value  + "], " +

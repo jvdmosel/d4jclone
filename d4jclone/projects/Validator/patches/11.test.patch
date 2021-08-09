@@ -1,101 +1,32 @@
-diff --git a/src/test/java/org/apache/commons/validator/EmailTest.java b/src/test/java/org/apache/commons/validator/EmailTest.java
-index 3ee3a0e7..627a9dc2 100644
---- a/src/test/java/org/apache/commons/validator/EmailTest.java
-+++ b/src/test/java/org/apache/commons/validator/EmailTest.java
-@@ -210,18 +210,6 @@ public class EmailTest extends AbstractCommonTest {
-         assertFalse("Test control char 127", validator.isValid("foo" + ((char)127) + "bar@domain.com"));
+diff --git a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+index 2f0a9dfd..11cfd442 100644
+--- a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+@@ -65,13 +65,8 @@ public class DomainValidator implements Serializable {
+     private static final long serialVersionUID = -4407125112880174009L;
+ 
+     // Regular expression strings for hostnames (derived from RFC2396 and RFC 1123)
+-
+-    // RFC2396: domainlabel   = alphanum | alphanum *( alphanum | "-" ) alphanum
+     private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]*\\p{Alnum})*";
+-
+-    // RFC2396 toplabel = alpha | alpha *( alphanum | "-" ) alphanum
+-    private static final String TOP_LABEL_REGEX = "\\p{Alpha}|(?:\\p{Alpha}(?:[\\p{Alnum}-])*\\p{Alnum})";
+-
++    private static final String TOP_LABEL_REGEX = "\\p{Alpha}{2,}";
+     private static final String DOMAIN_NAME_REGEX =
+             "^(?:" + DOMAIN_LABEL_REGEX + "\\.)+" + "(" + TOP_LABEL_REGEX + ")$";
+ 
+@@ -142,12 +137,6 @@ public class DomainValidator implements Serializable {
+         return allowLocal && hostnameRegex.isValid(domain);
      }
  
--    /**
--     * Test that @localhost and @localhost.localdomain
--     *  addresses aren't declared valid by default 
--     */
--    public void testEmailLocalhost() throws ValidatorException {
--       ValueBean info = new ValueBean();
--       info.setValue("joe@localhost");
--       valueTest(info, false);
--       info.setValue("joe@localhost.localdomain");
--       valueTest(info, false);
+-    // package protected for unit test access 
+-    final boolean isValidDomainSyntax(String domain) {
+-        String[] groups = domainRegex.match(domain);
+-        return (groups != null && groups.length > 0);
 -    }
 -
      /**
-      * Write this test according to parts of RFC, as opposed to the type of character
-      * that is being tested.
-diff --git a/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-index 9f4e2ecc..37c21615 100644
---- a/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-@@ -84,24 +84,4 @@ public class DomainValidatorTest extends TestCase {
-         assertFalse("empty string shouldn't validate as TLD", validator.isValid(""));
-         assertFalse("null shouldn't validate as TLD", validator.isValid(null));
-     }
--    
--    public void testAllowLocal() {
--       DomainValidator noLocal = DomainValidator.getInstance(false);
--       DomainValidator allowLocal = DomainValidator.getInstance(true);
--       
--       // Default is false, and should use singletons
--       assertEquals(noLocal, validator);
--       
--       // Default won't allow local
--       assertFalse("localhost.localdomain should validate", noLocal.isValid("localhost.localdomain"));
--       assertFalse("localhost should validate", noLocal.isValid("localhost"));
--       
--       // But it may be requested
--       assertTrue("localhost.localdomain should validate", allowLocal.isValid("localhost.localdomain"));
--       assertTrue("localhost should validate", allowLocal.isValid("localhost"));
--       
--       // Check the localhost one with a few others
--       assertTrue("apache.org should validate", allowLocal.isValid("apache.org"));
--       assertFalse("domain name with spaces shouldn't validate", allowLocal.isValid(" apache.org "));
--    }
- }
-diff --git a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-index 499955a1..d1c8665d 100644
---- a/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java
-@@ -19,7 +19,6 @@ package org.apache.commons.validator.routines;
- import junit.framework.TestCase;
- 
- import org.apache.commons.validator.ResultPair;
--import org.apache.commons.validator.ValidatorException;
- 
- /**
-  * Performs Validation Test for e-mail validations.
-@@ -169,36 +168,6 @@ public class EmailValidatorTest extends TestCase {
-         }
-         assertFalse("Test control char 127", validator.isValid("foo" + ((char)127) + "bar@domain.com"));
-     }
--    
--    /**
--     * Test that @localhost and @localhost.localdomain
--     *  addresses are declared as valid when requested. 
--     */
--    public void testEmailLocalhost() throws ValidatorException {
--       // Check the default is not to allow
--       EmailValidator noLocal = EmailValidator.getInstance(false);
--       EmailValidator allowLocal = EmailValidator.getInstance(true);
--       assertEquals(validator, noLocal);
--       
--       // Depends on the validator
--       assertTrue(
--             "@localhost.localdomain should be accepted but wasn't",
--             allowLocal.isValid("joe@localhost.localdomain")
--       );
--       assertTrue(
--             "@localhost should be accepted but wasn't",
--             allowLocal.isValid("joe@localhost")
--       );
--       
--       assertFalse(
--             "@localhost.localdomain should be accepted but wasn't",
--             noLocal.isValid("joe@localhost.localdomain")
--       );
--       assertFalse(
--             "@localhost should be accepted but wasn't",
--             noLocal.isValid("joe@localhost")
--       );
--    }
- 
-     /**
-      * Write this test according to parts of RFC, as opposed to the type of character
+      * Returns true if the specified <code>String</code> matches any
+      * IANA-defined top-level domain. Leading dots are ignored if present.

@@ -1,99 +1,30 @@
-diff --git a/src/test/org/apache/commons/validator/CustomValidatorResourcesTest.java b/src/test/org/apache/commons/validator/CustomValidatorResourcesTest.java
-deleted file mode 100644
-index 0dc862e7..00000000
---- a/src/test/org/apache/commons/validator/CustomValidatorResourcesTest.java
-+++ /dev/null
-@@ -1,93 +0,0 @@
--/*
-- * Licensed to the Apache Software Foundation (ASF) under one or more
-- * contributor license agreements.  See the NOTICE file distributed with
-- * this work for additional information regarding copyright ownership.
-- * The ASF licenses this file to You under the Apache License, Version 2.0
-- * (the "License"); you may not use this file except in compliance with
-- * the License.  You may obtain a copy of the License at
-- *
-- *      http://www.apache.org/licenses/LICENSE-2.0
-- *
-- * Unless required by applicable law or agreed to in writing, software
-- * distributed under the License is distributed on an "AS IS" BASIS,
-- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-- * See the License for the specific language governing permissions and
-- * limitations under the License.
-- */
--package org.apache.commons.validator;
+diff --git a/src/share/org/apache/commons/validator/ValidatorResources.java b/src/share/org/apache/commons/validator/ValidatorResources.java
+index 7158337a..2c1e5d5d 100644
+--- a/src/share/org/apache/commons/validator/ValidatorResources.java
++++ b/src/share/org/apache/commons/validator/ValidatorResources.java
+@@ -54,9 +54,6 @@ import org.xml.sax.Attributes;
+  */
+ public class ValidatorResources implements Serializable {
+ 
+-    /** Name of the digester validator rules file */
+-    private static final String VALIDATOR_RULES = "digester-rules.xml";
 -
--import java.io.InputStream;
--import junit.framework.Test;
--import junit.framework.TestCase;
--import junit.framework.TestSuite;
--import org.apache.commons.validator.custom.CustomValidatorResources;
--
--/**
-- * Test custom ValidatorResources.
-- *
-- * @version $Revision$ $Date$
-- */
--public class CustomValidatorResourcesTest extends TestCase {
--    
--    /**
--     * Construct a test case with the specified name.
--     * @param name Name of the test
--     */
--    public CustomValidatorResourcesTest(String name) {
--        super(name);
--    }
--
--   /**
--    * Start the tests.
--    *
--    * @param theArgs the arguments. Not used
--    */
--   public static void main(String[] theArgs) {
--       junit.awtui.TestRunner.main(new String[] {ValidatorResultsTest.class.getName()});
--   }
--
--   /**
--    * Create a Test Suite
--    * @return a test suite (<code>TestSuite</code>) that includes all methods
--    *         starting with "test"
--    */
--   public static Test suite() {
--       return new TestSuite(CustomValidatorResourcesTest.class);
--   }
--
--    /**
--     * Set up.
--     */
--    protected void setUp() {
--    }
--
--    /**
--     * Tear Down
--     */
--    protected void tearDown() {
--    }
--
--    /**
--     * Test creating a custom validator resources.
--     */
--    public void testCustomResources() {
--        // Load resources
--        InputStream in = null;
--        ValidatorResources resources = null;
--
--        try {
--            in = this.getClass().getResourceAsStream("TestNumber-config.xml");
--            resources = new CustomValidatorResources(in);
--        } catch(Exception e) {
--            fail("Error loading resources: " + e);
--        } finally {
--            try {
--                if (in != null) {
--                    in.close();
--                }
--            } catch(Exception e) {
--            }
+     /**
+      * The set of public identifiers, and corresponding resource names, for
+      * the versions of the configuration file DTDs that we know about.  There
+@@ -202,14 +199,7 @@ public class ValidatorResources implements Serializable {
+      *  Initialize the digester.
+      */
+     private Digester initDigester() {
+-        URL rulesUrl = this.getClass().getResource(VALIDATOR_RULES);
+-        if (rulesUrl == null) {
+-            // Fix for Issue# VALIDATOR-195
+-            rulesUrl = ValidatorResources.class.getResource(VALIDATOR_RULES);
 -        }
--    }
--
--}
+-        if (getLog().isDebugEnabled()) {
+-            getLog().debug("Loading rules from '" + rulesUrl + "'");
+-        }
++        URL rulesUrl = this.getClass().getResource("digester-rules.xml");
+         Digester digester = DigesterLoader.createDigester(rulesUrl);
+         digester.setNamespaceAware(true);
+         digester.setValidating(true);
