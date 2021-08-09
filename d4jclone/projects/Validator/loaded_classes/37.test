@@ -1,8 +1,0 @@
-org.apache.commons.validator.AbstractCommonTest
-org.apache.commons.validator.EmailTest
-org.apache.commons.validator.EntityImportTest
-org.apache.commons.validator.GenericValidatorImpl
-org.apache.commons.validator.ResultPair
-org.apache.commons.validator.ValueBean
-org.apache.commons.validator.routines.AbstractNumberValidatorTest
-org.apache.commons.validator.routines.FloatValidatorTest
