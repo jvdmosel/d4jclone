@@ -5,5 +5,5 @@
     "vcs": "Vcs::Git",
     "repository": "ant-ivy.git",
     "bugs.csv": "Ivy/bugs.csv",
-    "number_of_bugs": "294"
+    "number_of_bugs": "284"
 }

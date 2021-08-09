@@ -5,5 +5,5 @@
     "vcs": "Vcs::Git",
     "repository": "commons-scxml.git",
     "bugs.csv": "Scxml/bugs.csv",
-    "number_of_bugs": "28"
+    "number_of_bugs": "25"
 }

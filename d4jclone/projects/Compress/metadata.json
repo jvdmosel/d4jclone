@@ -5,5 +5,5 @@
     "vcs": "Vcs::Git",
     "repository": "commons-compress.git",
     "bugs.csv": "Compress/bugs.csv",
-    "number_of_bugs": "79"
+    "number_of_bugs": "74"
 }

@@ -5,5 +5,5 @@
     "vcs": "Vcs::Git",
     "repository": "giraph.git",
     "bugs.csv": "Giraph/bugs.csv",
-    "number_of_bugs": "127"
+    "number_of_bugs": "125"
 }

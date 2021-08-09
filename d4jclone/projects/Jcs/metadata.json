@@ -5,5 +5,5 @@
     "vcs": "Vcs::Git",
     "repository": "commons-jcs.git",
     "bugs.csv": "Jcs/bugs.csv",
-    "number_of_bugs": "45"
+    "number_of_bugs": "40"
 }
