@@ -42,15 +42,15 @@ def to_ISO_8601(dt, utc_offset):
 def createBugs():
     # clean projects dir
     path = Path.cwd() / 'd4jclone/projects'
-    if path.is_dir():
-        subprocess.call(['rm', '-r', path])
-    path.mkdir()
+    if not path.is_dir():
+        path.mkdir()
     
     dbConnect()
     
     # csv headers
     headers = ['bug.id', 'revision.id.buggy', 'revision.id.fixed', 
-               'revision.date.fixed', 'report.id', 'report.url']
+               'revision.date.buggy', 'revision.date.fixed', 
+               'report.id', 'report.url']
     
     for project_id, project in projects.items():
         bugs = []
@@ -80,7 +80,10 @@ def createBugs():
                         rid_fixed = commit.revision_hash
                         rid_buggy = commit.parents[0]
                         
+                        commit_buggy = Commit.objects(revision_hash=rid_buggy).only('committer_date', 'committer_date_offset').get()
+                        
                         # revision datetime with offset
+                        rdate_buggy = to_ISO_8601(commit_buggy.committer_date, commit_buggy.committer_date_offset)
                         rdate_fixed = to_ISO_8601(commit.committer_date, commit.committer_date_offset)
                         
                         # make sure verified lines exist for this bugfix
@@ -90,14 +93,15 @@ def createBugs():
                             hunks = hunks + Hunk.objects(file_action_id=file_action.id).filter(lines_verified__bugfix__ne = None).count()
                         if hunks >= 1:
                             bugs.append({'revision_id_buggy': rid_buggy, 'revision_id_fixed': rid_fixed,
-                                         'revision_date_fixed': rdate_fixed, 'external_id': ext,
-                                         'report_url': url})
+                                         'revision_date_buggy': rdate_buggy, 'revision_date_fixed': rdate_fixed, 
+                                         'external_id': ext, 'report_url': url})
             print_progress(i, len(commits), suffix=project_id, bar_length=20)
         # check whether validated bugs exist for this project
         if len(bugs) > 0:
             # create project dir
             project_path = path / project_id
-            project_path.mkdir()
+            if not project_path.is_dir():
+                project_path.mkdir()
             
             # write csv
             with open(project_path / 'bugs.csv', 'w', newline='') as bugs_csv:
@@ -110,5 +114,6 @@ def createBugs():
                 # write bugs to csv
                 for _id, bug in enumerate(bugs, 1):
                     (csv_writer.writerow([_id, bug['revision_id_buggy'], bug['revision_id_fixed'],
-                                          bug['revision_date_fixed'], bug['external_id'], bug['report_url']]))
+                                          bug['revision_date_buggy'], bug['revision_date_fixed'], 
+                                          bug['external_id'], bug['report_url']]))
         print_progress(len(commits), len(commits), suffix=project_id, bar_length=20)
