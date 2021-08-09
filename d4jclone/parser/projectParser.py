@@ -18,5 +18,6 @@ def parseProject(project):
     with open(metadata_file) as json_file:
         metadata = json.load(json_file)
         return Project(metadata['id'], metadata['program'], metadata['vcs'], 
-                       ENV['PROJECTDIR'] + '/' + metadata['build_file'], int(metadata['number_of_bugs']),
-                       ENV['REPODIR'] + '/' + metadata['repository'], ENV['PROJECTDIR'] + '/' + metadata['bugs.csv'])
+                       ENV['PROJECTDIR'] + '/' + project + '/'+ metadata['build_file'], int(metadata['number_of_bugs']),
+                       ENV['REPODIR'] + '/' + project + '/' + metadata['repository'], 
+                       ENV['PROJECTDIR'] + '/'+ project + '/' + metadata['bugs.csv'])
