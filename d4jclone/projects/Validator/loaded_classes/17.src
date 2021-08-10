@@ -1,2 +1,5 @@
-org.apache.commons.validator.ValidatorResources
-org.apache.commons.validator.util.Flags
+org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigit
+org.apache.commons.validator.routines.checkdigit.CheckDigit
+org.apache.commons.validator.routines.checkdigit.CheckDigitException
+org.apache.commons.validator.routines.checkdigit.EAN13CheckDigit
+org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit

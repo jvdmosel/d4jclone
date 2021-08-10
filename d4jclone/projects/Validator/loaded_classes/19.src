@@ -1,4 +1,5 @@
-org.apache.commons.validator.routines.DomainValidator
-org.apache.commons.validator.routines.EmailValidator
-org.apache.commons.validator.routines.InetAddressValidator
-org.apache.commons.validator.routines.RegexValidator
+org.apache.commons.validator.routines.checkdigit.CheckDigit
+org.apache.commons.validator.routines.checkdigit.CheckDigitException
+org.apache.commons.validator.routines.checkdigit.ISINCheckDigit
+org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit
+org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit
