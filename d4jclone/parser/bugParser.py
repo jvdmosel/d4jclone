@@ -46,16 +46,16 @@ def getTriggerTests(project_id, bug_id):
                 # testcases are prefixed with ---
                 if line[:3] == '---':
                     testcase = line[4:].strip('\n')
-                    trigger_tests[testcase] = []
+                    trigger_tests[testcase] = ''
                 # stacktrace is prefixed with \t (skip)
                 elif line[0] == '\t':
                     continue
                 # root cause
                 else:
-                    trigger_tests[testcase].append(line.strip('\n'))
+                    trigger_tests[testcase] += line.strip('\n')
         return trigger_tests
     else:
-        return None
+        return {}
 
 def getLayout(bug, version):
     with open(ENV['PROJECTDIR'] + '/' + bug.project + '/dir-layout.csv', 'r') as layout_file:
