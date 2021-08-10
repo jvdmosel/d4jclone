@@ -1,5 +1,3 @@
 org.apache.commons.validator.EntityImportTest
-org.apache.commons.validator.routines.DoubleValidatorTest
+org.apache.commons.validator.routines.EmailValidatorTest
 org.apache.commons.validator.routines.FloatValidatorTest
-org.apache.commons.validator.routines.UrlValidatorTest
-org.apache.commons.validator.routines.checkdigit.ABANumberCheckDigitTest

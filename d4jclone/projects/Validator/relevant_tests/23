@@ -1,2 +1,6 @@
-org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest
-org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest
+org.apache.commons.validator.EntityImportTest
+org.apache.commons.validator.routines.DomainValidatorTest
+org.apache.commons.validator.routines.DoubleValidatorTest
+org.apache.commons.validator.routines.FloatValidatorTest
+org.apache.commons.validator.routines.UrlValidatorTest
+org.apache.commons.validator.routines.checkdigit.ABANumberCheckDigitTest

@@ -1,1 +1,6 @@
-org.apache.commons.validator.routines.EmailValidatorTest
+org.apache.commons.validator.EntityImportTest
+org.apache.commons.validator.ValidatorResourcesTest
+org.apache.commons.validator.routines.FloatValidatorTest
+org.apache.commons.validator.routines.InetAddressValidatorTest
+org.apache.commons.validator.routines.IntegerValidatorTest
+org.apache.commons.validator.routines.checkdigit.ABANumberCheckDigitTest

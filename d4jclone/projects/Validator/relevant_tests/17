@@ -1,3 +1,2 @@
-org.apache.commons.validator.CustomValidatorResourcesTest
-org.apache.commons.validator.ValidatorResourcesTest
-org.apache.commons.validator.util.FlagsTest
+org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest
+org.apache.commons.validator.routines.checkdigit.EAN13CheckDigitTest
