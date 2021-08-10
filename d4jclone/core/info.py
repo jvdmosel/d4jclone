@@ -36,7 +36,7 @@ def bug_info(project_id, bug_id):
         print('-' * 80)
     else:
         print('UNKNOWN' + sep)
-    srcs = getModifiedSources(project_id, bug_id))
+    srcs = getModifiedSources(project_id, bug_id)
     if len(srcs) > 0:
         srcs = '\n - '.join(srcs)
     else:
