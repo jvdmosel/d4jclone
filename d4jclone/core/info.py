@@ -16,7 +16,7 @@ def project_info(project_id):
     print('    Project ID: ' + project.id)
     print('       Program: ' + project.program)
     print('    Build File: ' + project.build_file + sep)
-    print('           Vcs: ' + 'Vcs::' + project.vcs)
+    print('           Vcs: ' + project.vcs)
     print('    Repository: ' + str(Path(ENV['REPODIR']) / (projects.get(project.id) + '.git')))
     print('     Commit db: ' + str(Path(ENV['SCRIPTDIR']) / 'projects' / project.id / 'bugs.csv'))
     print('Number of bugs: ' + str(project.number_of_bugs) + sep)
@@ -32,7 +32,7 @@ def bug_info(project_id, bug_id):
     print('Root cause in triggering tests:')
     if trigger_tests != None:
         for test in trigger_tests.keys():
-            print(' - ' + test + '\n   --> ' + ' '.join(trigger_tests[test]))
+            print(' - ' + test + '\n   --> ' + trigger_tests[test])
         print('-' * 80)
     else:
         print('UNKNOWN' + sep)
