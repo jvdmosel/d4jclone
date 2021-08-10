@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest::testVALIDATOR_336_InvalidCheckDigits
+junit.framework.AssertionFailedError: Should fail: DUS0421CW
+	at org.apache.commons.validator.routines.checkdigit.CUSIPCheckDigitTest.testVALIDATOR_336_InvalidCheckDigits(CUSIPCheckDigitTest.java:62)

@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.InetAddressValidatorTest::testVALIDATOR_419
+junit.framework.AssertionFailedError: ::ffff:192.168.1.1:192.168.1.1
+	at org.apache.commons.validator.routines.InetAddressValidatorTest.testVALIDATOR_419(InetAddressValidatorTest.java:70)

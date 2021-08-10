@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.UrlValidatorTest::testValidator218
+junit.framework.AssertionFailedError: parentheses should be valid in URLs
+	at org.apache.commons.validator.routines.UrlValidatorTest.testValidator218(UrlValidatorTest.java:151)

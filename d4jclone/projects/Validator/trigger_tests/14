@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.UrlValidatorTest::testValidator309
+junit.framework.AssertionFailedError
+	at org.apache.commons.validator.routines.UrlValidatorTest.testValidator309(UrlValidatorTest.java:266)

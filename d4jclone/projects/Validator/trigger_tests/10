@@ -1,0 +1,4 @@
+--- org.apache.commons.validator.routines.CodeValidatorTest::testValidator294_1
+java.lang.NullPointerException
+	at org.apache.commons.validator.routines.CodeValidator.validate(CodeValidator.java:230)
+	at org.apache.commons.validator.routines.CodeValidatorTest.testValidator294_1(CodeValidatorTest.java:200)

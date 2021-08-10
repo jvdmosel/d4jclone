@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.DomainValidatorTest::testValidator306
+junit.framework.AssertionFailedError: 64 chars label should fail
+	at org.apache.commons.validator.routines.DomainValidatorTest.testValidator306(DomainValidatorTest.java:172)

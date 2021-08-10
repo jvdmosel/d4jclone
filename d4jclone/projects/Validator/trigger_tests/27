@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.UrlValidatorTest::testValidator375
+junit.framework.AssertionFailedError: IPv6 address URL should validate: http://[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:80/index.html
+	at org.apache.commons.validator.routines.UrlValidatorTest.testValidator375(UrlValidatorTest.java:420)

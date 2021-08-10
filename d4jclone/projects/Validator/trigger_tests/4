@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.CustomValidatorResourcesTest::testCustomResources
+junit.framework.AssertionFailedError: Error loading resources: org.apache.commons.digester.xmlrules.XmlLoadException
+	at org.apache.commons.validator.CustomValidatorResourcesTest.testCustomResources(CustomValidatorResourcesTest.java:82)

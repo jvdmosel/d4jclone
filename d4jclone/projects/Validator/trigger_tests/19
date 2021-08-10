@@ -1,0 +1,3 @@
+--- org.apache.commons.validator.routines.checkdigit.ISINCheckDigitTest::testVALIDATOR_345
+junit.framework.AssertionFailedError: Should fail: US037833100O
+	at org.apache.commons.validator.routines.checkdigit.ISINCheckDigitTest.testVALIDATOR_345(ISINCheckDigitTest.java:64)
