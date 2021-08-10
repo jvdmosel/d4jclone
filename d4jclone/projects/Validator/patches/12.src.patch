@@ -1,33 +1,43 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-index 07f8874e..ee9b60d9 100644
---- a/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java
-@@ -163,28 +163,6 @@ public class DomainValidatorTest extends TestCase {
-         assertTrue("xn--d1abbgf6aiiy.xn--p1ai should validate", validator.isValid("xn--d1abbgf6aiiy.xn--p1ai")); // This uses a valid TLD
-      }
+diff --git a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+index 17198013..44f74064 100644
+--- a/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/DomainValidator.java
+@@ -67,12 +67,10 @@ public class DomainValidator implements Serializable {
+     // Regular expression strings for hostnames (derived from RFC2396 and RFC 1123)
  
--    // labels are a max of 63 chars and domains 253
--    public void testValidator306() {
--        final String longString = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz0123456789A";
--        assertEquals(63, longString.length()); // 26 * 2 + 11
--        
--        assertTrue("63 chars label should validate", validator.isValidDomainSyntax(longString+".com"));
--        assertFalse("64 chars label should fail", validator.isValidDomainSyntax(longString+"x.com"));
--
--        assertTrue("63 chars TLD should validate", validator.isValidDomainSyntax("test."+longString));
--        assertFalse("64 chars TLD should fail", validator.isValidDomainSyntax("test.x"+longString));
--        
--        final String longDomain = 
--                longString
--                + "." + longString
--                + "." + longString
--                + "." + longString.substring(0,61)
--                ; 
--        assertEquals(253, longDomain.length());
--        assertTrue("253 chars domain should validate", validator.isValidDomainSyntax(longDomain));
--        assertFalse("254 chars domain should fail", validator.isValidDomainSyntax(longDomain+"x"));
--    }
--
-     // Check array is sorted and is lower-case
-     public void test_INFRASTRUCTURE_TLDS_sortedAndLowerCase() throws Exception {
-         final boolean sorted = isSortedLowerCase("INFRASTRUCTURE_TLDS");
+     // RFC2396: domainlabel   = alphanum | alphanum *( alphanum | "-" ) alphanum
+-    // Max 63 characters
+-    private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?";
++    private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]*\\p{Alnum})*";
+ 
+     // RFC2396 toplabel = alpha | alpha *( alphanum | "-" ) alphanum
+-    // Max 63 characters
+-    private static final String TOP_LABEL_REGEX = "\\p{Alpha}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?";
++    private static final String TOP_LABEL_REGEX = "\\p{Alpha}|(?:\\p{Alpha}(?:[\\p{Alnum}-])*\\p{Alnum})";
+ 
+     private static final String DOMAIN_NAME_REGEX =
+             "^(?:" + DOMAIN_LABEL_REGEX + "\\.)+" + "(" + TOP_LABEL_REGEX + ")$";
+@@ -137,9 +135,6 @@ public class DomainValidator implements Serializable {
+      * @return true if the parameter is a valid domain name
+      */
+     public boolean isValid(String domain) {
+-        if (domain == null || domain.length() > 253) {
+-            return false;
+-        }
+         String[] groups = domainRegex.match(domain);
+         if (groups != null && groups.length > 0) {
+             return isValidTld(groups[0]);
+@@ -147,12 +142,8 @@ public class DomainValidator implements Serializable {
+         return allowLocal && hostnameRegex.isValid(domain);
+     }
+ 
+-    // package protected for unit test access
+-    // must agree with isValid() above
++    // package protected for unit test access 
+     final boolean isValidDomainSyntax(String domain) {
+-        if (domain == null || domain.length() > 253) {
+-            return false;
+-        }
+         String[] groups = domainRegex.match(domain);
+         return (groups != null && groups.length > 0);
+     }

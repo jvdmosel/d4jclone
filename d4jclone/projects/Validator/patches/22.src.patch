@@ -1,38 +1,25 @@
-diff --git a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-index 143d9798..8fd11a95 100644
---- a/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-+++ b/src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java
-@@ -16,10 +16,10 @@
-  */
- package org.apache.commons.validator.routines;
+diff --git a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+index dc293211..5734c613 100644
+--- a/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
++++ b/src/main/java/org/apache/commons/validator/routines/UrlValidator.java
+@@ -136,18 +136,9 @@ public class UrlValidator implements Serializable {
+     private static final String AUTHORITY_CHARS_REGEX = "\\p{Alnum}\\-\\."; // allows for IPV4 but not IPV6
+     private static final String IPV6_REGEX = "[0-9a-fA-F:]+"; // do this as separate match because : could cause ambiguity with port prefix
  
--import org.apache.commons.validator.ResultPair;
--
- import junit.framework.TestCase;
+-    // userinfo    = *( unreserved / pct-encoded / sub-delims / ":" )
+-    // unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
+-    // sub-delims    = "!" / "$" / "&" / "'" / "(" / ")" / "*" / "+" / "," / ";" / "="
+-    // We assume that password has the same valid chars as user info
+-    private static final String USERINFO_CHARS_REGEX = "[a-zA-Z0-9%-._~!$&'()*+,;=]";
+-    // since neither ':' nor '@' are allowed chars, we don't need to use non-greedy matching
+-    private static final String USERINFO_FIELD_REGEX =
+-            USERINFO_CHARS_REGEX + "+:" + // At least one character for the name
+-            USERINFO_CHARS_REGEX + "*@"; // password may be absent
+     private static final String AUTHORITY_REGEX =
+-            "^(?:\\[("+IPV6_REGEX+")\\]|(?:(?:"+USERINFO_FIELD_REGEX+")?([" + AUTHORITY_CHARS_REGEX + "]*)))(:\\d*)?(.*)?";
+-    //                   1                 e.g. user:pass@                         2                         3       4
++            "^(?:\\[("+IPV6_REGEX+")\\]|([" + AUTHORITY_CHARS_REGEX + "]*))(:\\d*)?(.*)?";
++    //                   1                              2                3       4
+     private static final Pattern AUTHORITY_PATTERN = Pattern.compile(AUTHORITY_REGEX);
  
-+import org.apache.commons.validator.ResultPair;
-+
- /**
-  * Performs Validation Test for url validations.
-  *
-@@ -424,19 +424,7 @@ public class UrlValidatorTest extends TestCase {
-        assertFalse("IPv6 address without [] should not validate: " + url, validator.isValid(url));
-     }
- 
--
--   public void testValidator353() { // userinfo
--       UrlValidator validator = new UrlValidator();
--       assertTrue(validator.isValid("http://www.apache.org:80/path"));
--       assertTrue(validator.isValid("http://user:pass@www.apache.org:80/path"));
--       assertTrue(validator.isValid("http://user:@www.apache.org:80/path"));
--       assertTrue(validator.isValid("http://us%00er:-._~!$&'()*+,;=@www.apache.org:80/path"));
--       assertFalse(validator.isValid("http://:pass@www.apache.org:80/path"));
--       assertFalse(validator.isValid("http://:@www.apache.org:80/path"));
--       assertFalse(validator.isValid("http://user:pa:ss@www.apache.org/path"));
--       assertFalse(validator.isValid("http://user:pa@ss@www.apache.org/path"));
--   }
--
-+   
-    /**
-     * Only used to debug the unit tests.
-     * @param argv
+     private static final int PARSE_AUTHORITY_IPV6 = 1;

@@ -1,25 +1,25 @@
-diff --git a/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java b/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-index cca1538a..cd72efe2 100644
---- a/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-+++ b/src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java
-@@ -67,20 +67,12 @@ public final class ISINCheckDigit extends ModulusCheckDigit {
-      */
-     protected int calculateModulus(String code, boolean includesCheckDigit) throws CheckDigitException {
-         StringBuffer transformed = new  StringBuffer(code.length() * 2);
--        if (includesCheckDigit) {
--            char checkDigit = code.charAt(code.length()-1); // fetch the last character
--            if (!Character.isDigit(checkDigit)){
--                throw new CheckDigitException("Invalid checkdigit["+ checkDigit+ "] in " + code);
--            }
+diff --git a/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java b/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
+index 82d6b235..371a9c09 100644
+--- a/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
++++ b/src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java
+@@ -48,20 +48,4 @@ public class ISINCheckDigitTest extends AbstractCheckDigitTest {
+                               };
+         invalid = new String[] {"0378#3100"};
+     }
+-
+-    private static String invalidCheckDigits[] =
+-                             {"US037833100O", // proper check digit is '5', see above
+-                              "BMG8571G109D", // proper check digit is '6', see above
+-                              "AU0000XVGZAD", // proper check digit is '3', see above
+-                              "GB000263494I", // proper check digit is '6', see above
+-                              "FR000402625C", // proper check digit is '0', see above
+-                              "DK000976334H", // proper check digit is '4', see above
+-                              };
+-
+-    public void testVALIDATOR_345() {
+-        for (int i = 0; i < invalidCheckDigits.length; i++) {
+-            String invalidCheckDigit = invalidCheckDigits[i];
+-            assertFalse("Should fail: " + invalidCheckDigit, routine.isValid(invalidCheckDigit));
 -        }
-         for (int i = 0; i < code.length(); i++) {
-             int charValue = Character.getNumericValue(code.charAt(i));
-             if (charValue < 0 || charValue > 35) {
-                 throw new CheckDigitException("Invalid Character[" +
-                         (i + 1) + "] = '" + charValue + "'");
-             }
--             // this converts alphanumerics to two digits
--             // so there is no need to overload toInt()
-             transformed.append(charValue);
-         }
-         return super.calculateModulus(transformed.toString(), includesCheckDigit);
+-    }
+ }

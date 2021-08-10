@@ -1,13 +1,23 @@
-diff --git a/src/share/org/apache/commons/validator/EmailValidator.java b/src/share/org/apache/commons/validator/EmailValidator.java
-index 1b1b7329..a220cdd1 100644
---- a/src/share/org/apache/commons/validator/EmailValidator.java
-+++ b/src/share/org/apache/commons/validator/EmailValidator.java
-@@ -38,7 +38,7 @@ import org.apache.oro.text.perl.Perl5Util;
-  */
- public class EmailValidator {
+diff --git a/src/test/org/apache/commons/validator/EmailTest.java b/src/test/org/apache/commons/validator/EmailTest.java
+index a1a3496e..a5780128 100644
+--- a/src/test/org/apache/commons/validator/EmailTest.java
++++ b/src/test/org/apache/commons/validator/EmailTest.java
+@@ -221,18 +221,6 @@ public class EmailTest extends TestCommon {
  
--    private static final String SPECIAL_CHARS = "\\000-\\037\\(\\)<>@,;:'\\\\\\\"\\.\\[\\]\\177";
-+    private static final String SPECIAL_CHARS = "\\(\\)<>@,;:'\\\\\\\"\\.\\[\\]";
-     private static final String VALID_CHARS = "[^\\s" + SPECIAL_CHARS + "]";
-     private static final String QUOTED_USER = "(\"[^\"]*\")";
-     private static final String ATOM = VALID_CHARS + '+';
+     }
+ 
+-   /**
+-    * Tests the email validation with ascii control characters.
+-    * (i.e. Ascii chars 0 - 31 and 127)
+-    */
+-    public void testEmailWithControlChars() throws ValidatorException {
+-        EmailValidator validator = new EmailValidator();
+-        for (char c = 0; c < 32; c++) {
+-            assertFalse("Test control char " + ((int)c), validator.isValid("foo" + c + "bar@domain.com"));
+-        }
+-        assertFalse("Test control char 127", validator.isValid("foo" + ((char)127) + "bar@domain.com"));
+-    }
+-
+     /**
+      * Write this test according to parts of RFC, as opposed to the type of character
+      * that is being tested.
