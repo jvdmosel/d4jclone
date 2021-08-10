@@ -22,7 +22,7 @@ def createPatches(project_id):
             outtest = path / (str(i) + '.test.patch')
             cwd = Path.cwd()
             os.chdir(checkout_dir)
-            modified = getModifiedSources(bug)
+            modified = getModifiedSources(project_id, bug.id)
             testfiles = []
             srcfiles = []
             layout = getLayout(bug, 'f')

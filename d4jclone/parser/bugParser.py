@@ -21,18 +21,41 @@ def parseBug(project, bug_id):
     bug = linecache.getline(str(path), int(bug_id)+1).split(',')
     return Bug(project, bug_id, bug[1], bug[2], bug[3], bug[4], bug[5], bug[6][:-1])
 
-def getModifiedSources(bug):
-    srcs = parseLines(bug, 'modified_classes', '.src')
+def getModifiedSources(project_id, bug_id):
+    srcs = parseLines(project_id, bug_id, 'modified_classes', '.src')
     srcs.sort()
     return srcs
 
-def getLoadedClasses(bug, postfix = 'src'):
-    srcs = parseLines(bug, 'loaded_classes', '.' + postfix)
+def getLoadedClasses(project_id, bug_id, postfix = 'src'):
+    srcs = parseLines(project_id, bug_id, 'loaded_classes', '.' + postfix)
     return srcs
 
-def getRelevantTests(bug):
-    tests = parseLines(bug, 'relevant_tests')
+def getRelevantTests(project_id, bug_id):
+    tests = parseLines(project_id, bug_id, 'relevant_tests')
     return tests
+
+def getTriggerTests(project_id, bug_id):
+    file_path = Path(ENV['PROJECTDIR']) / project_id / 'trigger_tests' / str(bug_id)
+    # check if there are any triggering tests for this bug
+    if file_path.is_file():
+        with open(file_path, 'r') as file:
+            testcase = ''
+            trigger_tests = {}
+            # we only care for testcases and root causes
+            for line in file:
+                # testcases are prefixed with ---
+                if line[:3] == '---':
+                    testcase = line[4:].strip('\n')
+                    trigger_tests[testcase] = []
+                # stacktrace is prefixed with \t (skip)
+                elif line[0] == '\t':
+                    continue
+                # root cause
+                else:
+                    trigger_tests[testcase].append(line.strip('\n'))
+        return trigger_tests
+    else:
+        return None
 
 def getLayout(bug, version):
     with open(ENV['PROJECTDIR'] + '/' + bug.project + '/dir-layout.csv', 'r') as layout_file:
@@ -42,9 +65,9 @@ def getLayout(bug, version):
         layout = next(filter(lambda x: rev in x, csv_reader))
         return (layout[1],layout[2])
 
-def parseLines(bug, dir_name, postfix = ''):
+def parseLines(project_id, bug_id, dir_name, postfix = ''):
     lines = []
-    path = Path(ENV['PROJECTDIR']) / bug.project / dir_name / (str(bug.id) + postfix)
+    path = Path(ENV['PROJECTDIR']) / project_id / dir_name / (str(bug_id) + postfix)
     with open(path, 'r') as file:
         lines = file.readlines()
     lines = [line.strip() for line in lines]

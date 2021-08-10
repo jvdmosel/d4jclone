@@ -6,9 +6,8 @@ from subprocess import PIPE, run
 from d4jclone.config import ENV
 from d4jclone.parser.bugParser import (getLayout, getLoadedClasses,
                                        getModifiedSources, getRelevantTests,
-                                       parseBug)
+                                       getTriggerTests, parseBug)
 from d4jclone.parser.checkoutParser import parseCheckout
-from d4jclone.parser.triggerTestParser import parseTriggerTests
 from d4jclone.util.create_loaded_classes import getClasses
 from d4jclone.util.formatting import fill
 from d4jclone.util.projects import projects
@@ -38,11 +37,11 @@ def export(property, file = None, workdir = None):
         checkout = parseCheckout(workdir)
         # Classes modified by the bug fix
         if property == 'classes.modified':
-            for src in getModifiedSources(checkout.bug):
+            for src in getModifiedSources(checkout.project.id, checkout.bug.id):
                 print(src)
         # Classes loaded by the triggering tests
         elif property == 'classes.relevant':
-            for src in getLoadedClasses(checkout.bug):
+            for src in getLoadedClasses(checkout.project, checkout.bug):
                 print(src)
         # Classpath to compile the project
         elif property == 'cp.compile':
@@ -64,11 +63,11 @@ def export(property, file = None, workdir = None):
                 print(test)
         # Relevant tests that touch at least one of the modified sources
         elif property == 'tests.relevant':
-            for test in getRelevantTests(checkout.bug):
+            for test in getRelevantTests(checkout.project.id, checkout.bug.id):
                 print(test)
         # Trigger tests that expose the bug
         elif property == 'tests.trigger':
-            trigger_tests = parseTriggerTests(checkout.project.id, checkout.bug.id)
+            trigger_tests = getTriggerTests(checkout.project.id, checkout.bug.id)
             if trigger_tests != None:
                 for test in trigger_tests.keys():
                     print(test)

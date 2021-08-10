@@ -28,7 +28,7 @@ def createRelevantTests(project_id, workdir):
             # set of relevant tests
             relevant_tests = set()
             # modified sources
-            modified = getModifiedSources(bug)
+            modified = getModifiedSources(project_id, bug.id)
             path = Path(ENV['PROJECTDIR']) / project_id / 'relevant_tests'
             if not path.is_dir():
                 path.mkdir()

@@ -1,9 +1,8 @@
 from pathlib import Path
 
 from d4jclone.config import ENV
-from d4jclone.parser.bugParser import getModifiedSources, parseBug
+from d4jclone.parser.bugParser import getModifiedSources, parseBug, getTriggerTests
 from d4jclone.parser.projectParser import parseProject
-from d4jclone.parser.triggerTestParser import parseTriggerTests
 from d4jclone.util.projects import projects
 
 sep = '\n'+ '-' * 80
@@ -29,7 +28,7 @@ def bug_info(project_id, bug_id):
     print('Revision date (fixed version):\n' + bug.rev_date_fixed + sep)
     print('Bug report id:\n' + bug.external_id + sep)
     print('Bug report url:\n' + bug.url + sep)
-    trigger_tests = parseTriggerTests(project_id, bug_id)
+    trigger_tests = getTriggerTests(project_id, bug_id)
     print('Root cause in triggering tests:')
     if trigger_tests != None:
         for test in trigger_tests.keys():
@@ -37,7 +36,7 @@ def bug_info(project_id, bug_id):
         print('-' * 80)
     else:
         print('UNKNOWN' + sep)
-    srcs = getModifiedSources(bug)
+    srcs = getModifiedSources(project_id, bug_id))
     if len(srcs) > 0:
         srcs = '\n - '.join(srcs)
     else:
