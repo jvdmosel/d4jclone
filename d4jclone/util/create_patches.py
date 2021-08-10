@@ -27,13 +27,12 @@ def createPatches(project_id):
             srcfiles = []
             layout = getLayout(bug, 'f')
             for src in modified:
-                # greedy and buggy ... better way? 
-                src_path = Path(layout[0]) / (src.replace('.', '/') + '.java')
-                test_path = Path(layout[1]) / (src.replace('.', '/') + '.java')
+                src_path = Path(checkout_dir) / layout[0] / (src.replace('.', '/') + '.java')
+                test_path = Path(checkout_dir) / layout[1] / (src.replace('.', '/') + '.java')
                 if src_path.is_file():
-                    testfiles.append(str(src_path))
+                    srcfiles.append(str(src_path))
                 elif test_path.is_file():
-                    srcfiles.append(str(test_path))
+                    testfiles.append(str(test_path))
                 else:
                     raise Exception(src + ' does not exist in ' + checkout_dir)
             if len(testfiles) > 0:
