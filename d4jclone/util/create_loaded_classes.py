@@ -7,7 +7,7 @@ from d4jclone.core.compile import compile
 from d4jclone.core.test import test
 from d4jclone.parser.bugParser import getLayout, parseBug
 from d4jclone.parser.projectParser import parseProject
-from d4jclone.util.projects import projects
+from d4jclone.util.input_validation import is_valid_pid
 
 def getClasses(workdir, layout):
     target_dir = Path(workdir) / layout 
@@ -19,7 +19,7 @@ def getClasses(workdir, layout):
     return classes
 
 def createLoadedClasses(project_id, workdir):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         project = parseProject(project_id)
         for i in range(1, project.number_of_bugs+1):
             bug = parseBug(project_id, i)

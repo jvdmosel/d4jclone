@@ -8,11 +8,10 @@ from d4jclone.core.test import test as _test
 from d4jclone.core.test import testFails
 from d4jclone.parser.bugParser import parseBug
 from d4jclone.parser.projectParser import parseProject
-from d4jclone.util.projects import projects
-
+from d4jclone.util.input_validation import is_valid_pid
 
 def createTriggeringTests(project_id, workdir):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         project = parseProject(project_id)
         for i in range(1, project.number_of_bugs+1):
             bug = parseBug(project_id, i)

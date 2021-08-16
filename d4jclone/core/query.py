@@ -1,12 +1,11 @@
 import csv
 import sys
 
-from d4jclone.config import ENV
 from d4jclone.parser.bugParser import (getLoadedClasses, getModifiedSources,
                                        getRelevantTests, getTriggerTests,
                                        parseBug)
 from d4jclone.parser.projectParser import parseProject
-from d4jclone.util.projects import projects
+from d4jclone.util.input_validation import is_valid_pid
 
 available_fields = [
     'project.id',
@@ -33,7 +32,7 @@ def query(project_id, query = None, file = None, help = False):
     if help:
         print('Available fields: ' + ', '.join(available_fields))
         return
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         f = None
         if file == None:
             csv_writer = csv.writer(sys.stdout)
@@ -126,7 +125,7 @@ def query(project_id, query = None, file = None, help = False):
         if f != None:
             f.close()
     else:
-        raise Exception('Invalid project_id:' + project_id)
+        raise Exception('Invalid project_id: ' + project_id)
     
 def apply_to_rows(rows, fn):
     for i in range(len(rows)):

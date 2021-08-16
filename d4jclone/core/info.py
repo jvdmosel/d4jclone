@@ -1,8 +1,10 @@
 from pathlib import Path
 
 from d4jclone.config import ENV
-from d4jclone.parser.bugParser import getModifiedSources, parseBug, getTriggerTests
+from d4jclone.parser.bugParser import (getModifiedSources, getTriggerTests,
+                                       parseBug)
 from d4jclone.parser.projectParser import parseProject
+from d4jclone.util.input_validation import is_valid_pid
 from d4jclone.util.projects import projects
 
 sep = '\n'+ '-' * 80
@@ -44,7 +46,7 @@ def bug_info(project_id, bug_id):
     print('List of modified sources:\n - ' + srcs + sep)
         
 def info(project_id, bug_id = None):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         project = parseProject(project_id)
         project_info(project_id)
         if bug_id != None:
@@ -53,4 +55,4 @@ def info(project_id, bug_id = None):
             else:
                 raise Exception('Error: ' + project_id + '-' + bug_id  + ' is a non-existent bug')
     else:
-        raise Exception('Invalid project_id:' + project_id)
+        raise Exception('Invalid project_id: ' + project_id)

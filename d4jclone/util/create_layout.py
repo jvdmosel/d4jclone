@@ -1,12 +1,11 @@
 import csv
-import os
 from pathlib import Path
 
 from d4jclone.config import ENV
 from d4jclone.core.checkout import checkout
 from d4jclone.parser.bugParser import parseBug
 from d4jclone.parser.projectParser import parseProject
-from d4jclone.util.projects import projects
+from d4jclone.util.input_validation import is_valid_pid
 
 # list of possible layouts for each project
 project_layouts = {'Validator': [('src/main/java', 'src/test/java'), ('src/share', 'src/test')]}
@@ -18,7 +17,7 @@ def findLayout(checkout_dir, project_id):
             return layout
 
 def createLayout(project_id):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         project = parseProject(project_id)
         fp = Path(ENV['PROJECTDIR']) / project_id / 'dir-layout.csv'
         with open(fp, 'w') as csv_file:

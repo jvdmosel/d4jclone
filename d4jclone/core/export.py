@@ -1,4 +1,3 @@
-import re
 import sys
 from pathlib import Path
 from subprocess import PIPE, run
@@ -10,7 +9,7 @@ from d4jclone.parser.bugParser import (getLayout, getLoadedClasses,
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.util.create_loaded_classes import getClasses
 from d4jclone.util.formatting import fill
-from d4jclone.util.projects import projects
+from d4jclone.util.input_validation import is_valid_pid
 
 properties = {
     'classes.modified': 'Classes modified by the bug fix',
@@ -81,7 +80,7 @@ def export(property, file = None, workdir = None):
             print(fill('  ' + p, ' ', 20) + properties[p])
 
 def parseProperty(project_id, bug_id, version):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         bug = parseBug(project_id, bug_id)
         rev = bug.rev_buggy if version == 'b' else bug.rev_fixed
         path = Path(ENV['PROJECTDIR']) / project_id / 'build_files' / rev / 'maven-build.properties'
@@ -98,7 +97,7 @@ def parseProperty(project_id, bug_id, version):
             test_dir = dirs['maven.build.testOutputDir='].replace('${maven.build.dir}', prefix)
             return (output_dir, test_dir)
     else:
-        raise Exception('Invalid project_id:' + project_id)
+        raise Exception('Invalid project_id: ' + project_id)
 
 def parseClasspath(workdir, arg = 'classpath'):
     checkout = parseCheckout(workdir)

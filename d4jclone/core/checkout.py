@@ -9,14 +9,13 @@ from d4jclone.parser.bugParser import parseBug
 from d4jclone.parser.checkoutParser import parseCheckout
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.formatting import fill
-from d4jclone.util.projects import projects
+from d4jclone.util.input_validation import is_valid_pid, is_valid_bid
 from git import Repo
 
-
 def checkout(project_id, bug_id, version, workdir = None):
-    if project_id in projects.keys():
+    if is_valid_pid(project_id):
         project = parseProject(project_id)
-        if 0 < bug_id <= project.number_of_bugs+1:
+        if is_valid_bid(project_id, bug_id):
             bug = parseBug(project_id, bug_id)
             workdir = workdir if workdir != None else '/tmp/'
             if version == 'b':
@@ -34,14 +33,14 @@ def checkout(project_id, bug_id, version, workdir = None):
             print(fill('Initialize buggy program version', '.', 75), end ='')
             tagRevision(checkout, project_id, bug_id, 'BUGGY')
             tag_name = 'D4JCLONE_' + project.id + '_' + str(bug.id) + '_' + tag
-            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version, '.', 75), end ='')
+            print(fill('Check out program version: ' + project_id + '-' + str(bug_id) + version, '.', 75), end ='', flush=True)
             repo = Repo(checkout)
             repo.git.checkout(tag_name)
             print('OK')
         else:
             raise Exception('Error: ' + project_id + '-' + bug_id  + ' is a non-existent bug')
     else:
-        raise Exception('Invalid project_id:' + project_id)
+        raise Exception('Invalid project_id: ' + project_id)
 
 def checkoutRevision(project, bug_id, rev, tag, workdir = None): 
     checkout = workdir + '/' + project.id.lower() + '_' + str(bug_id)
@@ -75,7 +74,7 @@ def initLocalRepo(workdir):
         subprocess.call(['git', '-C', workdir, 'config', 'user.name', 'd4jclone\@localhost'], stdout=DEVNULL, stderr=DEVNULL)
         print('OK')
     else:
-        print('FAIL')
+        print('FAILED')
         raise Exception('Couldn\'t init local git repository!')
         
 def tagRevision(workdir, pid, bid, version):
@@ -91,7 +90,7 @@ def tagRevision(workdir, pid, bid, version):
         subprocess.call(['git', '-C', workdir, 'tag', tag], stdout=DEVNULL, stderr=DEVNULL)
         print('OK')
     else:
-        print('FAIL')
+        print('FAILED')
         raise Exception('Couldn\'t tag ' + tag + ' revision!')
         
 def applyPatch(workdir, bug):
@@ -102,7 +101,7 @@ def applyPatch(workdir, bug):
         subprocess.call(['git', '-C', workdir, 'apply', patch], stdout=DEVNULL, stderr=DEVNULL)
         print('OK')
     else:
-        print('FAIL')
+        print('FAILED')
 
 def fixBuild(project_dir, basedir, bug, rev):
     print(fill('Copy generated Ant build file', '.', 75), end ='')
