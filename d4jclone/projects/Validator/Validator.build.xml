@@ -8,6 +8,13 @@
     <property name="compile.debug" value="yes" />
 
     <property name="test.monitor" value="false"/>
+    <property name="junit.jar"  value="${libdir}/junit-4.11.jar"/>
+    <property name="dir.classes.testgen" value="${basedir}/.classes_testgen"/>
+    <property name="dir.lib.testgen.rt" value="${libdir}/test_generation/runtime"/>
+
+    <path id="lib.testgen.rt">
+        <fileset dir="${dir.lib.testgen.rt}" includes="*-rt.jar" />
+    </path>
 
     <!-- Include existing project build file -->
     <import file="${basedir}/build.xml"/>

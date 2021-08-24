@@ -154,6 +154,24 @@
     </copy>
   </target>
 
+  <target name="compile-gen-tests" depends="compile, compile-tests" description="Compile generated tests">
+    <delete dir="${dir.classes.testgen}" quiet="true" />
+    <mkdir dir="${dir.classes.testgen}"/>
+    <javac srcdir="${test.dir}" 
+           destdir="${dir.classes.testgen}"
+           debug="true"
+           deprecation="false"
+           optimize="false">
+      <classpath>
+        <path refid="build.test.classpath"/>
+        <path refid="lib.testgen.rt"/>
+        <pathelement path="${junit.jar}"/>
+        <pathelement path="${maven.build.outputDir}"/>
+        <pathelement path="${maven.build.testOutputDir}"/>
+      </classpath>
+    </javac>
+  </target>
+
   <!-- ====================================================================== -->
   <!-- Run all tests                                                          -->
   <!-- ====================================================================== -->
@@ -210,6 +228,28 @@
         <fileset dir="${maven.build.testDir.0}">
           <include name="**/${test}.java"/>
           <exclude name="**/*Abstract*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="run-gen-tests"  depends="compile-gen-tests" description="Run generated tests">
+    <mkdir dir="${maven.test.reports}"/>
+    <junit printsummary="yes" haltonfailure="no" haltonerror="no" fork="yes" forkmode="perBatch" showOutput="true">
+      <formatter type="xml"/>
+      <formatter type="plain" usefile="false"/>
+      <classpath>
+        <pathelement path="${dir.classes.testgen}" />
+        <pathelement path="${junit.jar}" />
+        <pathelement path="${maven.build.outputDir}" />
+        <path refid="build.test.classpath"/>
+        <path refid="lib.testgen.rt"/>
+      </classpath>
+      <test name="${test.entry.class}" methods="${test.entry.method}" if="test.entry.class" />
+      <batchtest todir="${maven.test.reports}" unless="test.entry.class">
+        <fileset dir="${test.dir}">
+          <include name="**/*.java"/>
+          <exclude name="**/*_scaffolding.java"/>
         </fileset>
       </batchtest>
     </junit>
