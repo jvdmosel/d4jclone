@@ -6,8 +6,6 @@ index 3bcc9bfc..a01e87fe 100644
       * Calculate the <i>Check Digit</i> for an IBAN code.
       * <p>
       * <b>Note:</b> The check digit is the third and fourth
--     * characters and is set to the value "<code>00</code>".
-+     * characters and and should contain value "<code>00</code>".
       *
       * @param code The code to calculate the Check Digit for
       * @return The calculated Check Digit as 2 numeric decimal characters, e.g. "42"

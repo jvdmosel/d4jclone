@@ -9,7 +9,6 @@ index 31111301..d9de7945 100644
 -        if (input == null) {
 -            return null;
 -        }
--
 -        String code = input.trim();
 -        if (code.length() == 0) {
 +        String code = (input == null ? null : input.trim());

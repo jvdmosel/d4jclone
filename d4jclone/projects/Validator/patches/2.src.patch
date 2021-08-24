@@ -7,20 +7,11 @@ index d731a0c7..dfaba2e6 100644
          }
  
 -    }
--    /**
--     * Returns the size of an indexed property from the object we're validating.
--     *
--     * @param bean The bean to extract the indexed values from.
--     * @throws ValidatorException If there's an error looking up the property 
--     * or, the property found is not indexed.
--     */
 -    private int getIndexedPropertySize(Object bean) throws ValidatorException {
 -        Object indexedProperty = null;
--
 -        try {
 -            indexedProperty =
 -                PropertyUtils.getProperty(bean, this.getIndexedListProperty());
--
 -        } catch(IllegalAccessException e) {
 -            throw new ValidatorException(e.getMessage());
 -        } catch(InvocationTargetException e) {
@@ -28,7 +19,6 @@ index d731a0c7..dfaba2e6 100644
 -        } catch(NoSuchMethodException e) {
 -            throw new ValidatorException(e.getMessage());
 -        }
--
 -        if (indexedProperty == null) {
 -            return 0;
 -        } else if (indexedProperty instanceof Collection) {
@@ -38,7 +28,6 @@ index d731a0c7..dfaba2e6 100644
 -        } else {
 -            throw new ValidatorException(this.getKey() + " is not indexed");
 -        }
--
      }
      
      /**

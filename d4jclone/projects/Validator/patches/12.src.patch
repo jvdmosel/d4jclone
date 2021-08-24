@@ -6,12 +6,10 @@ index 17198013..44f74064 100644
      // Regular expression strings for hostnames (derived from RFC2396 and RFC 1123)
  
      // RFC2396: domainlabel   = alphanum | alphanum *( alphanum | "-" ) alphanum
--    // Max 63 characters
 -    private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?";
 +    private static final String DOMAIN_LABEL_REGEX = "\\p{Alnum}(?>[\\p{Alnum}-]*\\p{Alnum})*";
  
      // RFC2396 toplabel = alpha | alpha *( alphanum | "-" ) alphanum
--    // Max 63 characters
 -    private static final String TOP_LABEL_REGEX = "\\p{Alpha}(?>[\\p{Alnum}-]{0,61}\\p{Alnum})?";
 +    private static final String TOP_LABEL_REGEX = "\\p{Alpha}|(?:\\p{Alpha}(?:[\\p{Alnum}-])*\\p{Alnum})";
  
@@ -31,9 +29,6 @@ index 17198013..44f74064 100644
          return allowLocal && hostnameRegex.isValid(domain);
      }
  
--    // package protected for unit test access
--    // must agree with isValid() above
-+    // package protected for unit test access 
      final boolean isValidDomainSyntax(String domain) {
 -        if (domain == null || domain.length() > 253) {
 -            return false;

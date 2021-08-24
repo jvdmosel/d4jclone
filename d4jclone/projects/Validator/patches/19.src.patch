@@ -18,8 +18,6 @@ index cca1538a..cd72efe2 100644
                  throw new CheckDigitException("Invalid Character[" +
                          (i + 1) + "] = '" + charValue + "'");
              }
--             // this converts alphanumerics to two digits
--             // so there is no need to overload toInt()
              transformed.append(charValue);
          }
          return super.calculateModulus(transformed.toString(), includesCheckDigit);

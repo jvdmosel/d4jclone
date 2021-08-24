@@ -7,18 +7,9 @@ index 0830ea2e..b8c2e77e 100644
              "^(?:" + DOMAIN_LABEL_REGEX + "\\.)+" + "(" + TOP_LABEL_REGEX + ")$";
  
 -    private final boolean allowLocal;
--    
      /**
--     * Singleton instance of this validator, which
--     *  doesn't consider local addresses as valid.
-+     * Singleton instance of this validator.
       */
 -    private static final DomainValidator DOMAIN_VALIDATOR = new DomainValidator(false);
--    
--    /**
--     * Singleton instance of this validator, which does
--     *  consider local addresses valid.
--     */
 -    private static final DomainValidator DOMAIN_VALIDATOR_WITH_LOCAL = new DomainValidator(true);
 +    private static final DomainValidator DOMAIN_VALIDATOR = new DomainValidator();
  
@@ -28,20 +19,11 @@ index 0830ea2e..b8c2e77e 100644
              new RegexValidator(DOMAIN_NAME_REGEX);
  
      /**
--     * Returns the singleton instance of this validator. It
--     *  will not consider local addresses as valid.
-+     * Returns the singleton instance of this validator.
       * @return the singleton instance of this validator
       */
      public static DomainValidator getInstance() {
          return DOMAIN_VALIDATOR;
      }
--    
--    /**
--     * Returns the singleton instance of this validator,
--     *  with local validation as required.
--     * @param allowLocal Should local addresses be considered valid?
--     */
 -    public static DomainValidator getInstance(boolean allowLocal) {
 -       if(allowLocal) {
 -          return DOMAIN_VALIDATOR_WITH_LOCAL;
@@ -86,17 +68,9 @@ index 0830ea2e..b8c2e77e 100644
          return COUNTRY_CODE_TLD_LIST.contains(chompLeadingDot(ccTld.toLowerCase()));
      }
  
--    /**
--     * Returns true if the specified <code>String</code> matches any
--     * widely used "local" domains (localhost or localdomain). Leading dots are
--     *  ignored if present. The search is case-sensitive.
--     * @param iTld the parameter to check for local TLD status
--     * @return true if the parameter is an local TLD
--     */
 -    public boolean isValidLocalTld(String iTld) {
 -        return LOCAL_TLD_LIST.contains(chompLeadingDot(iTld.toLowerCase()));
 -    }
--
      private String chompLeadingDot(String str) {
          if (str.startsWith(".")) {
              return str.substring(1);
@@ -108,7 +82,6 @@ index 0830ea2e..b8c2e77e 100644
 -       "localhost",           // RFC2606 defined
 -       "localdomain"          // Also widely used as localhost.localdomain
 -   };
--
      private static final List INFRASTRUCTURE_TLD_LIST = Arrays.asList(INFRASTRUCTURE_TLDS);
      private static final List GENERIC_TLD_LIST = Arrays.asList(GENERIC_TLDS);
      private static final List COUNTRY_CODE_TLD_LIST = Arrays.asList(COUNTRY_CODE_TLDS);
@@ -123,18 +96,9 @@ index b85e93a9..1fab56f2 100644
      private static final Pattern USER_PATTERN = Pattern.compile(USER_REGEX);
  
 -    private final boolean allowLocal;
--    
      /**
--     * Singleton instance of this class, which
--     *  doesn't consider local addresses as valid.
-+     * Singleton instance of this class.
       */
 -    private static final EmailValidator EMAIL_VALIDATOR = new EmailValidator(false);
--    
--    /**
--     * Singleton instance of this class, which does
--     *  consider local addresses valid.
--     */
 -    private static final EmailValidator EMAIL_VALIDATOR_WITH_LOCAL = new EmailValidator(true);
 +    private static final EmailValidator EMAIL_VALIDATOR = new EmailValidator();
  
@@ -144,18 +108,12 @@ index b85e93a9..1fab56f2 100644
          return EMAIL_VALIDATOR;
      }
  
--    /**
--     * Returns the Singleton instance of this validator,
--     *  with local validation as required.
--     * @param allowLocal Should local addresses be considered valid?
--     */
 -    public static EmailValidator getInstance(boolean allowLocal) {
 -        if(allowLocal) {
 -           return EMAIL_VALIDATOR_WITH_LOCAL;
 -        }
 -        return EMAIL_VALIDATOR;
 -    }
--
      /**                                       
       * Protected constructor for subclasses to use.
       */

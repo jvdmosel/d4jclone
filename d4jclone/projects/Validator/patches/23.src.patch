@@ -6,8 +6,6 @@ index ef1691c4..45fef194 100644
       */
      // Needed by UrlValidator
      static String unicodeToASCII(String input) {
--        if (isOnlyASCII(input)) { // skip possibly expensive processing
-+        if (isOnlyASCII(input)) { // TODO temporary hack to work round IDN.toASCII bug
              return input;
          }
          try {
@@ -19,11 +17,6 @@ index ef1691c4..45fef194 100644
 -            if (length == 0) {// check there is a last character
 -                return input;
 -            }
--// RFC3490 3.1. 1)
--//            Whenever dots are used as label separators, the following
--//            characters MUST be recognized as dots: U+002E (full stop), U+3002
--//            (ideographic full stop), U+FF0E (fullwidth full stop), U+FF61
--//            (halfwidth ideographic full stop).
 -            char lastChar = input.charAt(length-1);// fetch original last char
 -            switch(lastChar) {
 -                case '\u002E': // "." full stop
@@ -47,7 +40,6 @@ index ef1691c4..45fef194 100644
 -        }
 -        private static final boolean IDN_TOASCII_PRESERVES_TRAILING_DOTS = keepsTrailingDot();
 -    }
--
      /*
       * Check if input contains only ASCII
       * Treats null as all ASCII
