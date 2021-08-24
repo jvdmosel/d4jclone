@@ -1,7 +1,8 @@
 ENV = {
-	'BASEDIR': '/home/jvdmosel/workspace/defects',
-	'SCRIPTDIR': '/home/jvdmosel/workspace/defects/d4jclone',
-	'REPODIR': '/home/jvdmosel/workspace/defects/project_repos',
-	'PROJECTDIR': '/home/jvdmosel/workspace/defects/d4jclone/projects',
+	'BASEDIR': 'PATH_TO_D4JCLONE_BASEDIR',
+	'SCRIPTDIR': 'PATH_TO_D4JCLONE_SCRIPTS',
+	'REPODIR': 'PATH_TO_D4JCLONE_PROJECT_REPOSITORIES',
+	'PROJECTDIR': 'PATH_TO_D4JCLONE_PROJECTS',
+	'LIBDIR': 'PATH_TO_D4JCLONE_LIB',
 	'TZ': 'America/Los_Angeles',
 }

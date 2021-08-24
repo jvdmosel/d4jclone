@@ -8,6 +8,7 @@ with open('d4jclone/config.py', 'w') as config:
                  + '\n\t\'SCRIPTDIR\': \'' + BASEDIR + '/d4jclone\','
                  + '\n\t\'REPODIR\': \'' + BASEDIR + '/project_repos\','
                  + '\n\t\'PROJECTDIR\': \'' + BASEDIR + '/d4jclone/projects\','
+                 + '\n\t\'LIBDIR\': \'' + BASEDIR + '/lib\','
                  + '\n\t\'TZ\': \'America/Los_Angeles\','
                  + '\n}')
 
