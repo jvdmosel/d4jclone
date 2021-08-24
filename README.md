@@ -10,9 +10,13 @@ export PATH=$PATH:/home/"USER"/.local/bin
 ```
 
 ## TODO
-- Finish test command 
-- Add mutation command
-- Patch minimization
-- Remove build files for buggy versions (not needed)
-- Add list of working versions
-- Make project repositories and libaries available
+- \[HIGH\] Patch minimization -> also change checkout so that full versions (not only minimal) are available
+- \[HIGH\] Add documentation
+- \[MEDIUM\] Add mutation command
+- \[MEDIUM\] Add coverage command
+- \[MEDIUM\] Tests
+- \[LOW\] Remove build files for buggy versions (not needed)
+- \[LOW\] Add list of working versions
+- \[LOW\] Make project repositories and libaries available
+- \[LOW\] Docker
+- Add other projects ...
