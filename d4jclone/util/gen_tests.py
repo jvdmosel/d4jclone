@@ -135,7 +135,7 @@ TARGET_CLASSES = args.c if args.c != None else modified
 # Directory that contains test generator configuration files
 LIBDIR = Path(ENV['BASEDIR']) / 'lib'
 # Testgeneration library
-TESTGENDIR = LIBDIR / 'testgen'
+TESTGENDIR = LIBDIR / 'test_generation'
 # Directory of the checked out project version
 WORKDIR = Path(args.t) / (PID.lower() + '_' + str(BID) + '_'  + 'buggy' if VERSION == 'b' else 'fixed')
 # Temporary directory for testsuite generation
