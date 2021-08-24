@@ -6,17 +6,9 @@ from d4jclone.core.checkout import checkout
 from d4jclone.core.compile import compile
 from d4jclone.core.test import test
 from d4jclone.parser.bugParser import getLayout, parseBug
+from d4jclone.parser.checkoutParser import getClasses
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.input_validation import is_valid_pid
-
-def getClasses(workdir, layout):
-    target_dir = Path(workdir) / layout 
-    java_files = [str(x) for x in target_dir.glob('**/*.java')]
-    # remove everything before the package name
-    classes =  [file[file.find(layout)+len(layout):] for file in java_files]
-    # replace slashes with dots and remove .java postfix
-    classes = [cls.replace('/', '.')[1:-5] for cls in classes]    
-    return classes
 
 def createLoadedClasses(project_id, workdir):
     if is_valid_pid(project_id):

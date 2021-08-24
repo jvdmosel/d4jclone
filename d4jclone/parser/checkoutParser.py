@@ -20,3 +20,12 @@ def parseCheckout(dir):
     rev = bug.rev_buggy if parts[2] == 'buggy' else bug.rev_fixed
     version = "BUGGY" if parts[2] == 'buggy' else "FIXED"
     return Checkout(project, project_dir, bug, rev, version)
+
+def getClasses(workdir, layout):
+    target_dir = Path(workdir) / layout 
+    java_files = [str(x) for x in target_dir.glob('**/*.java')]
+    # remove everything before the package name
+    classes =  [file[file.find(layout)+len(layout):] for file in java_files]
+    # replace slashes with dots and remove .java postfix
+    classes = [cls.replace('/', '.')[1:-5] for cls in classes]    
+    return classes

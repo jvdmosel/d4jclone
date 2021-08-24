@@ -6,8 +6,8 @@ from d4jclone.config import ENV
 from d4jclone.parser.bugParser import (getLayout, getLoadedClasses,
                                        getModifiedSources, getRelevantTests,
                                        getTriggerTests, parseBug)
+from d4jclone.parser.checkoutParser import getClasses
 from d4jclone.parser.checkoutParser import parseCheckout
-from d4jclone.util.create_loaded_classes import getClasses
 from d4jclone.util.formatting import fill
 from d4jclone.util.input_validation import is_valid_pid
 
