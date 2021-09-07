@@ -7,6 +7,7 @@ from d4jclone.parser.bugParser import (getLoadedClasses, getModifiedSources,
 from d4jclone.parser.projectParser import parseProject
 from d4jclone.util.input_validation import is_valid_pid
 
+"""List of available fields"""
 available_fields = [
     'project.id',
     'project.name',
@@ -29,6 +30,19 @@ available_fields = [
 ]
 
 def query(project_id, query = None, file = None, help = False):
+    """Query the metadata for a project to obtain CSV-formatted results.
+
+    Args:
+        project_id (str): The project id.
+        query (str, optional): A comma-separated list of fields, encased in quotation marks. For example, -q "bug.id,report.id" returns the list of bug IDs and issue tracker IDs for the requested system. Defaults to None.
+        file (str, optional): A file to output the extracted CSV to. Defaults to print to screen.
+        help (bool, optional): List the available fields. Defaults to False.
+
+    Raises:
+        Exception: Requested field is invalid exception
+        Exception: Invalid project id exception
+    """
+    
     if help:
         print('Available fields: ' + ', '.join(available_fields))
         return
@@ -128,5 +142,12 @@ def query(project_id, query = None, file = None, help = False):
         raise Exception('Invalid project_id: ' + project_id)
     
 def apply_to_rows(rows, fn):
+    """Helper function that applies a given function to the CSV file rows.
+
+    Args:
+        rows (list<list>): Rows of the CSV file.
+        fn (function): Function that should be applied to the rows.
+    """
+    
     for i in range(len(rows)):
         rows[i].append(fn(i+1))

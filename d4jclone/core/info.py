@@ -10,6 +10,12 @@ from d4jclone.util.projects import projects
 sep = '\n'+ '-' * 80
 
 def project_info(project_id):
+    """ Prints the information for a specific project.
+
+    Args:
+        project_id (str): The project id.
+    """
+    
     project = parseProject(project_id)
     print('Summary of configuration for Project: ' + project.id + sep)
     print('    Script dir: ' + ENV['SCRIPTDIR'])
@@ -24,6 +30,13 @@ def project_info(project_id):
     print('Number of bugs: ' + str(project.number_of_bugs) + sep)
 
 def bug_info(project_id, bug_id):
+    """ Prints the information for a specific bug.
+
+    Args:
+        project_id (str): The project id.
+        bug_id (int): The bug id.
+    """
+    
     bug = parseBug(project_id, bug_id)
     print('\nSummary for Bug: ' + project_id + '-' + str(bug.id) + sep)
     print('Revision ID (fixed version):\n' + bug.rev_fixed + sep)
@@ -46,6 +59,18 @@ def bug_info(project_id, bug_id):
     print('List of modified sources:\n - ' + srcs + sep)
         
 def info(project_id, bug_id = None):
+    """ Prints the information for a specific bug. 
+    When no bug_id is provided prints the information for the project instead.
+
+    Args:
+        project_id (str): The project id.
+        bug_id (int, optional): The bug id. Defaults to None.
+
+    Raises:
+        Exception: Non-existent bug exception
+        Exception: Invalid project ID exception
+    """
+    
     if is_valid_pid(project_id):
         project = parseProject(project_id)
         project_info(project_id)

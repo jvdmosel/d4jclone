@@ -19,7 +19,7 @@ def checkout(project_id, bug_id, version, workdir = None):
     Args:
         project_id (str): The id of the project for which a particular version shall be checked out.
         bug_id (int): The id of the bug that shall be checked out.
-        version (str): The version that shall be checked out ('b' or 'f')
+        version (str): The version that shall be checked out ('b' or 'f').
         workdir (str, optional): The working directory to which the buggy or fixed project version shall be checked out. Defaults to None.
 
     Raises:
@@ -99,8 +99,8 @@ def checkoutRevision(project, bug_id, rev, tag, workdir):
     return checkout
 
 def checkoutVersion(workdir, version):
-    """ Check out a version (BUGGY / FIXED) for a given checked out directory
-       Helper function for core.test and util.create_triggering_tests
+    """ Check out a version (BUGGY / FIXED) for a given checked-out directory.
+    Helper function for core.test and util.create_triggering_tests.
 
     Args:
         workdir (str): Path to the directory of the checked out bug

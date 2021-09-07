@@ -7,6 +7,9 @@ from d4jclone.util.formatting import fill
 
 
 def env():
+    """ Prints the D4JCLONE Execution Enviroment.
+    """
+    
     env = os.environ
     sep = '-' * 80
     header = 'D4JCLONE Execution Enviroment'
@@ -31,6 +34,15 @@ def env():
     print(sep)
 
 def run_multiline_cmd(args):
+    """ Runs a command with a multiline output.
+
+    Args:
+        args (list): Arguments of the command.
+
+    Returns:
+        str: Multiline output seperated by newlines and tabs.
+    """
+    
     result = run(args, shell=True, stdout=PIPE, stderr=PIPE)
     out = result.stdout.decode('ascii').split('\n')[:-1]
     if len(out) == 0:
@@ -42,6 +54,15 @@ def run_multiline_cmd(args):
         return s
 
 def run_cmd(args):
+    """ Runs a command with a single line output.
+
+    Args:
+        args (list): Arguments of the command.
+
+    Returns:
+        str: Output of the command.
+    """
+    
     result = run(args, shell=True, stdout=PIPE, stderr=PIPE)
     out = result.stdout.strip()
     return '(none)' if len(out) == 0 else out.decode('ascii')

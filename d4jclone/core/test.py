@@ -11,7 +11,20 @@ from d4jclone.util.formatting import fill
 
 class_method = re.compile('([^:]+::[^:]+)')
 
-def test(workdir = None, testcase = None, relevant = False, testsuite = None, monitor = False): 
+def test(workdir = None, testcase = None, relevant = False, testsuite = None, monitor = False):
+    """Runs tests on a checked-out project version.
+
+    Args:
+        workdir (str, optional): The working directory of the checked-out project version. Defaults to the current working directory.
+        testcase ([str, optional): Name of the single testcase that should be run. Defaults to all developer written tests.
+        relevant (bool, optional): Whether only the relevant tests should be run. Defaults to False.
+        testsuite (str, optional): The path to an external testsuite. Defaults to None.
+        monitor (bool, optional): Whether the class loader should be monitored. Defaults to False.
+
+    Returns:
+        (str,str): The output (stdout, stderr).
+    """
+    
     workdir = Path(workdir) if workdir != None else Path.cwd()
     testdir = workdir / '.test_suite'
     if testsuite:
@@ -41,6 +54,19 @@ def test(workdir = None, testcase = None, relevant = False, testsuite = None, mo
     return result
 
 def testFails(workdir, testcase, version):
+    """Performs a checkout for a given version, runs the testcase and checks whether it fails.
+
+    Args:
+        workdir (str): The working directory of the checked-out project version.
+        testcase (str): The testcase that should be run.
+        version (str): The version that should be checked out.
+
+    Raises:
+        Exception: Directory not found exception
+
+    Returns:
+        bool: True if the testcase fails, otherwise False
+    """
     workdir = Path(workdir)
     if workdir.is_dir():
         checkoutVersion(workdir, version)
@@ -51,6 +77,12 @@ def testFails(workdir, testcase, version):
         raise Exception('Couldn\'t find directory!')
     
 def extractTestsuite(testsuite, testdir):
+    """Extracts a given external testsuite archive (tar.bz2) to the testdir.
+
+    Args:
+        testsuite (str): Path to the testsuite archive.
+        testdir (str): Path to the test directory.
+    """
     if not Path(testsuite).is_file():
         print('Test suite archive not found: ' + testsuite)
         return

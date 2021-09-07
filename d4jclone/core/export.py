@@ -26,6 +26,14 @@ properties = {
 }
 
 def export(property, file = None, workdir = None):
+    """ Exports a version-specific property.
+
+    Args:
+        property (str): Export the value(s) of this property.
+        file (str, optional): Write output to this file. Defaults to None (stdout).
+        workdir (str, optional): The working directory of the checked-out version. Defaults to current working director.
+    """
+    
     if property in properties.keys():
         f = None
         if file != None:
@@ -79,11 +87,27 @@ def export(property, file = None, workdir = None):
         for p in properties.keys():
             print(fill('  ' + p, ' ', 20) + properties[p])
 
+# TODO function name is misleading, change to parseOutputDirs
 def parseProperty(project_id, bug_id, version):
+    """ Parses build output directories for a given version from the build properties file.
+
+    Args:
+        project_id (str): The project id.
+        bug_id (int): The bug id.
+        version (str): The version of the bug. 'b' for buggy, 'f' for fixed.
+
+    Raises:
+        Exception: Invalid project ID exception
+
+    Returns:
+        tuple(str, str): outputDir, testOutputDir
+    """
+    
     if is_valid_pid(project_id):
         bug = parseBug(project_id, bug_id)
         rev = bug.rev_buggy if version == 'b' else bug.rev_fixed
         path = Path(ENV['PROJECTDIR']) / project_id / 'build_files' / rev / 'maven-build.properties'
+        # TODO confusing -> properties here should be renamed to build_properties
         with open(path, 'r') as properties:
             dirs = {'maven.build.dir=': None,
                     'maven.build.outputDir=': None,
@@ -100,6 +124,15 @@ def parseProperty(project_id, bug_id, version):
         raise Exception('Invalid project_id: ' + project_id)
 
 def parseClasspath(workdir, arg = 'classpath'):
+    """ Parses the source classpath or the test classpath.
+
+    Args:
+        workdir (str): Working directory of the checked-out project version.
+        arg (str, optional): The argument, valid options are 'classpath' and 'test-classpath'. Defaults to 'classpath'.
+
+    Returns:
+        str: Classpath
+    """
     checkout = parseCheckout(workdir)
     args = ['ant', 
             '-Dbasedir=' + str(workdir), 
