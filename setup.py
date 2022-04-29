@@ -13,7 +13,7 @@ with open('d4jclone/config.py', 'w') as config:
                  + '\n}')
 
 setup(
-    name = 'd4jclone',
+    name='d4jclone',
     version='1.0',
     packages=['d4jclone', 'd4jclone.util', 'd4jclone.parser', 'd4jclone.core'],
     entry_points={
@@ -22,5 +22,8 @@ setup(
         ]},
     install_requires=[
           'gitpython',
+          'pyyaml',
+          'mongoengine <= 0.23.1',
+          'pycoshark'
     ]
 )
