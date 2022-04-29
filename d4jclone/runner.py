@@ -21,7 +21,6 @@ import d4jclone.core.compile as compile
 import d4jclone.core.test as test
 import d4jclone.core.env as env
 import d4jclone.core as core
-import d4jclone.test as createTest
 import d4jclone.util.create_patches as patches
 import d4jclone.util.create_triggering_tests as triggeringTests
 import d4jclone.util.create_relevant_tests as relevantTests
